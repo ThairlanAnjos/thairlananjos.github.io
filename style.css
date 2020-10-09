@@ -43,6 +43,14 @@ html body {
     width: 25%;
   }
 
+  .crostruction{
+    background-color: #ffd7d7177, 172, 172);
+    text-align: center;
+    display: fixed;
+    position: top;
+  }
+
+
   .PageTitle{
     font-size: 65px; 
     text-align: center;
