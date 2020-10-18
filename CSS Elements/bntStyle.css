@@ -1,0 +1,154 @@
+
+
+
+/* Botão principal */
+button.primary-button {
+    font-family: Roboto;
+    font-size: 18px;
+    text-align: center;
+    color: #000000;
+    background-color: #FFFFFF;
+    border-style: solid;
+    border-radius: 10px;
+    border-color: #151515;
+    padding-right: 20px;
+    padding-left: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    transition: all 0.2s ease-in-out;
+  }
+  
+  
+  button.primary-button:hover {
+    box-shadow: #000 2px 2px 0px 1px;
+    transition: all 0.2s ease-in-out;
+  }
+
+
+/*Link Button*/
+  button.link-button {
+    font-family: Roboto;
+    font-size: 18px;
+    text-align: center;
+    color: #000000;
+    background-color: #FFFFFF;
+    border-style: solid;
+    border-radius: 10px;
+    border-color: #1a1a1a;
+    padding-right: 20px;
+    padding-left: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    transition: all 0.2s ease-in-out;
+
+  }
+  
+  button.link-button:hover {
+    border-color: #6200ff;
+    color: #6200ff;
+    box-shadow: #6200ff 2px 2px 0px 1px;
+    transition: all 0.2s ease-in-out;
+  }
+
+  /* Download Button*/
+  button.download-button {
+    font-family: Roboto;
+    font-size: 18px;
+    text-align: center;
+    color: #000000;
+    background-color: #FFFFFF;
+    border-style: solid;
+    border-radius: 10px;
+    border-color: #1a1a1a;
+    padding-right: 20px;
+    padding-left: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    transition: all 0.2s ease-in-out;
+
+  }
+  
+  button.download-button:hover {
+    border-color: #095fff;
+    color: #095fff;
+    box-shadow: #095fff 2px 2px 0px 1px;
+    transition: all 0.2s ease-in-out;
+  }
+
+  /* Info Button*/
+  button.info-button {
+    font-family: Roboto;
+    font-size: 18px;
+    text-align: center;
+    color: #070707;
+    background-color: #FFFFFF;
+    border-style: solid;
+    border-radius: 10px;
+    border-color: #1a1a1a;
+    padding-right: 20px;
+    padding-left: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    transition: all 0.2s ease-in-out;
+
+  }
+  
+  button.info-button:hover {
+    border-color: #00c3ff;
+    color: #00c3ff;
+    box-shadow: #00c3ff 2px 2px 0px 1px;
+    transition: all 0.2s ease-in-out;
+  }
+
+  /* Go back Button*/
+  button.back-button {
+    font-family: Roboto;
+    font-size: 18px;
+    text-align: center;
+    color: #000000;
+    background-color: #FFFFFF;
+    border-style: solid;
+    border-radius: 10px;
+    border-color: #1a1a1a;
+    padding-right: 20px;
+    padding-left: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    transition: all 0.2s ease-in-out;
+
+  }
+  
+  button.back-button:hover {
+    border-color: #ff00aa;
+    color: #ff00aa;
+    box-shadow: #ff00aa 2px 2px 0px 1px;
+    transition: all 0.2s ease-in-out;
+  }
+
+
+   /* More Button*/
+   button.more-button {
+    font-family: Roboto;
+    font-size: 18px;
+    text-align: center;
+    color: #000000;
+    background-color: #FFFFFF;
+    border-style: solid;
+    border-radius: 10px;
+    border-color: #1a1a1a;
+    padding-right: 20px;
+    padding-left: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    transition: all 0.2s ease-in-out;
+
+  }
+  
+  button.more-button:hover {
+    border-color: #0ada60;
+    color: #0ada60;
+    box-shadow: #0ada60 2px 2px 0px 1px;
+    transition: all 0.2s ease-in-out;
+  }
+
+  
