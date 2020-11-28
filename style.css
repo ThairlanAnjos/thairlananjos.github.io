@@ -40,12 +40,12 @@ footer {
 }
 
 img.ProfilePicture {
-  height: 20%;
+  height: 200px;
   border-radius: 100%;
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 25%;
+  width: 200px;
 }
 
 .PageTitle {
@@ -111,11 +111,11 @@ a {
 
 @media (max-width: 300px) {
   body {
-    margin: 20px;
+    margin: 10%;
   }
 
   .PageTitle {
-    font-size: 25px;
+    font-size: 30%;
     text-align: center;
     padding: 0px 0px 0px 0px;
     transition: all 0.2s ease-in-out;
@@ -123,8 +123,8 @@ a {
   }
 
   .PageDescription {
-    font-size: 16px;
-    margin-top: 18px;
+    font-size: 10px;
+    margin-top: 10px;
     text-align: center;
     letter-spacing: 0px;
   }
@@ -136,7 +136,19 @@ a {
     margin-left: auto;
     margin-right: auto;
     width: 25%;
-    transition: all 0.2s ease-in-out;
+    transition: all 0.1s ease-in-out;
+  }
+  h1 {
+    font-size: 18px;
+  }
+  
+  h2 {
+    font-size: 15px;
+    color: #ff2681;
+  }
+  
+  h3 {
+    font-size: 12px;
   }
 }
 
@@ -149,7 +161,7 @@ a {
     font-size: 35px;
     text-align: center;
     padding: 0px 0px 0px 0px;
-    transition: all 0.2s ease-in-out;
+    transition: all 0.1s ease-in-out;
     letter-spacing: -1.9px;
   }
 
@@ -161,13 +173,25 @@ a {
   }
 
   img.ProfilePicture {
-    height: 30%;
+    height: 100px;
     border-radius: 100%;
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 30%;
-    transition: all 0.2s ease-in-out;
+    width: 100px;
+    transition: all 0.1s ease-in-out;
+  }
+  h1 {
+    font-size: 25px;
+  }
+  
+  h2 {
+    font-size: 15px;
+    color: #ff2681;
+  }
+  
+  h3 {
+    font-size: 12px;
   }
 }
 
@@ -192,13 +216,25 @@ a {
   }
 
   img.ProfilePicture {
-    height: 40%;
+    height: 120px;
     border-radius: 100%;
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 40%;
+    width: 120px;
     transition: all 0.1s ease-in-out;
+  }
+  h1 {
+    font-size: 25px;
+  }
+  
+  h2 {
+    font-size: 15px;
+    color: #ff2681;
+  }
+  
+  h3 {
+    font-size: 12px;
   }
 }
 
