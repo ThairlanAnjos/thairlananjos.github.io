@@ -109,6 +109,30 @@ a {
   text-decoration: none;
 }
 
+/*------------- Scrollbar -------------*/
+
+/* width */
+::-webkit-scrollbar {
+  width: 15px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #transparent; 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #c9c9c9; 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #b0b0b0; 
+}
+
+/*------------------------------------*/
+
 @media (max-width: 300px) {
   body {
     margin: 10%;
