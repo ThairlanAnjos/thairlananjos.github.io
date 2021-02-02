@@ -1,0 +1,205 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+h1 {
+    font-family: Poppins;
+    font: 30px, #000000;
+    padding: 5px 25px 5px 25px;
+}
+
+h2 {
+    font-family: Poppins;
+    font: 25px, #000000;
+    padding: 5px 25px 5px 25px;
+}
+
+h3 {
+    font-family: Poppins;
+    font: 20px, #000000;
+    padding: 5px 25px 5px 25px;
+}
+
+h4 {
+    font-family: Poppins;
+    font: 180px, #000000;
+    letter-spacing: -1px;
+    padding: 5px 25px 5px 25px;
+}
+
+h5 {
+    font-family: Poppins;
+    font-size: 15px;
+    letter-spacing: -1px;
+    padding: 5px 25px 5px 25px;
+}
+
+h6 {
+    font-family: Poppins;
+    font-size: 15px;
+    font-weight: 400;
+    letter-spacing: -1px;
+    padding: 5px 25px 5px 25px;
+}
+
+body {
+    margin: 10%;
+}
+
+p {
+    margin: auto;
+    padding: 25px;
+}
+
+a {
+    text-decoration: underline;
+}
+
+.title{
+    font-family: Poppins;
+    font-weight: 900;
+    text-align: center;
+    font-size: 50px;
+    transition: all 0.3s ease-in-out;
+}
+.title:hover{
+    color: #ffffff;
+    text-shadow: 3px 3px 0px #000000;
+    -webkit-text-stroke-width: 2.1px;
+    -webkit-text-stroke-color: #000000;
+    transition: all 0.3s ease-in-out;
+
+}
+
+    .titleTwo{
+        font-family: Poppins;
+        font-weight: 600;
+        text-align: center;
+        font-size: 50px;
+        transition: all 0.3s ease-in-out;
+        color: #ffffff;
+        text-shadow: 3px 3px 0px #000000;
+        -webkit-text-stroke-width: 1.5px;
+        -webkit-text-stroke-color: #000000;
+        transition: all 0.1s ease-in-out;
+    }
+    .titleTwo:hover{
+        font-family: Poppins;
+        font-weight: 600;
+        text-align: center;
+        font-size: 50px;
+        color: #000000;
+        text-shadow: 0px 0px 0px #000000;
+        -webkit-text-stroke-width: 0px;
+        -webkit-text-stroke-color: #000000;
+        transition: all 0.1s ease-in-out; 
+ 
+}
+
+.box {
+    /*width: 98%; */
+    background-color: #ffffff;
+    border-radius: 10px;
+    border: 2px solid #000000;
+    color: #030303;
+    padding: 0px;
+    font-family: Mulish;
+    font-style: normal;
+    font-size: 15px;
+    text-decoration: none;
+    text-align: justify;
+}
+
+/*---------- Buttons ------------*/
+
+.BtnDefault {
+    font-family: Mulish;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 14px;
+    background-color: #ffffff;
+    box-shadow: #000000 3px 3px 0px 0px;
+    border-radius: 5px;
+    border: 2.9px solid #000000;
+    color: #000000;
+    padding: 10px 16px 10px 16px;
+    transition: all 0.1s ease;
+    text-align: center;
+    text-decoration: none;
+}
+
+.BtnDefault:hover {
+    background-color: #000000;
+    box-shadow: #0000003a 0px 3px 3px 0px;
+    color: #ffffff;
+}
+
+/*--------------- Attention -------------------*/
+
+.BtnAttention {
+    font-family: Mulish;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 14px;
+    background-color: #ffffff;
+    box-shadow: #c71515 3px 3px 0px 0px;
+    border-radius: 5px;
+    border: 2.9px solid #c71515;
+    color: #c71515;
+    padding: 10px 16px 10px 16px;
+    transition: all 0.1s ease;
+    text-align: center;
+    text-decoration: none;
+}
+
+.BtnAttention:hover {
+    background-color: #c71515;
+    box-shadow: #c71515 0px 0px 0px 0px;
+    color: #ffffff;
+}
+
+/*--------------- Confirm -------------------*/
+
+.BtnConfirm {
+    font-family: Mulish;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 14px;
+    background-color: #ffffff;
+    box-shadow: #0d753c 3px 3px 0px 0px;
+    border-radius: 5px;
+    border: 2.9px solid #0d753c;
+    color: #0d753c;
+    padding: 10px 16px 10px 16px;
+    transition: all 0.1s ease;
+    text-align: center;
+    text-decoration: none;
+}
+
+.BtnConfirm:hover {
+    background-color: #0d753c;
+    box-shadow: #0d753c 0px 0px 0px 0px;
+    color: #ffffff;
+}
+
+/*--------------- Download -------------------*/
+
+.BntDownload {
+    font-family: Mulish;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 14px;
+    background-color: #ffffff;
+    box-shadow: #0f54d4 3px 3px 0px 0px;
+    border-radius: 5px;
+    border: 2.9px solid #0f54d4;
+    color: #0f54d4;
+    padding: 10px 16px 10px 16px;
+    transition: all 0.1s ease;
+    text-align: center;
+    text-decoration: none;
+}
+
+.BntDownload:hover {
+    background-color: #0f54d4;
+    box-shadow: #0f54d4 0px 0px 0px 0px;
+    color: #ffffff;
+}
