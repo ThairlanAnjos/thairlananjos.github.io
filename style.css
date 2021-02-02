@@ -19,6 +19,22 @@ h3 {
 
 }
 
+.boxGrid {
+  /*width: 98%; */
+  background-color: #ffffff;
+  border-radius: 10px;
+  border: 2px solid #000000;
+  display: grid;
+  color: #030303;
+  padding: 0px;
+  font-family: Mulish;
+  font-style: normal;
+  font-size: 15px;
+  text-decoration: none;
+  text-align: justify;
+  margin: 100px 100px 100px 100px ;
+}
+
 .h3_box {
   font-family: 'Poppins', sans-serif;
   font-style: normal;
@@ -68,12 +84,16 @@ img.ProfilePicture {
 }
 
 .content {
+
+  /*  
   background-color: #6ea1ff00;
   display: grid;
   margin: auto;
+  transition: all 0.5s ease-in-out;
   max-width: 750px;
   min-width: 250px;
-  transition: all 0.5s ease-in-out;
+  */
+  
 }
 
 .wrapper {
