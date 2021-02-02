@@ -1,0 +1,53 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    font-family: Roboto;
+}
+
+.BoxContainer{
+    background-color: #ffccaf;
+    margin: 0%;
+    padding: 10% 0% 10% 0% ;
+}
+
+.navbarLeft{
+    background-color: #c2ffaf;  
+    float: left;  
+    position: relative;
+    width: 250px;
+}
+
+.BoxContContent{
+    background-color: #868b33;
+    margin: auto;
+    margin-left: 0%;
+    position: initial;
+    float: left;
+    padding: 0%;
+}
+.lineFist{
+    background-color: #afe6ff;
+    width: 750px;
+    min-width: 676px;
+    padding: 1%;
+
+
+}
+
+.lineSecond{
+    background-color: #6f00ff;
+    width: 750px;
+    min-width: 676px;
+    padding: 1%;
+
+
+}
+
+.lineThird{
+    background-color: #ffafc7;
+    width: 750px;
+    min-width: 676px;
+    padding: 1%;
+
+
+}
