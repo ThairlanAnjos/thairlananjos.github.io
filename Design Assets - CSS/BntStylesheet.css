@@ -113,16 +113,17 @@ a {
   font-family: Mulish;
   font-weight: 700;
   font-style: normal;
-  font-size: 14px;
+  font-size: 15px;
   background-color: #ffffff;
   box-shadow: #000000 3px 3px 0px 0px;
   border-radius: 5px;
   border: 2px solid #000000;
   color: #000000;
-  padding: 10px 16px 10px 16px;
+  padding: 11px 15px 11px 15px;
   transition: all 0.1s ease;
   text-align: center;
   text-decoration: none;
+    
 }
 
 .BtnDefault:hover {
@@ -137,13 +138,13 @@ a {
   font-family: Mulish;
   font-weight: 700;
   font-style: normal;
-  font-size: 14px;
+  font-size: 15px;
   background-color: #ffffff;
   box-shadow: #c71515 3px 3px 0px 0px;
   border-radius: 5px;
   border: 2px solid #c71515;
   color: #c71515;
-  padding: 10px 16px 10px 16px;
+  padding: 11px 15px 11px 15px;
   transition: all 0.1s ease;
   text-align: center;
   text-decoration: none;
@@ -161,13 +162,13 @@ a {
   font-family: Mulish;
   font-weight: 700;
   font-style: normal;
-  font-size: 14px;
+  font-size: 15px;
   background-color: #ffffff;
   box-shadow: #0d753c 3px 3px 0px 0px;
   border-radius: 5px;
   border: 2px solid #0d753c;
   color: #0d753c;
-  padding: 10px 16px 10px 16px;
+  padding: 11px 15px 11px 15px;
   transition: all 0.1s ease;
   text-align: center;
   text-decoration: none;
@@ -185,13 +186,13 @@ a {
   font-family: Mulish;
   font-weight: 700;
   font-style: normal;
-  font-size: 14px;
+  font-size: 15px;
   background-color: #ffffff;
   box-shadow: #0f54d4 3px 3px 0px 0px;
   border-radius: 5px;
   border: 2px solid #0f54d4;
   color: #0f54d4;
-  padding: 10px 16px 10px 16px;
+  padding: 11px 15px 11px 15px;
   transition: all 0.1s ease;
   text-align: center;
   text-decoration: none;
