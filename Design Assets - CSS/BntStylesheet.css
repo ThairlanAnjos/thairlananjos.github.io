@@ -2,56 +2,88 @@
 
 h1 {
   font-family: Poppins;
-  font: 30px, #000000;
+  font-size: 40px;
+  letter-spacing: -1px;
   padding: 5px 25px 5px 25px;
 }
 
 h2 {
   font-family: Poppins;
-  font: 25px, #000000;
+  font-size: 35px;
+  letter-spacing: -1px;
   padding: 5px 25px 5px 25px;
 }
 
 h3 {
   font-family: Poppins;
-  font: 20px, #000000;
+  font-size: 30px;
+  letter-spacing: -1px;
   padding: 5px 25px 5px 25px;
 }
 
 h4 {
   font-family: Poppins;
-  font: 180px, #000000;
+  font-size: 25px;  
   letter-spacing: -1px;
   padding: 5px 25px 5px 25px;
 }
 
 h5 {
   font-family: Poppins;
-  font-size: 15px;
+  font-size: 20px;
   letter-spacing: -1px;
   padding: 5px 25px 5px 25px;
 }
 
 h6 {
-  font-family: Poppins;
-  color: #5c5c5c;
-  font-size: 15px;
-  font-weight: 400;
+  font-family: Poppins;  
+  font-size: 18px;  
   letter-spacing: -1px;
   padding: 5px 25px 5px 25px;
+}
+
+p {
+  color: #555555;
+  margin: auto;
+  padding: 25px;
+  font-size: 17px;
+  font-weight: 500;
+  letter-spacing: 0.1px;
+
+}
+
+b{
+  color: #000000;
+}
+
+i{
+
 }
 
 body {
   margin: 10%;
 }
 
-p {
-  margin: auto;
-  padding: 25px;
-}
+
 
 a {
-  text-decoration: underline;
+  font-family: Mulish;
+  font-weight: 600;
+    
+  text-decoration-color: #9616ff;
+  text-decoration-thickness: .125em;
+  text-underline-offset: 1.9px;
+  text-decoration-style: dotted;
+ 
+}
+
+a:hover {
+  text-decoration-color: #ff3232;
+  text-decoration-thickness: .600em;
+  text-underline-offset: -35px;  
+  text-underline-position: initial; /*Continuar aqui*/
+  text-decoration-style: solid;
+
 }
 
 .title {

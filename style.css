@@ -3,7 +3,7 @@ html{
 }
 
 html body {
-  font-family: Helvetica;
+  font-family: Roboto;
   padding: 20px;
   transition: all 0.9s ease-in-out;
   background-color: #fafafa;
