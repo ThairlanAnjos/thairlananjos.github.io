@@ -312,7 +312,7 @@ body {
   text-align: center;
   font-family: Roboto;
   font-size: 15px;
-  box-shadow: 10px 10px 10px 10px #fbff0f;
+  box-shadow: 5px 5px 5px 5px #fbff0f;
   transition: all 0.2s ease-in-out;
   border: #00000088 solid 2px;
   position: fixed;
@@ -325,6 +325,6 @@ body {
   margin-top: -5px;
   margin-bottom: 5px;
   transition: all 0.2s ease-in-out;
-  box-shadow: 90px 5px 90px 900px rgba(0, 0, 0, 0.507);
+  box-shadow: 5px 5px 5px 5px #00000081;
   border: #00000054 solid 2px; 
 }
