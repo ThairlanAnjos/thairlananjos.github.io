@@ -37,7 +37,7 @@
 
 <body>
 
-  <!-- Google Tag Manager (noscript) -->
+  <!--  Google Tag Manager (noscript)  -->
   <noscript>
     <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PRMR4JZ" height="0" width="0"
       style="display:none;visibility:hidden">
@@ -45,6 +45,35 @@
   </noscript>
   <!-- End Google Tag Manager (noscript) -->
 
+  <!-- Facebook Messenger -->
+
+  <!-- Messenger Chat Plugin Code -->
+  <div id="fb-root"></div>
+  <script>
+    window.fbAsyncInit = function() {
+      FB.init({
+        xfbml            : true,
+        version          : 'v10.0'
+      });
+    };
+
+    (function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
+      fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));
+  </script>
+
+  <!-- Your Chat Plugin code -->
+  <div class="fb-customerchat"
+    attribution="biz_inbox"
+    page_id="397777050311047">
+  </div>
+
+  <!--End facebook Messenger-->
+  
   <!-- Warning message! -->
 
   <div class="wrapper-warning">
@@ -82,6 +111,64 @@
 
   </div>
 
+<<<<<<< HEAD
+=======
+</body>
+
+<!-- Facebook Pixel Code -->
+<script>
+  ! function (f, b, e, v, n, t, s) {
+    if (f.fbq) return;
+    n = f.fbq = function () {
+      n.callMethod ?
+        n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+    };
+    if (!f._fbq) f._fbq = n;
+    n.push = n;
+    n.loaded = !0;
+    n.version = '2.0';
+    n.queue = [];
+    t = b.createElement(e);
+    t.async = !0;
+    t.src = v;
+    s = b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t, s)
+  }(window, document, 'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
+  fbq('init', '385294735811530');
+  fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+    src="https://www.facebook.com/tr?id=385294735811530&ev=PageView&noscript=1" /></noscript>
+
+<!-- End Facebook Pixel Code -->
+
+
+<noscript>
+  <img height="1" width="1" style="display:none;" alt=""
+    src="https://ct.pinterest.com/v3/?event=init&tid=2613816151281&pd[em]=<hashed_email_address>&noscript=1" />
+</noscript>
+
+<script>
+  pintrk('track', 'lead', {
+    lead_type: 'Newsletter'
+  });
+</script>
+
+<script>
+  pintrk('track', 'search', {
+    search_query: 'boots'
+  });
+</script>
+</script>
+<script>
+  pintrk('track', 'watchvideo', {
+    video_title: 'How to style your Parker Boots'
+  });
+</script>
+
+
+>>>>>>> 792be24b7128fcf86a412c499396e8f0ecd625fe
 
 <footer>
   Thayrlan Anjos © | 2020 Todos os direitos resevados.

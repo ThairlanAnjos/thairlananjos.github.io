@@ -43,7 +43,7 @@ h6 {
 }
 
 p {
-  color: #555555;
+  color: #2c2c2c;
   margin: auto;
   padding: 25px;
   font-size: 17px;
@@ -55,15 +55,20 @@ b {
   color: #000000;
 }
 
+<<<<<<< HEAD
 i {
 }
 
+=======
+>>>>>>> 792be24b7128fcf86a412c499396e8f0ecd625fe
 body {
   margin: 10%;
 }
 
 a {
+  color: #464646;
   font-family: Mulish;
+<<<<<<< HEAD
   font-weight: 600;
 
   text-decoration-color: #9616ff;
@@ -78,6 +83,21 @@ a:hover {
   text-underline-offset: -35px;
   text-underline-position: initial; /*Continuar aqui*/
   text-decoration-style: solid;
+=======
+  font-weight: 600;  
+  text-decoration-color: #2c2c2c;
+  text-underline-offset: 3.9px;
+  text-decoration-style: dotted;
+  transition: all 0.3s ease-in-out;
+}
+
+a:hover {
+  color: #7000FF;
+  text-decoration-color: #7000FF;
+  text-underline-offset: 3.9px;
+  text-decoration-style: dotted;
+  transition: all 0.3s ease-in-out;
+>>>>>>> 792be24b7128fcf86a412c499396e8f0ecd625fe
 }
 
 .title {
@@ -165,10 +185,10 @@ a:hover {
   font-style: normal;
   font-size: 15px;
   background-color: #ffffff;
-  box-shadow: #c71515 3px 3px 0px 0px;
+  box-shadow: #FF2626 3px 3px 0px 0px;
   border-radius: 5px;
-  border: 2px solid #c71515;
-  color: #c71515;
+  border: 2px solid #FF2626;
+  color: #FF2626;
   padding: 11px 15px 11px 15px;
   transition: all 0.1s ease;
   text-align: center;
@@ -176,7 +196,7 @@ a:hover {
 }
 
 .BtnAttention:hover {
-  background-color: #c71515;
+  background-color: #FF2626;
   box-shadow: #0000003a 0px 5px 10px 0px;
   color: #ffffff;
 }
@@ -189,10 +209,10 @@ a:hover {
   font-style: normal;
   font-size: 15px;
   background-color: #ffffff;
-  box-shadow: #0d753c 3px 3px 0px 0px;
+  box-shadow: #00871E 3px 3px 0px 0px;
   border-radius: 5px;
-  border: 2px solid #0d753c;
-  color: #0d753c;
+  border: 2px solid #00871E;
+  color: #00871E;
   padding: 11px 15px 11px 15px;
   transition: all 0.1s ease;
   text-align: center;
@@ -200,7 +220,7 @@ a:hover {
 }
 
 .BtnConfirm:hover {
-  background-color: #0d753c;
+  background-color: #00871E;
   box-shadow: #0000003a 0px 5px 10px 0px;
   color: #ffffff;
 }
@@ -213,10 +233,10 @@ a:hover {
   font-style: normal;
   font-size: 15px;
   background-color: #ffffff;
-  box-shadow: #0f54d4 3px 3px 0px 0px;
+  box-shadow: #0047FF 3px 3px 0px 0px;
   border-radius: 5px;
   border: 2px solid #0f54d4;
-  color: #0f54d4;
+  color: #0047FF;
   padding: 11px 15px 11px 15px;
   transition: all 0.1s ease;
   text-align: center;
