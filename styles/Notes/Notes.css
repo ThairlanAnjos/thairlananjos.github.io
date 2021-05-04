@@ -1,0 +1,99 @@
+
+.NotesContainer{
+
+  width: 500px; 
+  margin: auto;
+  margin-top: 5%; 
+
+}
+
+.danger {
+  background-color: #ffdddd;
+  border-radius: 10px;
+  border-left: 2px solid #000;
+  border-right: 2px solid #000;
+  border-top: 2px solid #000;
+  border-bottom: 2px solid #000;
+  font-family: Roboto;
+  box-shadow: #000 3px 3px 0px 0px;
+  margin-bottom: 15px;
+  padding: 4px 12px;
+  display: flex;
+}
+
+.success {
+  background-color: #ddffdd;
+  border-radius: 10px;
+  border-left: 2px solid #000;
+  border-right: 2px solid #000;
+  border-top: 2px solid #000;
+  border-bottom: 2px solid #000;
+  font-family: Roboto;
+  box-shadow: #000 3px 3px 0px 0px;
+  margin-bottom: 15px;
+  padding: 4px 12px;
+  display: flex;
+}
+
+.info {
+  background-color: #e7f3fe;
+  border-radius: 10px;
+  border-left: 2px solid #000;
+  border-right: 2px solid #000;
+  border-top: 2px solid #000;
+  border-bottom: 2px solid #000;
+  font-family: Roboto;
+  box-shadow: #000 3px 3px 0px 0px;
+  margin-bottom: 15px;
+  padding: 4px 12px;
+  display: flex;
+}
+
+.warning {
+  background-color: #ffffcc;
+  border-radius: 10px;
+  border-left: 2px solid #000;
+  border-right: 2px solid #000;
+  border-top: 2px solid #000;
+  border-bottom: 2px solid #000;
+  font-family: Roboto;
+  box-shadow: #000 3px 3px 0px 0px;
+  margin-bottom: 15px;
+  padding: 4px 12px;
+  display: flex;
+}
+
+/* Whith sample */
+
+.chicken {
+  background-color: #ffffff;
+  border-radius: 10px;
+  border-left: 2px solid #000;
+  border-right: 2px solid #000;
+  border-top: 2px solid #000;
+  border-bottom: 2px solid #000;
+  font-family: Roboto;
+  box-shadow: #000 3px 3px 0px 0px;
+  margin-bottom: 15px;  
+  padding: 4px 12px;
+  display: flex;
+}
+
+.NoteIcon{
+  font-size:25px;
+  display: flex;
+  margin-top: 15px;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: auto;
+}
+
+.NoteContent{
+  display: flex;
+  margin-top: auto;
+  margin-left: 5px;
+  margin-right: 20px;
+  margin-bottom: auto;
+  text-align: justify;
+  
+}
