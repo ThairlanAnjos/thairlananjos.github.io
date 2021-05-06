@@ -55,12 +55,9 @@ b {
   color: #000000;
 }
 
-<<<<<<< HEAD
 i {
 }
 
-=======
->>>>>>> 792be24b7128fcf86a412c499396e8f0ecd625fe
 body {
   margin: 10%;
 }
@@ -68,36 +65,21 @@ body {
 a {
   color: #464646;
   font-family: Mulish;
-<<<<<<< HEAD
   font-weight: 600;
 
-  text-decoration-color: #9616ff;
+  transition: all 0.2s ease-in-out;
+  text-decoration-color: #e0e0e0;
   text-decoration-thickness: 0.125em;
-  text-underline-offset: 1.9px;
+  text-underline-offset: 1.5px;
   text-decoration-style: dotted;
 }
 
 a:hover {
-  text-decoration-color: #ff3232;
-  text-decoration-thickness: 0.6em;
-  text-underline-offset: -35px;
-  text-underline-position: initial; /*Continuar aqui*/
-  text-decoration-style: solid;
-=======
-  font-weight: 600;  
-  text-decoration-color: #2c2c2c;
-  text-underline-offset: 3.9px;
-  text-decoration-style: dotted;
-  transition: all 0.3s ease-in-out;
-}
+  transition: all 0.1s ease-in-out;
+  text-decoration-color: #4a89ff;
 
-a:hover {
-  color: #7000FF;
-  text-decoration-color: #7000FF;
-  text-underline-offset: 3.9px;
-  text-decoration-style: dotted;
-  transition: all 0.3s ease-in-out;
->>>>>>> 792be24b7128fcf86a412c499396e8f0ecd625fe
+  /*text-underline-position: initial; Continuar aqui*/
+
 }
 
 .title {
@@ -166,14 +148,16 @@ a:hover {
   border: 2px solid #000000;
   color: #000000;
   padding: 11px 15px 11px 15px;
+  position: absolute;
   transition: all 0.1s ease;
   text-align: center;
   text-decoration: none;
 }
 
 .BtnDefault:hover {
+  margin-top: -1px;
   background-color: #000000;
-  box-shadow: #0000003a 0px 5px 10px 0px;
+  box-shadow: #0000003a 0px 3px 5px 0px;
   color: #ffffff;
 }
 
@@ -190,14 +174,16 @@ a:hover {
   border: 2px solid #FF2626;
   color: #FF2626;
   padding: 11px 15px 11px 15px;
+  position: absolute;
   transition: all 0.1s ease;
   text-align: center;
   text-decoration: none;
 }
 
 .BtnAttention:hover {
+  margin-top: -1px;
   background-color: #FF2626;
-  box-shadow: #0000003a 0px 5px 10px 0px;
+  box-shadow: #0000003a 0px 3px 5px 0px;
   color: #ffffff;
 }
 
@@ -214,14 +200,16 @@ a:hover {
   border: 2px solid #00871E;
   color: #00871E;
   padding: 11px 15px 11px 15px;
+  position: absolute;
   transition: all 0.1s ease;
   text-align: center;
   text-decoration: none;
 }
 
 .BtnConfirm:hover {
+  margin-top: -1px;
   background-color: #00871E;
-  box-shadow: #0000003a 0px 5px 10px 0px;
+  box-shadow: #0000003a 0px 3px 5px 0px;
   color: #ffffff;
 }
 
@@ -238,13 +226,15 @@ a:hover {
   border: 2px solid #0f54d4;
   color: #0047FF;
   padding: 11px 15px 11px 15px;
+  position: absolute;
   transition: all 0.1s ease;
   text-align: center;
   text-decoration: none;
 }
 
 .BntDownload:hover {
+  margin-top: -1px;
   background-color: #0f54d4;
-  box-shadow: #0000003a 0px 5px 10px 0px;
+  box-shadow: #0000003a 0px 3px 5px 0px;
   color: #ffffff;
 }
