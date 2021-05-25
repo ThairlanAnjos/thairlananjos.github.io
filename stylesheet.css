@@ -11,10 +11,11 @@ body{
 }
 
 .navbarLeft{
+    align-items: stretch;
     background-color: #c2ffaf;  
     float: left;  
     position: relative;
-    width: 250px;
+    width: 100px;
 }
 
 .BoxContContent{
@@ -23,31 +24,42 @@ body{
     margin-left: 0%;
     position: initial;
     float: left;
+    align-items: stretch;
     padding: 0%;
 }
-.lineFist{
+.ContentFist{
+
+    align-items: stretch;
     background-color: #afe6ff;
-    width: 750px;
-    min-width: 676px;
+    width: 100px;
+    min-width: 100px;
     padding: 1%;
 
 
 }
 
-.lineSecond{
+.ContentSecond{
+
+/*
     background-color: #6f00ff;
     width: 750px;
     min-width: 676px;
     padding: 1%;
-
+*/
 
 }
 
-.lineThird{
+.ContentThird{
+
+ /*
     background-color: #ffafc7;
     width: 750px;
     min-width: 676px;
     padding: 1%;
+ */  
 
+}
 
+.a2a_button_facebook .a2a_button_twitter .a2a_button_telegram{
+    border-radius: 100px;
 }
