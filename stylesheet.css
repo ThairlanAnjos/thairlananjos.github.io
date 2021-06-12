@@ -28,18 +28,14 @@ body{
     padding: 0%;
 }
 .ContentFist{
-
     align-items: stretch;
     background-color: #afe6ff;
     width: 100px;
     min-width: 100px;
     padding: 1%;
-
-
 }
 
 .ContentSecond{
-
 /*
     background-color: #6f00ff;
     width: 750px;
@@ -50,7 +46,6 @@ body{
 }
 
 .ContentThird{
-
  /*
     background-color: #ffafc7;
     width: 750px;
