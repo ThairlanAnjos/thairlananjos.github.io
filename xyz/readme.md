@@ -1,0 +1,1 @@
+The links config with firebase.
