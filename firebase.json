@@ -1,3 +1,0 @@
-// Dynamic Links will start with https://thairlananjos.com/xyz
-"appAssociation": "AUTO",
-"rewrites": [ { "source": "/xyz/**", "dynamicLinks": true } ]
