@@ -1,86 +1,76 @@
-
-.NotesContainer{
-
-  width: 500px; 
+.NotesContainer {
+  width: 500px;
   margin: auto;
-  margin-top: 5%; 
-
+  margin-top: 5%;
 }
 
 .danger {
-  background-color: #ffdddd;
+  background-color: #ffefef;
   border-radius: 10px;
-  border-left: 2px solid #000;
-  border-right: 2px solid #000;
-  border-top: 2px solid #000;
-  border-bottom: 2px solid #000;
+  border: 2px solid #d81919;
+  color: #a02525;
   font-family: Roboto;
-  box-shadow: #000 3px 3px 0px 0px;
+  box-shadow: #d81919 -5px 5px 0px 0px;
   margin-bottom: 15px;
-  padding: 4px 12px;
+  padding: 10px 10px 10px 10px;
   display: flex;
+  transition: all 0.1s ease-in-out;
 }
 
 .success {
-  background-color: #ddffdd;
+  background-color: #effffa;
   border-radius: 10px;
-  border-left: 2px solid #000;
-  border-right: 2px solid #000;
-  border-top: 2px solid #000;
-  border-bottom: 2px solid #000;
+  border: 2px solid #00b837;
+  color: #00583d;
   font-family: Roboto;
-  box-shadow: #000 3px 3px 0px 0px;
+  box-shadow: #00b837 -5px 5px 0px 0px;
   margin-bottom: 15px;
-  padding: 4px 12px;
+  padding: 10px 10px 10px 10px;
   display: flex;
 }
 
 .info {
-  background-color: #e7f3fe;
+  background-color: #f0f7ff;
   border-radius: 10px;
-  border-left: 2px solid #000;
-  border-right: 2px solid #000;
-  border-top: 2px solid #000;
-  border-bottom: 2px solid #000;
+  border: 2px solid #0163e4;
+  color: #0163e4;
   font-family: Roboto;
-  box-shadow: #000 3px 3px 0px 0px;
+  box-shadow: #0163e4 -5px 5px 0px 0px;
   margin-bottom: 15px;
-  padding: 4px 12px;
+  padding: 10px 10px 10px 10px;
   display: flex;
 }
 
 .warning {
-  background-color: #ffffcc;
+  background-color: #fffcf2;
   border-radius: 10px;
-  border-left: 2px solid #000;
-  border-right: 2px solid #000;
-  border-top: 2px solid #000;
-  border-bottom: 2px solid #000;
+  border: 2px solid #ecb500;
+  color: #64631d;
   font-family: Roboto;
-  box-shadow: #000 3px 3px 0px 0px;
+  box-shadow: #ecb500 -5px 5px 0px 0px;
   margin-bottom: 15px;
-  padding: 4px 12px;
+  padding: 10px 10px 10px 10px;
   display: flex;
+  transition: all 0.1s ease-in-out;
 }
 
 /* Whith sample */
 
 .chicken {
-  background-color: #ffffff;
+  background-color: #ebebeb;
   border-radius: 10px;
-  border-left: 2px solid #000;
-  border-right: 2px solid #000;
-  border-top: 2px solid #000;
-  border-bottom: 2px solid #000;
+  border: 2px solid #141414;
+  color: #333333;
   font-family: Roboto;
-  box-shadow: #000 3px 3px 0px 0px;
-  margin-bottom: 15px;  
-  padding: 4px 12px;
+  box-shadow: #141414 -5px 5px 0px 0px;
+  margin-bottom: 15px;
+  padding: 10px 10px 10px 10px;
   display: flex;
+  transition: all 0.1s ease-in-out;
 }
 
-.NoteIcon{
-  font-size:25px;
+.NoteIcon {
+  font-size: 25px;
   display: flex;
   margin-top: 15px;
   margin-left: 10px;
@@ -88,12 +78,11 @@
   margin-bottom: auto;
 }
 
-.NoteContent{
+.NoteContent {
   display: flex;
   margin-top: auto;
   margin-left: 5px;
   margin-right: 20px;
   margin-bottom: auto;
   text-align: justify;
-  
 }
