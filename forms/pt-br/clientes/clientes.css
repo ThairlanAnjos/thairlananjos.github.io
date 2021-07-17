@@ -1,0 +1,139 @@
+@import url(https://fonts.googleapis.com/css2?family=Muli:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap);
+
+@import url(https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap);
+
+@import url(https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap);
+
+@import url(https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap);
+
+div a img {
+  display: none;
+}
+
+#ff-compose {
+  font-family: Roboto;
+  font-size: 16px;
+  margin-top: 25px;
+}
+
+h3.h3.ff-title {
+  font-family: Poppins;
+  font-size: 24px;
+}
+
+input.form-control.ff-email-widget {
+  border-style: solid;
+  border-color: #141414;
+  border-width: 3px;
+  border-radius: 5px;
+  font-family: Roboto;
+}
+
+/*Remove a borda ao focar o input */
+textarea:focus, input:focus{
+    outline: none;
+}
+
+button.btn.btn-primary.ff-next {
+  font-family: Mulish;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 15px;
+  background-color: #ffffff;
+  box-shadow: #000000 3px 3px 0px 0px;
+  border-radius: 5px;
+  border: 2px solid #000000;
+  color: #000000;
+  padding: 11px 15px 11px 15px;
+  position: absolute;
+  transition: all 0.1s ease;
+  text-align: center;
+  text-decoration: none;  
+}
+
+button.btn.btn-primary.ff-next:hover {
+  background-color: #000000;
+  box-shadow: #0000003a 0px 3px 5px 0px;
+  color: #ffffff;
+}
+
+button.btn.btn-secondary.ff-back {
+  font-family: Mulish;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 15px;
+  background-color: #ffffff;
+  box-shadow: #000000 3px 3px 0px 0px;
+  border-radius: 5px;
+  border: 2px solid #000000;
+  color: #000000;
+  padding: 11px 15px 11px 15px;
+  margin-right: 10px;
+  transition: all 0.1s ease;
+  text-align: center;
+  text-decoration: none;  
+}
+
+button.btn.btn-secondary.ff-back:hover{
+  background-color: #000000;
+  box-shadow: #0000003a 0px 3px 5px 0px;
+  color: #ffffff;
+}
+
+input.form-control {
+  border-style: solid;
+  border-color: #141414;
+  border-width: 3px;
+  border-radius: 5px;
+  font-family: Muli;
+  outline: none;
+  font-size: 16px;
+  
+}
+
+button.btn.btn-primary.ff-submit {
+    font-family: Mulish;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 15px;
+  background-color: #ffffff;
+  box-shadow: #00871E 3px 3px 0px 0px;
+  border-radius: 5px;
+  border: 2px solid #00871E;
+  color: #00871E;
+  padding: 11px 15px 11px 15px;
+  position: absolute;
+  transition: all 0.1s ease;
+  text-align: center;
+  text-decoration: none;
+}
+
+button.btn.btn-primary.ff-submit:hover{
+  background-color: #00871E;
+  box-shadow: #0000003a 0px 3px 5px 0px;
+  color: #ffffff;
+}
+
+/*Removi o icone padrão do formfacade do aviazinho*/
+img.ff-submit-icon {
+  color: #6aa84f;
+  display: none;
+  
+}
+
+button.btn.btn-primary {
+  display: none;
+  
+}
+
+div.ff-success {
+  font-family: Poppins;
+  font-size: 36px;
+  font-weight: 700;
+  font-style: normal;
+  margin-top: 100px;
+}
+
+div.ff-button-bar {
+  font-family: Roboto;
+}
