@@ -4,139 +4,120 @@ html{
 
 html body {
   font-family: Roboto;
-  padding: 20px;
+  padding: 0px;
+  margin: 0px;
   transition: all 0.9s ease-in-out;
   background-color: #fafafa;
 }
 
 h1 {
-  font-size: 45px;
+  font-size: 35px;
 }
 
 h2 {
-  font-size: 35px;
+  font-size: 25px;
   color: #ff2681;
 }
 
 h3 {
-  font-size: 25px;
+  font-size: 20px;
 
-}
-
-.boxGrid {
-  /*width: 98%; */
-  background-color: #ffffff;
-  border-radius: 10px;
-  border: 2px solid #000000;
-  display: grid;
-  color: #030303;
-  padding: 0px;
-  font-family: Mulish;
-  font-style: normal;
-  font-size: 15px;
-  text-decoration: none;
-  text-align: justify;
-  margin: 100px 100px 100px 100px ;
-}
-
-.h3_box {
-  font-family: 'Poppins', sans-serif;
-  font-style: normal;
-  font-weight: 900;
-  font-size: 27px;
-  line-height: 92.69%;
-  letter-spacing: -1.1pt;
-  margin-top: -5px;
-  margin-bottom: 15px;
-  text-align: right;
 }
 
 p {
-  font-size: 16px;
-  margin: 5px;
+  font-size: 18px;
+  margin: 15px;
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+
+.notify{
+  background-color: #ffe555de;
+  width: 100%;  
+  position: fixed;
+  float: left;  
+  text-align: center;
+  padding: 15px;
 }
 
 footer {
-  padding: 70px 20px 35px 20px;
+  width: 500px;
+  font-size: 20px;
   text-align: center;
+  float: center;
+  margin: auto;
+  padding: 35px;
 }
 
+/*Lembra de voltar o valor da margem top para 32px*/
+
 img.ProfilePicture {
-  height: 200px;
+  height: 150px;
+  width: 150px;
   border-radius: 100%;
   display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 200px;
+  margin: auto; 
+  margin-top: 75px;
+  float: center;
+  
 }
 
 .PageTitle {
   font-family: 'Poppins', sans-serif;
-  font-size: 65px;
+  font-size: 45px;
   text-align: center;
   margin-top: 20px;
   padding: 0px 0px 0px 0px;
-  letter-spacing: -4px;
+  letter-spacing: -3px;
+  float: center;
 }
 .PageDescription {
   font-size: 20px;
   margin-top: -20px;
-  margin-bottom: 45px;
+  margin-bottom: 20px;
+  text-align: center;
+  float: center;
+}
+
+.Social{
+
+padding: 10px;
   text-align: center;
 }
 
-.content {
+.About{
+  width: 600px;
+  font-size: 20px;
+  margin-top: -20px;
+  margin-bottom: 45px;
+  text-align: center;
+  float: center;
+  margin: auto;
+}
 
-  /*  
+.content {
+ 
   background-color: #6ea1ff00;
   display: grid;
   margin: auto;
   transition: all 0.5s ease-in-out;
   max-width: 750px;
   min-width: 250px;
-  */
+
   
 }
 
-.wrapper {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  grid-gap: 10px;
-}
-
-.box {
-  background-color: #ffffff;
-  color: #000;
-  border: solid 2.9px #000;
-  border-radius: 10px;
-  padding: 20px 20px 20px 20px;
-  font-size: 18px;
-  text-decoration: none;
-  transition: all 0.1s ease-in-out;
-}
-
-.box:hover {
-  background-color: #fafafa;
-  color: #000;
-  border-radius: 10px;
-  padding: 15px;
-  font-size: 18px;
-  box-shadow: #000 2px 2px 0px 1px;  
-  padding: 20px 20px 0px 20px; 
-  transition: all 0.1s ease-in-out;
-  position: sticky;
-}
-
-.box c{
-  width: 100%;
-  height: 150px;
-  background-image: url("paper.gif");
-
-}
 a {
   text-decoration: none;
+  color: #ff2681;
+  transition: all 0.5s ease-in-out;
 }
 
+a:hover{
+  color: #9626ff;
+  transition: all 0.5s ease-in-out;
+}
 /*------------- Scrollbar -------------*/
 
 /* width */
@@ -157,172 +138,4 @@ a {
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
   background: #b0b0b0; 
-}
-
-/*------------------------------------*/
-
-@media (max-width: 300px) {
-  body {
-    margin: 10%;
-  }
-
-  .PageTitle {
-    font-size: 30%;
-    text-align: center;
-    padding: 0px 0px 0px 0px;
-    transition: all 0.2s ease-in-out;
-    letter-spacing: -1.9px;
-  }
-
-  .PageDescription {
-    font-size: 10px;
-    margin-top: 10px;
-    text-align: center;
-    letter-spacing: 0px;
-  }
-
-  img.ProfilePicture {
-    height: 25%;
-    border-radius: 100%;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 25%;
-    transition: all 0.1s ease-in-out;
-  }
-  h1 {
-    font-size: 18px;
-  }
-  
-  h2 {
-    font-size: 15px;
-    color: #ff2681;
-  }
-  
-  h3 {
-    font-size: 12px;
-  }
-}
-
-@media (max-width: 400px) {
-  body {
-    margin: 20px;
-  }
-
-  .PageTitle {
-    font-size: 35px;
-    text-align: center;
-    padding: 0px 0px 0px 0px;
-    transition: all 0.1s ease-in-out;
-    letter-spacing: -1.9px;
-  }
-
-  .PageDescription {
-    font-size: 16px;
-    margin-top: 18px;
-    text-align: center;
-    letter-spacing: 0px;
-  }
-
-  img.ProfilePicture {
-    height: 100px;
-    border-radius: 100%;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 100px;
-    transition: all 0.1s ease-in-out;
-  }
-  h1 {
-    font-size: 25px;
-  }
-  
-  h2 {
-    font-size: 15px;
-    color: #ff2681;
-  }
-  
-  h3 {
-    font-size: 12px;
-  }
-}
-
-@media (max-width: 600px) {
-  body {
-    margin: 20px;
-  }
-
-  .PageTitle {
-    font-size: 40px;
-    text-align: center;
-    padding: 0px 0px 0px 0px;
-    transition: all 0.1s ease-in-out;
-    letter-spacing: -1.9px;
-  }
-
-  .PageDescription {
-    font-size: 16px;
-    margin-top: 18px;
-    text-align: center;
-    letter-spacing: 0px;
-  }
-
-  img.ProfilePicture {
-    height: 120px;
-    border-radius: 100%;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 120px;
-    transition: all 0.1s ease-in-out;
-  }
-  h1 {
-    font-size: 25px;
-  }
-  
-  h2 {
-    font-size: 15px;
-    color: #ff2681;
-  }
-  
-  h3 {
-    font-size: 12px;
-  }
-}
-
-/*! Warnig */
-body {
-  padding: 20px;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-}
-
-.wrapper-warning {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  grid-gap: 5px;
-}
-
-.box_warning {
-  background-color: #fcff4e;
-  color: #252525;
-  border-radius: 10px;
-  padding: 10px 20px 10px 20px;
-  text-align: center;
-  font-family: Roboto;
-  font-size: 15px;
-  box-shadow: 5px 5px 5px 5px #fbff0f;
-  transition: all 0.2s ease-in-out;
-  border: #00000088 solid 2px;
-  position: fixed;
-  bottom: 2%;
-  top: 100;
-  margin: auto;
-}
-
-.box_warning:hover {
-  margin-top: -5px;
-  margin-bottom: 5px;
-  transition: all 0.2s ease-in-out;
-  box-shadow: 5px 5px 5px 5px #00000081;
-  border: #00000054 solid 2px; 
 }
