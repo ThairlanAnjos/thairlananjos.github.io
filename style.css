@@ -1,4 +1,4 @@
-html{
+html {
   scroll-behavior: smooth;
 }
 
@@ -21,22 +21,20 @@ h2 {
 
 h3 {
   font-size: 20px;
-
 }
 
 p {
   font-size: 18px;
-  margin: 15px;
+  margin: 20px;
   text-align: justify;
   text-justify: inter-word;
 }
 
-
-.notify{
+.notify {
   background-color: #ffe555de;
-  width: 100%;  
+  width: 100%;
   position: fixed;
-  float: left;  
+  float: left;
   text-align: center;
   padding: 15px;
 }
@@ -57,14 +55,13 @@ img.ProfilePicture {
   width: 150px;
   border-radius: 100%;
   display: block;
-  margin: auto; 
+  margin: auto;
   margin-top: 75px;
   float: center;
-  
 }
 
 .PageTitle {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-size: 45px;
   text-align: center;
   margin-top: 20px;
@@ -80,13 +77,12 @@ img.ProfilePicture {
   float: center;
 }
 
-.Social{
-
-padding: 10px;
+.Social {
+  padding: 10px;
   text-align: center;
 }
 
-.About{
+.About {
   width: 600px;
   font-size: 20px;
   margin-top: -20px;
@@ -97,45 +93,42 @@ padding: 10px;
 }
 
 .content {
- 
   background-color: #6ea1ff00;
   display: grid;
   margin: auto;
   transition: all 0.5s ease-in-out;
   max-width: 750px;
   min-width: 250px;
-
-  
 }
 
 a {
   text-decoration: none;
-  color: #ff2681;
-  transition: all 0.5s ease-in-out;
+  color: #1a1a1a;
+  transition: all 0.3s ease-in-out;
 }
 
-a:hover{
-  color: #9626ff;
-  transition: all 0.5s ease-in-out;
+a:hover {
+  color: #919191;
+  transition: all 0.3s ease-in-out;
 }
 /*------------- Scrollbar -------------*/
 
 /* width */
 ::-webkit-scrollbar {
-  width: 15px;
+  width: 10px;
 }
 
 /* Track */
 ::-webkit-scrollbar-track {
-  background: #ffffff00; 
+  background: #f1f1f1;
 }
- 
+
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: #c9c9c9; 
+  background: #c9c9c9;
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: #b0b0b0; 
+  background: #b0b0b0;
 }
