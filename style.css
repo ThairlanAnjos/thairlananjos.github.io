@@ -166,6 +166,11 @@ a:hover {
 
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
+
+  .notify {
+    display: none;
+  }
+
   .content {
     background-color: #ffe240;
     display: grid;
