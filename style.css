@@ -7,26 +7,42 @@ html body {
   padding: 0px;
   margin: 0px;
   transition: all 0.9s ease-in-out;
-  background-color: #fafafa;
+  background-color: #fafafa00;
 }
 
 h1 {
-  font-size: 35px;
+  font-size: 36px; 
+  font-family: "Poppins", sans-serif; 
+  letter-spacing: -2px;
+  font-weight: 900;
+  color: #1a1a1aec;
+  margin: 5px 10px 5px 10px;
+  padding: 15px 10px 10px 15px;
 }
 
 h2 {
-  font-size: 25px;
-  color: #ff2681;
+  font-size: 26px;  
+  font-family: "Poppins", sans-serif;
+  font-weight: 800;
+  color: #1a1a1aec;
+  margin: 5px 10px 5px 10px;
+  padding: 10px 5px 5px 10px;
 }
 
 h3 {
-  font-size: 20px;
+  font-size: 18px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  color: #1a1a1ade;
+  margin: 5px 10px 5px 10px;
+  padding: 10px 0px 0px 10px;
 }
 
 p {
   font-size: 18px;
-  margin: 10px;
-  padding: 25px;
+  color: #1a1a1ade;
+  margin: 0px;
+  padding: 5px 20px 5px 20px;
   text-align: justify;
   text-justify: inter-word;
 }
@@ -62,14 +78,26 @@ img.ProfilePicture {
 }
 
 .PageTitle {
-  font-family: "Poppins", sans-serif;
+  font-family: "Poppins", sans-serif;  
+  color: #1a1a1a00;
+  -webkit-text-stroke: 1.5px #1a1a1a;
+  font-weight: 700;
   font-size: 45px;
   text-align: center;
   margin-top: 20px;
   padding: 0px 0px 0px 0px;
-  letter-spacing: -3px;
+  letter-spacing: -1px;
   float: center;
+  transition: all 0.2s ease-in-out;
 }
+
+.PageTitle:hover {
+  transition: all 0.2s ease-in-out;
+  -webkit-text-stroke: 1.5px #1a1a1a;
+  color: #1a1a1a;
+}
+
+
 .PageDescription {
   font-size: 20px;
   margin-top: 5px;
@@ -109,8 +137,9 @@ a {
 }
 
 a:hover {
-  color: #919191;
+  color: #5e5e5e;
   transition: all 0.3s ease-in-out;
+  
 }
 
 /*------------- Scrollbar -------------*/
@@ -138,20 +167,46 @@ a:hover {
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
   .content {
-    background-color: #70a2ff;
+    background-color: #ffe240;
     display: grid;
     margin: auto;
     transition: all 0.5s ease-in-out;
-    width: 350px;
+    width: 370px;
   }
 
   .About {
-    width: 350px; 
+    width: 370px; 
   }
 
   footer {
-    width: 350px;
+    width: 370px;
     font-size: 16px;
+  }
+
+  p {
+    font-size: 16px;
+    margin: 5px;
+    padding: 15px;
+  }
+
+  .PageTitle { 
+    font-size: 35px;
+  }
+
+  .PageDescription {
+    font-size: 16px;
+  }
+
+  h1{
+    font-size: 30px;
+  }
+
+  h2{
+    font-size: 25px;
+  }
+
+  h3{
+    font-size: 18px;
   }
 
 }
