@@ -177,7 +177,7 @@ a:hover {
   .About {
     width: 400px;
     padding: 10px 10px 10px 10px;
-    margin: auto;    
+    float: left;   
   }
 
   footer {
