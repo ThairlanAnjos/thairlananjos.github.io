@@ -47,7 +47,6 @@ p {
   text-align: justify;
   text-justify: inter-word;
   line-height: 27px;
-
 }
 
 .notify {
@@ -222,11 +221,11 @@ a:hover {
 
   footer {
     width: 100%;
-    font-size: 16px;    
+    font-size: 15px;    
     text-align: center;
     float: center;
     margin: auto;
-    padding: 25px 0px 25px 0px;
+    padding: 25px -1px 25px 0px;
   }
 
   p {
@@ -253,6 +252,10 @@ a:hover {
 
   h3{
     font-size: 18px;
+  }
+
+  .linkpost{
+    font-size: 16px;
   }
 
 }
