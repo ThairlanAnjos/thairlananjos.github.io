@@ -171,15 +171,15 @@ a:hover {
     display: grid;
     margin: auto;
     transition: all 0.5s ease-in-out;
-    width: 370px;
+    width: 400px;
   }
 
   .About {
-    width: 370px; 
+    width: 400px; 
   }
 
   footer {
-    width: 370px;
+    width: 400px;
     font-size: 16px;
   }
 
