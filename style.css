@@ -168,11 +168,11 @@ a:hover {
 @media only screen and (max-width: 600px) {
 
   .notify {
-    display: none;
+   /*display: none;*/ 
   }
 
   .content {
-    background-color: #ffe240;
+    background-color: #fffbc2;
     display: grid;
     margin: auto;
     transition: all 0.5s ease-in-out;
@@ -186,8 +186,12 @@ a:hover {
   }
 
   footer {
-    width: 400px;
-    font-size: 16px;
+    width: 100%;
+    font-size: 16px;    
+    text-align: center;
+    float: left;
+    margin: auto;
+    padding: 25px 0px 25px 0px;
   }
 
   p {
