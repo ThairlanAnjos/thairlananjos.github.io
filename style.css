@@ -43,8 +43,11 @@ p {
   color: #1a1a1ade;
   margin: 0px;
   padding: 5px 20px 5px 20px;
+  letter-spacing: -0.7px;
   text-align: justify;
   text-justify: inter-word;
+  line-height: 27px;
+
 }
 
 .notify {
@@ -142,6 +145,26 @@ a:hover {
   
 }
 
+
+.linkpost{
+  font-size: 18px;
+  letter-spacing: -0.7px;
+  border-bottom: 2px solid #303030;
+  background-color: #30303000;
+  padding: 4px 3px 1px 3px;  
+  border-radius: 0px;
+  color: #303030;
+}
+
+.linkpost:hover{
+  background-color: #30303018;
+  border-bottom: 2px solid #30303025;
+  border-radius: 0px;
+  padding: 4px 3px 1px 3px;  
+  color: #303030;
+  
+}
+
 /*------------- Scrollbar -------------*/
 
 /* width */
@@ -201,7 +224,7 @@ a:hover {
     width: 100%;
     font-size: 16px;    
     text-align: center;
-    float: left;
+    float: center;
     margin: auto;
     padding: 25px 0px 25px 0px;
   }
