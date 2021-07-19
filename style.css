@@ -7,7 +7,7 @@ html body {
   padding: 0px;
   margin: 0px;
   transition: all 0.9s ease-in-out;
-  background-color: #fafafa00;
+  background-color: #f0f0f0;
 }
 
 h1 {
@@ -41,7 +41,7 @@ h3 {
 p {
   font-size: 18px;
   color: #1a1a1ade;
-  margin: 0px;
+  margin: 5px;
   padding: 5px 20px 5px 20px;
   letter-spacing: -0.7px;
   text-align: justify;
@@ -51,7 +51,7 @@ p {
 
 .notify {
   background-color: #ffe555de;
-  width: 100%;
+  width: 98%;
   position: fixed;
   float: left;
   text-align: center;
@@ -59,7 +59,7 @@ p {
 }
 
 footer {
-  width: 500px;
+  width: 90%;
   font-size: 20px;
   text-align: center;
   float: center;
@@ -109,27 +109,30 @@ img.ProfilePicture {
 }
 
 .Social {
-  padding: 10px;
+  padding: 15px 0px 25px 0px;
   text-align: center;
 }
 
 .Container {
+  background-color: #ffffff;
+  border-radius: 25px 25px 0px 0px ;
   width: 600px;
   font-size: 20px;
-  margin-top: -20px;
-  margin-bottom: 45px;
+  margin: 0px; 
   text-align: center;
   float: center;
   margin: auto;  
 }
 
 .content {
-  background-color: #6ea1ff00;
+  background-color: #0df30d;
   display: grid;
-  margin: auto;
+  margin: 0px;
+  padding: 0px;
   transition: all 0.5s ease-in-out;
-  max-width: 750px;
-  min-width: 250px;
+  
+  width: 750px;
+ 
 }
 
 a {
@@ -148,7 +151,7 @@ a:hover {
 .linkpost{
   font-size: 18px;
   letter-spacing: -0.7px;
-  border-bottom: 2px solid #303030;
+  border-bottom: 2px solid #ffb52c;
   background-color: #30303000;
   padding: 4px 3px 1px 3px;  
   border-radius: 0px;
@@ -156,8 +159,8 @@ a:hover {
 }
 
 .linkpost:hover{
-  background-color: #30303018;
-  border-bottom: 2px solid #30303025;
+  background-color: #ffb52c;
+  border-bottom: 2px solid #ffb52c;
   border-radius: 0px;
   padding: 4px 3px 1px 3px;  
   color: #303030;
@@ -186,22 +189,38 @@ a:hover {
   background: #b0b0b0;
 }
 
+
+/* -------------------------------------  Mobile -----------------------------------------*/
+
+
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
 
   .notify {
    /*display: none;*/ 
+  } 
+
+  body{
+    background-color: #f7f7f7;
   }
 
- 
-
   .content {
-    background-color: #fffbc2;
+    background-color: #f7f7f700;
     display: grid;
     margin: auto;
-    transition: all 0.5s ease-in-out;
-    width: 100%;
+    padding: 0%;
+    transition: all 0.2s ease-in-out;
+    width: 350px;
+    float: center;
+  }
 
+  .SocialMobile{
+    padding: 15px 0px 25px 0px;
+    text-align: center;
+  }
+
+  .Social {
+    display: none; 
   }
 
   img.ProfilePicture {
@@ -215,43 +234,55 @@ a:hover {
   }
 
   .Container {
-    width: 400px;
-    padding: 10px 10px 10px 10px;      
+    background-color: #ffffff;
+    width: 310px;
+    padding: 25px 20px 0px 20px;  
+    margin: 0px;    
   }
 
   footer {
-    width: 100%;
-    font-size: 15px;    
+    width: 90%;
+    font-size: 14px;    
     text-align: center;
-    float: center;
-    margin: auto;
-    padding: 25px -1px 25px 0px;
+    float: center;    
+    padding: 15px 0px 15px 0px;
   }
 
   p {
     font-size: 16px;
-    margin: 5px;
-    padding: 15px;
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
   }
 
   .PageTitle { 
-    font-size: 35px;
+    font-size: 35px;    
   }
+
 
   .PageDescription {
     font-size: 16px;
+    padding: 15px 25px 0px 25px;
+    margin: 0px;
+    width: 300px;
   }
 
   h1{
     font-size: 30px;
+    margin: 0px;
+    padding: 0px;
   }
 
   h2{
     font-size: 25px;
+    margin: 0px;
+    padding: 0px;
   }
 
   h3{
     font-size: 18px;
+    margin: 0px;
+    padding: 0px;
   }
 
   .linkpost{
@@ -281,12 +312,17 @@ a:hover {
     float: center;
   }
 
+
+  .SocialMobile{
+    display: none; 
+  }
+
   .Container {
-    width: 500px; 
+    width: 100%; 
   }
   
   footer {
-    width: 500px;
+    width: 90%;
     font-size: 18px;
   }
   
@@ -296,11 +332,16 @@ a:hover {
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
   .content {
-    background-color: #c670ff;
+    background-color: #c670ff60;
     display: grid;
     margin: auto;
     transition: all 0.5s ease-in-out;
     width: 700px;
+  }
+
+
+  .SocialMobile{
+    display: none; 
   }
 
   .Container {
@@ -308,7 +349,7 @@ a:hover {
   }
   
   footer {
-    width: 700px;
+    width: 90%;
     font-size: 18px;
   }
   
