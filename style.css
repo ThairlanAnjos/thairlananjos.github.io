@@ -41,12 +41,23 @@ h3 {
 p {
   font-size: 18px;
   color: #1a1a1ade;
-  margin: 5px;
-  padding: 5px 20px 5px 20px;
   letter-spacing: -0.7px;
   text-align: justify;
   text-justify: inter-word;
   line-height: 27px;
+}
+
+.Subtitle{
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 19px;
+  color: #1a1a1ade;
+  letter-spacing: -0.7px;
+  text-align: center;
+  text-justify: inter-word;
+  line-height: 27px;
+  margin: 20px 0px 0px 0px;
+  padding: 0px 20px 0px 20px;
 }
 
 .notify {
@@ -55,16 +66,16 @@ p {
   position: fixed;
   float: left;
   text-align: center;
-  padding: 15px;
+  padding: 10px 305px 15px 5px;
 }
 
 footer {
-  width: 90%;
+  width: 100%;
   font-size: 20px;
   text-align: center;
   float: center;
-  margin: auto;
-  padding: 35px;
+  margin: 0px;
+  padding: 0px;
 }
 
 /*Lembra de voltar o valor da margem top para 32px*/
@@ -103,7 +114,7 @@ img.ProfilePicture {
 .PageDescription {
   font-size: 20px;
   margin-top: 5px;
-  margin-bottom: 10px;
+  margin-bottom: 5px;
   text-align: center;
   float: center;
 }
@@ -133,6 +144,12 @@ img.ProfilePicture {
   
   width: 750px;
  
+}
+
+.textbox{
+  padding: 25px 15px 15px 15px; 
+  text-align: center;
+  float: center;
 }
 
 a {
@@ -205,17 +222,30 @@ a:hover {
   }
 
   .content {
-    background-color: #f7f7f700;
+    background-color: #ff9b9bbd;
     display: grid;
     margin: auto;
     padding: 0%;
     transition: all 0.2s ease-in-out;
-    width: 350px;
+    width: 100%;
+    float: center;
+  }
+
+  .Container {
+    background-color: #ff6767;
+    width: 100%;
+    padding: 0px 0px 0px 0px;  
+    margin: 0px;    
+  }
+
+  .textbox{
+    padding: 20px 25px 15px 25px; 
+    text-align: center;
     float: center;
   }
 
   .SocialMobile{
-    padding: 15px 0px 25px 0px;
+    padding: 5px 0px 25px 0px;
     text-align: center;
   }
 
@@ -224,8 +254,8 @@ a:hover {
   }
 
   img.ProfilePicture {
-    height: 130px;
-    width: 130px;
+    height: 125px;
+    width: 125px;
     border-radius: 100%;
     display: block;
     margin: auto;
@@ -233,15 +263,10 @@ a:hover {
     float: center;
   }
 
-  .Container {
-    background-color: #ffffff;
-    width: 310px;
-    padding: 25px 20px 0px 20px;  
-    margin: 0px;    
-  }
+ 
 
   footer {
-    width: 90%;
+    width: 100%;
     font-size: 14px;    
     text-align: center;
     float: center;    
@@ -250,9 +275,6 @@ a:hover {
 
   p {
     font-size: 16px;
-    margin: 0px;
-    padding: 0px;
-    width: 100%;
   }
 
   .PageTitle { 
@@ -261,10 +283,11 @@ a:hover {
 
 
   .PageDescription {
-    font-size: 16px;
-    padding: 15px 25px 0px 25px;
-    margin: 0px;
-    width: 300px;
+    width: 100%;
+    font-size: 16px;    
+    text-align: center;
+    float: center;    
+    
   }
 
   h1{
@@ -295,7 +318,7 @@ a:hover {
 @media only screen and (min-width: 600px) {
   
   .content {
-    background-color: #70ffcf;
+    background-color: #70ffcf00;
     display: grid;
     margin: auto;
     transition: all 0.5s ease-in-out;
@@ -332,7 +355,7 @@ a:hover {
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
   .content {
-    background-color: #c670ff60;
+    background-color: #c670ff00;
     display: grid;
     margin: auto;
     transition: all 0.5s ease-in-out;
@@ -349,7 +372,7 @@ a:hover {
   }
   
   footer {
-    width: 90%;
+    width: 100%;
     font-size: 18px;
   }
   
