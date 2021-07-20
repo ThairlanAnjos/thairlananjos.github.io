@@ -7,7 +7,7 @@ html body {
   padding: 0px;
   margin: 0px;
   transition: all 0.9s ease-in-out;
-  background-color: #f0f0f0;
+  background-color: #d1d1d1;
 }
 
 h1 {
@@ -217,12 +217,10 @@ a:hover {
    /*display: none;*/ 
   } 
 
-  body{
-    background-color: #f7f7f7;
-  }
+ 
 
   .content {
-    background-color: #ff9b9bbd;
+    background-color: #ffffffbd;
     display: grid;
     margin: auto;
     padding: 0%;
@@ -232,7 +230,7 @@ a:hover {
   }
 
   .Container {
-    background-color: #ff6767;
+    background-color: #ffffff;
     width: 100%;
     padding: 0px 0px 0px 0px;  
     margin: 0px;    
