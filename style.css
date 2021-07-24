@@ -7,7 +7,7 @@ html body {
   padding: 0px;
   margin: 0px;
   transition: all 0.9s ease-in-out;
-  background-color: #d1d1d1;
+  background-color: #f7f7f7;
 }
 
 h1 {
@@ -40,11 +40,12 @@ h3 {
 
 p {
   font-size: 18px;
-  color: #1a1a1ade;
+  font-weight: 400;
   letter-spacing: -0.7px;
-  text-align: justify;
-  text-justify: inter-word;
   line-height: 27px;
+  margin: 0px;
+  text-align: justify;
+  text-justify: inter-word;  
 }
 
 .Subtitle{
@@ -61,20 +62,23 @@ p {
 }
 
 .notify {
-  background-color: #ffe555de;
+  background-color: #ffe46af5;
   width: 98%;
   position: fixed;
   float: left;
   text-align: center;
   padding: 10px 305px 15px 5px;
+  display: inline-block;
 }
+
+
 
 footer {
   width: 100%;
   font-size: 20px;
   text-align: center;
   float: center;
-  margin: 0px;
+  margin: 25px  0px  25px  0px;
   padding: 0px;
 }
 
@@ -126,7 +130,8 @@ img.ProfilePicture {
 
 .Container {
   background-color: #ffffff;
-  border-radius: 25px 25px 0px 0px ;
+  border-radius: 25px 35px 0px 0px;
+  padding: 35px 0px 0px 0px;
   width: 600px;
   font-size: 20px;
   margin: 0px; 
@@ -136,18 +141,16 @@ img.ProfilePicture {
 }
 
 .content {
-  background-color: #0df30d;
+  background-color: #a07e7e00;
   display: grid;
   margin: 0px;
   padding: 0px;
-  transition: all 0.5s ease-in-out;
-  
-  width: 750px;
- 
+  transition: all 0.5s ease-in-out;  
+  width: 750px; 
 }
 
 .textbox{
-  padding: 25px 15px 15px 15px; 
+  padding: 0px 20px 0px 20px; 
   text-align: center;
   float: center;
 }
@@ -161,9 +164,7 @@ a {
 a:hover {
   color: #5e5e5e;
   transition: all 0.3s ease-in-out;
-  
 }
-
 
 .linkpost{
   font-size: 18px;
@@ -181,7 +182,6 @@ a:hover {
   border-radius: 0px;
   padding: 4px 3px 1px 3px;  
   color: #303030;
-  
 }
 
 /*------------- Scrollbar -------------*/
@@ -217,10 +217,8 @@ a:hover {
    /*display: none;*/ 
   } 
 
- 
-
   .content {
-    background-color: #ffffffbd;
+    background-color: #ffffff00;
     display: grid;
     margin: auto;
     padding: 0%;
@@ -261,8 +259,6 @@ a:hover {
     float: center;
   }
 
- 
-
   footer {
     width: 100%;
     font-size: 14px;    
@@ -279,13 +275,11 @@ a:hover {
     font-size: 35px;    
   }
 
-
   .PageDescription {
     width: 100%;
     font-size: 16px;    
     text-align: center;
-    float: center;    
-    
+    float: center;       
   }
 
   h1{
@@ -347,7 +341,6 @@ a:hover {
     font-size: 18px;
   }
   
-
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
@@ -359,7 +352,6 @@ a:hover {
     transition: all 0.5s ease-in-out;
     width: 700px;
   }
-
 
   .SocialMobile{
     display: none; 
