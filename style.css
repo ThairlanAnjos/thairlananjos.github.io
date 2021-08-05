@@ -108,7 +108,7 @@ p {
   transition: all 0.2s ease-in-out;
 }
 .chatlink:hover{
-  color: #ffffffa2;
+  color: #ffffffce;
   transition: all 0.2s ease-in-out;
 }
 
@@ -169,7 +169,7 @@ img.ProfilePicture {
 }
 
 .Container {
-  background-color: #ffffff00;
+  background-color: #d6ffc6;
   border-radius: 0px 0px 0px 0px;
   padding: 35px 0px 0px 0px;
   width: 600px;
@@ -181,7 +181,7 @@ img.ProfilePicture {
 }
 
 .content {
-  background-color: #a07e7e00;
+  background-color: #ffcccc;
   display: grid;
   margin: 0px;
   padding: 0px;
@@ -202,18 +202,20 @@ img.ProfilePicture {
   margin: 15px 0px 0px 0px;
   background-color: #ffffff;
   border-radius: 25px;
-  border: solid 1px #1a1a1a00;
+  border: solid 1px #f0f0f0;
   padding: 15px 25px 25px 25px;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0 13px 6px -12px #00000021;
   text-align: center;
   float: center;
 }
 
 .linkdiv:hover {
-  border: solid 1px #1a1a1a15;
-  box-shadow: 0 3px 4px #0000000e;
-  -webkit-box-shadow: 0 3px 4px #0000000e;
-  -moz-box-shadow: 0 3px 4px #0000000e;
+  border: solid 1px #fcfcfcfd;
+  box-shadow: 0 0px 0px rgba(0, 0, 0, 0.14)
+;
 
+  transition: all 0.3s ease-in-out;
 }
 
 a {
@@ -279,7 +281,6 @@ a:hover {
    display: none;
   } 
 */
-
 
   .content {
     background-color: #ffffff00;
@@ -456,4 +457,14 @@ display: none;
     font-size: 18px;
   }
 
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  .example {background: orange;}
+} 
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  .example {background: pink;}
 }
