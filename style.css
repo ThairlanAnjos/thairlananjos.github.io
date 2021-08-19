@@ -7,35 +7,35 @@ html body {
   padding: 0px;
   margin: 0px;
   transition: all 0.9s ease-in-out;
-  background-color: #f7f7f7;
+  background-color: #fafafa;
 }
 
 h1 {
-  font-size: 36px;
+  font-size: 45px;
   font-family: "Poppins", sans-serif;
   letter-spacing: -2px;
   font-weight: 900;
   color: #1a1a1aec;
-  margin: 5px 10px 5px 10px;
-  padding: 10px 5px 10px 5px;
+  margin: 5px 0px 5px 0px;
+  padding: 10px 0px 10px 0px;
 }
 
 h2 {
-  font-size: 26px;
+  font-size: 30px;
   font-family: "Poppins", sans-serif;
-  font-weight: 800;
+  font-weight: 600;
   color: #1a1a1aec;
-  margin: 5px 10px 5px 10px;
-  padding: 10px 5px 10px 5px;
+  margin: 5px 0px 5px 0px;
+  padding: 10px 0px 10px 0px;
 }
 
 h3 {
-  font-size: 18px;
+  font-size: 20px;
   font-family: "Poppins", sans-serif;
   font-weight: 600;
   color: #1a1a1ade;
-  margin: 5px 10px 5px 10px;
-  padding: 10px 5px 10px 5px;
+  margin: 5px 0px 5px 0px;
+  padding: 10px 0px 10px 0px;
 }
 
 p {
@@ -52,7 +52,7 @@ p {
   font-family: "Poppins", sans-serif;
   font-weight: 400;
   font-size: 19px;
-  color: #1a1a1ade;
+  color: #555555;
   letter-spacing: -0.7px;
   text-align: center;
   text-justify: inter-word;
@@ -71,47 +71,59 @@ p {
   display: inline-block;
 }
 
-.chatbot{
+.chatbot {
   background: #0088cc;
-  background: -moz-linear-gradient(25deg, rgba(0,136,204,1) 0%, rgba(0,212,255,1) 100%);
-  background: -webkit-linear-gradient(25deg, rgba(0,136,204,1) 0%, rgba(0,212,255,1) 100%);
-  background: linear-gradient(25deg, rgba(0,136,204,1) 0%, rgba(0,212,255,1) 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#0088cc",endColorstr="#00d4ff",GradientType=1); 
+  background: -moz-linear-gradient(25deg,
+      rgba(0, 136, 204, 1) 0%,
+      rgba(0, 212, 255, 1) 100%);
+  background: -webkit-linear-gradient(25deg,
+      rgba(0, 136, 204, 1) 0%,
+      rgba(0, 212, 255, 1) 100%);
+  background: linear-gradient(25deg,
+      rgba(0, 136, 204, 1) 0%,
+      rgba(0, 212, 255, 1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#0088cc", endColorstr="#00d4ff", GradientType=1);
   color: #ffffff;
   position: fixed;
   bottom: 0px;
   right: 0px;
-  padding:10px;
+  padding: 10px;
   border-radius: 100px;
-  margin: 0px 15px 15px 0px; 
-  transition: all 0.2s ease-in-out; 
+  margin: 0px 15px 15px 0px;
+  transition: all 0.2s ease-in-out;
 }
 
-.chatbotmobile{
+.chatbotmobile {
   background: #0088cc;
-  background: -moz-linear-gradient(25deg, rgba(0,136,204,1) 0%, rgba(0,212,255,1) 100%);
-  background: -webkit-linear-gradient(25deg, rgba(0,136,204,1) 0%, rgba(0,212,255,1) 100%);
-  background: linear-gradient(25deg, rgba(0,136,204,1) 0%, rgba(0,212,255,1) 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#0088cc",endColorstr="#00d4ff",GradientType=1);
+  background: -moz-linear-gradient(25deg,
+      rgba(0, 136, 204, 1) 0%,
+      rgba(0, 212, 255, 1) 100%);
+  background: -webkit-linear-gradient(25deg,
+      rgba(0, 136, 204, 1) 0%,
+      rgba(0, 212, 255, 1) 100%);
+  background: linear-gradient(25deg,
+      rgba(0, 136, 204, 1) 0%,
+      rgba(0, 212, 255, 1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#0088cc", endColorstr="#00d4ff", GradientType=1);
   color: #ffffff;
   position: fixed;
   bottom: 0px;
   right: 0px;
-  padding:10px;
+  padding: 10px;
   border-radius: 100px;
-  margin: 0px 15px 15px 0px;  
+  margin: 0px 15px 15px 0px;
   transition: all 0.2s ease-in-out;
 }
 
-.chatlink{
+.chatlink {
   color: #ffffff;
   transition: all 0.2s ease-in-out;
 }
-.chatlink:hover{
+
+.chatlink:hover {
   color: #ffffffce;
   transition: all 0.2s ease-in-out;
 }
-
 
 footer {
   width: 100%;
@@ -136,7 +148,7 @@ img.ProfilePicture {
 
 .PageTitle {
   font-family: "Poppins", sans-serif;
-  color: #1a1a1a00;
+  color: #00000000;
   -webkit-text-stroke: 1.5px #1a1a1a;
   font-weight: 700;
   font-size: 45px;
@@ -154,7 +166,6 @@ img.ProfilePicture {
   color: #1a1a1a;
 }
 
-
 .PageDescription {
   font-size: 20px;
   margin-top: 5px;
@@ -169,7 +180,7 @@ img.ProfilePicture {
 }
 
 .Container {
-  background-color: #d6ffc6;
+  background-color: #ffffff00;
   border-radius: 0px 0px 0px 0px;
   padding: 35px 0px 0px 0px;
   width: 600px;
@@ -181,7 +192,7 @@ img.ProfilePicture {
 }
 
 .content {
-  background-color: #ffcccc;
+  background-color: #ffffff;
   display: grid;
   margin: 0px;
   padding: 0px;
@@ -192,7 +203,8 @@ img.ProfilePicture {
 .textbox {
   margin: 15px 0px 0px 0px;
   background-color: #ffffff;
-  border-radius: 25px;
+  border-radius: 20px;
+  border: 1px solid #0000000e;
   padding: 10px 25px 25px 25px;
   text-align: center;
   float: center;
@@ -201,20 +213,19 @@ img.ProfilePicture {
 .linkdiv {
   margin: 15px 0px 0px 0px;
   background-color: #ffffff;
-  border-radius: 25px;
-  border: solid 1px #f0f0f0;
+  border-radius: 15px;
+  border: solid 1px #00000010;
   padding: 15px 25px 25px 25px;
   transition: all 0.3s ease-in-out;
   box-shadow: 0 13px 6px -12px #00000021;
-  text-align: center;
+  text-align: left;
   float: center;
 }
 
 .linkdiv:hover {
-  border: solid 1px #fcfcfcfd;
-  box-shadow: 0 0px 0px rgba(0, 0, 0, 0.14)
-;
-
+  background-color: #f5f5f5;
+  border: solid 1px #fcfcfc00;
+  box-shadow: 0 0px 0px #00000024;
   transition: all 0.3s ease-in-out;
 }
 
@@ -247,6 +258,34 @@ a:hover {
   color: #303030;
 }
 
+.mailbox{
+  margin: 15px 0px 0px 0px;
+  background-color: #fdf5db;
+  border-radius: 20px;
+  border: 1px solid #0000000e;
+  padding: 10px 25px 25px 25px;
+  text-align: center;
+  float: center;
+}
+
+.mail{
+  text-align: center;
+}
+
+button {
+  font-family: Poppins;
+  font-size: 19px;
+  padding-top: 10px;
+  padding-right: 25px;
+  padding-left: 25px;
+  padding-bottom: 10px;
+  border: 0px solid #00ff00;
+  border-radius: 10px;
+  color: #ffffff;
+  background-color: #000000;
+  margin: 10px 0px 0px 10px;
+}
+
 /*------------- Scrollbar -------------*/
 
 /* width */
@@ -269,17 +308,14 @@ a:hover {
   background: #b0b0b0;
 }
 
-
 /* -------------------------------------  Mobile -----------------------------------------*/
-
 
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
-
   /*
-  .notify {
-   display: none;
-  } 
+.notify {
+display: none;
+} 
 */
 
   .content {
@@ -315,8 +351,8 @@ a:hover {
     display: none;
   }
 
-  .chatbot{
- display: none;
+  .chatbot {
+    display: none;
   }
 
   img.ProfilePicture {
@@ -356,30 +392,25 @@ a:hover {
   h1 {
     font-size: 30px;
     margin: 0px;
-
   }
 
   h2 {
     font-size: 25px;
     margin: 0px;
-
   }
 
   h3 {
     font-size: 18px;
     margin: 0px;
-
   }
 
   .linkpost {
     font-size: 16px;
   }
-
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
-
   .content {
     background-color: #70ffcf00;
     display: grid;
@@ -399,13 +430,12 @@ a:hover {
     transition: all 0.3s ease-in-out;
   }
 
-
   .SocialMobile {
     display: none;
   }
 
-  .chatbotmobile{
-display: none;
+  .chatbotmobile {
+    display: none;
   }
 
   .Container {
@@ -416,7 +446,6 @@ display: none;
     width: 90%;
     font-size: 18px;
   }
-
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
@@ -426,7 +455,7 @@ display: none;
     display: grid;
     margin: auto;
     transition: all 0.5s ease-in-out;
-    width: 700px;
+    width: 850px;
   }
 
   img.ProfilePicture {
@@ -444,27 +473,16 @@ display: none;
     display: none;
   }
 
-  .chatbotmobile{
-display: none; 
+  .chatbotmobile {
+    display: none;
   }
 
   .Container {
-    width: 700px;
+    width: 850px;
   }
 
   footer {
     width: 100%;
     font-size: 18px;
   }
-
-}
-
-/* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 992px) {
-  .example {background: orange;}
-} 
-
-/* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1200px) {
-  .example {background: pink;}
 }
