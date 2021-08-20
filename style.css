@@ -7,13 +7,13 @@ html body {
   padding: 0px;
   margin: 0px;
   transition: all 0.9s ease-in-out;
-  background-color: #fafafa;
+  background-color: #fcfcfc;
 }
 
 h1 {
   font-size: 45px;
   font-family: "Poppins", sans-serif;
-  letter-spacing: -2px;
+  letter-spacing: -1px;
   font-weight: 900;
   color: #1a1a1aec;
   margin: 5px 0px 5px 0px;
@@ -61,27 +61,31 @@ p {
   padding: 0px 20px 0px 20px;
 }
 
-.notify {
-  background-color: #ffe46af5;
+.navbar {
+  background-color: #fffdf1;
+  color: #585858;
   width: 98%;
   position: fixed;
   float: left;
   text-align: center;
   padding: 10px 305px 15px 5px;
   display: inline-block;
+  -webkit-box-shadow: 0 0 4px 1px #0000001c;
+  -moz-box-shadow: 0 0 4px 1px #0000001c;
+  box-shadow: 0 0 4px 1px #0000001c;
 }
 
 .chatbot {
   background: #0088cc;
   background: -moz-linear-gradient(25deg,
-      rgba(0, 136, 204, 1) 0%,
-      rgba(0, 212, 255, 1) 100%);
+      #0088cc 0%,
+      #00d4ff 100%);
   background: -webkit-linear-gradient(25deg,
-      rgba(0, 136, 204, 1) 0%,
-      rgba(0, 212, 255, 1) 100%);
+      #0088cc 0%,
+      #00d4ff 100%);
   background: linear-gradient(25deg,
-      rgba(0, 136, 204, 1) 0%,
-      rgba(0, 212, 255, 1) 100%);
+      #0088cc 0%,
+      #00d4ff 100%);
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#0088cc", endColorstr="#00d4ff", GradientType=1);
   color: #ffffff;
   position: fixed;
@@ -203,7 +207,7 @@ img.ProfilePicture {
 .textbox {
   margin: 15px 0px 0px 0px;
   background-color: #ffffff;
-  border-radius: 20px;
+  border-radius: 35px;
   border: 1px solid #0000000e;
   padding: 10px 25px 25px 25px;
   text-align: center;
@@ -228,6 +232,19 @@ img.ProfilePicture {
   box-shadow: 0 0px 0px #00000024;
   transition: all 0.3s ease-in-out;
 }
+
+.imglink{
+  height:150px;
+  width: 150px;
+  float: left;
+  background-color: #00000007;
+  border-radius: 15px;
+  border: solid 0px #000000;
+  box-shadow: 0px 0px 0px 0px #00000024;
+  padding: 10px;
+  margin: 5px 15px 0px 0px;
+}
+
 
 a {
   text-decoration: none;
@@ -263,7 +280,7 @@ a:hover {
   background-color: #fdf5db;
   border-radius: 20px;
   border: 1px solid #0000000e;
-  padding: 10px 25px 25px 25px;
+  padding: 10px 10px 0px 10px;
   text-align: center;
   float: center;
 }
@@ -406,6 +423,18 @@ display: none;
 
   .linkpost {
     font-size: 16px;
+  }
+
+  .imglink{
+    height:50px;
+    width: 50px;
+    float: left;
+    background-color: #00000017;
+    border-radius: 15px;
+    border: solid 0px #000000;
+    box-shadow: 0px 0px 0px 0px #00000024;
+    padding: 10px;
+    margin: 5px 15px 0px 0px;
   }
 }
 
