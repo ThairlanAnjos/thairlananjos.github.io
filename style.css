@@ -77,16 +77,6 @@ p {
 
 .chatbot {
   background: #0088cc;
-  background: -moz-linear-gradient(25deg,
-      #0088cc 0%,
-      #00d4ff 100%);
-  background: -webkit-linear-gradient(25deg,
-      #0088cc 0%,
-      #00d4ff 100%);
-  background: linear-gradient(25deg,
-      #0088cc 0%,
-      #00d4ff 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#0088cc", endColorstr="#00d4ff", GradientType=1);
   color: #ffffff;
   position: fixed;
   bottom: 0px;
@@ -99,16 +89,6 @@ p {
 
 .chatbotmobile {
   background: #0088cc;
-  background: -moz-linear-gradient(25deg,
-      rgba(0, 136, 204, 1) 0%,
-      rgba(0, 212, 255, 1) 100%);
-  background: -webkit-linear-gradient(25deg,
-      rgba(0, 136, 204, 1) 0%,
-      rgba(0, 212, 255, 1) 100%);
-  background: linear-gradient(25deg,
-      rgba(0, 136, 204, 1) 0%,
-      rgba(0, 212, 255, 1) 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#0088cc", endColorstr="#00d4ff", GradientType=1);
   color: #ffffff;
   position: fixed;
   bottom: 0px;
@@ -260,7 +240,7 @@ a:hover {
 .linkpost {
   font-size: 18px;
   letter-spacing: -0.7px;
-  border-bottom: 2px solid #ffb52c;
+  border-bottom: 2px solid #ffb52cad;
   background-color: #30303000;
   padding: 4px 3px 1px 3px;
   border-radius: 0px;
@@ -268,11 +248,11 @@ a:hover {
 }
 
 .linkpost:hover {
-  background-color: #ffb52c;
-  border-bottom: 2px solid #ffb52c;
+  background-color: #ffb52c36;
+  border-bottom: 2px solid #ffb52c36;
   border-radius: 0px;
   padding: 4px 3px 1px 3px;
-  color: #303030;
+  color: #303030b0;
 }
 
 .mailbox{
@@ -290,17 +270,26 @@ a:hover {
 }
 
 button {
-  font-family: Poppins;
-  font-size: 19px;
+  font-family: Roboto;
+  font-size: 16px;
   padding-top: 10px;
   padding-right: 25px;
   padding-left: 25px;
   padding-bottom: 10px;
-  border: 0px solid #00ff00;
+  border: 3px solid #000000;
   border-radius: 10px;
   color: #ffffff;
   background-color: #000000;
   margin: 10px 0px 0px 10px;
+  transition: all 0.3s ease-in-out;
+
+}
+
+button:hover{
+  border: 3px solid #000000;
+  color: #000000;
+  background-color: #ffffff;
+  transition: all 0.3s ease-in-out;
 }
 
 /*------------- Scrollbar -------------*/
