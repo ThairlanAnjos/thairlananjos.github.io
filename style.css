@@ -395,6 +395,8 @@ button:hover {
 
   .SocialMobile {
     padding: 5px 0px 25px 0px;
+    animation: fadeInUp; 
+    animation-duration: 1s;
     text-align: center;
   }
 
