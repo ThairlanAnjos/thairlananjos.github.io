@@ -87,18 +87,6 @@ p {
   transition: all 0.2s ease-in-out;
 }
 
-.chatbotmobile {
-  background: #0088cc;
-  color: #ffffff;
-  position: fixed;
-  bottom: 0px;
-  right: 0px;
-  padding: 10px;
-  border-radius: 100px;
-  margin: 0px 15px 15px 0px;
-  transition: all 0.2s ease-in-out;
-}
-
 .chatlink {
   color: #ffffff;
   transition: all 0.2s ease-in-out;
@@ -164,7 +152,7 @@ img.ProfilePicture {
 }
 
 .Container {
-  background-color: #ffffff00;
+  background-color: #ff0000;
   border-radius: 0px 0px 0px 0px;
   padding: 35px 0px 0px 0px;
   width: 600px;
@@ -213,8 +201,8 @@ img.ProfilePicture {
   transition: all 0.3s ease-in-out;
 }
 
-.imglink{
-  height:150px;
+.imglink {
+  height: 150px;
   width: 150px;
   float: left;
   background-color: #00000007;
@@ -224,7 +212,6 @@ img.ProfilePicture {
   padding: 10px;
   margin: 5px 15px 0px 0px;
 }
-
 
 a {
   text-decoration: none;
@@ -255,7 +242,7 @@ a:hover {
   color: #303030b0;
 }
 
-.mailbox{
+.mailbox {
   margin: 15px 0px 0px 0px;
   background-color: #fdf5db;
   border-radius: 20px;
@@ -265,7 +252,7 @@ a:hover {
   float: center;
 }
 
-.mail{
+.mail {
   text-align: center;
 }
 
@@ -282,10 +269,9 @@ button {
   background-color: #000000;
   margin: 10px 0px 0px 10px;
   transition: all 0.3s ease-in-out;
-
 }
 
-button:hover{
+button:hover {
   border: 3px solid #000000;
   color: #000000;
   background-color: #ffffff;
@@ -414,8 +400,8 @@ display: none;
     font-size: 16px;
   }
 
-  .imglink{
-    height:50px;
+  .imglink {
+    height: 50px;
     width: 50px;
     float: left;
     background-color: #00000017;
@@ -451,11 +437,6 @@ display: none;
   .SocialMobile {
     display: none;
   }
-
-  .chatbotmobile {
-    display: none;
-  }
-
   .Container {
     width: 100%;
   }
@@ -488,10 +469,6 @@ display: none;
   }
 
   .SocialMobile {
-    display: none;
-  }
-
-  .chatbotmobile {
     display: none;
   }
 
