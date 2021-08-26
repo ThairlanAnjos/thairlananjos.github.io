@@ -48,6 +48,28 @@ p {
   text-justify: inter-word;
 }
 
+.PageTitle {
+  font-family: "Poppins", sans-serif;
+  color: #00000000;
+  -webkit-text-stroke: 1.5px #1a1a1a;
+  font-weight: 700;
+  font-size: 45px;
+  text-align: center;
+  margin-top: 5px;
+  padding: 0px 0px 0px 0px;
+  letter-spacing: -1px;
+  float: center;
+  transition: all 0.2s ease-in-out;
+  animation: flip; 
+  animation-duration: 1s;
+}
+
+.PageTitle:hover {
+  transition: all 0.2s ease-in-out;
+  -webkit-text-stroke: 1.5px #1a1a1a;
+  color: #1a1a1a;
+}
+
 .Subtitle {
   font-family: "Poppins", sans-serif;
   font-weight: 400;
@@ -59,6 +81,10 @@ p {
   line-height: 27px;
   margin: 20px 0px 0px 0px;
   padding: 0px 20px 0px 20px;
+  animation: fadeInUp; 
+  animation-duration: 1s;
+
+  
 }
 
 .navbar {
@@ -75,8 +101,21 @@ p {
   box-shadow: 0 0 4px 1px #0000001c;
 }
 
+.cover {
+  border-radius: 0px;
+  background-color: #34e1ff00;
+  background-image: url("https://images.unsplash.com/photo-1629662182419-960a8596bba0?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=889&q=80");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-attachment: fixed;
+  background-repeat: repeat-x;
+  padding: 0%;
+  width: 100%;
+  height: 300px;
+}
+
 .chatbot {
-  background: #0088cc;
+  background: #00aaff;
   color: #ffffff;
   position: fixed;
   bottom: 0px;
@@ -108,35 +147,25 @@ footer {
 
 /*Lembra de voltar o valor da margem top para 32px*/
 
-img.ProfilePicture {
+.ProfilePicture {
   height: 250px;
   width: 250px;
   border-radius: 100%;
+  border: 10px solid #ffffff;
+  background-color: #ffffff;
   display: block;
+  padding: 0px;
   margin: auto;
-  margin-top: 75px;
+  margin-top: -135px;
   float: center;
+  animation: fadeInUp; 
+  animation-duration: 1s;
 }
 
-.PageTitle {
-  font-family: "Poppins", sans-serif;
-  color: #00000000;
-  -webkit-text-stroke: 1.5px #1a1a1a;
-  font-weight: 700;
-  font-size: 45px;
-  text-align: center;
-  margin-top: 20px;
-  padding: 0px 0px 0px 0px;
-  letter-spacing: -1px;
-  float: center;
-  transition: all 0.2s ease-in-out;
+.profilepic {
+  border-radius: 100%;
 }
 
-.PageTitle:hover {
-  transition: all 0.2s ease-in-out;
-  -webkit-text-stroke: 1.5px #1a1a1a;
-  color: #1a1a1a;
-}
 
 .PageDescription {
   font-size: 20px;
@@ -152,15 +181,17 @@ img.ProfilePicture {
 }
 
 .Container {
-  background-color: #ff0000;
+  background-color: #ff000000;
   border-radius: 0px 0px 0px 0px;
-  padding: 35px 0px 0px 0px;
+  padding: 0px 0px 0px 0px;
   width: 600px;
   font-size: 20px;
   margin: 0px;
   text-align: center;
   float: center;
   margin: auto;
+  animation: fadeInUp; 
+  animation-duration: 1s;
 }
 
 .content {
@@ -183,6 +214,7 @@ img.ProfilePicture {
 }
 
 .linkdiv {
+  width: 90%;  
   margin: 15px 0px 0px 0px;
   background-color: #ffffff;
   border-radius: 15px;
@@ -192,6 +224,7 @@ img.ProfilePicture {
   box-shadow: 0 13px 6px -12px #00000021;
   text-align: left;
   float: center;
+  font-size-adjust: inherit;
 }
 
 .linkdiv:hover {
@@ -202,15 +235,19 @@ img.ProfilePicture {
 }
 
 .imglink {
-  height: 150px;
-  width: 150px;
+  width: 85px;
+  height: 85px;  
   float: left;
-  background-color: #00000007;
-  border-radius: 15px;
+  background-color: #ffffff00;
+  border-radius: 0px;
   border: solid 0px #000000;
   box-shadow: 0px 0px 0px 0px #00000024;
-  padding: 10px;
+  padding: 0px;
   margin: 5px 15px 0px 0px;
+}
+
+.linkpic{
+  border-radius: 10px
 }
 
 a {
@@ -259,24 +296,33 @@ a:hover {
 button {
   font-family: Roboto;
   font-size: 16px;
-  padding-top: 10px;
-  padding-right: 25px;
-  padding-left: 25px;
-  padding-bottom: 10px;
+  padding: 15px 25px 15px 25px;
   border: 3px solid #000000;
   border-radius: 10px;
   color: #ffffff;
   background-color: #000000;
   margin: 10px 0px 0px 10px;
-  transition: all 0.3s ease-in-out;
+  transition: all 0.1s ease-in-out;
 }
 
 button:hover {
   border: 3px solid #000000;
   color: #000000;
   background-color: #ffffff;
-  transition: all 0.3s ease-in-out;
+  transition: all 0.1s ease-in-out;
 }
+
+::-moz-selection { 
+  color: #9e501c;
+  background: #ffe0a7;  
+}
+
+::selection {
+  color: #9e501c;
+  background: #ffe0a7;  
+   }
+
+
 
 /*------------- Scrollbar -------------*/
 
@@ -287,7 +333,7 @@ button:hover {
 
 /* Track */
 ::-webkit-scrollbar-track {
-  background: #f1f1f1;
+  background: #f1f1f1cb;
 }
 
 /* Handle */
@@ -304,14 +350,14 @@ button:hover {
 
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
-  /*
-.notify {
-display: none;
-} 
-*/
+
+  div.navbar {
+    font-size: 9px;
+  }
+
 
   .content {
-    background-color: #ffffff00;
+    background-color: #41f2ff00;
     display: grid;
     margin: auto;
     padding: 0%;
@@ -327,12 +373,23 @@ display: none;
     margin: 0px;
   }
 
+  .cover {
+    border-radius: 0px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-attachment: fixed;
+    background-repeat: repeat-x;
+    padding: 0%;
+    width: 100%;
+    height: 180px;
+  }
+
   .textbox {
     margin: 15px 0px 0px 0px;
     padding: 20px 25px 15px 25px;
     text-align: center;
     float: center;
-  }
+  } 
 
   .SocialMobile {
     padding: 5px 0px 25px 0px;
@@ -343,21 +400,20 @@ display: none;
     display: none;
   }
 
-  .chatbot {
-    display: none;
-  }
-
-  img.ProfilePicture {
-    height: 125px;
-    width: 125px;
+  .ProfilePicture {
+    height: 100px;
+    width: 100px;
     border-radius: 100%;
+    border: 5px solid #ffffff;
+    background-color: #ffffff;
     display: block;
+    padding: 0px;
     margin: auto;
-    margin-top: 95px;
+    margin-top: -55px;
     float: center;
-    transition: all 0.3s ease-in-out;
   }
 
+ 
   footer {
     width: 100%;
     font-size: 14px;
@@ -366,39 +422,55 @@ display: none;
     padding: 15px 0px 35px 0px;
   }
 
-  p {
-    font-size: 16px;
-  }
 
   .PageTitle {
     font-size: 35px;
   }
 
+  .Subtitle{
+    margin-top: 5%;
+    margin-bottom: 1%;
+    font-size: 15px;
+  }
+
   .PageDescription {
     width: 100%;
-    font-size: 16px;
+    font-size: 10px;
     text-align: center;
+    margin-top: -5px;
     float: center;
   }
 
   h1 {
-    font-size: 30px;
-    margin: 0px;
-  }
-
-  h2 {
     font-size: 25px;
     margin: 0px;
   }
 
-  h3 {
+  h2 {
     font-size: 18px;
     margin: 0px;
   }
 
-  .linkpost {
+  h3 {
     font-size: 16px;
+    margin: 0px;
   }
+  
+  p {
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  .linkpost {
+    font-size: 14px;
+  }
+
+  
+.linkdiv {
+  margin: auto;
+  margin-bottom: 10px;
+  width: 85%;  
+}
 
   .imglink {
     height: 50px;
@@ -423,15 +495,10 @@ display: none;
     width: 100%;
   }
 
-  img.ProfilePicture {
+ .ProfilePicture {
     height: 200px;
     width: 200px;
-    border-radius: 100%;
-    display: block;
-    margin: auto;
-    margin-top: 95px;
-    float: center;
-    transition: all 0.3s ease-in-out;
+
   }
 
   .SocialMobile {
@@ -439,6 +506,12 @@ display: none;
   }
   .Container {
     width: 100%;
+  }
+
+  .linkdiv {
+    margin: auto;
+    margin-bottom: 10px;
+    width: 85%;  
   }
 
   footer {
@@ -457,17 +530,11 @@ display: none;
     width: 850px;
   }
 
-  img.ProfilePicture {
-    height: 250px;
-    width: 250px;
-    border-radius: 100%;
-    display: block;
-    margin: auto;
-    margin-top: 75px;
-    float: center;
-    transition: all 0.3s ease-in-out;
+  
+  .cover {
+    height: 280px;
   }
-
+ 
   .SocialMobile {
     display: none;
   }
@@ -476,8 +543,44 @@ display: none;
     width: 850px;
   }
 
+  .linkdiv {
+    margin: auto;
+    margin-bottom: 10px;
+    width: 85%;  
+  }
+
   footer {
     width: 100%;
     font-size: 18px;
   }
+
+  /* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (max-width: 768px) {
+
+  .content {
+    width: 100%;
+    background-color: #ffffff;
+  }
+  .Container {
+    background-color: #ffffff;
+    width: 100%;
+  }
+
+  .ProfilePicture {
+    height: 125px;
+    width: 125px;  
+    margin-top: -65px;  
+    border: 5px solid #ffffff;
+  }
+
+  .linkdiv {
+    margin: auto;
+    margin-bottom: 10px;
+    width: 85%;  
+  }
+
+  .cover {
+    height: 280px;
+  }
+
 }
