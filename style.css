@@ -60,7 +60,7 @@ p {
   letter-spacing: -1px;
   float: center;
   transition: all 0.2s ease-in-out;
-  animation: flip; 
+  animation: flip;
   animation-duration: 1s;
 }
 
@@ -81,10 +81,10 @@ p {
   line-height: 27px;
   margin: 20px 0px 0px 0px;
   padding: 0px 20px 0px 20px;
-  animation: fadeInUp; 
+  animation: fadeInUp;
   animation-duration: 1s;
 
-  
+
 }
 
 .navbar {
@@ -158,7 +158,7 @@ footer {
   margin: auto;
   margin-top: -135px;
   float: center;
-  animation: fadeInUp; 
+  animation: fadeInUp;
   animation-duration: 1s;
 }
 
@@ -177,7 +177,7 @@ footer {
 
 .Social {
   padding: 15px 0px 25px 0px;
-  animation: fadeInUp; 
+  animation: fadeInUp;
   animation-duration: 1s;
   text-align: center;
 }
@@ -192,7 +192,7 @@ footer {
   text-align: center;
   float: center;
   margin: auto;
-  animation: fadeInUp; 
+  animation: fadeInUp;
   animation-duration: 1s;
 }
 
@@ -216,7 +216,7 @@ footer {
 }
 
 .linkdiv {
-  width: 90%;  
+  width: 90%;
   margin: 15px 0px 0px 0px;
   background-color: #ffffff;
   border-radius: 15px;
@@ -238,7 +238,7 @@ footer {
 
 .imglink {
   width: 85px;
-  height: 85px;  
+  height: 85px;
   float: left;
   background-color: #ffffff00;
   border-radius: 0px;
@@ -248,7 +248,7 @@ footer {
   margin: 5px 15px 0px 0px;
 }
 
-.linkpic{
+.linkpic {
   border-radius: 10px
 }
 
@@ -314,15 +314,15 @@ button:hover {
   transition: all 0.1s ease-in-out;
 }
 
-::-moz-selection { 
+::-moz-selection {
   color: #9e501c;
-  background: #ffe0a7;  
+  background: #ffe0a7;
 }
 
 ::selection {
   color: #9e501c;
-  background: #ffe0a7;  
-   }
+  background: #ffe0a7;
+}
 
 
 
@@ -391,11 +391,11 @@ button:hover {
     padding: 20px 25px 15px 25px;
     text-align: center;
     float: center;
-  } 
+  }
 
   .SocialMobile {
     padding: 5px 0px 25px 0px;
-    animation: fadeInUp; 
+    animation: fadeInUp;
     animation-duration: 1s;
     text-align: center;
   }
@@ -417,7 +417,7 @@ button:hover {
     float: center;
   }
 
- 
+
   footer {
     width: 100%;
     font-size: 14px;
@@ -431,7 +431,7 @@ button:hover {
     font-size: 35px;
   }
 
-  .Subtitle{
+  .Subtitle {
     margin-top: 5%;
     margin-bottom: 1%;
     font-size: 15px;
@@ -459,7 +459,7 @@ button:hover {
     font-size: 16px;
     margin: 0px;
   }
-  
+
   p {
     font-size: 14px;
     line-height: 20px;
@@ -469,12 +469,12 @@ button:hover {
     font-size: 14px;
   }
 
-  
-.linkdiv {
-  margin: auto;
-  margin-bottom: 10px;
-  width: 85%;  
-}
+
+  .linkdiv {
+    margin: auto;
+    margin-bottom: 10px;
+    width: 85%;
+  }
 
   .imglink {
     height: 50px;
@@ -499,7 +499,7 @@ button:hover {
     width: 100%;
   }
 
- .ProfilePicture {
+  .ProfilePicture {
     height: 200px;
     width: 200px;
 
@@ -508,6 +508,7 @@ button:hover {
   .SocialMobile {
     display: none;
   }
+
   .Container {
     width: 100%;
   }
@@ -515,7 +516,7 @@ button:hover {
   .linkdiv {
     margin: auto;
     margin-bottom: 10px;
-    width: 85%;  
+    width: 85%;
   }
 
   footer {
@@ -534,11 +535,10 @@ button:hover {
     width: 850px;
   }
 
-  
   .cover {
     height: 280px;
   }
- 
+
   .SocialMobile {
     display: none;
   }
@@ -550,7 +550,7 @@ button:hover {
   .linkdiv {
     margin: auto;
     margin-bottom: 10px;
-    width: 85%;  
+    width: 85%;
   }
 
   footer {
@@ -559,32 +559,33 @@ button:hover {
   }
 
   /* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (max-width: 768px) {
+  @media only screen and (max-width: 768px) {
 
-  .content {
-    width: 100%;
-    background-color: #ffffff;
-  }
-  .Container {
-    background-color: #ffffff;
-    width: 100%;
-  }
+    .content {
+      width: 100%;
+      background-color: #ffffff;
+    }
 
-  .ProfilePicture {
-    height: 125px;
-    width: 125px;  
-    margin-top: -65px;  
-    border: 5px solid #ffffff;
-  }
+    .Container {
+      background-color: #ffffff;
+      width: 100%;
+    }
 
-  .linkdiv {
-    margin: auto;
-    margin-bottom: 10px;
-    width: 85%;  
-  }
+    .ProfilePicture {
+      height: 125px;
+      width: 125px;
+      margin-top: -65px;
+      border: 5px solid #ffffff;
+    }
 
-  .cover {
-    height: 280px;
-  }
+    .linkdiv {
+      margin: auto;
+      margin-bottom: 10px;
+      width: 85%;
+    }
 
-}
+    .cover {
+      height: 280px;
+    }
+
+  }
