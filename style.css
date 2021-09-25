@@ -97,8 +97,6 @@ p {
   text-align: center;
   padding: 20px 0px 20px 0px;
   display: inline-block;
-  animation: fadeInUp;
-  animation-duration: 1s;
   -webkit-box-shadow: 0 0 4px 1px #0000001c;
   -moz-box-shadow: 0 0 4px 1px #0000001c;
   box-shadow: 0 0 4px 1px #0000001c;
