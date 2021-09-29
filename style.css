@@ -3,51 +3,11 @@ html {
 }
 
 html body {
-  font-family: Roboto;
   padding: 0px;
   margin: 0px;
-  transition: all 0.9s ease-in-out;
-  background-color: #fcfcfc;
+  background-color: #f8f8f8;
 }
-
-h1 {
-  font-size: 45px;
-  font-family: "Poppins", sans-serif;
-  letter-spacing: -1px;
-  font-weight: 900;
-  color: #1a1a1aec;
-  margin: 5px 0px 5px 0px;
-  padding: 10px 0px 10px 0px;
-}
-
-h2 {
-  font-size: 30px;
-  font-family: "Poppins", sans-serif;
-  font-weight: 600;
-  color: #1a1a1aec;
-  margin: 5px 0px 5px 0px;
-  padding: 10px 0px 10px 0px;
-}
-
-h3 {
-  font-size: 20px;
-  font-family: "Poppins", sans-serif;
-  font-weight: 600;
-  color: #1a1a1ade;
-  margin: 5px 0px 5px 0px;
-  padding: 10px 0px 10px 0px;
-}
-
-p {
-  font-size: 18px;
-  font-weight: 400;
-  letter-spacing: -0.7px;
-  line-height: 27px;
-  margin: 0px;
-  text-align: justify;
-  text-justify: inter-word;
-}
-
+ 
 .PageTitle {
   font-family: "Poppins", sans-serif;
   color: #00000000;
@@ -83,8 +43,6 @@ p {
   padding: 0px 20px 0px 20px;
   animation: fadeInUp;
   animation-duration: 1s;
-
-
 }
 
 .navbar {
@@ -116,7 +74,7 @@ p {
 }
 
 .chatbot {
-  background: #00aaff;
+  background: #1fa5ff;
   color: #ffffff;
   position: fixed;
   bottom: 0px;
@@ -140,6 +98,7 @@ p {
 footer {
   width: 100%;
   font-size: 20px;
+  font-family: Roboto;
   text-align: center;
   float: center;
   margin: 25px 0px 25px 0px;
@@ -223,7 +182,7 @@ a {
 }
 
 a:hover {
-  color: #5e5e5e;
+  color: #858585;
   transition: all 0.3s ease-in-out;
 }
 

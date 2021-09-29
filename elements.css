@@ -1,0 +1,111 @@
+
+
+    /* ------------ Headings ----------- */
+    h1 {
+        font-size: 45px;
+        font-family: "Poppins", sans-serif;
+        font-weight: 900;
+        letter-spacing: -1px;
+        color: #1a1a1aec;
+        margin: 5px 0px 5px 0px;
+        padding: 10px 0px 10px 0px;
+    }
+
+    h2 {
+        font-family: "Poppins", sans-serif;
+        font-size: 35px;
+        font-weight: 600;
+        letter-spacing: -1px;
+        color: #1a1a1aec;
+        margin: 5px 0px 5px 0px;
+        padding: 10px 0px 10px 0px;
+    }
+
+    h3 {
+        font-family: "Poppins", sans-serif;
+        font-size: 25px;
+        font-weight: 600;
+        letter-spacing: -1px;
+        color: #1a1a1ade;
+        margin: 5px 0px 5px 0px;
+        padding: 10px 0px 10px 0px;
+    }
+
+    h4 {
+        font-family: "Poppins", sans-serif;
+        font-size: 20px;
+        font-weight: 600;
+        text-align: left;
+        letter-spacing: -1px;
+        color: #a25cffde;
+        margin: 5px 0px 5px 0px;
+        padding: 5px 0px 0px 0px;
+    }
+
+    /*----------- Paragraphs / Quotes / Codeblocks -----------*/
+
+
+    p {
+        font-family: "Roboto", sans-serif;
+        font-size: 18px;
+        font-weight: 400;
+        letter-spacing: -0.7px;
+        line-height: 27px;
+        text-align: justify;
+        text-justify: inter-word;
+    }
+
+    q {
+        font-family: 'Source Serif Pro', serif;
+        font-size: 20px;
+        font-weight: 500;
+        font-style: italic;
+        letter-spacing: -0.7px;
+        line-height: 27px;
+        text-align: justify;
+        text-justify: inter-word;
+    }
+    blockquote {
+        font-family: 'Source Serif Pro', serif;
+        font-size: 25px;
+        font-weight: 400;
+        font-style: italic;
+        color: #6d6d6d;
+        border-left: 3px solid #555555;
+        padding-left: 1%;
+        letter-spacing: -0.7px;
+        line-height: 27px;
+        text-align: justify;
+        text-justify: inter-word;
+    }
+
+    pre code {
+        background-color: #261333;
+        border: 1px solid #0000002a;
+        border-radius: 25px;
+        display: block;
+        padding: 15px;
+        color: #13ffff;
+        text-align: left;
+        font-size: 16px;
+        font-family: JetBrains Mono;
+      }
+
+    code {
+        background-color: #261333;     
+        border-radius: 5px;
+        padding: 3px 5px 3px 5px;
+        color: #13ffff;
+        font-weight: 400;
+        font-family: JetBrains Mono;
+
+    }
+
+    /*------- Line / Callout */
+
+    hr {
+    width:100%;
+    size: 1px;
+    color: #DADADA;
+    border-top: 1px solid #d8d8d8;
+}
