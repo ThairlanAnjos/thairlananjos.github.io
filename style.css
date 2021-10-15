@@ -1,11 +1,11 @@
-html {
-  scroll-behavior: smooth;
-}
 
-html body {
+
+body {
   padding: 0px;
   margin: 0px;
-  background-color: #f8f8f8;
+  background-color: #f8f8f815;
+  scroll-behavior: smooth;
+  font-family: "Roboto", sans-serif;
 }
  
 .PageTitle {
@@ -62,50 +62,24 @@ html body {
 
 .cover {
   border-radius: 0px;
-  background-color: #ff6169;
+  background-color: #8a30d3;
   /*background-image: url("https://images.unsplash.com/photo-1629662182419-960a8596bba0?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=889&q=80");*/
   background-repeat: no-repeat;
   background-size: contain;
   background-attachment: fixed;
   background-repeat: repeat-x;
+  margin: auto;
   padding: 0%;
   width: 100%;
   height: 300px;
 }
 
-.chatbot {
-  background: #1fa5ff;
-  color: #ffffff;
-  position: fixed;
-  bottom: 0px;
-  right: 0px;
-  padding: 10px;
-  border-radius: 100px;
-  margin: 0px 15px 15px 0px;
-  transition: all 0.2s ease-in-out;
-}
-
-.chatlink {
-  color: #ffffff;
-  transition: all 0.2s ease-in-out;
-}
-
-.chatlink:hover {
-  color: #ffffffce;
-  transition: all 0.2s ease-in-out;
-}
-
-footer {
+.title{
+  background-color: #ffffff;
+  border: 1px solid #0000000e;  
+  margin: auto;
   width: 100%;
-  font-size: 20px;
-  font-family: Roboto;
-  text-align: center;
-  float: center;
-  margin: 25px 0px 25px 0px;
-  padding: 0px;
 }
-
-/*Lembra de voltar o valor da margem top para 32px*/
 
 .ProfilePicture {
   height: 250px;
@@ -143,10 +117,10 @@ footer {
 }
 
 .Container {
-  background-color: #ff000000;
+  background-color: #ff00008a;
   border-radius: 0px 0px 0px 0px;
   padding: 0px 0px 0px 0px;
-  width: 600px;
+  width: 100%;
   font-size: 20px;
   margin: 0px;
   text-align: center;
@@ -157,12 +131,12 @@ footer {
 }
 
 .content {
-  background-color: #ffffff;
+  background-color: #1cca1c;
   display: grid;
-  margin: 0px;
+  margin: auto;
   padding: 0px;
   transition: all 0.5s ease-in-out;
-  width: 750px;
+  width: 950px;
 }
 
 .textbox {
@@ -175,33 +149,38 @@ footer {
   float: center;
 }
 
-a {
-  text-decoration: none;
-  color: #1a1a1a;
-  transition: all 0.3s ease-in-out;
+footer {
+  width: 100%;
+  font-size: 20px;
+  font-family: "Roboto", sans-serif;
+  text-align: center;
+  float: center;
+  margin: 25px 0px 25px 0px;
+  padding: 0px;
 }
 
-a:hover {
-  color: #858585;
-  transition: all 0.3s ease-in-out;
+
+
+.chatbot {
+  background: #1fa5ff;
+  color: #ffffff;
+  position: fixed;
+  bottom: 0px;
+  right: 0px;
+  padding: 10px;
+  border-radius: 100px;
+  margin: 0px 15px 15px 0px;
+  transition: all 0.2s ease-in-out;
 }
 
-.linkpost {
-  font-size: 18px;
-  letter-spacing: -0.7px;
-  border-bottom: 2px solid #ffb52cad;
-  background-color: #30303000;
-  padding: 4px 3px 1px 3px;
-  border-radius: 0px;
-  color: #303030;
+.chatlink {
+  color: #ffffff;
+  transition: all 0.2s ease-in-out;
 }
 
-.linkpost:hover {
-  background-color: #ffb52c36;
-  border-bottom: 2px solid #ffb52c36;
-  border-radius: 0px;
-  padding: 4px 3px 1px 3px;
-  color: #303030b0;
+.chatlink:hover {
+  color: #ffffffce;
+  transition: all 0.2s ease-in-out;
 }
 
 .mailbox {
@@ -220,316 +199,3 @@ a:hover {
 }
 
 
-button {
-  font-family: Poppins;
-  font-weight: 400;
-  font-size: 16px;
-  text-transform: uppercase;
-  padding: 10px 25px 10px 25px;
-  border: 0px solid #00000000;
-  border-radius: 10px;
-  color: #ffffff;
-  cursor: pointer;
-  background-color: #303030;
-  transition: all 0.1s ease-in-out;
-  display: inline-block;
-  box-shadow: 1px 1px 5px 1px #30303038;
-  margin: 1%;
-}
-
-button:hover {
-  color: #ffffff;
-  border: 0px solid #ffffff;
-  background-color: #000000;
-  box-shadow: inset 0px 0px 1px 100px #0000001c;
-  transition: all 0.1s ease-in-out;
-}
-
-.btnGreen {
-  background-color: #00b862;
-  box-shadow: 1px 1px 5px 1px #00b8626b;
-}
-
-.btnGreen:hover {
-  background-color: #008f4c;
-
-}
-
-.btnRed {
-  background-color: #e22e2e;
-  box-shadow: 1px 1px 5px 1px #e22e2e54;
-}
-
-.btnRed:hover {
-  background-color: #e22e2e;
-}
-
-.btnBlue {
-  background-color: #0954f5;
-  box-shadow: 1px 1px 5px 1px #0954f562;
-}
-
-.btnBlue:hover {
-  background-color: #0842be;
-}
-
-.btnYellow {
-  background-color: #ffae00;
-  box-shadow: 1px 1px 5px 1px #ffae006b;
-}
-
-.btnYellow:hover {
-  background-color: #ffae00e7;
-
-}
-
-::-moz-selection {
-  color: #9e501c;
-  background: #ffe0a7;
-}
-
-::selection {
-  color: #9e501c;
-  background: #ffe0a7;
-}
-
-
-
-/*------------- Scrollbar -------------*/
-
-/* width */
-::-webkit-scrollbar {
-  width: 10px;
-}
-
-/* Track */
-::-webkit-scrollbar-track {
-  background: #e7e7e7;
-
-
-}
-
-/* Handle */
-::-webkit-scrollbar-thumb {
-  background: #b8b8b8;
-  border-radius: 0px;
-  border: 0px solid #ffffff;
-
-}
-
-/* Handle on hover */
-::-webkit-scrollbar-thumb:hover {
-  background: #6b6b6b;
-}
-
-/* -------------------------------------  Mobile -----------------------------------------*/
-
-/* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 600px) {
-
-
-  .content {
-    background-color: #beff2700;
-    display: grid;
-    margin: auto;
-    padding: 0%;
-    transition: all 0.2s ease-in-out;
-    width: 100%;
-    float: center;
-  }
-
-  .Container {
-    background-color: #db1c1c00;
-    width: 100%;
-    padding: 0px 0px 0px 0px;
-    margin: 0px;
-  }
-
-  .cover {
-    border-radius: 0px;
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-attachment: fixed;
-    padding: 0%;
-    width: 100%;
-    height: 180px;
-  }
-
-  .textbox {
-    margin: 15px 0px 0px 0px;
-    padding: 20px 25px 15px 25px;
-    text-align: center;
-    float: center;
-  }
-
-  .SocialMobile {
-    padding: 5px 0px 25px 0px;
-    animation: fadeInUp;
-    animation-duration: 1s;
-    text-align: center;
-  }
-
-  .Social {
-    display: none;
-  }
-
-  .ProfilePicture {
-    height: 100px;
-    width: 100px;
-    border-radius: 100%;
-    border: 5px solid #ffffff;
-    background-color: #ffffff;
-    display: block;
-    padding: 0px;
-    margin: auto;
-    margin-top: -55px;
-    float: center;
-  }
-
-  footer {
-    width: 100%;
-    font-size: 14px;
-    text-align: center;
-    float: center;
-    padding: 15px 0px 35px 0px;
-  }
-
-  .PageTitle {
-    font-size: 35px;
-  }
-
-  .Subtitle {
-    margin-top: 5%;
-    margin-bottom: 1%;
-    font-size: 15px;
-  }
-
-  .PageDescription {
-    width: 100%;
-    font-size: 10px;
-    text-align: center;
-    margin-top: -5px;
-    float: center;
-  }
-
-  h1 {
-    font-size: 25px;
-    margin: 0px;
-  }
-
-  h2 {
-    font-size: 18px;
-    margin: 0px;
-  }
-
-  h3 {
-    font-size: 16px;
-    margin: 0px;
-  }
-
-  p {
-    font-size: 16px;
-    line-height: 20px;
-  }
-
-  .linkpost {
-    font-size: 16px;
-  }
-}
-
-/* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px) {
-  .content {
-    background-color: #70ffcf00;
-    display: grid;
-    margin: auto;
-    transition: all 0.5s ease-in-out;
-    width: 100%;
-  }
-
-  .ProfilePicture {
-    height: 200px;
-    width: 200px;
-
-  }
-
-  .SocialMobile {
-    display: none;
-  }
-
-  .Container {
-    width: 100%;
-  }
-
-
-
-  footer {
-    width: 90%;
-    font-size: 18px;
-  }
-}
-
-/* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 855px) {
-  .content {
-    background-color: #c670ff00;
-    display: grid;
-    margin: auto;
-    transition: all 0.5s ease-in-out;
-    width: 100%;
-  }
-
-  .cover {
-    height: 280px;
-  }
-
-  .SocialMobile {
-    display: none;
-  }
-
-  .Container {
-    width: 850px;
-  }
-
-  .linkdiv {
-    margin: auto;
-    margin-bottom: 10px;
-    width: 100%;
-  }
-
-  footer {
-    width: 100%;
-    font-size: 18px;
-  }
-
-  /* Medium devices (landscape tablets, 768px and up) */
-  @media only screen and (max-width: 855px) {
-
-    .content {
-      width: 100%;
-      background-color: #ffffff;
-    }
-
-    .Container {
-      background-color: #ffffff;
-      width: 100%;
-    }
-
-    .ProfilePicture {
-      height: 125px;
-      width: 125px;
-      margin-top: -65px;
-      border: 5px solid #ffffff;
-    }
-
-    .linkdiv {
-      margin: auto;
-      margin-bottom: 10px;
-      width: 100%;
-    }
-
-    .cover {
-      height: 280px;
-    }
-
-  }

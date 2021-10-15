@@ -2,44 +2,96 @@
 
     /* ------------ Headings ----------- */
     h1 {
-        font-size: 45px;
+        font-size: 35px;
         font-family: "Poppins", sans-serif;
-        font-weight: 900;
+        font-weight: 700;
         letter-spacing: -1px;
         color: #1a1a1aec;
-        margin: 5px 0px 5px 0px;
-        padding: 10px 0px 10px 0px;
+        margin: 0px 0px 5px 0px;
+        padding: 0px 0px 10px 0px;
     }
 
     h2 {
         font-family: "Poppins", sans-serif;
-        font-size: 35px;
-        font-weight: 600;
-        letter-spacing: -1px;
-        color: #1a1a1aec;
-        margin: 5px 0px 5px 0px;
-        padding: 10px 0px 10px 0px;
-    }
-
-    h3 {
-        font-family: "Poppins", sans-serif;
         font-size: 25px;
         font-weight: 600;
         letter-spacing: -1px;
-        color: #1a1a1ade;
-        margin: 5px 0px 5px 0px;
-        padding: 10px 0px 10px 0px;
+        color: #1a1a1aec;
+        margin: 0px 0px 5px 0px;
+        padding: 0px 0px 10px 0px;
     }
 
-    h4 {
+    .h1float {
+      font-size: 30px;
+      float: left;
+      font-family: "Poppins", sans-serif;
+      font-weight: 700;
+      letter-spacing: -1px;
+      color: #1a1a1aec;
+      margin: 0px 0px 5px 0px;
+      padding: 0px 0px 10px 0px;
+  }
+
+    h3 {
         font-family: "Poppins", sans-serif;
         font-size: 20px;
         font-weight: 600;
+        letter-spacing: -1px;
+        color: #1a1a1ade;
+        margin: 0px 0px 5px 0px;
+        padding: 0px 0px 10px 0px;
+    }
+
+    h4 {
+        font-family: "Roboto", sans-serif;
+        font-size: 18px;
+        font-weight: 400;
         text-align: left;
         letter-spacing: -1px;
-        color: #a25cffde;
+        color: #5d4e72de;
         margin: 5px 0px 5px 0px;
         padding: 5px 0px 0px 0px;
+    }
+
+    .HeadingIcon{
+      background-color: #2B2B2B;
+      text-align: center;
+      border-radius: 100px;
+      float: left;
+      color: #ffffff;
+      padding: 10px;
+      margin: 0px 15px 0px 0px;
+      width: auto;
+      height: auto;
+      
+    }
+
+    .Headings{
+      display: inline-block;
+    }
+    /*----------- Resposiver Grid -----------------------------*/
+
+    .wrapper {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      grid-gap: 10px;
+    }
+    
+    .box {
+      transition: all 0.2s ease-in-out;
+      border: 1px solid #0000000c;
+      background-color: #f5f5f5;
+      color: #272727;
+      border-radius: 15px;
+      padding: 20px;
+      font-size: 14px;
+    }
+    .box:hover{
+      background-color: #ffffff;
+      -webkit-box-shadow:0px 18px 20px 1px rgba(62,66,66,0.07);
+      -moz-box-shadow: 0px 18px 20px 1px rgba(62,66,66,0.07);
+      box-shadow: 0px 18px 20px 1px rgba(62,66,66,0.07);
+      transition: all 0.2s ease-in-out;
     }
 
     /*----------- Paragraphs / Quotes / Codeblocks -----------*/
@@ -48,7 +100,8 @@
     p {
         font-family: "Roboto", sans-serif;
         font-size: 18px;
-        font-weight: 400;
+        font-weight: 300;
+        font-style: normal;
         letter-spacing: -0.7px;
         line-height: 27px;
         text-align: justify;
@@ -60,6 +113,7 @@
         font-size: 20px;
         font-weight: 500;
         font-style: italic;
+        color: #383838;
         letter-spacing: -0.7px;
         line-height: 27px;
         text-align: justify;
@@ -67,39 +121,53 @@
     }
     blockquote {
         font-family: 'Source Serif Pro', serif;
-        font-size: 25px;
+        font-size: 20px;
         font-weight: 400;
         font-style: italic;
         color: #6d6d6d;
-        border-left: 3px solid #555555;
-        padding-left: 1%;
+        border-left: 5px solid #555555;
+        background: #ffffff;
+        background: linear-gradient(261deg, #ffffff00 0%, #ebebeb0e 45%, #ebebeb33 100%);
+        padding: 25px;
+        padding-left: 15px;
         letter-spacing: -0.7px;
-        line-height: 27px;
+        line-height: 25px;
         text-align: justify;
         text-justify: inter-word;
+        max-width: 800px;
+        min-width: auto;
     }
 
-    pre code {
-        background-color: #261333;
+  
+      pre code {
+        background-color: #542574;
         border: 1px solid #0000002a;
-        border-radius: 25px;
+        border-radius: 15px;
         display: block;
-        padding: 15px;
+        padding: 0px 10px 15px 25px;
         color: #13ffff;
-        text-align: left;
-        font-size: 16px;
+        font-size: 15px;
         font-family: JetBrains Mono;
+        white-space:pre-line;
       }
-
-    code {
-        background-color: #261333;     
+      code {
+        padding-left: 10px;
+        background-color: #542574;     
         border-radius: 5px;
         padding: 3px 5px 3px 5px;
         color: #13ffff;
-        font-weight: 400;
+        font-weight: 300;
+        text-align: left;
         font-family: JetBrains Mono;
-
+        white-space: pre;
     }
+
+    
+
+   
+
+   
+
 
     /*------- Line / Callout */
 
@@ -109,3 +177,149 @@
     color: #DADADA;
     border-top: 1px solid #d8d8d8;
 }
+
+/* ------------------ Links ---------------------------*/
+a {
+    text-decoration: none;
+    color: #1a1a1a;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  a:hover {
+    color: #858585;
+    transition: all 0.3s ease-in-out;
+  }
+
+  
+.linkpost {
+    font-size: 18px;
+    letter-spacing: -0.7px;
+    border-bottom: 2px solid #ffb52cad;
+    background-color: #30303000;
+    padding: 4px 3px 1px 3px;
+    border-radius: 0px;
+    color: #303030;
+  }
+  
+  .linkpost:hover {
+    background-color: #ffb52c36;
+    border-bottom: 2px solid #ffb52c36;
+    border-radius: 0px;
+    padding: 4px 3px 1px 3px;
+    color: #303030b0;
+  }
+
+  /*--------------------- Buttons ---------------------------*/
+
+  button {
+    font-family: Poppins;
+    font-weight: 400;
+    font-size: 16px;
+    text-transform: uppercase;
+    padding: 10px 25px 10px 25px;
+    border: 0px solid #00000000;
+    border-radius: 10px;
+    color: #ffffff;
+    cursor: pointer;
+    background-color: #303030;
+    transition: all 0.1s ease-in-out;
+    display: inline-block;
+    box-shadow: 1px 1px 5px 1px #30303011;
+    margin: 1%;
+  }
+  
+  button:hover {
+    color: #ffffff;
+    border: 0px solid #ffffff;
+    background-color: #000000;
+    box-shadow: inset 0px 0px 1px 100px #0000001c;
+    transition: all 0.1s ease-in-out;
+  }
+  
+  .btnGreen {
+    background-color: #00b862;
+    box-shadow: 1px 1px 5px 1px #00b8623f;
+  }
+  
+  .btnGreen:hover {
+    background-color: #008f4c;
+  
+  }
+  
+  .btnRed {
+    background-color: #e22e2e;
+    box-shadow: 1px 1px 5px 1px #e22e2e2c;
+  }
+  
+  .btnRed:hover {
+    background-color: #e22e2e;
+  }
+  
+  .btnBlue {
+    background-color: #0954f5;
+    box-shadow: 1px 1px 5px 1px #0954f536;
+  }
+  
+  .btnBlue:hover {
+    background-color: #0842be;
+  }
+  
+  .btnYellow {
+    background-color: #ffae00;
+    box-shadow: 1px 1px 5px 1px #ffae0033;
+  }
+  
+  .btnYellow:hover {
+    background-color: #ffae00e7;
+  
+  }
+
+  .btnAmazon{
+    background-color: #ff9113;
+    box-shadow: 1px 1px 5px 1px #ff9d2c71;
+  }
+
+  .btnAmazon:hover{
+    background-color: #ff7f2a;
+  }
+
+/*---------------- Selection ------------*/
+
+
+::-moz-selection {
+    color: #9e501c;
+    background: #ffe0a7;
+  }
+  
+  ::selection {
+    color: #9e501c;
+    background: #ffe0a7;
+  }  
+
+
+/*------------- Scrollbar -------------*/
+
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #e7e7e7;
+  
+  
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #b8b8b8;
+    border-radius: 0px;
+    border: 0px solid #ffffff;
+  
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #6b6b6b;
+  }
