@@ -161,17 +161,7 @@ footer {
 
 
 
-.chatbot {
-  background: #1fa5ff;
-  color: #ffffff;
-  position: fixed;
-  bottom: 0px;
-  right: 0px;
-  padding: 10px;
-  border-radius: 100px;
-  margin: 0px 15px 15px 0px;
-  transition: all 0.2s ease-in-out;
-}
+
 
 .chatlink {
   color: #ffffff;

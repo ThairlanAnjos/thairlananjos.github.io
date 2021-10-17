@@ -6,7 +6,6 @@
         font-family: "Poppins", sans-serif;
         font-weight: 700;
         letter-spacing: -1px;
-        color: #1a1a1aec;
         margin: 0px 0px 5px 0px;
         padding: 0px 0px 10px 0px;
     }
@@ -16,7 +15,6 @@
         font-size: 25px;
         font-weight: 600;
         letter-spacing: -1px;
-        color: #1a1a1aec;
         margin: 0px 0px 5px 0px;
         padding: 0px 0px 10px 0px;
     }
@@ -27,7 +25,6 @@
       font-family: "Poppins", sans-serif;
       font-weight: 700;
       letter-spacing: -1px;
-      color: #1a1a1aec;
       margin: 0px 0px 5px 0px;
       padding: 0px 0px 10px 0px;
   }
@@ -37,7 +34,6 @@
         font-size: 20px;
         font-weight: 600;
         letter-spacing: -1px;
-        color: #1a1a1ade;
         margin: 0px 0px 5px 0px;
         padding: 0px 0px 10px 0px;
     }
@@ -48,7 +44,6 @@
         font-weight: 400;
         text-align: left;
         letter-spacing: -1px;
-        color: #5d4e72de;
         margin: 5px 0px 5px 0px;
         padding: 5px 0px 0px 0px;
     }
@@ -69,38 +64,78 @@
     .Headings{
       display: inline-block;
     }
-    /*----------- Resposiver Grid -----------------------------*/
+    /*--------------------- Resposiver Grid Wrapper ------------------------*/
 
     .wrapper {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-      grid-gap: 10px;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      grid-gap: 15px;
     }
     
     .box {
       transition: all 0.2s ease-in-out;
-      border: 1px solid #0000000c;
+      border: 1px solid #00000000;
       background-color: #f5f5f5;
       color: #272727;
-      border-radius: 15px;
+      border-radius: 18px;
       padding: 20px;
       font-size: 14px;
+      max-width: auto;
+      min-width: auto;
     }
     .box:hover{
       background-color: #ffffff;
-      -webkit-box-shadow:0px 18px 20px 1px rgba(62,66,66,0.07);
-      -moz-box-shadow: 0px 18px 20px 1px rgba(62,66,66,0.07);
-      box-shadow: 0px 18px 20px 1px rgba(62,66,66,0.07);
+      border: 1px solid #0000000c;
+      box-shadow: 0px 15px 30px -6px #00000010
+    ;
+    
       transition: all 0.2s ease-in-out;
     }
 
+    /*Unsplash*/
+
+    div.box.UnsplashPics {
+      background-color: #0f0f0f;
+      color: #ffffff      
+    }
+
+    div.box.UnsplashPics:hover {
+      background-color: #ffffff;
+      color: #1d1d1d      
+    }
+        img.sample_img {
+      border-radius: 15px;
+    }
+
+    /*Tweets*/
+
+    div.box.LastTweet {
+      color: #0084ff;
+      background-color: #f5f5f5;
+    }
+    div.box.LastTweet:hover {
+      color: #0099ff;
+      background-color: #f5f8fa      
+    }
+    /*Quotes*/
+    
+    div.box.Quote {
+      background-color: #ff9900;
+      color: #ffffff;
+    }
+
+    div.box.Quote:hover {
+      color: #ff9900;
+      background-color: #ffffff
+      
+    }
     /*----------- Paragraphs / Quotes / Codeblocks -----------*/
 
 
     p {
         font-family: "Roboto", sans-serif;
         font-size: 18px;
-        font-weight: 300;
+        font-weight: 400;
         font-style: normal;
         letter-spacing: -0.7px;
         line-height: 27px;
@@ -113,7 +148,6 @@
         font-size: 20px;
         font-weight: 500;
         font-style: italic;
-        color: #383838;
         letter-spacing: -0.7px;
         line-height: 27px;
         text-align: justify;
@@ -121,10 +155,9 @@
     }
     blockquote {
         font-family: 'Source Serif Pro', serif;
-        font-size: 20px;
+        font-size: 21px;
         font-weight: 400;
         font-style: italic;
-        color: #6d6d6d;
         border-left: 5px solid #555555;
         background: #ffffff;
         background: linear-gradient(261deg, #ffffff00 0%, #ebebeb0e 45%, #ebebeb33 100%);
@@ -134,7 +167,7 @@
         line-height: 25px;
         text-align: justify;
         text-justify: inter-word;
-        max-width: 800px;
+        max-width: auto;
         min-width: auto;
     }
 
@@ -182,12 +215,12 @@
 a {
     text-decoration: none;
     color: #1a1a1a;
-    transition: all 0.3s ease-in-out;
+    transition: all 0.1s ease-in-out;
   }
   
   a:hover {
     color: #858585;
-    transition: all 0.3s ease-in-out;
+    transition: all 0.1s ease-in-out;
   }
 
   

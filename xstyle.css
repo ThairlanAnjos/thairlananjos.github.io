@@ -22,15 +22,36 @@ body {
   font-family: "Poppins", sans-serif;
   box-shadow: 0px 5px 10px -1px #000000d7;  
   border: 1px solid #00000011;
-  font-weight: 700;
-  font-size: 18px;
+  font-weight: 500;
+  font-size: 16px;
   text-align: center;
   backdrop-filter: blur(2px);
   background-color: #ffffffe7; 
   border-radius: 0px;
-  padding: 15px;
+  padding: 0px;
   margin: auto;
   width: 100%;
+}
+
+/* ------- Navbar Menu ------- */
+
+.BrandIcon{
+  width: 50px;
+}
+
+#menu a {
+  text-decoration:none;
+}
+
+#menu ul  {
+  list-style:none;
+ 
+}
+
+#menu ul li {
+  text-align: center;
+  display:inline;
+  margin: 0px 10px 0px 10px;
 }
 
 .cover {
@@ -55,17 +76,17 @@ body {
   margin: auto;
   margin-top: -250px;
   padding: 10px;
-  max-width: 950px;
+  max-width: 1000px;
   min-width: auto;
 }
 
 /* ------- Elements Container "All site elements and Content" ------- */
 
 .ElementsContainer {
-  background-color: #5d90ffd8;
+  background-color: #5d90ffd8;  
   margin: auto;
-  padding: 10px;
-  max-width: 950px;
+  padding: 0px;
+  max-width: 1000px;
   min-width: auto;
 }
 
@@ -74,8 +95,8 @@ body {
 .Content {
   background-color: #6cffce;
   margin: auto;
-  padding: 10px;
-  max-width: 950px;
+  padding: 0px;
+  max-width: 1000px;
   min-width: auto;
 }
 
@@ -168,17 +189,72 @@ body {
 /* ------- Text areas "Box of elements" ------- */
 
 .TextBox {
-  margin: 15px 0px 0px 0px;
+  color: #1a1a1a;
   background-color: #ffffff;
-  border-radius: 35px;
-  border: 1px solid #0000000e;
-  padding: 10px 25px 25px 25px;
+  border-radius: 18px;
+  border: 0px solid #0000000e;
+  margin: 15px 0px 0px 0px;
+  padding: 25px 25px 25px 25px;
   margin: 10px 0px 25px 0px;
   width: auto;
   height: auto;  
   max-width: auto;
-  min-width: auto;  
-  float: center;
+  min-width: auto; 
+}
+
+.TextBoxBlue{
+  color: #ffffff;
+  background-color: #2ba0ff;
+  border-radius: 18px;
+  border: 0px solid #0000000e;
+  margin: 15px 0px 0px 0px;
+  padding: 25px 25px 25px 25px;
+  margin: 10px 0px 25px 0px;
+  width: auto;
+  height: auto;  
+  max-width: auto;
+  min-width: auto; 
+}
+
+.TextBoxYellow{
+  color: #000000;
+  background-color: #ffe134;
+  border-radius: 18px;
+  border: 0px solid #0000000e;
+  margin: 15px 0px 0px 0px;
+  padding: 25px 25px 25px 25px;
+  margin: 10px 0px 25px 0px;
+  width: auto;
+  height: auto;  
+  max-width: auto;
+  min-width: auto; 
+}
+
+.TextBoxGreen{
+  color: #000000;
+  background-color: #72ff4f;
+  border-radius: 18px;
+  border: 0px solid #0000000e;
+  margin: 15px 0px 0px 0px;
+  padding: 25px 25px 25px 25px;
+  margin: 10px 0px 25px 0px;
+  width: auto;
+  height: auto;  
+  max-width: auto;
+  min-width: auto; 
+}
+.TextBoxBlack{
+  color: #ffffff;
+  background-color: #000000;
+  border-radius: 18px;
+  border: 0px solid #0000000e;
+  margin: 15px 0px 0px 0px;
+  padding: 25px 25px 25px 25px;
+  margin: 10px 0px 25px 0px;
+  width: auto;
+  height: auto;  
+  max-width: auto;
+  min-width: auto; 
 }
 
 .MailBox {
@@ -191,8 +267,7 @@ body {
   width: auto;
   height: auto;  
   max-width: auto;
-  min-width: auto;  
-  float: center;
+  min-width: auto;
 }
 
 .SocialMailBox {
@@ -207,4 +282,61 @@ body {
   animation: fadeInUp;
   animation-duration: 1s;
   text-align: center;
+}
+
+/* ------- Elements Inside Direct in Body ------- */
+
+.chatbot {
+  background: #1fa5ff;
+  color: #ffffff;
+  position: fixed;
+  bottom: 0px;
+  right: 0px;
+  padding: 10px;
+  border-radius: 10px;
+  margin: 0px 15px 15px 0px;
+  transition: all 0.2s ease-in-out;
+}
+
+.chatbot:hover {
+  transition: all 0.2s ease-in-out;
+  background: #0099ff;
+  color: #ffffff;
+}
+
+/* ------------ Footer ------------ */
+
+
+.Footer {  
+  font-size: 16px;
+  font-family: "Roboto", sans-serif;
+  margin: 25px 0px 0px 0px;
+  background-color: #ffffff;
+  border-radius: 20px;
+  border: 1px solid #0000000e;
+  padding: 25px 10px 10px 10px;
+  text-align: center;  
+  width: auto;
+  height: auto;  
+  max-width: auto;
+  min-width: auto; 
+}
+
+
+#FooterMenu a {
+  text-decoration:none;
+}
+
+#FooterMenu ul  {
+  list-style:none;
+  padding: 0px;
+ 
+}
+
+#FooterMenu li {
+  font-family: Roboto;
+  text-align: center;
+  display:inline;
+  margin: auto;
+  padding: 15px;
 }
