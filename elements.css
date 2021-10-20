@@ -64,6 +64,10 @@
     .Headings{
       display: inline-block;
     }
+
+    .MailBoxText {
+      text-align: center;  
+    }
     /*--------------------- Resposiver Grid Wrapper ------------------------*/
 
     .wrapper {
@@ -210,9 +214,10 @@
     hr {
     width:100%;
     size: 1px;
-    color: #DADADA;
-    border-top: 1px solid #d8d8d8;
-}
+    color: #0000002d;
+    border: 1px solid #0000001e;
+    }
+    
 
 /* ------------------ Links ---------------------------*/
 a {
@@ -248,12 +253,12 @@ a {
   /*--------------------- Buttons ---------------------------*/
 
   button {
-    font-family: Poppins;
+    font-family: "Poppins", sans-serif;
     font-weight: 400;
     font-size: 16px;
     padding: 10px 25px 10px 25px;
     border: 0px solid #00000000;
-    border-radius: 100px;
+    border-radius: 10px;
     color: #ffffff;
     cursor: pointer;
     background-color: #303030;
@@ -330,6 +335,68 @@ a {
     color: #9e501c;
     background: #ffe0a7;
   }  
+
+/*------------- Mailchimp -------------*/
+
+#mc_embed_signup{
+    text-align: center;
+    background: #a0606000;    
+    margin: auto;
+    padding: 15px;
+
+    height: 150px;
+    min-height: auto;
+    max-height: auto;
+
+    width: 250px;
+    min-width: auto;
+    max-width: auto;
+}
+
+
+  div div label {
+    font-size: 15px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal
+    
+  }
+  
+  input.required.email {
+    background-color: #ffffff;
+    padding: 5px;
+    color: #666666;
+
+    border-style: solid;
+    border-color: #000000;
+    border-radius: 10px;
+
+    height: 25px;
+    min-height: auto;
+    max-height: auto;
+
+    width: 100%;
+    min-width: auto;
+    max-width: auto;
+
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  
+  input.button {
+    font-size:14px;
+    color: #ffffff;
+    height: 45px;
+    padding: 5px 15px 5px 15px;
+    border-style: none;
+    border-radius: 10px;
+    background-color: #0954f5;
+    box-shadow: 1px 1px 5px 1px #0954f536;
+  }
+  
+  input.button:hover {
+    background-color: #0954f5;
+  }
 
 
 /*------------- Scrollbar -------------*/
