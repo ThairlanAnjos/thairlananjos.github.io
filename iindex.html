@@ -20,40 +20,64 @@
     href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100;0,189;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital@0;1&family=Source+Serif+Pro:ital,wght@0,400;0,600;1,400&display=swap"
     rel="stylesheet" />
 
-
-
   <!--Icons libs-->
   <link rel="stylesheet" href="path/to/line-awesome/css/line-awesome-font-awesome.min.css" />
   <link rel="stylesheet"
     href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css" />
 
-  <!-- CSS Stylesheet-->
+  <!--Mobile color-->
+  <meta name="theme-color" content="#535353">
+  <meta name="apple-mobile-web-app-status-bar-style" content="#535353">
+  <!---->
 
+  <!-- CSS Stylesheet-->
   <link rel="stylesheet" href="xstyle.css" />
   <link rel="stylesheet" href="xmobile.css" />
   <link rel="stylesheet" href="elements.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 
+
   <link rel="alternate" href="rss.xml" type="application/rss+xml" title="RSS" />
   <title>Thairlan Anjos | Official Website</title>
 </head>
 
+<!--Scripts-->
+
+<script>
+  function myFunction() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+      x.className += " responsive";
+    } else {
+      x.className = "topnav";
+    }
+  }
+  </script>
+
 <body>
-  <div class="navbar">
-    <div class="navbar-container">
-      <div id="menu">
-        <ul>
-          <img src="src\Brand\ThairlanAnjosBrand.png" width="30px" height="30px"                alt="Thairlan Anjos Brand">
-          <li><a href="index.php">Home</a></li>
-          <li><a href="about.php">About Us</a></li>
-          <li><a href="offers.php">Special Offers</a></li>
-          <li><a href="staff.php">Meet Our Staff</a></li>
-          <li><a href="contact.php">Contact</a></li>
-        </ul>
+
+  <div class="topnav" id="myTopnav">
+  
+    <a href="https://www.thairlananjos.com" class="active"><img src="https://raw.githubusercontent.com/ThairlanAnjos/thairlananjos.github.io/2a067d664165dc7b9a6b9bfcd16f871021cff3d5/src/Brand/Thairlan%20Anjos%20-%20Brand.svg
+    " width="30px" height="30px" alt="Thairlan Anjos Brand"></a>
+    
+    
+    <a href="#news">News</a>
+    <a href="#contact">Contact</a>
+    <div class="dropdown">
+      <button class="dropbtn">Dropdown 
+        <i class="fa fa-caret-down"></i>
+      </button>
+      <div class="dropdown-content">
+        <a href="#">Link 1</a>
+        <a href="#">Link 2</a>
+        <a href="#">Link 3</a>
       </div>
-      <!--Table of contents inline-->
-    </div>
+    </div> 
+    <a href="#about">About</a>
+    <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
   </div>
+
 
   <a href="https://t.me/thairlananjos" target="_blank" class="chatlink">
     <div class="chatbot">
@@ -413,8 +437,9 @@
             <h1>Me around web</h1>
 
             <p class="MailBoxText">
-              
-              Follow me on social networks, you can also subscribe to my Newsletter by <a class="linkpost" href="http://eepurl.com/hCh0Pz" target="_blank">clicking here.</a></p><br>
+
+              Follow me on social networks, you can also subscribe to my Newsletter by <a class="linkpost"
+                href="http://eepurl.com/hCh0Pz" target="_blank">clicking here.</a></p><br>
 
             <a href="https://thairlananjos.page.link/github" target="_blank">
               <i class="lab la-github la-2x"></i></a>
@@ -440,7 +465,7 @@
             <a href="mailto:contact@thairlananjos.com" target="_blank">
               <i class="las la-envelope la-2x"></i></a>
 
-            <br><br>          
+            <br><br>
 
           </div>
         </div>
@@ -475,95 +500,6 @@
   </div>
 
 
-  <div class="areateste">
-
-    <!--Inicio teste-->
-
-    <style>
-      .dropbtn {
-        background-color: #04AA6D;
-        color: white;
-        padding: 0px;
-        font-size: 10px;
-        border: none;
-        background: #1fa5ff;
-        color: #ffffff;
-        position: fixed;
-        bottom: 15px;
-        left: 25px;
-        padding: 10px;
-        border-radius: 100px;
-        margin: 0px 15px 15px 0px;
-        width: 35px;
-        height: 35px;
-        transition: all 1s ease-in-out;
-      }
-      
-      .dropdown {
-        position: relative;
-        display: inline-block;
-        transition: all 0.2s ease-in-out;
-      }
-      
-      .dropdown-content {
-        display: none;
-        min-width: 160px;
-        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);  
-        background: #1fa5ff;
-        color: #000000;
-        position: fixed;
-        bottom: 15px;
-        left: 15px;
-        padding: 10px;
-        border-radius: 15px;
-        margin: 0px 15px 15px 0px;
-        transition: all 0.2s ease-in-out;
-        z-index: 1;
-      }
-      
-      .dropdown-content a {
-        color: black;
-        padding: 12px 16px;
-        text-decoration: none;
-        border-radius: 5px;
-        display: block;
-        transition: all 0.2s ease-in-out;
-      }
-      
-      .dropdown-content a:hover {
-      background-color: #fff;
-      border-radius: 5px;
-      transition: all 0.2s ease-in-out;
-      }
-      
-      .dropdown:hover .dropdown-content {
-      display: block;
-      transition: all 0.2s ease-in-out;
-      }
-      
-      .dropdown:hover .dropbtn {
-      background-color: #000;
-      transition: all 0.2s ease-in-out;
-      }
-      </style>
-      </head>
-      <body>
-      
-      <h2>Hoverable Dropdown</h2>
-      <p>Move the mouse over the button to open the dropdown menu.</p>
-      
-      <div class="dropdown">
-        <button class="dropbtn">*</button>
-        <div class="dropdown-content">
-          <a href="#">Link 1</a>
-          <a href="#">Link 2</a>
-          <a href="#">Link 3</a>
-        </div>
-      </div>
-
-    <!--Fim do teste-->
-
-  </div>
 
 
 </body>

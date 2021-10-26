@@ -4,13 +4,6 @@ if (screen.width <= 699) {
   document.location = "https://m.thairlananjos.com";
 }
 
-// Dynamic Links will start with https://thairlananjos.com
-"appAssociation": "AUTO",
-"rewrites": [{
-  "source": "/**",
-  "dynamicLinks": true
-}]
-
 /* Google Tag Manager */
 
 (function (w, d, s, l, i) {
@@ -27,3 +20,4 @@ if (screen.width <= 699) {
     'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
   f.parentNode.insertBefore(j, f);
 })(window, document, 'script', 'dataLayer', 'GTM-PRMR4JZ');
+

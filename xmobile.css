@@ -19,7 +19,8 @@
 
   .PageTitle {
     font-size: 30px;
-    font-weight: 700;  
+    font-weight: 700;
+    margin-top: 15px;;  
   }
   
   .ProfilePicture {

@@ -39,39 +39,13 @@ header{
   width: 100%;
 }
 
-/* ------- Navbar Menu ------- */
-
-.BrandIcon{
-  width: 45px;
-}
-
-#menu a {
-  text-decoration:none;
-}
-
-#menu ul  {
-  list-style:none;
- 
-}
-
-#menu ul li{
-  text-align: center;
-  color: #ffffff;
-  display:inline;
-  margin: 0px 10px 0px 10px;
-}
-#menu ul li a {  
-  color: #ffffff;
-}
-
 
 .cover {
-  border-radius: 0px;
-  
-  background-image: url("https://source.unsplash.com/user/lachlanjdempsey");
+  border-radius: 0px;  
+  background-color: #41414111;
+  background-image: url("https://source.unsplash.com/user/wellfers7");
   background-repeat: no-repeat;
   background-size: 100%;
-
   background-attachment: fixed;
   margin: auto;
   padding: 0px;
@@ -230,7 +204,8 @@ header{
   color: #1a1a1a;
   background-color: #ffffff;
   border-radius: 25px;
-  border: 0px solid #0000000e;
+  border: 1px solid #0000000e;
+  box-shadow: 0px 8px 5px -7px #0000001a;
   margin: 15px 0px 0px 0px;
   padding: 25px 25px 25px 25px;
   width: auto;
@@ -243,8 +218,8 @@ header{
   color: #ffffff;
   background-color: #2ba0ff;
   border-radius: 25px;
-  border: 0px solid #0000000e;
-  margin: 15px 0px 0px 0px;
+  border: 1px solid #0000000e;
+  box-shadow: 0px 8px 5px -7px #0000001a;
   padding: 25px 25px 25px 25px;
   margin: 10px 0px 25px 0px;
   width: auto;
@@ -257,8 +232,8 @@ header{
   color: #000000;
   background-color: #ffe134;
   border-radius: 25px;
-  border: 0px solid #0000000e;
-  margin: 15px 0px 0px 0px;
+  border: 1px solid #0000000e;
+  box-shadow: 0px 8px 5px -7px #0000001a;
   padding: 25px 25px 25px 25px;
   margin: 10px 0px 25px 0px;
   width: auto;
@@ -271,8 +246,8 @@ header{
   color: #000000;
   background-color: #72ff4f;
   border-radius: 25px;
-  border: 0px solid #0000000e;
-  margin: 15px 0px 0px 0px;
+  border: 1px solid #0000000e;
+  box-shadow: 0px 8px 5px -7px #0000001a;
   padding: 25px 25px 25px 25px;
   margin: 10px 0px 25px 0px;
   width: auto;
@@ -284,8 +259,8 @@ header{
   color: #ffffff;
   background-color: #000000;
   border-radius: 25px;
-  border: 0px solid #0000000e;
-  margin: 15px 0px 0px 0px;
+  border: 1px solid #0000000e;
+  box-shadow: 0px 8px 5px -7px #0000001a;
   padding: 25px 25px 25px 25px;
   margin: 10px 0px 25px 0px;
   width: auto;
@@ -296,10 +271,10 @@ header{
 
 .MailBox {
   margin: 15px 0px 0px 0px;
-  background: rgb(255, 205, 114);
-  background: linear-gradient(261deg, rgba(255, 205, 114, 1) 0%, rgba(255, 229, 171, 1) 47%);
+  background: #fff2db;
   border-radius: 25px;
-  border: 0px solid #0000000e;
+  border: 1px solid #0000000e;
+  box-shadow: 0px 8px 5px -7px #0000001a;
   padding: 10px 10px 0px 10px;
   text-align: center;
   font-size: 21px;
@@ -334,6 +309,7 @@ header{
   padding: 10px;
   border-radius: 10px;
   margin: 0px 15px 15px 0px;
+  box-shadow: 0px 8px 5px -7px #0000001a;
   transition: all 0.2s ease-in-out;
 }
 
@@ -353,6 +329,7 @@ header{
   background-color: #ffffff;
   border-radius: 25px;
   border: 1px solid #0000000e;
+  box-shadow: 0px 8px 5px -7px #0000001a;
   padding: 25px 10px 10px 10px;
   text-align: center;  
   width: auto;
