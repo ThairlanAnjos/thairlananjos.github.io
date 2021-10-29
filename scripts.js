@@ -1,8 +1,11 @@
 /* Redirect to Mobile*/
 
+
+/*
 if (screen.width <= 699) {
   document.location = "https://m.thairlananjos.com";
 }
+*/
 
 /* Google Tag Manager */
 
