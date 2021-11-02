@@ -42,14 +42,15 @@ header {
 .cover {
   border-radius: 0px;
   background-color: #41414111;
-  background-image: url("https://source.unsplash.com/user/cihansoysakal");
+  background-image: url("https://source.unsplash.com/user/cleipelt");
+  background-position:center top;
   background-repeat: no-repeat;
   background-size: 100%;
   background-attachment: fixed;
   margin: auto;
   padding: 0px;
   width: 100%;
-  height: 615px;
+  height: 400px;
 }
 
 /* ------- Body Container "All site content!" ------- */
