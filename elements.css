@@ -367,25 +367,26 @@ a {
     top: 0;
     width: 100%;
     position: fixed;
+    border-bottom: 1px solid #00000015;
     backdrop-filter: blur(2px);
-    background-color: #414141e8; 
+    background-color: #ffffffe8; 
     transition: all 0.1s ease-in-out;
     }
     
     .topnav a {
       float: left;
       display: block;
-      color: #f2f2f2;
+      color: #2c2c2c;
       text-align: center;
       padding: 14px 16px;
       text-decoration: none;
-      font-size: 17px;
+      font-size: 18px;
       transition: all 0.1s ease-in-out;
     }
     
     .active {
-      background-color: #04AA6D;
-      color: white;
+      background-color: #ffffff;
+      color: #181818;
       width: 30px;
       height: 20px;
       margin: 0px;
@@ -410,10 +411,10 @@ a {
     }
     
     .dropdown .dropbtn {
-      font-size: 17px;    
+      font-size: 18px;    
       border: none;
       outline: none;
-      color: white;
+      color: #5f5f5f;
       padding: 14px 16px;
       border-radius: 0px;
       background-color: inherit;
@@ -428,14 +429,14 @@ a {
       background-color: #fff;
       border-radius: 0px 0px 0px 0px; 
       min-width: 160px;
-      box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+      box-shadow: 0px 8px 16px 0px #0000001e;
       z-index: 1;
       transition: all 0.1s ease-in-out
     }
     
     .dropdown-content a {
       float: none;
-      color: black;
+      color: #3d3d3d;
       padding: 12px 16px;
       text-decoration: none;
       display: block;
@@ -444,15 +445,15 @@ a {
     }
     
     .topnav a:hover, .dropdown:hover .dropbtn {
-      background-color: #555;
-      color: white;
+      background-color: #e2e2e2;
+      color: #555555;
       transition: all 0.1s ease-in-out
     }
     
     .dropdown-content a:hover {
       background-color: #A2A2A236;
       border-radius: 0px 0px 0px 0px;
-      color: black;
+      color: #353535;
       transition: all 0.1s ease-in-out
     }
     
@@ -461,7 +462,7 @@ a {
       transition: all 0.1s ease-in-out
     }
     
-    @media screen and (max-width: 600px) {
+    @media screen and (max-width: 900px) {
       .topnav a:not(:first-child), .dropdown .dropbtn {
         display: none;
       }
@@ -471,7 +472,7 @@ a {
       }
     }
     
-    @media screen and (max-width: 600px) {
+    @media screen and (max-width: 900px) {
       .topnav.responsive {position: relative;}
       .topnav.responsive .icon {
         position: absolute;
