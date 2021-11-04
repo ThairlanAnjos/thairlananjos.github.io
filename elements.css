@@ -467,6 +467,7 @@ a {
         display: none;
       }
       .topnav a.icon {
+        height: 26px;
         float: right;
         display: block;
       }

@@ -41,7 +41,7 @@ header {
 
 .cover {
   border-radius: 0px;
-  background-color: #41414111;
+  background: #fd5a5a;
   background-image: url("https://source.unsplash.com/user/cleipelt");
   background-position:center top;
   background-repeat: no-repeat;
