@@ -30,9 +30,12 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="#535353">
   <!---->
 
+  <!--Scripts-->
+
+  <script src="/scripts.js"></script>
+
   <!-- CSS Stylesheet-->
   <link rel="stylesheet" href="xstyle.css" />
-  <link rel="stylesheet" href="xmobile.css" />
   <link rel="stylesheet" href="elements.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 
@@ -41,20 +44,7 @@
   <title>Thairlan Anjos | Official Website</title>
 </head>
 
-<!--Scripts-->
 
-<script src="/scripts.js"></script>
-
-<script>
-  function myFunction() {
-    var x = document.getElementById("myTopnav");
-    if (x.className === "topnav") {
-      x.className += " responsive";
-    } else {
-      x.className = "topnav";
-    }
-  }
-</script>
 
 <body>
 
@@ -64,17 +54,17 @@
     " width="30px" height="30px" alt="Thairlan Anjos Brand"></a>
 
 
-    <a href="#news">
+    <a href="/index.html">
       <i class="las la-home"></i>
       Home
     </a>
 
-    <a href="#contact">
+    <a href="forms/en-us/customers/contact.html">
       <i class="las la-envelope"></i>
       Contact
     </a>
 
-    <a href="#contact">
+    <a href="pages/bookmarks.html">
       <i class="las la-bookmark la-1x"></i>
       Bookmarks
     </a>
@@ -86,13 +76,16 @@
         <i class="fa fa-caret-down"></i>
       </button>
       <div class="dropdown-content">
+
         <a href="#" target="_blank"><i class="lab la-dev"></i> Dev.to</a>
-        <a href="#" target="_blank"><i class="las la-newspaper"></i> Hashnode</a>
         <a href="#" target="_blank"><i class="lab la-medium"></i> Medium</a>
+        <a href="#" target="_blank"><i class="las la-newspaper"></i> Hashnode</a>
+        <a  class="marked" href="/pages/blog.html" target="_blank"><i class="las la-coffee"></i> Personal</a>
+
       </div>
     </div>
 
-    <a href="#contact">
+    <a href="/pages/portifolio.html">
       <i class="las la-laptop-code"></i>
       Portifolio
     </a>
@@ -110,15 +103,13 @@
       </div>
     </div>
 
-    <a href="#about">
+    <a href="/index.html">
       <i class="las la-user"></i>
       About
     </a>
 
     <a href="javascript:void(0);" style="font-size:16px;" class="icon" onclick="myFunction()">&#9776;</a>
-  </div>   
-
-
+  </div>
 
   <a href="https://t.me/thairlananjos" target="_blank" class="chatlink">
     <div class="chatbot">
@@ -126,8 +117,6 @@
       </i>
     </div>
   </a>
-
-
 
   <div class="cover"></div>
 
