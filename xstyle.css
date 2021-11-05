@@ -6,10 +6,22 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
-header {
-  padding: 0px;
-  margin: 0px;
+/* Light mode */
+@media (prefers-color-scheme: light) {
+  :root {
+      --body-bg: #FFFFFF;
+      --body-color: #000000;
+  }
 }
+
+/* Dark mode */
+@media (prefers-color-scheme: dark) {
+  :root {
+      --body-bg: #000000;
+      --body-color: #FFFFFF;
+  }
+}
+
 .navbar {
   background-color: #53535300;
   color: white;
