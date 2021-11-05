@@ -362,6 +362,10 @@ a {
   }
 
   /*----------------- Navbar ------------------------*/
+
+  .marked{
+    background-color: #fffeb1;
+  }
       
   .topnav {
     top: 0;
