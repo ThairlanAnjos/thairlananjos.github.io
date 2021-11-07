@@ -99,43 +99,6 @@
       transition: all 0.2s ease-in-out;
     }
 
-    /*Unsplash*/
-
-    div.box.UnsplashPics {
-      background-color: #0f0f0f;
-      color: #ffffff      
-    }
-
-    div.box.UnsplashPics:hover {
-      background-color: #ffffff;
-      color: #1d1d1d      
-    }
-        img.sample_img {
-      border-radius: 15px;
-    }
-
-    /*Tweets*/
-
-    div.box.LastTweet {
-      color: #0084ff;
-      background-color: #f5f5f5;
-    }
-    div.box.LastTweet:hover {
-      color: #0099ff;
-      background-color: #f5f8fa      
-    }
-    /*Quotes*/
-    
-    div.box.Quote {
-      background-color: #ff9900;
-      color: #ffffff;
-    }
-
-    div.box.Quote:hover {
-      color: #ff9900;
-      background-color: #ffffff
-      
-    }
     /*----------- Paragraphs / Quotes / Codeblocks -----------*/
 
 
