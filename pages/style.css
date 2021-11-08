@@ -1,17 +1,12 @@
 body {
   padding: 0px;
-  margin: 0px;
+  margin: 0px 0px 0px 0px;
   background-color: #fafafa;
   scroll-behavior: smooth;
   font-family: "Roboto", sans-serif;
 }
-
-header {
-  padding: 0px;
-  margin: 0px;
-}
 .navbar {
-  background-color: #53535300;
+  background-color: #5353539f;
   color: white;
   padding: 0px;
   position: fixed;
@@ -32,7 +27,7 @@ header {
   font-size: 14px;
   text-align: center;
   backdrop-filter: blur(2px);
-  background-color: #414141ea;
+  background-color: #ffffffea;
   border-radius: 0px;
   padding: 0px;
   margin: auto;
@@ -41,7 +36,7 @@ header {
 
 .cover {
   border-radius: 0px;
-  background: #fd5a5a;
+  background: #ffffff00;
   background-image: url("https://source.unsplash.com/user/cleipelt");
   background-position:center top;
   background-repeat: no-repeat;
@@ -50,7 +45,7 @@ header {
   margin: auto;
   padding: 0px;
   width: 100%;
-  height: 400px;
+  height: 500px;
 }
 
 /* ------- Body Container "All site content!" ------- */
@@ -84,25 +79,15 @@ header {
   min-width: auto;
 }
 
-/* ------- Elements Inside Elements Content ------- 
-  border: 0px solid #000000;
-  background-color: #636363;
-  margin: 10px 0px 25px 0px;
-  padding: 10px;
-  border-radius: 35px;
-  width: 100%;
-  height: auto;
-  max-width: 100%;
-  min-width: auto;*/
+/* ------- Elements Inside Elements Content -------*/
 
 .ProfileCard {
   color: #1a1a1a;
-  background-color: #ffffff00;
+  background-color: #ff000000;
   border: 0px solid #0000000e;
-  display: grid;
-  margin: 5px 0px 0px 0px;
+  display: grid;  
   padding: 5px;
-  margin: 10px 0px 25px 0px;
+  margin: 100px 0px 25px 0px;
   height: 500px;
 }
 
@@ -123,9 +108,7 @@ header {
 
 .ProfilePicture {
   border: 0px dotted #ffffff;
-
   border-radius: 1000px;
-
   background-color: #ffffff;
   margin: auto;
   padding: 10px;
@@ -137,7 +120,6 @@ header {
 
 .ProfileImage {
   border: 0px dotted #ffffff00;
-
   border-radius: 100%;
   background-color: #ffffff;
   padding: 0px;
@@ -156,7 +138,6 @@ header {
 
 .PageTitle {
   border: 0px dotted #ff9f9f;
-
   font-family: "Poppins", sans-serif;
   color: #00000000;
   -webkit-text-stroke: 1.5px #1a1a1a;
@@ -368,76 +349,76 @@ header {
   padding: 5px 15px 15px 15px;
 }
 
+ /* ------------ Headings ----------- */
+ h1 {
+   font-size: 35px;
+   font-family: "Poppins", sans-serif;
+   font-weight: 700;
+   letter-spacing: -1px;
+   margin: 0px 0px 5px 0px;
+   padding: 0px 0px 10px 0px;
+ }
+
+ h2 {
+   font-family: "Poppins", sans-serif;
+   font-size: 25px;
+   font-weight: 600;
+   letter-spacing: -1px;
+   margin: 0px 0px 5px 0px;
+   padding: 0px 0px 10px 0px;
+ }
 
 
-    /* ------------ Headings ----------- */
-    h1 {
-      font-size: 35px;
-      font-family: "Poppins", sans-serif;
-      font-weight: 700;
-      letter-spacing: -1px;
-      margin: 0px 0px 5px 0px;
-      padding: 0px 0px 10px 0px;
-  }
 
-  h2 {
-      font-family: "Poppins", sans-serif;
-      font-size: 25px;
-      font-weight: 600;
-      letter-spacing: -1px;
-      margin: 0px 0px 5px 0px;
-      padding: 0px 0px 10px 0px;
-  }
+ .h1float {
+   font-size: 30px;
+   float: left;
+   font-family: "Poppins", sans-serif;
+   font-weight: 700;
+   letter-spacing: -1px;
+   margin: 0px 0px 5px 0px;
+   padding: 0px 0px 10px 0px;
+ }
 
-  .h1float {
-    font-size: 30px;
-    float: left;
-    font-family: "Poppins", sans-serif;
-    font-weight: 700;
-    letter-spacing: -1px;
-    margin: 0px 0px 5px 0px;
-    padding: 0px 0px 10px 0px;
-}
+ h3 {
+   font-family: "Poppins", sans-serif;
+   font-size: 20px;
+   font-weight: 600;
+   letter-spacing: -1px;
+   margin: 0px 0px 5px 0px;
+   padding: 0px 0px 10px 0px;
+ }
 
-  h3 {
-      font-family: "Poppins", sans-serif;
-      font-size: 20px;
-      font-weight: 600;
-      letter-spacing: -1px;
-      margin: 0px 0px 5px 0px;
-      padding: 0px 0px 10px 0px;
-  }
+ h4 {
+   font-family: "Roboto", sans-serif;
+   font-size: 18px;
+   font-weight: 400;
+   text-align: left;
+   letter-spacing: -1px;
+   margin: 5px 0px 5px 0px;
+   padding: 5px 0px 0px 0px;
+ }
 
-  h4 {
-      font-family: "Roboto", sans-serif;
-      font-size: 18px;
-      font-weight: 400;
-      text-align: left;
-      letter-spacing: -1px;
-      margin: 5px 0px 5px 0px;
-      padding: 5px 0px 0px 0px;
-  }
+ .HeadingIcon {
+   background-color: #2B2B2B;
+   text-align: center;
+   border-radius: 100px;
+   float: left;
+   color: #ffffff;
+   padding: 10px;
+   margin: 0px 15px 0px 0px;
+   width: auto;
+   height: auto;
 
-  .HeadingIcon{
-    background-color: #2B2B2B;
-    text-align: center;
-    border-radius: 100px;
-    float: left;
-    color: #ffffff;
-    padding: 10px;
-    margin: 0px 15px 0px 0px;
-    width: auto;
-    height: auto;
-    
-  }
+ }
 
-  .Headings{
-    display: inline-block;
-  }
+ .Headings {
+   display: inline-block;
+ }
 
-  .MailBoxText {
-    text-align: center;  
-  }
+ .MailBoxText {
+   text-align: center;
+ }
   /*--------------------- Resposiver Grid Wrapper ------------------------*/
 
   .wrapper {
@@ -469,43 +450,6 @@ header {
     transition: all 0.2s ease-in-out;
   }
 
-  /*Unsplash*/
-
-  div.box.UnsplashPics {
-    background-color: #0f0f0f;
-    color: #ffffff      
-  }
-
-  div.box.UnsplashPics:hover {
-    background-color: #ffffff;
-    color: #1d1d1d      
-  }
-      img.sample_img {
-    border-radius: 15px;
-  }
-
-  /*Tweets*/
-
-  div.box.LastTweet {
-    color: #0084ff;
-    background-color: #f5f5f5;
-  }
-  div.box.LastTweet:hover {
-    color: #0099ff;
-    background-color: #f5f8fa      
-  }
-  /*Quotes*/
-  
-  div.box.Quote {
-    background-color: #ff9900;
-    color: #ffffff;
-  }
-
-  div.box.Quote:hover {
-    color: #ff9900;
-    background-color: #ffffff
-    
-  }
   /*----------- Paragraphs / Quotes / Codeblocks -----------*/
 
 
@@ -514,7 +458,7 @@ header {
       font-size: 18px;
       font-weight: 400;
       font-style: normal;
-      letter-spacing: -0.7px;
+      letter-spacing: -0.5px;
       line-height: 27px;
       text-align: justify;
       text-justify: inter-word;
@@ -580,9 +524,16 @@ header {
   hr {
   width:100%;
   size: 1px;
-  color: #0000002d;
-  border: 1px solid #0000001e;
+  color: #0000005b;
+  border: 0.5px solid #0000002f;
   }
+
+  hr.divisor {
+    border: 0;
+    height: 0;
+    border-top: 1px solid #0000001a;
+    border-bottom: 1px solid #ffffff4d;
+}
   
 
 /* ------------------ Links ---------------------------*/
@@ -619,32 +570,31 @@ a:hover {
 /*--------------------- Buttons ---------------------------*/
 
 button {
-  font-family: "Poppins", sans-serif;
+  font-family: "Roboto", sans-serif;
   font-weight: 400;
   font-size: 16px;
-  padding: 10px 25px 10px 25px;
-  border: 0px solid #00000000;
+  padding: 10px 15px 10px 15px;
+  border: 0px solid #0000000e;
   border-radius: 10px;
   color: #ffffff;
   cursor: pointer;
   background-color: #303030;
   transition: all 0.1s ease-in-out;
   display: inline-block;
-  box-shadow: 1px 1px 5px 1px #30303011;
-  margin: 1%;
+  box-shadow: 0px 4px 4px -3px #0000001f;
+  margin: auto 1% 1% auto;
 }
 
 button:hover {
   color: #ffffff;
-  border: 0px solid #ffffff;
-  background-color: #000000;
-  box-shadow: inset 0px 0px 1px 100px #0000000a;
+  border: 0px solid #00000007;
+  background-color: #1f1f1f;
+  box-shadow: inset 0px 0px 1px 100px #00000015;
   transition: all 0.1s ease-in-out;
 }
 
 .btnGreen {
   background-color: #00b862;
-  box-shadow: 1px 1px 5px 1px #00b8623f;
 }
 
 .btnGreen:hover {
@@ -654,7 +604,6 @@ button:hover {
 
 .btnRed {
   background-color: #e22e2e;
-  box-shadow: 1px 1px 5px 1px #e22e2e2c;
 }
 
 .btnRed:hover {
@@ -663,7 +612,6 @@ button:hover {
 
 .btnBlue {
   background-color: #0954f5;
-  box-shadow: 1px 1px 5px 1px #0954f536;
 }
 
 .btnBlue:hover {
@@ -672,7 +620,6 @@ button:hover {
 
 .btnYellow {
   background-color: #ffae00;
-  box-shadow: 1px 1px 5px 1px #ffae0033;
 }
 
 .btnYellow:hover {
@@ -682,7 +629,6 @@ button:hover {
 
 .btnAmazon{
   background-color: #ff9113;
-  box-shadow: 1px 1px 5px 1px #ff9d2c71;
 }
 
 .btnAmazon:hover{
@@ -733,26 +679,27 @@ button:hover {
 
 /*----------------- Navbar ------------------------*/
 
-.marked{
-  background-color: #fffeb1;
-}
     
 .topnav {
   top: 0;
   width: 100%;
   position: fixed;
-  border-bottom: 1px solid #00000015;
+  font-family: "Poppins", sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  border-bottom: 1px solid #00000009;
   backdrop-filter: blur(2px);
-  background-color: #ffffffe8; 
+  background-color: #fffffff5; 
   transition: all 0.1s ease-in-out;
   }
   
   .topnav a {
     float: left;
     display: block;
-    color: #2c2c2c;
-    text-align: center;
-    padding: 14px 16px;
+    color: #000000;
+    text-align: center; 
+    padding: 10px 14px 14px 10px;
+    margin: 0px auto 0px auto;
     text-decoration: none;
     font-size: 18px;
     transition: all 0.1s ease-in-out;
@@ -760,17 +707,14 @@ button:hover {
   
   .active {
     background-color: #ffffff;
-    color: #181818;
+    color: #000000;
     width: 30px;
     height: 27px;
     margin: 0px;
-    padding-top: 8px;
-    background-color: #00000000;
+    padding: 10px;
+    border-radius: 0px;
+    background-color: #b65c5c00;
     transition: all 0.1s ease-in-out;
-  }
-
-  a.active {
-    padding-top: 9px      
   }
   
   .topnav .icon {
@@ -781,6 +725,9 @@ button:hover {
   .dropdown {
     float: left;
     overflow: hidden;
+    margin: 0px auto 0px auto ;
+    background-color: #ff919100;
+    border-radius: 0px;
     transition: all 0.1s ease-in-out
   }
   
@@ -788,12 +735,12 @@ button:hover {
     font-size: 18px;    
     border: none;
     outline: none;
-    color: #5f5f5f;
-    padding: 14px 16px;
+    color: #000000;
+    padding: 10px 14px 14px 10px;
+    margin: 0px auto 0px auto;
     border-radius: 0px;
     background-color: inherit;
     font-family: inherit;
-    margin: 0;
     transition: all 0.1s ease-in-out
   }
   
@@ -810,7 +757,7 @@ button:hover {
   
   .dropdown-content a {
     float: none;
-    color: #3d3d3d;
+    color: #000000;
     padding: 12px 16px;
     text-decoration: none;
     display: block;
@@ -820,14 +767,14 @@ button:hover {
   
   .topnav a:hover, .dropdown:hover .dropbtn {
     background-color: #e2e2e2;
-    color: #555555;
+    color: #000000;
     transition: all 0.1s ease-in-out
   }
   
   .dropdown-content a:hover {
-    background-color: #A2A2A236;
+    background-color: #00000013;
     border-radius: 0px 0px 0px 0px;
-    color: #353535;
+    color: #000000;
     transition: all 0.1s ease-in-out
   }
   
@@ -841,7 +788,7 @@ button:hover {
       display: none;
     }
     .topnav a.icon {
-      height: 26px;
+      height: 30px;
       float: right;
       display: block;
     }
@@ -867,6 +814,38 @@ button:hover {
       text-align: left;
     }
   }
+
+  /*----------------- Navbar Anchor ------------------------*/
+
+div.scrollmenu {
+  transition: all 0.2s ease-in-out;
+  background-color: #ead1dc00;
+  color: #000000;
+  border-radius: 0px;
+  overflow: auto;
+  white-space: nowrap;
+  font-family: Roboto;
+}
+
+div.scrollmenu a {
+  transition: all 0.2s ease-in-out;
+  display: inline-block;
+  color: #000000;
+  text-align: center;
+  border-radius: 10px;
+  padding: 10px 15px 10px 15px;
+  background-color: #ffffff;
+  font-size: 16px;  
+  text-decoration: none;
+}
+
+div.scrollmenu a:hover {
+  transition: all 0.2s ease-in-out;
+  background-color: #ffffff63;
+}
+
+
+
 /*----------------- Media----------------------*/
 
 
