@@ -228,7 +228,7 @@ a {
     cursor: pointer;    
     transition: all 0.3s ease-in-out;
     display: inline-block;
-    margin: auto 1% 1% auto;
+    margin: 1% 2% 1% auto;
   }
   
   button:hover {
