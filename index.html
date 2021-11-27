@@ -1,59 +1,384 @@
 <!DOCTYPE html>
-<html lang="en-US">
+<html lang="en">
 
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!--Tags and trackers-->
-    <meta name="facebook-domain-verification" content="ghdc3mwh0qf0j8if8of3ogmbfj1it1" />
+  <!--Tags and trackers-->
+  <meta name="facebook-domain-verification" content="ghdc3mwh0qf0j8if8of3ogmbfj1it1" />
 
-    <!--Icons / Favicons-->
-    <link rel="shortcut icon" href="/src/Brand/Thairlan Anjos - Brand.svg" type="image/x-icon">
+  <!--Icons / Favicons-->
+  <link rel="apple-touch-icon" sizes="180x180" href="favicons/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicons/favicon-16x16.png">
+  <link rel="manifest" href="favicons/site.webmanifest">
+  <link rel="mask-icon" href="favicons/safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="msapplication-TileColor" content="#FFE683">
+  <meta name="theme-color" content="#FFE683"> 
 
-    <!--Google Font's-->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-      href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100;0,189;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital@0;1&family=Source+Serif+Pro:ital,wght@0,400;0,600;1,400&display=swap"
-      rel="stylesheet">
+  <!--Google Font's-->
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins|Roboto|Source Serif Pro">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@370;400;500;600&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100;0,189;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital@0;1&family=Source+Serif+Pro:ital,wght@0,400;0,600;1,400&display=swap"
+    rel="stylesheet" />
+
+  <!--Icons libs-->
+  <link rel="stylesheet" href="path/to/line-awesome/css/line-awesome-font-awesome.min.css" />
+  <link rel="stylesheet"
+    href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css" />
+
+  <!--Mobile color-->
+  <meta name="theme-color" content="#535353">
+  <meta name="apple-mobile-web-app-status-bar-style" content="#535353">
+  <!---->
+
+  <!--Scripts-->
+
+  <script src="/scripts.js"></script>
+
+  <!-- CSS Stylesheet-->
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="elements.css" />
+  <link rel="stylesheet" href="media.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 
 
-    <!--Icons libs-->
-    <link rel="stylesheet" href="path/to/line-awesome/css/line-awesome-font-awesome.min.css">
-    <link rel="stylesheet"
-      href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
+  <link rel="alternate" href="rss.xml" type="application/rss+xml" title="RSS" />
+  <title>Thairlan Anjos | Official Website</title>
+</head>
 
-    <!-- CSS Stylesheet-->
-    <link rel="stylesheet" href="style.css">
+<body>
 
 
-    <!--Scripts linkeds-->
-    <script src="scripts.js"></script>
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <!-- Progess Bar-->
 
-    <!--Mobile color-->
-    <meta name="theme-color" content="#000000">
-    <meta name="apple-mobile-web-app-status-bar-style" content="black">
-    <!---->
+  <div class="header">
+    <div class="progress-container">
+      <div class="progress-bar" id="myBar"></div>
+    </div>
+  </div>
+
+  <!-- Navbar-->
+
+  <div class="navbar">
+    <div class="navbar-container"></div>
+  </div>
+
+  <!-- Navbar Menu-->
+
+  <div class="topnav" id="myTopnav">
+
+    <a href="https://www.thairlananjos.com" class="active">
+      <img src="/src/Brand/Thairlan Anjos - Brand.svg" width="30px" height="30px" alt="Thairlan Anjos Brand">
+    </a>
 
 
-    <title>Thairlan Anjos | Official Website</title>
+    <a href="/pages/about.html">
+      <i class="las la-user"></i>
+      About
+    </a>
 
-  </head>
+    <a href="/forms/contact.html">
+      <i class="las la-envelope"></i>
+      Contact
+    </a>
 
-    <body>      
-      <div class="content">
-        <center>
-          <img class="BrandIcon" src="\src\Brand\Thairlan Anjos - Brand.svg" alt="" width="100px" height="100px">
-        <h1>Welcome!</h1>
-        <p>This site is under construction. <br> So you will be able to enter very soon.</p>
-        <br>
-        </center>
+    <a href="/pages/portifolio.html">
+      <i class="las la-laptop"></i>
+      Portfolio
+    </a>
 
+    <a href="/pages/blog/index.html">
+      <i class="las la-coffee"></i>
+      Blog
+    </a>
+
+    <a href="https://thairlananjos.page.link/paypaldonate">
+      <i class="las la-hand-holding-heart"></i>
+      Support
+    </a>
+
+    <div class="dropdown">
+      <button class="dropbtn">
+        <i class="las la-language"></i>
+        Language
+      </button>
+      <div class="dropdown-content">
+        <a href="/index.html" target="_blank"> English <i class="las la-arrow-circle-right"></i></a>
+        <a href="/pt-br/index.html" target="_blank"> Português <i class="las la-arrow-circle-right"></i></a>
+      </div>
+    </div>
+
+
+
+    <a href="javascript:void(0);" style="font-size:16px;" class="icon" onclick="myFunction()">&#9776;</a>
+  </div>
+
+  <a href="https://t.me/thairlananjos" target="_blank" class="chatlink">
+    <div class="chatbot">
+      <i class="lab la-telegram la-2x">
+      </i>
+    </div>
+  </a>
+
+
+
+  <div class="cover"></div>
+
+  <div class="BodyContainer">
+
+    <div class="ElementsContainer">
+
+      <div class="Content">
+
+        <!---------- Profile Card Area --------->
+
+        <div class="ProfileCard">
+          <div class="ProfileCardContent">
+
+            <div class="ProfilePicture">
+              <img class="ProfileImage" src="/src/Images/ProfilePicture.jpeg" alt="" />
+            </div>
+
+
+            <div class="ProfileBio">
+              <header>
+                <h1 class="PageTitle">Hey, i'm Thairlan</h1>
+                <p class="Subtitle">
+                  Student of Software Engineering | UX Design.
+                </p>
+
+                <div class="Social">
+
+                  <a href="https://thairlananjos.page.link/instagram" target="_blank">
+                    <i class="lab la-instagram la-3x"></i></a>
+
+                  <a href="https://thairlananjos.page.link/twitter" target="_blank">
+                    <i class="lab la-twitter la-3x"></i></a>
+
+                  <a href="https://thairlananjos.page.link/github" target="_blank">
+                    <i class="lab la-github la-3x"></i></a>
+
+                  <a href="https://thairlananjos.page.link/spotify" target="_blank">
+                    <i class="lab la-spotify la-3x"></i></a>
+
+                  <a href="https://thairlananjos.page.link/youtube" target="_blank">
+                    <i class="lab la-youtube la-3x"></i></a>
+
+                  <a href="/pages/podcast.html" target="_blank">
+                    <i class="las la-podcast la-3x"></i></a>
+
+                </div>
+            </div>
+
+            </header>
+          </div>
+
+        </div>
+
+        <!--End Profile cards-->
+
+        <div class="SpaceBar">
+          This is a space bar
+        </div>
+
+        <div class="TextBox">
+          <h1>🦁 About</h1>          
+          <p>
+            Um pouco sobre mim e sobre como eu conheci o UX Design, e o mundo do desenvolvimento web, aqui também falo
+            sobre pontos importantes que forma cruciais para minha formação profissional até o momento.
+          </p>
+          <button>Saiba mais sobre min <i class="las la-arrow-circle-right"></i></button>
+          <hr class="divisor">
+
+          <!-- Medium -->
+          <div class="TextBoxGray">
+            <div class="Headings">
+              <div class="HeadingIcon">
+                <i class="lab la-medium la-2x "></i>
+              </div>
+              <h1 class="h1float">Me on medium.</h1>
+            </div>
+            <hr class="divisor">
+            <a href="http://">
+              <p><i class="las la-link"></i>
+                WWF works in 100 countries and is supported million members in the United States and close to 5
+                million globally.
+              </p>
+            </a>
+          </div>
+
+          <!--Books-->
+          <div class="TextBoxGreen">
+            <div class="Headings">
+              <div class="HeadingIcon">
+                <i class="las la-book la-2x "></i>
+              </div>
+              <h1 class="h1float">Books I've read</h1>
+            </div>
+            <hr class="divisor">
+            <a href="http://">
+              <p><i class="las la-link"></i>
+                WWF works in 100 countries and is supported million members in the United States and close to 5
+                million globally.
+              </p>
+            </a>
+          </div>
+
+          <!-- Articles -->
+          <div class="TextBoxYellow">
+            <div class="Headings">
+              <div class="HeadingIcon">
+                <i class="lar la-bookmark la-2x "></i>
+              </div>
+              <h1 class="h1float">Latest articles read</h1>
+            </div>
+            <hr class="divisor">
+            <a href="http://">
+              <p><i class="las la-link"></i>
+                WWF works in 100 countries and is supported million members in the United States and close to 5
+                million globally.
+              </p>
+            </a>
+          </div>
+
+          <!--People i follow-->
+          <div class="TextBox">
+            <div class="Headings">
+              <div class="HeadingIcon">
+                <i class="las la-bell la-2x "></i>
+              </div>
+              <h1 class="h1float">People I follow</h1>
+            </div>
+            <hr class="divisor">
+            <p>Content creators, didactic and relevant.</p>
+            <br>
+            <div class="wrapper">
+
+              <div class="box a">
+                <img class="FollowImg" src="/src/Images/ProfilePicture.jpeg" alt="">
+                <h5>Name</h5>
+                <p>CSS is a language that describes media.</p>
+                <a class="linkpost" href="http://" target="_blank">See more
+                  <i class="las la-arrow-circle-right"></i></a>
+              </div>
+
+              <div class="box a">
+                <img class="FollowImg" src="/src/Images/ProfilePicture.jpeg" alt="">
+                <h5>Name</h5>
+                <p>CSS is a language that describes media.</p>
+                <a class="linkpost" href="http://" target="_blank">See more
+                  <i class="las la-arrow-circle-right"></i></a>
+              </div>
+
+              <div class="box a">
+                <img class="FollowImg" src="/src/Images/ProfilePicture.jpeg" alt="">
+                <h5>Name</h5>
+                <p>CSS is a language that describes media.</p>
+                <a class="linkpost" href="http://" target="_blank">See more
+                  <i class="las la-arrow-circle-right"></i></a>
+              </div>
+
+
+            </div>
+
+          </div>
+
+          <!-- Fim da linha do about -->
+        </div>
+
+
+
+
+        <div class="MailBox">
+          <div class="SocialMailBox">
+
+            <h3>📫 How to reach me:</h3>
+
+            <p class="MailBoxText">
+
+              Follow me on social networks, you can also subscribe to my Newsletter by <a class="linkpost"
+                href="http://eepurl.com/hCh0Pz" target="_blank">clicking here.</a></p><br>
+
+            <a href="https://thairlananjos.page.link/github" target="_blank">
+              <i class="lab la-github la-2x"></i></a>
+
+            <a href="https://thairlananjos.page.link/telegramchannel" target="_blank">
+              <i class="lab la-telegram la-2x"></i></a>
+
+            <a href="https://thairlananjos.page.link/snapchat" target="_blank">
+              <i class="lab la-snapchat la-2x"></i></a>
+
+            <a href="https://thairlananjos.page.link/instagram" target="_blank">
+              <i class="lab la-instagram la-2x"></i></a>
+
+            <a href="https://thairlananjos.page.link/facebook" target="_blank">
+              <i class="lab la-facebook la-2x"></i></a>
+
+            <a href="https://thairlananjos.page.link/dribbble" target="_blank">
+              <i class="lab la-dribbble la-2x"></i></a>
+
+            <a href="https://thairlananjos.page.link/spotify" target="_blank">
+              <i class="lab la-spotify la-2x"></i></a>
+
+            <a href="mailto:contact@thairlananjos.com" target="_blank">
+              <i class="las la-envelope la-2x"></i></a>
+
+            <br><br>
+
+          </div>
+        </div>
+
+        <div class="Footer">
+          <footer>
+            <div id="FooterMenu">
+              <ul>
+
+                <li>
+                  <a href="/index.html">
+                    <i class="las la-home"></i>
+                    Home
+                  </a>
+                </li>
+
+                <li>
+                  <a href="/forms/contact.html">
+                    <i class="las la-envelope"></i>
+                    Contact
+                  </a>
+                </li>
+
+                <li>
+                  <a href="/pages/about.html">
+                    <i class="las la-user"></i>
+                    About
+                  </a>
+                </li>
+
+              </ul>
+            </div>
+            <hr class="divisor">
+            </br>
+            Thairlan Anjos © <br> 2021 All rights reserved
+            <br> - </br>
+            <i class="las la-coffee"></i> Made with lots of coffee.
+            <br><br>
+          </footer>
+        </div>
 
       </div>
-    </body>
+
+    </div>
+
+  </div>
+
+</body>
 
 </html>

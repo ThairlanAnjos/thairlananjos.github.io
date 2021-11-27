@@ -1,88 +1,377 @@
 body {
   padding: 0px;
   margin: 0px;
-  background-color: #f8f8f815;
-  background-image: url("https://source.unsplash.com/user/cleipelt");
-  background-position: center center;
+  background-color: #fafafa;
+  scroll-behavior: smooth;
+  font-family: 'Inter', sans-serif;
+  transition: all 0.9s;
+}
+.navbar {
+  background-color: #5353539f;
+  color: white;
+  padding: 0px;
+  position: fixed;
+  margin: auto;
+  overflow: hidden;
+  width: 100%;
+  max-width: 100%;
+  min-width: auto;
+  top: 0;
+}
+
+.navbar-container {
+  font-family: 'Outfit', sans-serif;
+  color: #ffffff;
+  box-shadow: 0px 15px 10px -1px #000000d7;
+  border: 1px solid #00000011;
+  font-weight: 300;
+  font-size: 14px;
+  text-align: center;
+  backdrop-filter: blur(2px);
+  background-color: #ffffffea;
+  border-radius: 0px;
+  padding: 0px;
+  margin: auto;
+  width: 100%;
+}
+
+.cover {
+  border-radius: 0px;
+  background: #ffffff00;
+  background-image: url("https://source.unsplash.com/random/?san-francisco-skyline");
+  background-position:center top;
   background-repeat: no-repeat;
   background-size: 100%;
   background-attachment: fixed;
   margin: auto;
   padding: 0px;
   width: 100%;
-  height: 100%;
-  scroll-behavior: smooth;
-  font-family: "Roboto", sans-serif;
+  height: 500px;
 }
 
-h1 {
-  font-family: "Poppins", sans-serif;
+/* ------- Body Container "All site content!" ------- */
+
+.BodyContainer {
+  background-color: #3b3b3b00;
+  margin: auto;
+  margin-top: -250px;
+  padding: 0px;
+  max-width: 1000px;
+  min-width: auto;
+}
+
+/* ------- Elements Container "All site elements and Content" ------- */
+
+.ElementsContainer {
+  background-color: #5d90ff00;
+  margin: auto;
+  padding: 0px;
+  max-width: 1000px;
+  min-width: auto;
+}
+
+/*------------------------------------------*/
+
+.Content {
+  background-color: #6cffce00;
+  margin: auto;
+  padding: 0px;
+  max-width: 1000px;
+  min-width: auto;
+}
+
+/* ------- Elements Inside Elements Content -------*/
+
+.ProfileCard {
+  color: #1a1a1a;
+  background-color: #ff000000;
+  border: 0px solid #0000000e;
+  display: grid;  
+  padding: 5px;
+  margin: 100px 0px 25px 0px;
+  height: 500px;
+}
+
+.ProfileCard > .ProfileCardContent {
+  width: 100%;
+  height: 100%;
+}
+
+.ProfileCardContent {
+  margin: auto;
+  background-color: #aaffdc00;
+  padding: 0%;
+  width: 100%;
+  height: 300px;
+  max-width: 95%;
+  min-width: auto;
+}
+
+.ProfilePicture {
+  border: 0px dotted #ffffff;
+  border-radius: 1000px;
+  background-color: #ffffff;
+  margin: auto;
+  padding: 10px;
+  width: 250px;
+  height: 250px;
+  max-width: 250px;
+  min-width: auto;
+}
+
+.ProfileImage {
+  border: 0px dotted #ffffff00;
+  border-radius: 100%;
+  background-color: #ffffff;
+  padding: 0px;
+  width: 100%;
+  height: 100%;
+  margin: auto;
+  max-width: 100%;
+  min-width: auto;
+}
+
+.ProfileBio {
+  border: 0px dotted #ff9f9f;
+  background-color: #51fff600;
+  padding: 0px;
+}
+
+.PageTitle {
+  border: 0px dotted #ff9f9f;
+  font-family: 'Outfit', sans-serif;
   color: #00000000;
   -webkit-text-stroke: 1.5px #1a1a1a;
   font-weight: 700;
-  font-size: 45px;
+  font-size: 65px;
   text-align: center;
-  margin: 10px 0px 10px 0px;
-  padding: 0px 5px 0px 5px;
+  margin: 0px;
+  padding: 0px 0px 0px 0px;
   letter-spacing: -1px;
-  float: center;
   transition: all 0.2s ease-in-out;
   animation: flip;
-  animation-duration: 0.8s;
+  animation-duration: 1s;
 }
 
-
-h4 {
-  text-align: center;
-  font-size: 25px;
-  font-family: "Poppins", sans-serif;
-  font-weight: 700;
-  letter-spacing: -1px;
-  padding: 0px;
-  margin: 0px;
-}
-
-h5 {
-  text-align: center;
-  font-size: 16px;
-  font-family: "Poppins", sans-serif;
-  font-weight: 300;
+.PageTitle:hover {
   transition: all 0.2s ease-in-out;
-  padding: 0px;
-  margin: 0px 0px 10px 0px;
+  -webkit-text-stroke: 1.5px #1a1a1a;
+  color: #1a1a1a;
 }
 
-
-.content {
-  background: #ffffff59;
-  -webkit-backdrop-filter: blur(50px);
-  backdrop-filter: blur(50px);
-  display: grid;
-  margin: 35px auto auto auto;
-  padding: 45px 0px 0px 0px;
-  transition: all 0.5s ease-in-out;
-  border-radius: 35px 35px 35px 35px;
-  max-width: 700px;
-  min-width: auto;
-  max-height: auto;
-  min-height: auto;
-  width: 100%;
-  height: 300px;
-}
-
-button {
-  background-color: #ffffff;
-  color: #2e2e2e;
-  border-style: none;
-  border-radius: 10px;
-  font-family: Roboto;
+.Subtitle {
+  border: 0px dotted #ff9f9f;
+  font-family: 'Inter', sans-serif;
+  font-weight: 300;
   font-size: 18px;
-  width: 200px;
-  height: 55px;
-  margin: auto;
+  color: #292929;
+  letter-spacing: -0.7px;
+  text-align: center;
+  text-justify: inter-word;
+  line-height: 27px;
+  margin: 5px 0px 25px 0px;
+  padding: 0px 0px 0px 0px;
+  animation: fadeInUp;
+  animation-duration: 1s;
 }
 
-button:hover {
-  background-color: #2e2e2e;
+.Social {
+  text-align: center;
+  font-size: 18px;
+}
+
+/* ------- Text areas "Box of elements" ------- */
+
+.SpaceBar{
+  background-color: #00000000;
+  margin: 10px;
+  padding: 10px;
+  width: auto;
+  height: 100px;
+  max-width: auto;
+  min-width: auto;
+}
+
+.TargetBar{
+  color: #000000e1;
+  background-color: #ffe134;
+  border-radius: 25px;
+  border: 1px solid #00000011;
+  margin: 15px 0px 0px 0px;
+  padding: 25px 25px 25px 25px;
+  width: auto;
+  height: auto;
+  max-width: auto;
+  min-width: auto;
+}
+
+.TextBox {
+  color: #000000e1;
+  background-color: #ffffff;
+  border-radius: 25px;
+  border: 1px solid #00000011;
+  margin: 15px 0px 0px 0px;
+  padding: 25px 25px 25px 25px;
+  width: auto;
+  height: auto;
+  max-width: auto;
+  min-width: auto;
+}
+
+.TextBoxBlue {
+  color: #000000e1;
+  background-color: #8EDDFF;
+  border-radius: 25px;
+  border: 1px solid #00000011;
+  padding: 25px 25px 25px 25px;
+  margin: 10px 0px 25px 0px;
+  width: auto;
+  height: auto;
+  max-width: auto;
+  min-width: auto;
+}
+
+.TextBoxRed {
+  color: #000000e1;
+  background-color: #FFC2C2;
+  border-radius: 25px;
+  border: 1px solid #00000011;
+  padding: 25px 25px 25px 25px;
+  margin: 10px 0px 25px 0px;
+  width: auto;
+  height: auto;
+  max-width: auto;
+  min-width: auto;
+}
+
+.TextBoxYellow {
+  color: #000000e1;
+  background-color: #FFE683;
+  border-radius: 25px;
+  border: 1px solid #00000011;
+  padding: 25px 25px 25px 25px;
+  margin: 10px 0px 25px 0px;
+  width: auto;
+  height: auto;
+  max-width: auto;
+  min-width: auto;
+}
+
+.TextBoxGreen {
+  color: #000000e1;
+  background-color: #CDFF82;
+  border-radius: 25px;
+  border: 1px solid #00000011;
+  padding: 25px 25px 25px 25px;
+  margin: 10px 0px 25px 0px;
+  width: auto;
+  height: auto;
+  max-width: auto;
+  min-width: auto;
+}
+.TextBoxGray {
+  color: #000000e1;
+  background-color: #EBEBEB;
+  border-radius: 25px;
+  border: 1px solid #00000011;
+  padding: 25px 25px 25px 25px;
+  margin: 10px 0px 25px 0px;
+  width: auto;
+  height: auto;
+  max-width: auto;
+  min-width: auto;
+}
+
+.MailBox {
+  color: #000000e1;
+  margin: 15px 0px 0px 0px;
+  background: #fff9ee;
+  border-radius: 35px;
+  border: 1px solid #00000011;
+  padding: 10px 10px 0px 10px;
+  text-align: center;
+  font-size: 21px;
+  width: auto;
+  height: auto;
+  max-width: auto;
+  min-width: auto;
+}
+
+.SocialMailBox {
+  padding: 15px 0px 25px 0px;
+  animation: fadeInUp;
+  animation-duration: 1s;
+  text-align: center;
+}
+
+.SocialMailBoxMobile {
+  padding: 15px 0px 25px 0px;
+  animation: fadeInUp;
+  animation-duration: 1s;
+  text-align: center;
+}
+
+/* ------- Elements Inside Direct in Body ------- */
+
+.chatbot {
+  font-family: 'Inter', sans-serif;
+  font-weight: 100;
+  font-size: 18px;
+  background: #1fa5ff;
   color: #ffffff;
+  position: fixed;
+  bottom: 0px;
+  right: 0px;
+  padding: 15px;
+  border-radius: 100px;
+  margin: 0px 15px 15px 0px;
+  display: inline-block;
+  box-shadow: 0px 8px 5px -7px #0000001a;
+  transition: all 0.2s;
+}
+
+.chatbot:hover {
+  transition: all 0.2s;
+  background: #0099ff;
+  color: #ffffff;
+}
+
+.chatbot:active {
+  border-radius: 10px;
+  transition: all 0.3s;
+}
+
+/* ------------ Footer ------------ */
+
+.Footer {
+  font-size: 16px;
+  font-family: 'Inter', sans-serif;
+  margin: 25px 0px 35px 0px;
+  background-color: #ffffff;
+  border-radius: 25px;
+  border: 1px solid #0000000e;
+  box-shadow: 0px 8px 5px -7px #0000001a;
+  padding: 25px 10px 10px 10px;
+  text-align: center;
+  width: auto;
+  height: auto;
+  max-width: auto;
+  min-width: auto;
+}
+
+#FooterMenu a {
+  text-decoration: none;
+}
+
+#FooterMenu ul {
+  list-style: none;
+  padding: 5px 15px 15px 15px;
+}
+
+#FooterMenu li {
+  font-family: 'Inter', sans-serif;
+  text-align: center;
+  display: inline;
+  margin: auto;
+  padding: 5px 15px 15px 15px;
 }

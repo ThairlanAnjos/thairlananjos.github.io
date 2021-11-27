@@ -1,6 +1,33 @@
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
 
+
+  h1 {
+    font-size: 45px;
+  }
+
+  h2 {
+    font-size: 40px;
+  }
+
+  h3 {
+    font-size: 35px;
+  }
+
+  h4 {
+    font-size: 30px;
+  }
+
+  h5 {
+    font-size: 25px;
+  }
+
+  h6 {
+    font-size: 20px;
+  }
+
+
+
   .navbar {
     display: none;
   }
@@ -14,41 +41,42 @@
   .ProfileCard {
     margin-top: -50px;
     padding: 0px;
-    height: 450px ; 
+    height: 450px;
   }
 
   .PageTitle {
-    font-size: 30px;
-    font-weight: 700;
-    margin-top: 15px;;  
+    font-size: 40px;
+    font-weight: 800;
+    margin-top: 15px;
+    ;
   }
-  
+
   .ProfilePicture {
     margin-top: 100px;
     width: 150px;
     height: 150px;
   }
 
-  .Social{
+  .Social {
     font-size: 12px;
   }
 
   .wrapper {
     max-width: auto;
-    min-width: auto;   
+    min-width: auto;
   }
 
-  
-.TextBox {
-  border-radius: 25px;
-  margin: 15px 0px 0px 0px;
-  padding: 15px 15px 15px 15px;
-}
-  
-.MailBox {
 
-  font-size: 16px;
-}
+  .TextBox {
+    border-radius: 25px;
+    margin: 15px 0px 0px 0px;
+    padding: 15px 15px 15px 15px;
+  }
+
+  .MailBox {
+
+    font-size: 16px;
+  }
 
 }
 
@@ -56,7 +84,7 @@
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
- 
+
 
   .cover {
     padding: 0%;
@@ -67,20 +95,14 @@
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) {
-  
-}
+@media only screen and (min-width: 768px) {}
 
 /*- ----- Fim Mobile -----*/
 
 
 
 /* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 992px) {
-
-}
+@media only screen and (min-width: 992px) {}
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1200px) {
-
-}
+@media only screen and (min-width: 1200px) {}
