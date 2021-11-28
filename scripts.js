@@ -13,7 +13,8 @@
   f.parentNode.insertBefore(j, f);
 })(window, document, "script", "dataLayer", "GTM-PRMR4JZ");
 
-/* -------------- Navbar ---------------- */
+
+/* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
 function myFunction() {
   var x = document.getElementById("myTopnav");
   if (x.className === "topnav") {
@@ -22,16 +23,3 @@ function myFunction() {
     x.className = "topnav";
   }
 }
-
-/* -------------- Progress Bar ---------------- */
-
-// When the user scrolls the page, execute myFunction
-window.onscroll = function() {myFunction()};
-
-function myFunction() {
-  var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
-  var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
-  var scrolled = (winScroll / height) * 100;
-  document.getElementById("myBar").style.width = scrolled + "%";
-}
-

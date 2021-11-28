@@ -429,7 +429,7 @@
       font-size: 18px;
       font-weight: 400;
       border-bottom: 1px solid #00000013;
-      margin: 3px auto 0px auto;
+      margin: 0px auto 0px auto;
       backdrop-filter: blur(2px);
       background-color: #fffffff5;
       transition: all 0.1s ease-in-out;
@@ -466,7 +466,7 @@
 
     .topnav .icon {
       display: none;
-      transition: all 0.1s ease-in-out
+      transition: all 0.1s ease-in-out;
     }
 
     .dropdown {
@@ -475,7 +475,7 @@
       margin: 0px auto 0px auto;
       background-color: #ff919100;
       border-radius: 0px;
-      transition: all 0.1s ease-in-out
+      transition: all 0.1s ease-in-out;
     }
 
     .dropdown .dropbtn {
@@ -488,7 +488,7 @@
       border-radius: 0px;
       background-color: inherit;
       font-family: inherit;
-      transition: all 0.1s ease-in-out
+      transition: all 0.1s ease-in-out;
     }
 
     .dropdown-content {
@@ -499,7 +499,7 @@
       min-width: 160px;
       box-shadow: 0px 8px 16px 0px #0000001e;
       z-index: 1;
-      transition: all 0.1s ease-in-out
+      transition: all 0.1s ease-in-out;
     }
 
     .dropdown-content a {
@@ -509,26 +509,26 @@
       text-decoration: none;
       display: block;
       text-align: left;
-      transition: all 0.1s ease-in-out
+      transition: all 0.1s ease-in-out;
     }
 
     .topnav a:hover,
     .dropdown:hover .dropbtn {
       background-color: #e2e2e2;
       color: #000000;
-      transition: all 0.1s ease-in-out
+      transition: all 0.1s ease-in-out;
     }
 
     .dropdown-content a:hover {
       background-color: #00000013;
       border-radius: 0px 0px 0px 0px;
       color: #000000;
-      transition: all 0.1s ease-in-out
+      transition: all 0.1s ease-in-out;
     }
 
     .dropdown:hover .dropdown-content {
       display: block;
-      transition: all 0.1s ease-in-out
+      transition: all 0.1s ease-in-out;
     }
 
     @media screen and (max-width: 1000px) {
