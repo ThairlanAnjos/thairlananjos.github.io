@@ -147,7 +147,7 @@ body {
   text-align: center;
   margin: 0px;
   padding: 0px 0px 0px 0px;
-  letter-spacing: -1px;
+  letter-spacing: 1px;
   transition: all 0.2s ease-in-out;
   animation: flip;
   animation-duration: 1s;
@@ -177,13 +177,13 @@ body {
 
 .Social {
   text-align: center;
-  font-size: 18px;
 }
 
 /* ------- Text areas "Box of elements" ------- */
 
 .Box_Text_Center {
   text-align: center;
+  margin: auto;
   font-size: 18px        
 }
 
