@@ -54,7 +54,7 @@ body {
 .BodyContainer {
   background-color: #3b3b3b00;
   margin: auto;
-  margin-top: -250px;
+  margin-top: -275px;
   padding: 0px;
   max-width: 1000px;
   min-width: auto;
@@ -182,12 +182,17 @@ body {
 
 /* ------- Text areas "Box of elements" ------- */
 
+.Box_Text_Center {
+  text-align: center;
+  font-size: 18px        
+}
+
 .SpaceBar{
   background-color: #00000000;
-  margin: 10px;
+  margin: auto;
   padding: 10px;
   width: auto;
-  height: 100px;
+  height: 45px;
   max-width: auto;
   min-width: auto;
 }
@@ -197,7 +202,7 @@ body {
   background-color: #ffe134;
   border-radius: 25px;
   border: 1px solid #00000011;
-  margin: 15px 0px 0px 0px;
+  margin: 0px 0px 20px 0px;
   padding: 25px 25px 25px 25px;
   width: auto;
   height: auto;
@@ -208,79 +213,116 @@ body {
 .TextBox {
   color: #000000e1;
   background-color: #ffffff;
-  border-radius: 25px;
+  border-radius: 45px;
   border: 1px solid #00000011;
-  margin: 15px 0px 0px 0px;
+  margin: 0px 0px 20px 0px;
   padding: 25px 25px 25px 25px;
   width: auto;
   height: auto;
   max-width: auto;
   min-width: auto;
+  transition: all 0.3s ease-in-out;
+}
+
+.TextBox:hover {
+  border-radius: 25px;
+  transition: all 0.3s ease-in-out;
 }
 
 .TextBoxBlue {
   color: #000000e1;
   background-color: #8EDDFF;
-  border-radius: 25px;
+  border-radius: 45px;
   border: 1px solid #00000011;
   padding: 25px 25px 25px 25px;
-  margin: 10px 0px 25px 0px;
+  margin: 0px 0px 20px 0px;
   width: auto;
   height: auto;
   max-width: auto;
   min-width: auto;
+  transition: all 0.3s ease-in-out;
+}
+
+.TextBoxBlue:hover {
+  border-radius: 25px;
+  transition: all 0.3s ease-in-out;
 }
 
 .TextBoxRed {
   color: #000000e1;
   background-color: #FFC2C2;
-  border-radius: 25px;
+  border-radius: 45px;
   border: 1px solid #00000011;
   padding: 25px 25px 25px 25px;
-  margin: 10px 0px 25px 0px;
+  margin: 0px 0px 20px 0px;
   width: auto;
   height: auto;
   max-width: auto;
   min-width: auto;
+  transition: all 0.3s ease-in-out;
+}
+
+.TextBoxRed:hover {
+  border-radius: 25px;
+  transition: all 0.3s ease-in-out;
 }
 
 .TextBoxYellow {
   color: #000000e1;
   background-color: #FFE683;
-  border-radius: 25px;
+  border-radius: 45px;
   border: 1px solid #00000011;
   padding: 25px 25px 25px 25px;
-  margin: 10px 0px 25px 0px;
+  margin: 0px 0px 20px 0px;
   width: auto;
   height: auto;
   max-width: auto;
   min-width: auto;
+  transition: all 0.3s ease-in-out;
+}
+
+.TextBoxYellow:hover {
+  border-radius: 25px;
+  transition: all 0.3s ease-in-out;;
 }
 
 .TextBoxGreen {
   color: #000000e1;
   background-color: #CDFF82;
-  border-radius: 25px;
+  border-radius: 35px;
   border: 1px solid #00000011;
   padding: 25px 25px 25px 25px;
-  margin: 10px 0px 25px 0px;
+  margin: 0px 0px 20px 0px;
   width: auto;
   height: auto;
   max-width: auto;
   min-width: auto;
+  transition: all 0.3s ease-in-out;
 }
+
+.TextBoxGreen:hover{
+  border-radius: 25px;
+  transition: all 0.3s ease-in-out;
+}
+
 .TextBoxGray {
   color: #000000e1;
   background-color: #EBEBEB;
-  border-radius: 25px;
+  border-radius: 45px;
   border: 1px solid #00000011;
   padding: 25px 25px 25px 25px;
-  margin: 10px 0px 25px 0px;
+  margin: 0px 0px 20px 0px;
   width: auto;
   height: auto;
   max-width: auto;
   min-width: auto;
+  transition: all 0.3s ease-in-out;
 }
+.TextBoxGray:hover{
+  border-radius: 25px;
+  transition: all 0.3s ease-in-out;
+}
+
 
 .MailBox {
   color: #000000e1;
@@ -295,6 +337,12 @@ body {
   height: auto;
   max-width: auto;
   min-width: auto;
+  transition: all 0.3s ease-in-out;
+}
+
+.MailBox:hover {
+  border-radius: 25px;
+  transition: all 0.3s ease-in-out;
 }
 
 .SocialMailBox {

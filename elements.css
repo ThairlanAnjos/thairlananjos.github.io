@@ -1,8 +1,8 @@
     /* ------------ Headings ----------- */
     h1 {
       font-family: 'Outfit', sans-serif;
-      font-size: 65px;
-      font-weight: 800;
+      font-size: 50px;
+      font-weight: 900;
       letter-spacing: -1px;
       margin: 0px 0px 5px 0px;
       padding: 0px 0px 5px 0px;
@@ -10,8 +10,8 @@
 
     h2 {
       font-family: 'Outfit', sans-serif;
-      font-size: 55px;
-      font-weight: 700;
+      font-size: 40px;
+      font-weight: 800;
       letter-spacing: -1px;
       margin: 0px 0px 5px 0px;
       padding: 0px 0px 5px 0px;
@@ -21,8 +21,8 @@
 
     h3 {
       font-family: 'Outfit', sans-serif;
-      font-size: 45px;
-      font-weight: 600;
+      font-size: 30px;
+      font-weight: 700;
       letter-spacing: -1px;
       margin: 0px 0px 5px 0px;
       padding: 0px 0px 5px 0px;
@@ -30,8 +30,8 @@
 
     h4 {
       font-family: 'Outfit', sans-serif;
-      font-size: 35px;
-      font-weight: 500;
+      font-size: 25px;
+      font-weight: 600;
       text-align: left;
       letter-spacing: -1px;
       margin: 5px 0px 5px 0px;
@@ -40,8 +40,8 @@
 
     h5 {
       font-family: 'Outfit', sans-serif;
-      font-size: 25px;
-      font-weight: 400;
+      font-size: 20px;
+      font-weight: 500;
       text-align: left;
       letter-spacing: -1px;
       margin: 5px 0px 5px 0px;
@@ -50,8 +50,8 @@
 
     h6 {
       font-family: 'Outfit', sans-serif;
-      font-size: 20px;
-      font-weight: 300;
+      font-size: 18px;
+      font-weight: 400;
       text-align: left;
       letter-spacing: -1px;
       margin: 5px 0px 5px 0px;
@@ -198,7 +198,6 @@
     }
 
 
-
     /*------- Line / Callout */
 
     hr {
@@ -218,21 +217,24 @@
 
     /* ------------------ Links ---------------------------*/
     a {
+      font-size: 18px;
+      letter-spacing: -0.7px;
       text-decoration: none;
-      color: #1a1a1a;
-      transition: all 0.1s ease-in-out;
+      color: #000000d2;
+      transition: all 0.2s ease-in-out;
+
     }
 
     a:hover {
-      color: #858585;
-      transition: all 0.1s ease-in-out;
+      color: #00000044;
+      transition: all 0.2s ease-in-out;
     }
 
 
     .linkpost {
       font-size: 18px;
       letter-spacing: -0.7px;
-      border-bottom: 2px solid #ffb52cad;
+      border-bottom: 2px solid #ffc354;
       background-color: #30303000;
       padding: 4px 3px 1px 3px;
       border-radius: 0px;
@@ -392,26 +394,31 @@
 
     /* -------------- Scroll Menu "Section" ------------ */
 
-    .scrollmenu{
-      background-color: #ffd00000; 
-      padding: 10px 0px 10px 0px;
+    .scrollmenu {
+      background-color: #a18b2900;
+      border-radius: 15px;
+      padding: 5px 0px 10px 0px;
+      display: flex;
+      flex-wrap: wrap;
     }
 
-    .ScrollLink{
+    .ScrollLink {
+      flex: auto;
       color: black;
-      padding: 10px;
+      padding: 15px 20px 15px 20px;
+      margin: 5px 5px 5px 5px;
       border-radius: 100px;
       background-color: #ffffff;
-      transition: all 0.3s ease-in-out;      
+      transition: all 0.3s ease-in-out;
     }
 
-    .ScrollLink:hover{
+    .ScrollLink:hover {
       color: black;
       background-color: #ffffffee;
       transition: all 0.3s ease-in-out;
     }
 
-    .ScrollLink:active{
+    .ScrollLink:active {
       outline: none;
       border-radius: 10px;
       background-color: #ffffffee;
@@ -626,4 +633,64 @@
         display: block;
         width: 100%;
         text-align: left;
+      }
+    }
+
+      /*------------------ Revue Newsletter ------------------*/
+
+      .newsletter {
+        margin: auto;
+        text-align: center;
+      }
+
+      #revue-embed {
+        margin: auto;
+      }
+
+      input.revue-form-field {
+        border-top-width: 1px;
+        padding: 10px;
+        border: 1px solid #404040;
+        border-radius: 5px;
+        margin-top: 10px;
+        height: 25px;
+        width: 250px;
+        background-color: #ffffff;
+        color: #404040;
+        font-family: Inter;
+        font-size: 16px;
+        border-style: solid;
+        border-color: #cccccc;
+        margin-bottom: 10px;
+
+      }
+
+      #member_submit {
+        font-family: 'Inter', sans-serif;
+        font-weight: 400;
+        font-size: 18px;
+        color: #000000e1;
+        background-color: #EBEBEB;
+        padding: 15px 10px 15px 10px;
+        border: 1px solid #EBEBEB;
+        border-radius: 105px;
+        cursor: pointer;
+        transition: all 0.3s;
+        display: inline-block;
+        width: 275px;
+        margin: 10px 0px 20px 0px;
+      }
+
+      form div label {
+        font-family: 'Outfit',sans-serif;
+        font-size: 18px;
+        font-weight: 500;
+        font-style: normal;
+      }
+ 
+      
+      .revue-form-footer {
+        font-size: 18px;
+        margin-top: 15px;
+        margin-bottom: 25px;
       }
