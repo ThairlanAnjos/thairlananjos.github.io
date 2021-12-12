@@ -425,6 +425,26 @@
       transition: all 0.3s ease-in-out;
     }
 
+    /*----------------- FlexBox ----------------------*/
+    
+    .ContentBox {
+      background-color: #ffe674;
+      padding: 1px;
+      border-radius: 14px;
+      flex-wrap: wrap;  
+      display: flex;      
+    }
+
+    .FlexBox {
+      flex: auto;
+      color: black;
+      padding: 15px 20px 15px 20px;
+      margin: 2px 2px 2px 2px;
+      border-radius: 10px;
+      background-color: #ff9e9e;
+      min-width: 250px;
+    }
+
     /*----------------- Navbar ------------------------*/
 
 
@@ -636,61 +656,61 @@
       }
     }
 
-      /*------------------ Revue Newsletter ------------------*/
+    /*------------------ Revue Newsletter ------------------*/
 
-      .newsletter {
-        margin: auto;
-        text-align: center;
-      }
+    .newsletter {
+      margin: auto;
+      text-align: center;
+    }
 
-      #revue-embed {
-        margin: auto;
-      }
+    #revue-embed {
+      margin: auto;
+    }
 
-      input.revue-form-field {
-        border-top-width: 1px;
-        padding: 10px;
-        border: 1px solid #404040;
-        border-radius: 5px;
-        margin-top: 10px;
-        height: 25px;
-        width: 250px;
-        background-color: #ffffff;
-        color: #404040;
-        font-family: Inter;
-        font-size: 16px;
-        border-style: solid;
-        border-color: #cccccc;
-        margin-bottom: 10px;
+    input.revue-form-field {
+      border-top-width: 1px;
+      padding: 10px;
+      border: 1px solid #404040;
+      border-radius: 5px;
+      margin-top: 10px;
+      height: 25px;
+      width: 250px;
+      background-color: #ffffff;
+      color: #404040;
+      font-family: Inter;
+      font-size: 16px;
+      border-style: solid;
+      border-color: #cccccc;
+      margin-bottom: 10px;
 
-      }
+    }
 
-      #member_submit {
-        font-family: 'Inter', sans-serif;
-        font-weight: 400;
-        font-size: 18px;
-        color: #000000e1;
-        background-color: #EBEBEB;
-        padding: 15px 10px 15px 10px;
-        border: 1px solid #EBEBEB;
-        border-radius: 105px;
-        cursor: pointer;
-        transition: all 0.3s;
-        display: inline-block;
-        width: 275px;
-        margin: 10px 0px 20px 0px;
-      }
+    #member_submit {
+      font-family: 'Inter', sans-serif;
+      font-weight: 400;
+      font-size: 18px;
+      color: #000000e1;
+      background-color: #EBEBEB;
+      padding: 15px 10px 15px 10px;
+      border: 1px solid #EBEBEB;
+      border-radius: 105px;
+      cursor: pointer;
+      transition: all 0.3s;
+      display: inline-block;
+      width: 275px;
+      margin: 10px 0px 20px 0px;
+    }
 
-      form div label {
-        font-family: 'Outfit',sans-serif;
-        font-size: 18px;
-        font-weight: 500;
-        font-style: normal;
-      }
- 
-      
-      .revue-form-footer {
-        font-size: 18px;
-        margin-top: 15px;
-        margin-bottom: 25px;
-      }
+    form div label {
+      font-family: 'Outfit', sans-serif;
+      font-size: 18px;
+      font-weight: 500;
+      font-style: normal;
+    }
+
+
+    .revue-form-footer {
+      font-size: 18px;
+      margin-top: 15px;
+      margin-bottom: 25px;
+    }
