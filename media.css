@@ -63,6 +63,9 @@
     height: 150px;
   }
 
+  .FlexBox {
+    width: auto;
+  }
 
   .wrapper {
     max-width: auto;
