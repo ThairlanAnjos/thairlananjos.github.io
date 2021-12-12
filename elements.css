@@ -1,8 +1,8 @@
     /* ------------ Headings ----------- */
     h1 {
       font-family: 'Outfit', sans-serif;
-      font-size: 50px;
-      font-weight: 900;
+      font-size: 40px;
+      font-weight: 700;
       letter-spacing: -1px;
       margin: 0px 0px 5px 0px;
       padding: 0px 0px 5px 0px;
@@ -10,8 +10,8 @@
 
     h2 {
       font-family: 'Outfit', sans-serif;
-      font-size: 40px;
-      font-weight: 800;
+      font-size: 35px;
+      font-weight: 700;
       letter-spacing: -1px;
       margin: 0px 0px 5px 0px;
       padding: 0px 0px 5px 0px;
@@ -41,7 +41,7 @@
     h5 {
       font-family: 'Outfit', sans-serif;
       font-size: 20px;
-      font-weight: 500;
+      font-weight: 600;
       text-align: left;
       letter-spacing: -1px;
       margin: 5px 0px 5px 0px;
@@ -51,7 +51,7 @@
     h6 {
       font-family: 'Outfit', sans-serif;
       font-size: 18px;
-      font-weight: 400;
+      font-weight: 500;
       text-align: left;
       letter-spacing: -1px;
       margin: 5px 0px 5px 0px;
