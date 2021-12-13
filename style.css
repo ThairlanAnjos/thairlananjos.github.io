@@ -200,11 +200,13 @@ body {
 
 .TargetBar {
   color: #000000e1;
+  text-align: center;
+  align-items: center;
   background-color: #ffe134;
   border-radius: 20px;
   border: 1px solid #00000011;
   margin: 0px 0px 20px 0px;
-  padding: 10px;
+  padding: 25px;
   width: auto;
   height: auto;
   max-width: auto;
