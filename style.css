@@ -141,29 +141,21 @@ body {
 .PageTitle {
   border: 0px dotted #ff9f9f;
   font-family: 'Outfit', sans-serif;
-  color: #00000000;
-  -webkit-text-stroke: 1.5px #1a1a1a;
-  font-weight: 700;
+  color: #292929;
+  font-weight: 600;
   font-size: 65px;
   text-align: center;
   margin: 0px;
-  padding: 0px 0px 0px 0px;
-  letter-spacing: 1px;
-  transition: all 0.2s ease-in-out;
+  padding: 0px;
+  letter-spacing: -1px;
   animation: flip;
   animation-duration: 1s;
-}
-
-.PageTitle:hover {
-  transition: all 0.2s ease-in-out;
-  -webkit-text-stroke: 1.5px #1a1a1a;
-  color: #1a1a1a;
 }
 
 .Subtitle {
   border: 0px dotted #ff9f9f;
   font-family: 'Inter', sans-serif;
-  font-weight: 300;
+  font-weight: 400;
   font-size: 18px;
   color: #292929;
   letter-spacing: -0.7px;
