@@ -86,8 +86,17 @@
       display: inline-block;
     }
 
+    .CenterText{
+      text-align: center;
+    }
+
     .MailBoxText {
       text-align: center;
+    }
+
+    .SocialMailBox{
+      text-align: center;
+      align-content: center;
     }
 
     /*--------------------- Resposiver Grid Wrapper ------------------------*/
