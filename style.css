@@ -38,8 +38,8 @@ body {
 
 .cover {
   border-radius: 0px;
-  background: #ffffff00;
-  background-image: url("https://source.unsplash.com/random/?san-francisco-skyline");
+  background: #ecececa2;
+  /*background-image: url("https://source.unsplash.com/random/?san-francisco-skyline");*/  
   background-position: center top;
   background-repeat: no-repeat;
   background-size: 100%;
