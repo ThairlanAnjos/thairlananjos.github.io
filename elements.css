@@ -60,33 +60,29 @@
 
 
     .h1float {
-      font-size: 25px;
-      float: left;
       font-family: 'Outfit', sans-serif;
-      font-weight: 700;
+      font-weight: 500;
+      font-size: 25px;
       letter-spacing: -1px;
-      margin: 0px 0px 5px 0px;
-      padding: 0px 0px 10px 0px;
+      padding: 0px 0px 0px 0px;
+      display: inline-block;
     }
 
     .HeadingIcon {
-      background-color: #2B2B2B;
+      display: inline-block;
+      font-size: 25px;
+      background-color: #e9ffbf00;
       text-align: center;
-      border-radius: 100px;
-      float: left;
-      color: #ffffff;
-      padding: 10px;
-      margin: 0px 15px 0px 0px;
-      width: auto;
-      height: auto;
-
+      border-radius: 0px;
+      color: #000000e3;
+      padding: 5px 5px 5px 5px;
     }
 
     .Headings {
       display: inline-block;
     }
 
-    .CenterText{
+    .CenterText {
       text-align: center;
     }
 
@@ -94,7 +90,7 @@
       text-align: center;
     }
 
-    .SocialMailBox{
+    .SocialMailBox {
       text-align: center;
       align-content: center;
     }
@@ -235,7 +231,7 @@
     }
 
     a:hover {
-      color: #00000044;
+      color: #5465ff;
       transition: all 0.2s ease-in-out;
     }
 
@@ -247,7 +243,7 @@
       background-color: #30303000;
       padding: 4px 3px 1px 3px;
       border-radius: 0px;
-      color: #303030;
+      color: #303030d8;
     }
 
     .linkpost:hover {
@@ -278,7 +274,7 @@
 
     button:hover {
       color: #000000e1;
-      border-radius: 100px;
+      border-radius: 50px;
       border: 1px solid #00000011;
       background-color: #EBEBEB;
       transition: all 0.3s;
@@ -442,8 +438,8 @@
       padding: 1px;
       margin: 10px auto auto auto;
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      grid-gap: 0px;   
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      grid-gap: 0px;
     }
 
     .FlexBox {
@@ -451,21 +447,59 @@
       color: black;
       padding: 15px 20px 15px 20px;
       margin: 2px 2px 2px 2px;
-      border-radius: 30px;
-      background-color: #f5f5f5;
-      border: 3px solid #00000000;
-      transition: all 0.3s ease-in-out;
-    }   
-    
-    .FlexBox:hover {
-      border-radius: 20px;
-      background-color: #ffffff;
-      border: 3px solid #00000007;
+      border-radius: 45px;
+      background-color: #f7f7f7;
+      border: 2px solid #00000000;
       transition: all 0.3s ease-in-out;
     }
 
-    .FlexBox:active{
-      border: 3px solid #000000;
+    .FlexBox:hover {
+      border-radius: 20px;
+      background-color: #fafafa;
+      border: 2px solid #00000000;
+      transition: all 0.3s ease-in-out;
+    }
+
+    .FlexBox:active {
+      border: 2px solid #000000;
+    }
+
+    .FlexBoxNull {
+      flex: auto;
+      padding: 1px;
+      margin: 2px 2px 2px 2px;
+      border-radius: 45px;
+      background-color: #ff000000;
+      border: 2px solid #ff000000;
+      block-size: fit-content;
+      transition: all 0.3s ease-in-out;
+    }
+
+    .FlexBoxNull:hover {
+      border-radius: 20px;
+      transition: all 0.3s ease-in-out;
+    }
+
+    .FlexBoxNull:active {
+      background-color: #000000;
+      border: 2px solid #000000;
+      transition: all 0.3s ease-in-out;
+    }
+
+    .imgradius {
+      width: 100%;
+      block-size: fit-content;
+      display: block;
+      overflow: auto;
+      border-radius: 42px;
+      margin: 0px;
+      transition: all 0.3s ease-in-out;
+    }
+
+    .imgradius:hover {
+      border-radius: 18px;
+      transition: all 0.3s ease-in-out;
+
     }
 
     /*----------------- Navbar ------------------------*/
@@ -478,17 +512,19 @@
       font-family: 'Outfit', sans-serif;
       font-size: 18px;
       font-weight: 400;
-      border-bottom: 1px solid #00000013;
+      border-bottom: 0px solid #00000000;
       margin: 0px auto 0px auto;
       backdrop-filter: blur(2px);
-      background-color: #fffffff5;
+      background-color: #fffffff6;
+      animation: fadeInDown;
+      animation-duration: 3s;
       transition: all 0.1s ease-in-out;
     }
 
     .topnav a {
       float: left;
       display: block;
-      color: #000000;
+      color: #000000bd;
       text-align: center;
       padding: 14px 20px 16px 20px;
       text-decoration: none;
@@ -497,8 +533,8 @@
     }
 
     .active {
-      background-color: #251212;
-      color: #000000;
+      background-color: #251212d5;
+      color: #000000a9;
       width: 25px;
       height: 24px;
       margin: 0px;
@@ -513,6 +549,8 @@
       padding-bottom: 19px;
       padding-right: 25px;
     }
+
+
 
     .topnav .icon {
       display: none;
@@ -532,8 +570,8 @@
       font-size: 18px;
       border: none;
       outline: none;
-      color: #000000;
-      padding: 14px 20px 15px 20px;
+      color: #000000b2;
+      padding: 15px 20px 22px 20px;
       margin: 0px auto 0px auto;
       border-radius: 0px;
       background-color: inherit;
@@ -547,14 +585,14 @@
       background-color: #fff;
       border-radius: 0px 0px 0px 0px;
       min-width: 160px;
-      box-shadow: 0px 8px 16px 0px #0000001e;
+      box-shadow: 0px 8px 16px 0px #9c9c9c1e;
       z-index: 1;
       transition: all 0.1s ease-in-out;
     }
 
     .dropdown-content a {
       float: none;
-      color: #000000;
+      color: #3a3a3a;
       padding: 12px 16px;
       text-decoration: none;
       display: block;
@@ -564,15 +602,18 @@
 
     .topnav a:hover,
     .dropdown:hover .dropbtn {
-      background-color: #e2e2e2;
-      color: #000000;
-      transition: all 0.1s ease-in-out;
+      background-color: #00000000;
+      color: #1b1b1b;
+      border-radius: 0px 0px 0px 0px;
+      -webkit-box-shadow: inset 0px -3px 0px 0px #3a3a3a;
+      box-shadow: inset 0px -3px 0px 0px #3a3a3a;
+      transition: all 0.3 ease-in-out;
     }
 
     .dropdown-content a:hover {
       background-color: #00000013;
       border-radius: 0px 0px 0px 0px;
-      color: #000000;
+      color: #3a3a3a;
       transition: all 0.1s ease-in-out;
     }
 

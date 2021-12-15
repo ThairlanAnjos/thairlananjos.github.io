@@ -39,26 +39,28 @@ body {
 .cover {
   border-radius: 0px;
   background: #ecececa2;
-  /*background-image: url("https://source.unsplash.com/random/?san-francisco-skyline");*/  
-  background-position: center top;
+  background-image: url("https://source.unsplash.com/random/?abstract-background");
+  background-position: center bottom;
   background-repeat: no-repeat;
   background-size: 100%;
   background-attachment: fixed;
   margin: auto;
   padding: 0px;
   width: 100%;
-  height: 500px;
+  height: 400px;
 }
 
 /* ------- Body Container "All site content!" ------- */
 
 .BodyContainer {
-  background-color: #3b3b3b00;
+  background-color: #ff676700;
   margin: auto;
-  margin-top: -275px;
+  margin-top: -250px;
   padding: 0px;
-  max-width: 1000px;
+  max-width: 1100px;
   min-width: auto;
+  animation: fadeInUp;
+  animation-duration: 2s;
 }
 
 /* ------- Elements Container "All site elements and Content" ------- */
@@ -67,17 +69,17 @@ body {
   background-color: #5d90ff00;
   margin: auto;
   padding: 0px;
-  max-width: 1000px;
+  max-width: 1100px;
   min-width: auto;
 }
 
 /*------------------------------------------*/
 
 .Content {
-  background-color: #6cffce00;
+  background-color: #00ffaa00;
   margin: auto;
   padding: 0px;
-  max-width: 1000px;
+  max-width: 1100px;
   min-width: auto;
 }
 
@@ -310,15 +312,16 @@ body {
 
 .SocialMailBox {
   padding: 15px 0px 25px 0px;
-  animation: fadeInUp;
-  animation-duration: 1s;
   text-align: center;
+}
+
+.SocialMailBox:hover {
+  animation: tada;
+  animation-duration: 1s;
 }
 
 .SocialMailBoxMobile {
   padding: 15px 0px 25px 0px;
-  animation: fadeInUp;
-  animation-duration: 1s;
   text-align: center;
 }
 
@@ -338,13 +341,15 @@ body {
   margin: 0px 15px 15px 0px;
   display: inline-block;
   box-shadow: 0px 8px 5px -7px #0000001a;
-  transition: all 0.2s;
+  transition: all 0.1s;
 }
 
 .chatbot:hover {
-  transition: all 0.2s;
+  transition: all 0.1s;
   background: #0099ff;
   color: #ffffff;
+  animation: tada;
+  animation-duration: 1s;
 }
 
 .chatbot:active {
