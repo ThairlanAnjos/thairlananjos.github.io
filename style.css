@@ -307,7 +307,7 @@ body {
   height: auto;
   max-width: auto;
   min-width: auto;
-  transition: all 0.3s ease-in-out;
+  transition: all 0.3s;
 }
 
 .SocialMailBox {
@@ -315,10 +315,6 @@ body {
   text-align: center;
 }
 
-.SocialMailBox:hover {
-  animation: tada;
-  animation-duration: 1s;
-}
 
 .SocialMailBoxMobile {
   padding: 15px 0px 25px 0px;
@@ -331,8 +327,8 @@ body {
   font-family: 'Inter', sans-serif;
   font-weight: 100;
   font-size: 18px;
-  background: #1fa5ff;
-  color: #ffffff;
+  background: #abddff;
+  color: #000000ab;
   position: fixed;
   bottom: 0px;
   right: 0px;
@@ -340,20 +336,21 @@ body {
   border-radius: 100px;
   margin: 0px 15px 15px 0px;
   display: inline-block;
-  box-shadow: 0px 8px 5px -7px #0000001a;
-  transition: all 0.1s;
+  box-shadow: 0px 5px 10px -7px #0000002c;
+  transition: all 0.3s;
 }
 
 .chatbot:hover {
-  transition: all 0.1s;
-  background: #0099ff;
-  color: #ffffff;
+  transition: all 0.3s;
+  background: #bbe5ff;
+  color: #4a6374e0;
   animation: tada;
-  animation-duration: 1s;
+  animation-duration: 0.9s;
 }
 
 .chatbot:active {
   border-radius: 10px;
+  border: 2px solid #000000b2;
   transition: all 0.3s;
 }
 
