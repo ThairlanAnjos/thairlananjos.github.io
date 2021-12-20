@@ -235,7 +235,6 @@
       transition: all 0.2s ease-in-out;
     }
 
-
     .linkpost {
       font-size: 18px;
       letter-spacing: -0.7px;
@@ -340,13 +339,13 @@
 
 
     ::-moz-selection {
-      color: #000000e1;
-      background: #FFE683;
+      color: #0077ff;
+      background: #00000011;
     }
 
     ::selection {
-      color: #000000e1;
-      background: #FFE683;
+      color: #0077ff;
+      background: #0051ff11;
     }
 
     /*------------- Scrollbar -------------*/
