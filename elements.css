@@ -441,6 +441,8 @@
       grid-gap: 0px;
     }
 
+
+
     .FlexBox {
       flex: auto;
       color: black;
@@ -463,6 +465,61 @@
       border: 2px solid #000000;
       transition: all 0.2s ease-in-out;
     }
+
+    /* ----- Flex Buttons ----- */
+
+    .FlexButtons {
+      background-color: #ffe676a2;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(70px, 0.1fr));
+      align-content: center;
+      justify-content: center;
+    }
+
+    #FlexButton {
+      color: black;
+      font-size: 55px;
+      flex-direction: row;
+      padding: 4px 0px 4px 0px;
+      margin: 10px 3px 10px 3px;
+      background-color: #ffffff00;
+      text-align: center;
+      transition: all 0.5s ease-in-out;
+    }
+
+    /* Icons color hover*/
+
+    .XboxIcon{
+      color: #0000004d;
+      transition: all 0.2s;
+    }
+    
+    .XboxIcon:hover{
+      color: #3cad3c;
+      transition: all 0.2s;
+    }
+
+    .TwitterIcon{
+      color: #0000004d;
+      transition: all 0.2s;
+    }
+    
+    .TwitterIcon:hover{
+      color: #3191ff;
+      transition: all 0.2s;
+    }
+
+    .BehanceIcon{
+      color: #0000004d;
+      transition: all 0.2s;
+    }
+    
+    .BehanceIcon:hover{
+      color: #181818;
+      transition: all 0.2s;
+    }
+
+    /* ---- Trasparent Flexbox  ---*/
 
     .FlexBoxNull {
       flex: auto;
@@ -556,7 +613,7 @@
       margin-bottom: 3px;
       padding-top: 5px;
       padding-bottom: 40px;
-      margin-right: 5px;  
+      margin-right: 5px;
     }
 
     .topnav .icon {
@@ -599,7 +656,7 @@
       border-radius: 10px;
       margin: 0%;
       min-width: 200px;
-      box-shadow: 0px 8px 16px 0px #9c9c9c1e;     
+      box-shadow: 0px 8px 16px 0px #9c9c9c1e;
       transition: all 0.1s ease-in-out;
       z-index: 1;
     }
@@ -618,7 +675,7 @@
     .topnav a:hover,
     .dropdown:hover .dropbtn {
       background-color: #c5c5c528;
-      color: #1b1b1b;    
+      color: #1b1b1b;
       -webkit-box-shadow: inset 0px -3px 0px 0px #3a3a3a00;
       box-shadow: inset 0px -3px 0px 0px #3a3a3a00;
       transition: all 0.3 ease-in-out;
