@@ -117,7 +117,7 @@
 
     .box:hover {
       border-radius: 20px;
-      background-color: #f1f1f1;
+      background-color: #f0f0f09a;
       transition: all 0.3s ease-in-out;
     }
 
@@ -161,17 +161,16 @@
 
     blockquote {
       font-family: 'Source Serif Pro', serif;
-      font-size: 21px;
-      font-weight: 400;
+      font-size: 25px;
+      font-weight: 500;
       font-style: italic;
-      color: #000000bb;
-      border-left: 5px solid #55555542;
+      color: #0000009f;
       background: #ffffff00;
       margin: 0px 0px 0px 0px;
       padding: 15px 30px 15px 25px;
       letter-spacing: -0.7px;
       line-height: 25px;
-      text-align: justify;
+      text-align: center;
       text-justify: inter-word;
       max-width: auto;
       min-width: auto;
@@ -447,18 +446,17 @@
       flex: auto;
       color: black;
       padding: 15px 20px 15px 20px;
-      margin: 2px 2px 2px 2px;
-      border-radius: 20px;
-      background-color: #ffffff;
-      border: 2px solid #00000000;
-      transition: all 0.5s ease-in-out;
+      margin: 2px 2px 2px 2px;     
+      color: #272727;
+      border-radius: 35px;
+      background-color: #fafafa;
+      transition: all 0.2s ease-in-out;
     }
 
     .FlexBox:hover {
-      border-radius: 30px;
-      background-color: #f7f7f7;
-      border: 2px solid #00000000;
-      transition: all 0.5s ease-in-out;
+      border-radius: 20px;
+      background-color: #f0f0f09a;
+      transition: all 0.3s ease-in-out;
     }
 
     .FlexBox:active {
