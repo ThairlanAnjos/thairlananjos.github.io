@@ -9,7 +9,7 @@
   <!--Scripts-->
   <script src="/scripts.js"></script>
   <script src="https://code.iconify.design/2/2.1.2/iconify.min.js"></script>
-
+  
   <!--Tags and trackers-->
   <meta name="facebook-domain-verification" content="ghdc3mwh0qf0j8if8of3ogmbfj1it1" />
 
@@ -32,11 +32,8 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="#EBEBEB">
   <!---->
 
-
-
   <!-- CSS Stylesheet-->
   <link rel="stylesheet" href="style.css" />
-  <link rel="stylesheet" href="elements.css" />
   <link rel="stylesheet" href="media.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 
@@ -49,6 +46,14 @@
 
 <body>
 
+      
+    <div class="chatbot">
+      <a href="http://www.t.me/ThairlanAnjos" target="_blank" rel="noopener noreferrer">
+        <span class="iconify-inline" data-icon="bxl:telegram"></span>
+        Chat with me!
+      </a>      
+    </div> 
+  
   <!-- Navbar Menu-->
 
   <div class="topnav" id="myTopnav">
@@ -83,7 +88,7 @@
       Resume
     </a>
 
-    <a href="/blog">
+    <a href="/blog" target="_blank" onclick="return false;">
       <span class="iconify-inline" data-icon="system-uicons:create" data-flip="horizontal,vertical"></span>
       Blog
     </a>
@@ -117,20 +122,14 @@
 
   </div>
 
-  <a href="https://t.me/thairlananjos" target="_blank" class="chatlink">
-    <div class="chatbot">
-      <i class="lab la-telegram">
-      </i>
-    </div>
-  </a>
-
   <button class="open-button" onclick="openForm()">
     <i class="las la-language"></i>
   </button>
 
   <div class="form-popup" id="CountrySelect">
     <form action="/action_page.php" class="form-container">
-      <h6 id="h6center">
+
+      <h6 class="center">
         <i class="las la-language"></i>
         Select your language
       </h6>
@@ -182,7 +181,7 @@
 
               <div class="ProfileBio">
                 <header>
-                  <h1 class="PageTitle">Thairlan Anjos</h1><br>
+                  <h1 class="PageTitle">Thairlan Anjos</h1>
 
                   <p class="Subtitle">
                     🎓 Soft. Engineering | UX Designer.
@@ -215,20 +214,25 @@
 
         <div class="TextBox">
 
-          <h1><span class="iconify-inline" data-icon="system-uicons:user-male-circle"></span> About</h1>
+          <h1>
+            <span class="iconify-inline" data-icon="system-uicons:user-male-circle"></span>
+            About</h1>
 
           <p>
             A little about me, and about how I came to know UX Design, Design Thinking and the world of web development,
             here I talk about my life story, and important points that have been crucial to my professional training so
             far.
           </p>
+
           <br>
+
           <button onclick="window.location.href='/pages/about.html'">
             See more
             <i class="las la-arrow-circle-right"></i>
           </button>
 
           <br>
+
 
         </div>
 
@@ -237,7 +241,7 @@
 
           <div class="ContentBox">
 
-            <div class="FlexBox FlexBoxYellow">
+            <div class="FlexBox" id="Yellow">
 
 
               <div class="HeadingIcon blue">
@@ -251,7 +255,8 @@
                 pleasure of collaborating.</p>
               <br>
 
-              <button class="lock btnWhiteFull" onclick="window.location.href='/pages/portfolio/index.html'"> Go to Portfolio
+              <button class="lock btnWhiteFull" onclick="window.location.href='/pages/portfolio/index.html'"> Go to
+                Portfolio
                 <i class="icon-regular">
                   <span class="iconify-inline" data-icon="fluent:arrow-circle-right-32-regular"></span>
                 </i>
@@ -263,7 +268,7 @@
 
             </div>
 
-            <div class="FlexBox FlexBoxGreen">
+            <div class="FlexBox" id="Green">
 
 
               <div class="HeadingIcon blue">
@@ -290,7 +295,7 @@
 
             </div>
 
-            <div class="FlexBox FlexBoxBlue">
+            <div class="FlexBox" id="Blue">
               <div class="HeadingIcon blue">
                 <span class="iconify-inline" data-icon="system-uicons:newspaper"></span>
               </div>
@@ -304,7 +309,8 @@
               </p>
               <br>
 
-              <button class="lock btnWhiteFull" onclick="window.location.href='/forms/newsletter.html'"> Go to Newsletter
+              <button class="lock btnWhiteFull" onclick="window.location.href='/forms/newsletter.html'"> Go to
+                Newsletter
                 <i class="icon-regular">
                   <span class="iconify-inline" data-icon="fluent:arrow-circle-right-32-regular"></span>
                 </i>
@@ -315,7 +321,9 @@
               </button>
 
             </div>
+
           </div>
+
         </div>
 
         <div class="TextBox">
@@ -382,6 +390,7 @@
             </div>
           </div>
         </div>
+
       </div>
 
       <div class="MailBox">
@@ -457,7 +466,6 @@
       </div>
 
     </div>
-  </div>
   </div>
 
 </body>

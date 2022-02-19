@@ -2,6 +2,7 @@
 <html lang="en">
 
 <head>
+  <!--Meta tags-->
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -10,11 +11,11 @@
   <meta name="facebook-domain-verification" content="ghdc3mwh0qf0j8if8of3ogmbfj1it1" />
 
   <!--Icons / Favicons-->
-  <link rel="apple-touch-icon" sizes="180x180" href="favicons/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="favicons/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="favicons/favicon-16x16.png">
-  <link rel="manifest" href="favicons/site.webmanifest">
-  <link rel="mask-icon" href="favicons/safari-pinned-tab.svg" color="#FFE683">
+  <link rel="apple-touch-icon" sizes="180x180" href="/favicons/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicons/favicon-16x16.png">
+  <link rel="manifest" href="/favicons/site.webmanifest">
+  <link rel="mask-icon" href="/favicons/safari-pinned-tab.svg" color="#FFE683">
   <meta name="msapplication-TileColor" content="#FFE683">
   <meta name="theme-color" content="#FFE683">
 
@@ -33,72 +34,51 @@
   <!--Mobile color-->
   <meta name="theme-color" content="#EBEBEB">
   <meta name="apple-mobile-web-app-status-bar-style" content="#EBEBEB">
-  <!---->
 
   <!--Scripts-->
   <script src="/scripts.js"></script>
+  <script src="https://code.iconify.design/2/2.1.2/iconify.min.js"></script>
 
   <!-- CSS Stylesheet-->
   <link rel="stylesheet" href="/style.css" />
   <link rel="stylesheet" href="/elements.css" />
   <link rel="stylesheet" href="/media.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
-
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/ animate.min.css" />
 
   <link rel="alternate" href="rss.xml" type="application/rss+xml" title="RSS" />
 
-  <title>Thairlan Anjos | Website</title>
+  <title>BR - Thairlan Anjos | Website</title>
 
 </head>
 
 <body>
 
-  <!-- Navbar-->
-
-  <div class="navbar">
-    <div class="navbar-container"></div>
-  </div>
-
-  <!-- Navbar Menu-->
-
   <div class="topnav" id="myTopnav">
 
     <a href="/pt-br/index.html" class="active">
-      <img src="/src/Brand/FullThairlanAnjos - Brand.svg" width="100%" height="60px" alt="Thairlan Anjos Brand">
+      <img src="/src/Brand/Thairlan Anjos - Brand.svg" width="100%" height="30px" alt="Thairlan Anjos Brand">
     </a>
 
 
     <a href="/pt-br/pages/sobre.html">
-      <i class="las la-user"></i>
+      <span class="iconify-inline" data-icon="system-uicons:user-male-circle"></span>
       Sobre
     </a>
 
     <a href="/pt-br/pages/portifolio.html">
-      <i class="las la-laptop"></i>
+      <span class="iconify-inline" data-icon="system-uicons:folder-open"></span>
       Portifólio
     </a>
 
     <a href="/forms/contact.html">
-      <i class="las la-envelope"></i>
+      <span class="iconify-inline" data-icon="system-uicons:mail-add"></span>
       Contato
     </a>
 
-
     <a href="https://drive.google.com/uc?export=download&id=1gy-7_k5oqI1zCzquBe2zCbACYtalGj9r">
-      <i class="lar la-file-alt"></i>
+      <span class="iconify-inline" data-icon="system-uicons:document"></span>
       Curriculo
     </a>
-
-    <div class="dropdown">
-      <button class="dropbtn">
-        <i class="las la-language"></i>
-        Idioma
-      </button>
-      <div class="dropdown-content">
-        <a href="/index.html" target="_blank"> English <i class="las la-arrow-circle-right"></i></a>
-        <a href="/pt-br/index.html" target="_blank"> Português <i class="las la-arrow-circle-right"></i></a>
-      </div>
-    </div>
 
     <a href="javascript:void(0);" style="font-size:16px;" class="icon" onclick="myFunction()">&#9776;</a>
 
@@ -106,10 +86,55 @@
 
   <a href="https://t.me/thairlananjos" target="_blank" class="chatlink">
     <div class="chatbot">
-      <i class="lab la-telegram la-2x">
+      <i class="lab la-telegram">
       </i>
     </div>
   </a>
+
+
+
+  <button class="open-button" onclick="openForm()">
+    <i class="las la-language"></i>
+  </button>
+
+  <button class="open-button" onclick="openForm()">
+    <i class="las la-language"></i>
+  </button>
+
+  <div class="form-popup" id="CountrySelect">
+    <form action="/action_page.php" class="form-container">
+
+      <h6 class="center">
+        <i class="las la-language"></i>
+        Select your language
+      </h6>
+
+      <br>
+
+      <a class="btnlink" href="/index.html">
+        <span class="iconify-inline" data-icon="twemoji:flag-for-flag-united-states"></span>
+        English
+      </a>
+
+      <a class="btnlink" href="/pt-br/"><span class="iconify-inline" data-icon="twemoji:flag-for-flag-brazil"></span>
+        Portuguese</a>
+
+      <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+
+    </form>
+  </div>
+
+  <script>
+    function openForm() {
+      document.getElementById("CountrySelect").style.display = "block";
+    }
+
+    function closeForm() {
+      document.getElementById("CountrySelect").style.display = "none";
+    }
+  </script>
+
+
 
   <div class="cover"></div>
 
@@ -161,18 +186,16 @@
         <!--End Profile cards-->
 
         <div class="TargetBar">
-          <h6>Este site está em costrução.</h6>
+          <h6>Este site está em construção.</h6>
         </div>
 
         <div class="TextBox">
-
-          <div class="HeadingIcon">
-            <i class="las la-user"></i>
-            <h1 class="h1float">Sobre</h1>
-          </div>
+          <h1>Sobre</h1>
 
           <p>
-            Um pouco sobre mim, e sobre como conheci a UX Design, Design Thinking, e o mundo do desenvolvimento web, aqui falo da minha história de vida, e de pontos importantes que têm sido cruciais para a minha formação profissional até agora.
+            Um pouco sobre mim, e sobre como conheci a UX Design, Design Thinking, e o mundo do desenvolvimento web,
+            aqui falo da minha história de vida, e de pontos importantes que têm sido cruciais para a minha formação
+            profissional até agora.
           </p>
 
           <button onclick="window.location.href='/pages/about.html'">
@@ -185,77 +208,31 @@
         </div>
 
         <div class="TextBox">
-          <div class="ContentBox">
+          <h1>Portfólio</h1>
 
-            <div class="FlexBox">
 
-              <div class="HeadingIcon">
-                <i class="las la-pen-nib"></i>
-                <h1 class="h1float">Portfólio</h1>
-              </div>
+          <p>Alguns projetos pessoais, acadêmicos e profissionais desenvolvidos por mim e por equipes com as quais tive
+            o grande prazer de colaborar.</p>
 
-              <hr class="divisor">
-
-              <p>Alguns projetos pessoais, acadêmicos e profissionais desenvolvidos por mim e por equipes com as quais tive o grande prazer de colaborar.</p>
-
-              <button onclick="window.location.href='/pages/portfolio/index.html'">
-                Ir para Portfolio
-                <i class="las la-arrow-circle-right"></i>
-              </button>
-            </div>
-
-            <div class="FlexBox">
-
-              <div class="HeadingIcon">
-                <i class="las la-inbox"></i>
-                <h1 class="h1float">Contato</h1>
-              </div>
-              <hr class="divisor">
-              <p>
-                Gostou do meu trabalho, ou tem alguma pergunta interessante? Então vamos conversar, envie-me uma mensagem clicando no botão abaixo.
-              </p>
-
-              <button onclick="window.location.href='/pages/contact.html'">
-                Ir para Contact
-                <i class="las la-arrow-circle-right"></i>
-              </button>
-
-            </div>
-
-          </div>
+          <button onclick="window.location.href='/pages/portfolio/index.html'">
+            Ir para Portfolio
+            <i class="las la-arrow-circle-right"></i>
+          </button>
         </div>
 
         <div class="TextBox">
+          <h1>Contato</h1>
+          <hr class="divisor">
+          <p>
+            Gostou do meu trabalho, ou tem alguma pergunta interessante? Então vamos conversar, envie-me uma mensagem
+            clicando no botão abaixo.
+          </p>
 
-          <div class="HeadingIcon">
-            <i class="las la-link"></i>
-            <h1 class="h1float">Conteúdo selecionado por mim:</h1>
-          </div>
+          <button onclick="window.location.href='/pages/contact.html'">
+            Ir para Contact
+            <i class="las la-arrow-circle-right"></i>
+          </button>
 
-          <div class="ContentBox">
-              
-            <!--- 
-              <div class="FlexBox">
-              <h5>Livros que li...</h5>
-              <hr class="divisor">
-              <p>Link 01</p>
-              <p>Link 02</p>
-              <p>Link 03</p>
-            </div>
-            --->
-
-
-            <div class="FlexBox">
-              <h5>Últimos artigos que li...</h5>
-              <hr class="divisor">
-              <a href="https://bit.ly/3dQEbzu">✅ 5 To-Do List Applications Making Waves Right Now.</a>
-              <br><br>
-              <a href="https://bit.ly/3EUUF5i">📝 Here is a Notion Template To Help You Outline Successful Medium
-                Articles.</a>
-              <br><br>
-              <a href="https://bit.ly/320M8iS">🎯 7 Basic Rules for Button Design</a>
-            </div>
-          </div>
         </div>
 
         <div class="MailBox">
@@ -313,16 +290,17 @@
             </div>
             <hr class="divisor">
             </br>
-            Thairlan Anjos © <br> 2021 Todos os direitos reservados.
+            Thairlan Anjos 2022 © <br>Todos os direitos reservados.
             <br> - </br>
             <i class="las la-heart"></i> Feito com amor!
             <br><br>
           </footer>
         </div>
-        
+
       </div>
-     </div>
+    </div>
   </div>
 
 </body>
+
 </html>

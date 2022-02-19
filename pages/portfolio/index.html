@@ -33,14 +33,15 @@
     <link rel="stylesheet"
         href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css" />
 
-     <!--Mobile color-->
-     <meta name="theme-color" content="#8EDDFF">
-     <meta name="apple-mobile-web-app-status-bar-style" content="#8EDDFF">
-     <!---->
+    <!--Mobile color-->
+    <meta name="theme-color" content="#8EDDFF">
+    <meta name="apple-mobile-web-app-status-bar-style" content="#8EDDFF">
+    <!---->
 
-    <!--Scripts-->
+  <!--Scripts-->
+  <script src="/scripts.js"></script>
+  <script src="https://code.iconify.design/2/2.1.2/iconify.min.js"></script>
 
-    <script src="/scripts.js"></script>
 
     <!-- CSS Stylesheet-->
     <link rel="stylesheet" href="/style.css" />
@@ -56,82 +57,110 @@
 <body>
 
 
-    <!-- Navbar-->
+  <!-- Navbar Menu-->
 
-    <div class="navbar">
-        <div class="navbar-container"></div>
-    </div>
+  <div class="topnav" id="myTopnav">
 
-    <!-- Navbar Menu-->
-
-    <div class="topnav" id="myTopnav">
-
-        <a href="https://www.thairlananjos.com" class="active">
-            <img src="/src/Brand/FullThairlanAnjos - Brand.svg" width="100%" height="60px" alt="Thairlan Anjos Brand">        </a>
+    <a href="/index.html" class="active">
+      <img src="/src/Brand/Thairlan Anjos - Brand.svg" width="100%" height="30px" alt="Thairlan Anjos Brand">
+    </a>
 
 
-        <a href="/pages/about.html">
-            <i class="las la-user"></i>
-            About
-        </a>
+    <a href="/pages/about.html">
+      <span class="iconify-inline" data-icon="system-uicons:user-male-circle"></span>
+      About
+    </a>
 
-        <a href="/pages/portfolio/index.html">
-            <i class="las la-laptop"></i>
-            Portfolio
-        </a>
+    <a href="/pages/portfolio/index.html">
+      <span class="iconify-inline" data-icon="system-uicons:folder-open"></span>
+      Portfolio
+    </a>
 
-        <a href="/forms/contact.html">
-            <i class="las la-envelope"></i>
-            Contact
-        </a>
+    <a href="/forms/contact.html">
+      <span class="iconify-inline" data-icon="system-uicons:mail-add"></span>
+      Contact
+    </a>
 
-        <a href="/forms/newsletter.html">
-            <i class="las la-newspaper"></i>
-            Newsletter
-        </a>
-
-
+    <a href="/forms/newsletter.html">
+      <span class="iconify-inline" data-icon="system-uicons:newspaper"></span>
+      Newsletter
+    </a>
 
     <a href="https://drive.google.com/uc?export=download&id=1gy-7_k5oqI1zCzquBe2zCbACYtalGj9r">
-      <i class="lar la-file-alt"></i>
+      <span class="iconify-inline" data-icon="system-uicons:document"></span>
       Resume
     </a>
 
-        <a href="/pages/blog/index.html">
-            <i class="las la-coffee"></i>
-            Blog
+    <a href="/blog" target="_blank" onclick="return false;">
+      <span class="iconify-inline" data-icon="system-uicons:create" data-flip="horizontal,vertical"></span>
+      Blog
+    </a>
+
+    </a>
+
+    <div class="dropdown">
+      <button class="dropbtn">
+        <span class="iconify-inline" data-icon="system-uicons:diamond"></span>
+        Support
+      </button>
+
+      <div class="dropdown-content">
+
+        <a href="https://thairlananjos.page.link/patreon" target="_blank">
+          <i class="lab la-patreon"></i>
+          Patreon
         </a>
 
-        <a href="https://thairlananjos.page.link/paypaldonate">
-            <i class="las la-hand-holding-heart"></i>
-            Support
+        <a href="https://thairlananjos.page.link/paypaldonate" target="_blank">
+          <i class="lab la-paypal"></i>
+          PayPal
         </a>
 
-        <div class="dropdown">
-            <button class="dropbtn">
-                <i class="las la-language"></i>
-                Language
-            </button>
-            <div class="dropdown-content">
-                <a href="/index.html" target="_blank"> English <i class="las la-arrow-circle-right"></i></a>
-                <a href="/pt-br/index.html" target="_blank"> Português <i class="las la-arrow-circle-right"></i></a>
-            </div>
-        </div>
 
-        <a href="javascript:void(0);" style="font-size:16px;" class="icon" onclick="myFunction()">&#9776;</a>
+      </div>
 
     </div>
 
-    <a href="https://t.me/thairlananjos" target="_blank" class="chatlink">
-        <div class="chatbot">
-            <i class="lab la-telegram la-2x">
-            </i>
-        </div>
-    </a>
+    <a href="javascript:void(0);" style="font-size:16px;" class="icon" onclick="myFunction()">&#9776;</a>
 
+  </div>
 
+  <button class="open-button" onclick="openForm()">
+    <i class="las la-language"></i>
+  </button>
 
-    
+  <div class="form-popup" id="CountrySelect">
+    <form action="/action_page.php" class="form-container">
+
+      <h6 class="center">
+        <i class="las la-language"></i>
+        Select your language
+      </h6>
+
+      <br>
+
+      <a class="btnlink" href="/index.html">
+        <span class="iconify-inline" data-icon="twemoji:flag-for-flag-united-states"></span>
+        English
+      </a>
+
+      <a class="btnlink" href="/pt-br/"><span class="iconify-inline" data-icon="twemoji:flag-for-flag-brazil"></span>
+        Portuguese</a>
+
+      <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+
+    </form>
+  </div>
+
+  <script>
+    function openForm() {
+      document.getElementById("CountrySelect").style.display = "block";
+    }
+
+    function closeForm() {
+      document.getElementById("CountrySelect").style.display = "none";
+    }
+  </script>
 
     <div class="BodyContainer">
 
@@ -144,54 +173,57 @@
                 <div class="SpaceBar">
                     <!-- THIS IS A SPACE BAR -->
                 </div>
-                <br>
-                <div class="SpaceBar">
-                    <!-- THIS IS A SPACE BAR -->
-                </div>
-                <br>
-                <div class="SpaceBar">
-                    <!-- THIS IS A SPACE BAR -->
-                </div>
-                <br>
-                <div class="SpaceBar">
-                    <!-- THIS IS A SPACE BAR -->
-                </div>
-                <br>
 
                 <div class="TextBox">
 
                     <h1>Portfolio</h1>
-                    <hr class="divisor">
 
-                    <div class="ContentBox">
+                    <div class="ContentBoxStand">
 
-                        <div class="FlexBox">
-                            <h5>Project</h5>
-                            <hr class="divisor">
-                            <img src="https://i.postimg.cc/tTMj8kft/prototype-3x.png" alt="" width="100%">
-                            <p>Lorem ipsum dolor, sit quam veritatis amet consectetur adipisicing elit, officiis rerum
-                                odio quam veritatis consequuntur.</p>
+                        <div class="FlexBoxStand">
 
-                            <button onclick="window.location.href='/pages/portfolio/instagramredesign.html'">
+                            <img src="/src/Images/Reservaí/reservaí.png" alt="" width="100%">
+
+                            <p>Applications for scheduling appointments, where the user can schedule times at clinics,
+                                barber shops and beauty salons, among others.</p>
+
+                            <button class="btnWhiteFull"
+                                onclick="window.location.href='/pages/portfolio/reservai/'">
                                 See this project
                                 <i class="las la-arrow-circle-right"></i>
                             </button>
+
                         </div>
 
 
-                        <div class="FlexBox">
-                            <h5>Project</h5>
-                            <hr class="divisor">
-                            <img src="https://i.postimg.cc/tTMj8kft/prototype-3x.png" alt="" width="100%">
-                            <p>Lorem ipsum dolor, sit quam veritatis amet consectetur adipisicing elit, officiis rerum
-                                odio quam veritatis consequuntur.</p>
+                        <div class="FlexBoxStand">
 
-                            <button onclick="window.location.href='/pages/portfolio/instagramredesign.html'">
+                            <img src="https://i.postimg.cc/tTMj8kft/prototype-3x.png" alt="" width="100%">
+
+                            <p>Applications for scheduling appointments, where the user can schedule times at clinics,
+                                barber shops and beauty salons, among others.</p>
+
+                            <button class="btnWhiteFull"
+                                onclick="window.location.href='/pages/portfolio/instagramredesign.html'">
                                 See this project
                                 <i class="las la-arrow-circle-right"></i>
                             </button>
+
                         </div>
-                        
+                        <div class="FlexBoxStand">
+
+                            <img src="https://i.postimg.cc/tTMj8kft/prototype-3x.png" alt="" width="100%">
+
+                            <p>Applications for scheduling appointments, where the user can schedule times at clinics,
+                                barber shops and beauty salons, among others.</p>
+
+                            <button class="btnWhiteFull"
+                                onclick="window.location.href='/pages/portfolio/instagramredesign.html'">
+                                See this project
+                                <i class="las la-arrow-circle-right"></i>
+                            </button>
+
+                        </div>
 
                     </div>
 
@@ -245,9 +277,9 @@
                         </div>
                         <hr class="divisor">
                         </br>
-                        Thairlan Anjos © <br> 2021 All rights reserved
+                        Thairlan Anjos 2022 © <br> All rights reserved
                         <br> - </br>
-                        <i class="las la-coffee"></i> Made with lots of coffee.
+                        <i class="las la-heart"></i> Make with love!
                         <br><br>
                     </footer>
                 </div>

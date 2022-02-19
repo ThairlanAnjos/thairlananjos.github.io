@@ -18,20 +18,13 @@
   <meta name="msapplication-TileColor" content="#ffffff">
   <meta name="theme-color" content="#ffffff">
 
-  <!--Google Font's-->
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins|Roboto|Source Serif Pro">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@370;400;500;600&display=swap" rel="stylesheet">
-  <link
-    href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100;0,189;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital@0;1&family=Source+Serif+Pro:ital,wght@0,400;0,600;1,400&display=swap"
-    rel="stylesheet" />
 
   <!--Icons libs-->
   <link rel="stylesheet" href="path/to/line-awesome/css/line-awesome-font-awesome.min.css" />
   <link rel="stylesheet"
     href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css" />
+
+
 
   <!--Mobile color-->
   <meta name="theme-color" content="#FFC2C2">
@@ -41,6 +34,7 @@
   <!--Scripts-->
 
   <script src="/scripts.js"></script>
+  <script src="https://code.iconify.design/2/2.1.2/iconify.min.js"></script>
 
   <!-- CSS Stylesheet-->
   <link rel="stylesheet" href="style.css" />
@@ -48,6 +42,7 @@
   <link rel="stylesheet" href="media.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 
+  <link rel="stylesheet" href="https://unpkg.com/@coreui/icons/css/all.min.css">
 
   <link rel="alternate" href="rss.xml" type="application/rss+xml" title="RSS" />
   <title>Thairlan Anjos | Official Website</title>
@@ -55,75 +50,110 @@
 
 <body>
 
-  <div class="navbar">
-    <div class="navbar-container"></div>
-  </div>
+  <!-- Navbar Menu-->
 
   <div class="topnav" id="myTopnav">
 
-    <a href="https://www.thairlananjos.com" class="active">
-      <img src="/src/Brand/FullThairlanAnjos - Brand.svg" width="100%" height="60px" alt="Thairlan Anjos Brand"></a>
+    <a href="/index.html" class="active">
+      <img src="/src/Brand/Thairlan Anjos - Brand.svg" width="100%" height="30px" alt="Thairlan Anjos Brand">
+    </a>
 
 
     <a href="/pages/about.html">
-      <i class="las la-user"></i>
+      <span class="iconify-inline" data-icon="system-uicons:user-male-circle"></span>
       About
     </a>
 
     <a href="/pages/portfolio/index.html">
-      <i class="las la-laptop"></i>
+      <span class="iconify-inline" data-icon="system-uicons:folder-open"></span>
       Portfolio
     </a>
 
     <a href="/forms/contact.html">
-      <i class="las la-envelope"></i>
+      <span class="iconify-inline" data-icon="system-uicons:mail-add"></span>
       Contact
     </a>
 
     <a href="/forms/newsletter.html">
-      <i class="las la-newspaper"></i>
+      <span class="iconify-inline" data-icon="system-uicons:newspaper"></span>
       Newsletter
     </a>
 
-
-
-    <a href="/pages/resume.html">
-      <i class="lar la-file-alt"></i>
+    <a href="https://drive.google.com/uc?export=download&id=1gy-7_k5oqI1zCzquBe2zCbACYtalGj9r">
+      <span class="iconify-inline" data-icon="system-uicons:document"></span>
       Resume
     </a>
 
-    <a href="/pages/blog/index.html">
-      <i class="las la-coffee"></i>
+    <a href="/blog" target="_blank" onclick="return false;">
+      <span class="iconify-inline" data-icon="system-uicons:create" data-flip="horizontal,vertical"></span>
       Blog
     </a>
 
-    <a href="https://thairlananjos.page.link/paypaldonate">
-      <i class="las la-hand-holding-heart"></i>
-      Support
     </a>
 
     <div class="dropdown">
       <button class="dropbtn">
-        <i class="las la-language"></i>
-        Language
+        <span class="iconify-inline" data-icon="system-uicons:diamond"></span>
+        Support
       </button>
+
       <div class="dropdown-content">
-        <a href="/index.html" target="_blank"> English <i class="las la-arrow-circle-right"></i></a>
-        <a href="/pt-br/index.html" target="_blank"> Português <i class="las la-arrow-circle-right"></i></a>
+
+        <a href="https://thairlananjos.page.link/patreon" target="_blank">
+          <i class="lab la-patreon"></i>
+          Patreon
+        </a>
+
+        <a href="https://thairlananjos.page.link/paypaldonate" target="_blank">
+          <i class="lab la-paypal"></i>
+          PayPal
+        </a>
+
+
       </div>
+
     </div>
 
     <a href="javascript:void(0);" style="font-size:16px;" class="icon" onclick="myFunction()">&#9776;</a>
 
   </div>
 
-  <a href="https://t.me/thairlananjos" target="_blank" class="chatlink">
-    <div class="chatbot">
-      <i class="lab la-telegram la-2x">
-      </i>
-    </div>
-  </a>
+  <button class="open-button" onclick="openForm()">
+    <i class="las la-language"></i>
+  </button>
 
+  <div class="form-popup" id="CountrySelect">
+    <form action="/action_page.php" class="form-container">
+
+      <h6 class="center">
+        <i class="las la-language"></i>
+        Select your language
+      </h6>
+
+      <br>
+
+      <a class="btnlink" href="/index.html">
+        <span class="iconify-inline" data-icon="twemoji:flag-for-flag-united-states"></span>
+        English
+      </a>
+
+      <a class="btnlink" href="/pt-br/"><span class="iconify-inline" data-icon="twemoji:flag-for-flag-brazil"></span>
+        Portuguese</a>
+
+      <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+
+    </form>
+  </div>
+
+  <script>
+    function openForm() {
+      document.getElementById("CountrySelect").style.display = "block";
+    }
+
+    function closeForm() {
+      document.getElementById("CountrySelect").style.display = "none";
+    }
+  </script>
 
 
   <div class="cover"></div>
@@ -220,6 +250,38 @@
         </div>
 
         <div class="TextBox">
+          <div class="Social_Icons">
+
+            <a href="#" target="_blank">
+              <i class="cib-notion"></i>
+            </a>
+
+            <a href="#" target="_blank">
+              <i class="cib-notion"></i>
+            </a>
+
+            <a href="#" target="_blank">
+              <i class="cib-notion"></i>
+            </a>
+
+            <a href="#" target="_blank">
+              <i class="cib-notion"></i>
+            </a>
+
+            <br>
+            <hr class="divisor"><br>
+
+            <p>Text with icon sample <span class="iconify-inline" data-icon="cib:notion" style="color: #e1e;"></span> to
+            show icon alignment in text.</p>
+
+            
+
+          </div>
+
+
+        </div>
+
+        <div class="TextBox">
 
           <h1>Box Colors</h1>
 
@@ -271,29 +333,90 @@
         </div>
 
         <div class="TextBox">
-          <h1>This a list of buttons:</h1>
+          <h1><span class="iconify-inline" data-icon="mdi:hand-wave" style="color: #2c88ff;"></span> This a list of buttons:</h1>
 
-          </br>
-          <h3>Cores</h3>
+          <br><br>
+          <hr class="divisor"><br>
+
+          <h3>Normal Buttons</h3><br>
 
           <button>Normal</button>
           <button class="btnRed">Red</button>
           <button class="btnYellow">Yellow</button>
           <button class="btnBlue">Blue</button>
           <button class="btnGreen">Green</button>
+          <button class="btnWhite">White</button>
 
-          <br>
+          <br><br>
+
+          <button class="lock"> Hover me
+            <i class="icon-regular">
+                <span class="iconify-inline" data-icon="fluent:arrow-circle-right-32-regular"></span>
+            </i>
+
+            <i class="icon-filled">
+                <span class="iconify-inline" data-icon="fluent:arrow-circle-right-32-filled"></span>
+            </i>
+        </button>
+
+        <br><br>
+
+        <button class="lock btnGreen"> Hover me
+          <i class="icon-regular">
+              <span class="iconify-inline" data-icon="fluent:arrow-circle-right-32-regular"></span>
+          </i>
+
+          <i class="icon-filled">
+              <span class="iconify-inline" data-icon="fluent:arrow-circle-right-32-filled"></span>
+          </i>
+      </button>
+
+          <hr class="divisor"><br>
+
+          <h3>Full Buttons</h3><br>
+          <button class="btnFull">Normal</button>
+          <button class="btnRedFull">Red</button>
+          <button class="btnYellowFull">Yellow</button>
+          <button class="btnBlueFull">Blue</button>
+          <button class="btnGreenFull">Green</button>
+          <button class="btnWhiteFull">White</button>
+
+          <br><br>
+          <hr class="divisor"><br>
+
+          <h3>Small Buttons</h3><br>
+          <button class="btnSmall">Normal</button>
+          <button class="btnRedSmall">Red</button>
+          <button class="btnYellowSmall">Yellow</button>
+          <button class="btnBlueSmall">Blue</button>
+          <button class="btnGreenSmall">Green</button>
+          <button class="btnWhiteSmall">White</button>
+
+          <br><br>
+          <hr class="divisor"><br>
+
           <h3>Variações com icones</h3>
 
           <button class="btnBlue"><i class="lab la-facebook "></i> Facebook</button>
           <button class="btnGreen"><i class="las la-download"></i> Download</button>
           <button class="btnGreen"><i class="las la-upload"></i> Upload</button>
+          
+          <button class="btn">
+            <span class="iconify-inline" data-icon="akar-icons:facebook-fill" style="color: #2c88ff;"></span> Facebook
+          </button>
 
-          <br>
+          <br><br>
+          <hr class="divisor"><br>
+
           <h3>Buttons with links</h3>
           <button onclick="window.location.href='/index.html'"> Homepage</button>
           <button class="btnGreen" onclick="window.location.href='/index.html'">Homepage</button>
-          <hr class="divisor">
+
+          <br><br>
+          <hr class="divisor"><br>
+
+
+
 
           <div class="FlexButtons">
 
@@ -478,7 +601,7 @@
         <h2>Social Buttons</h2>
 
         <i class="lab la-github la-2x"></i></a>
-        <i class="lab la-telegram la-2x"></i></a>
+        <i class="lab la-telegram"></i></a>
         <i class="lab la-snapchat la-2x"></i></a>
         <i class="lab la-instagram la-2x"></i></a>
         <i class="lab la-facebook la-2x"></i></a>
@@ -545,12 +668,10 @@
 
       <div class="ContentBox">
 
-        <div class="FlexBox">
+        <div class="FlexBoxNull">
 
-          <div class="HeadingIcon">
-            <i class="las la-user"></i>
-            <h1 class="h1float">About</h1>
-          </div>
+          <h1>🤙🏽 Hi, I'm Thairlan!</h1>
+
 
           <p>
             A little about me, and about how I came to know UX Design, Design Thinking and the world of web
@@ -559,11 +680,39 @@
             so
             far.
           </p>
+<br>
+          <div class="SocialAbout">
 
-          <button onclick="window.location.href='/pages/about.html'">
-            See more
-            <i class="las la-arrow-circle-right"></i>
-          </button>
+            <a href="https://thairlananjos.page.link/instagram" target="_blank">
+              <i class="lab la-instagram la-2x"></i></a>
+
+            <a href="https://thairlananjos.page.link/twitter" target="_blank">
+              <i class="lab la-twitter la-2x"></i></a>
+
+            <a href="https://thairlananjos.page.link/github" target="_blank">
+              <i class="lab la-github la-2x"></i></a>
+
+            <a href="https://thairlananjos.page.link/spotify" target="_blank">
+              <i class="lab la-spotify la-2x"></i></a>
+
+            <a href="https://thairlananjos.page.link/youtube" target="_blank">
+              <i class="lab la-youtube la-2x"></i></a>
+
+            <a href="/pages/podcast.html" target="_blank">
+              <i class="las la-podcast la-2x"></i></a>
+
+          </div>
+
+
+
+
+
+
+
+
+
+
+
         </div>
 
         <div class="FlexBoxNull">
@@ -595,7 +744,7 @@
             <i class="lab la-github la-2x"></i></a>
 
           <a href="https://thairlananjos.page.link/telegramchannel" target="_blank">
-            <i class="lab la-telegram la-2x"></i></a>
+            <i class="lab la-telegram"></i></a>
 
           <a href="https://thairlananjos.page.link/snapchat" target="_blank">
             <i class="lab la-snapchat la-2x"></i></a>
@@ -738,9 +887,9 @@
           </div>
           <hr class="divisor">
           </br>
-          Thairlan Anjos © <br> 2021 All rights reserved
+          Thairlan Anjos 2022 © <br> All rights reserved
           <br> - </br>
-          <i class="las la-coffee"></i> Made with lots of coffee.
+          <i class="las la-heart"></i> Make with love!
           <br><br>
         </footer>
       </div>
