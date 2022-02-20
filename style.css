@@ -96,7 +96,7 @@ body {
 .cover {
   padding: 60px;
   text-align: center;
-  background: #1abc9c;
+  background: #1abc9c00;
   border-radius: 0px 0px 0px 0px;
   background-image: url("https://source.unsplash.com/random/?solid");
   background-position: center top;
