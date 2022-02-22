@@ -1500,7 +1500,6 @@ button.dropbtn {
   background-color: var(--color02);
   border: 0px solid var(--black95);
   bottom: 15px;
-  box-shadow: 0px 5px 10px -7px var(--black70);
   transition: all 0.8 ease-in-out;
   color: #000000ab;
   cursor: pointer;
@@ -1509,17 +1508,16 @@ button.dropbtn {
   font-size: 30px;
   font-weight: 400;
   left: 15px;
-  padding: 10px;
+  padding: 5px;
   position: fixed;
-  width: 70px;
-  height: 70px;
+  width: 55px;
+  height: 55px;
 }
 
 .open-button:hover{
   border: 0px solid var(--black95);
-  box-shadow: 0px 0px 0px 0px var(--black70);
   background-color: var(--color02);
-  opacity: 10px;
+  opacity: 5px;
 }
 
 /* The popup form - hidden by default */
