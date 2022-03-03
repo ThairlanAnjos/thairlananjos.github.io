@@ -101,7 +101,7 @@ body {
   text-align: center;
   background: #1abc9c00;
   border-radius: 0px 0px 0px 0px;
-  background-image: url("https://source.unsplash.com/random/?solid");
+  background-image: url("https://source.unsplash.com/random/?minimal");
   background-position: center top;
   background-repeat: no-repeat;
   background-size: 100%;
@@ -235,7 +235,9 @@ body {
 }
 
 .SocialAbout {
+  font-size: 20px;
   text-align: left;
+  margin: 5px 10px 5px 0px;
 }
 
 .Social_Icons {
@@ -1095,8 +1097,10 @@ button:active {
 
 /*----------------- FlexBox ----------------------*/
 
+
+
 .ContentBox {
-  background-color: #ffe67400;
+  background-color: #ffe674;
   padding: 1px;
   margin: 10px auto auto auto;
   display: grid;
@@ -1183,7 +1187,20 @@ button:active {
   color: #ffffffda;
   background-color: #4aff80;
 }
-
+.ContentBoxAbout{
+  background-color: #ffbe74;
+  margin: 10px auto 10px auto;
+  display: flex;
+  flex-basis: 0;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 0px;
+  font-family: var(--paragraph-font);
+  flex-wrap: nowrap;
+  align-content: flex-start;
+  justify-content: center;
+  align-items: stretch;
+  flex-direction: row;
+}
 /* ----- Flex Buttons ----- */
 
 .FlexButtons {
@@ -1203,38 +1220,6 @@ button:active {
   background-color: #ffffff00;
   text-align: center;
   transition: all 0.5s ease-in-out;
-}
-
-/* Icons color hover*/
-
-.XboxIcon {
-  color: #0000004d;
-  transition: all 0.2s;
-}
-
-.XboxIcon:hover {
-  color: #3cad3c;
-  transition: all 0.2s;
-}
-
-.TwitterIcon {
-  color: #0000004d;
-  transition: all 0.2s;
-}
-
-.TwitterIcon:hover {
-  color: #3191ff;
-  transition: all 0.2s;
-}
-
-.BehanceIcon {
-  color: #0000004d;
-  transition: all 0.2s;
-}
-
-.BehanceIcon:hover {
-  color: #181818;
-  transition: all 0.2s;
 }
 
 /* ---- Trasparent Flexbox  ---*/
@@ -1267,6 +1252,39 @@ button:active {
   border-radius: 18px;
   transition: all 0.3s ease-in-out;
 }
+/* Icons color hover*/
+
+.XboxIcon {
+  color: #0000004d;
+  transition: all 0.2s;
+}
+
+.XboxIcon:hover {
+  color: #3cad3c;
+  transition: all 0.2s;
+}
+
+.TwitterIcon {
+  color: #0000004d;
+  transition: all 0.2s;
+}
+
+.TwitterIcon:hover {
+  color: #3191ff;
+  transition: all 0.2s;
+}
+
+.BehanceIcon {
+  color: #0000004d;
+  transition: all 0.2s;
+}
+
+.BehanceIcon:hover {
+  color: #181818;
+  transition: all 0.2s;
+}
+
+
 
 /*----------------- Navbar ------------------------*/
 
