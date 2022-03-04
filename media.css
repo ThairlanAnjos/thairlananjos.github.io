@@ -96,9 +96,9 @@
 
   /*Teste*/
   .ContentBoxAbout{
-    background-color: #ceff74;
+    background-color: #ceff7400;
     padding: 5px;
-    margin: 10px auto 10px auto;
+    margin: auto;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     grid-gap: 0px;
@@ -107,6 +107,12 @@
 
   .FlexBoxNull {
     text-align: center;
+    padding: 5px;
+  }
+
+  .AboutImage{
+    max-width: 200px;
+    max-height: 200px;
   }
 
   .SocialAbout{
