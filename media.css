@@ -52,11 +52,15 @@
   }
 
   .PageTitle {
-    color: #202020;
-    border: 0px solid #000000;
-    font-size: 45px;
-    font-weight: 700;
+    font-family: var(--headings-font);
+    color: var(--color06);
+    font-weight: 600;
+    font-size: 36px;
     margin: 0px 0px 10px 0px;
+    padding: 0px;
+    letter-spacing: -3px;
+    animation: flip;
+    animation-duration: 1s;
   }
 
   .Subtitle {
