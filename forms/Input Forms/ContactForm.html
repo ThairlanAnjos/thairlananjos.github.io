@@ -74,9 +74,9 @@ I would like to talk to you about..." class="form-control" required></textarea>
             dataType: 'jsonp',
 
             error: function () {
-                alert('Form Submitted. Thanks.')
-                window.location = 'http://www.thairlananjos.com/thankyoupage.html'
+                location.replace("/thankyoupage.html")
             }
+            
         })
     })
 </script>

@@ -1239,7 +1239,7 @@ button:active {
 }
 
 .ContentBoxHeader {
-  background-color: #ffbe74;
+  background-color: #ffbe7400;
   margin: 10px auto 10px auto;
   display: flex;
   flex-basis: 0;

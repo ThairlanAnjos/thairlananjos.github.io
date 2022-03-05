@@ -104,7 +104,7 @@ input.btn {
     cursor: pointer;
     transition: all 0.3s;
     display: inline-block;
-    margin: auto;
+    margin: 20px auto auto auto;
     width: 45%;
 }
 
@@ -128,7 +128,7 @@ input.btn.btn-primary {
     cursor: pointer;
     transition: all 0.3s;
     display: inline-block;
-    margin: auto;
+    margin: 15px auto auto auto;
     width: 45%;
 }
 
