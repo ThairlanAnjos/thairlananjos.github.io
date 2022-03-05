@@ -33,14 +33,14 @@
   <!--Mobile color-->
   <meta name="theme-color" content="#CDFF82">
   <meta name="apple-mobile-web-app-status-bar-style" content="#CDFF82">
-  
+
   <!--Scripts-->
   <script src="/scripts.js"></script>
   <script src="https://code.iconify.design/2/2.1.2/iconify.min.js"></script>
 
   <!-- CSS Stylesheet-->
   <link rel="stylesheet" href="/style.css" />
-  <link rel="stylesheet" href="/elements.css" />
+  <link rel="stylesheet" href="forms.css">
   <link rel="stylesheet" href="/media.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 
@@ -162,26 +162,26 @@
 
       <div class="Content">
 
-
-
         <div class="SpaceBar">
           <!-- THIS IS A SPACE BAR -->
         </div>
-        <br>
 
         <div class="TextBox">
 
-          <h1>Newsletter</h1>
-          <hr class="divisor">
-          <p>
-            Welcome to the newsletter form, here you can subscribe to receive all my content in your email box, please
-            remember that all fields with an <b>*</b> are required.
-          </p>
+          <div class="TextBoxHeader">
+            <h1> Newsletter</h1>
+            <p>
+              Welcome to the newsletter form, here you can subscribe to receive all my content in your email box, please
+              remember that all fields with an <b>*</b> are required.
+            </p>
+          </div>      
 
-          <br><br>
-          <iframe
-            src="https://docs.google.com/forms/d/e/1FAIpQLSdIgiaIeSVvxNZReN93Mrwn8i-IeD8msf_S7gkSpqEJzSpTUQ/viewform?embedded=true"
-            width="100%" height="900" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+          <div class="BoxCenter">
+            
+            <iframe class="NewsletterIframe" src="/forms/Input Forms/NewsletterForm.html" frameborder="0">
+            </iframe>
+
+          </div>
 
         </div>
 

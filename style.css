@@ -215,7 +215,6 @@ body {
   color: var(--color06);
   font-weight: 600;
   font-size: 60px;
-  text-align: center;
   margin: 0px;
   padding: 0px;
   letter-spacing: -3px;
@@ -265,7 +264,7 @@ body {
 .SpaceBar {
   background-color: rgba(196, 196, 196, 0);
   height: 1px;
-  margin: 325px 0px 5px 0px;
+  margin: 200px 0px 10px 0px;
   max-width: auto;
   min-width: auto;
   padding: 5px;
@@ -286,6 +285,33 @@ body {
   padding: 25px;
   text-align: center;
   width: auto;
+}
+/*------- iFrames --------*/
+.BoxCenter{
+    width: 560px;
+    min-width: 250px;
+    margin: 0 auto;
+    padding: 0px;
+    background-color: #77777700;
+}
+
+.NewsletterIframe{ 
+  background-color: #ff000000;
+  border-style: none;
+  display: block;
+  height: 450px;
+  margin: 0px; 
+  padding: 0px;
+  width: 100%;
+}
+.ContactIframe{ 
+  background-color: #ff000000;;
+  border-style: none;
+  display: block;
+  height: 670px;
+  margin: 0px; 
+  padding: 0px;
+  width: 100%;
 }
 
 .TextBox {
@@ -740,7 +766,7 @@ button {
   color: var(--black80);
   background-color: var(--color01);
   padding: 15px 20px 15px 20px;
-  border: 1px solid #ebebeb;
+  border: 1px solid var(--black05);
   border-radius: 100px;
   cursor: pointer;
   transition: all 0.3s;
@@ -751,7 +777,7 @@ button {
 button:hover {
   color: var(--black80);
   border-radius: 50px;
-  border: 1px solid #00000011;
+  border: 1px solid var(--black10);
   background-color: var(--color01);
   transition: all 0.3s;
 }
@@ -1212,8 +1238,8 @@ button:active {
   background-color: #4aff80;
 }
 
-.ContentBoxAbout {
-  background-color: #ffbe7400;
+.ContentBoxHeader {
+  background-color: #ffbe74;
   margin: 10px auto 10px auto;
   display: flex;
   flex-basis: 0;
