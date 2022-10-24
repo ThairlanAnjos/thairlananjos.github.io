@@ -42,10 +42,10 @@
 }
 
 input {
-    font-size: 18px;
+    font-size: 16px;
     font-family: var(--paragraph-font);
     background-color: var(--color01);
-    border: 3px solid var(--black10);
+    border: 1px solid var(--black10);
     border-radius: 10px;
     padding: 15px 10px 15px 10px;
     margin: auto;
@@ -54,15 +54,15 @@ input {
 
 input:focus {
     outline: none;
-    border: 3px solid var(--black20);
+    border: 1px solid var(--black20);
     background-color: var(--color00);
 }
 
 textarea.form-control {
-    font-size: 18px;
+    font-size: 16px;
     font-family: var(--paragraph-font);
     background-color: var(--color01);
-    border: 3px solid var(--black10);
+    border: 1px solid var(--black10);
     border-radius: 10px;
     padding: 15px 10px 15px 10px;
     margin: auto auto 15px auto;
@@ -72,7 +72,7 @@ textarea.form-control {
 
 textarea.form-control:focus {
     outline: none;
-    border: 3px solid var(--black20);
+    border: 1px solid var(--black20);
     background-color: var(--color00);
 }
 
@@ -86,16 +86,16 @@ body form fieldset {
 form fieldset legend {
     font-family: Poppins;
     padding-bottom: 5px;
-    padding-top: 10px;
-    font-size: 20px;
-    font-weight: 500;
+    padding-top: 5px;
+    font-size: 16px;
+    font-weight: 400;
     font-style: normal;
 }
 
 input.btn {
     font-family: var(--button-font);
     font-weight: 400;
-    font-size: 18px;
+    font-size: 16px;
     color: var(--black80);
     background-color: var(--color01);
     padding: 15px 20px 15px 20px;
@@ -119,7 +119,7 @@ input.btn:hover {
 input.btn.btn-primary {
     font-family: var(--button-font);
     font-weight: 400;
-    font-size: 18px;
+    font-size: 16px;
     color: var(--black80);
     background-color: var(--color01);
     padding: 15px 20px 15px 20px;
@@ -147,7 +147,7 @@ form fieldset h2 {
 #bootstrapForm {
     max-width: 80%;
     border: solid 0px #9900ff28;
-    padding: 10px;
+    padding: 9px;
     margin: auto;
 }
 
@@ -160,3 +160,18 @@ html body {
     padding: 0px;
     margin: 0px;
 }
+
+
+.btnFull {
+    color: var(--black80);
+    border: 1px solid var(--color01);
+    background-color: var(--color01);
+    margin: 3px 0px 3px 0px;
+    border-radius: 100px;
+    width: 100%;
+  }
+
+  .btnFull:hover {
+    border: 1px solid var(--black05);
+    background-color: var(--color01);
+  }

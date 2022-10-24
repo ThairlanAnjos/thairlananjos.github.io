@@ -44,7 +44,7 @@
   <!-- CSS Stylesheet-->
   <link rel="stylesheet" href="style.css" />
   <link rel="stylesheet" href="elements.css" />
-  <link rel="stylesheet" href="media.css" />
+  <!-- <link rel="stylesheet" href="media.css" /> -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 
   <link rel="stylesheet" href="https://unpkg.com/@coreui/icons/css/all.min.css">
@@ -123,42 +123,6 @@
 
   </div>
 
-  <button class="open-button" onclick="openForm()">
-    <i class="las la-language"></i>
-  </button>
-
-  <div class="form-popup" id="CountrySelect">
-    <form action="/action_page.php" class="form-container">
-
-      <h6 class="center">
-        <i class="las la-language"></i>
-        Select your language
-      </h6>
-
-      <br>
-
-      <a class="btnlink" href="/index.html">
-        <span class="iconify-inline" data-icon="twemoji:flag-for-flag-united-states"></span>
-        English
-      </a>
-
-      <a class="btnlink" href="/pt-br/"><span class="iconify-inline" data-icon="twemoji:flag-for-flag-brazil"></span>
-        Portuguese</a>
-
-      <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
-
-    </form>
-  </div>
-
-  <script>
-    function openForm() {
-      document.getElementById("CountrySelect").style.display = "block";
-    }
-
-    function closeForm() {
-      document.getElementById("CountrySelect").style.display = "none";
-    }
-  </script>
 
 
   <div class="cover"></div>
@@ -174,7 +138,7 @@
           <div class="TextBoxHeader">
             <div class="ContentBoxHeader">
               <div class="FlexBoxNull">
-                <img class="AboutImage" src="/src/Images/ProfilePicture.jpeg" alt="" height="250px" />
+                <img class="AboutImage" src="/src/Images/ProfilePicture.webp" alt="" height="250px" />
               </div>
               <div class="FlexBoxNull">
       
@@ -339,6 +303,31 @@
         </div>
 
         <div class="TextBox">
+          <h2>Alert Boxes</h2>
+          <hr>
+          <div class="alert danger">
+            <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
+            <strong>Danger!</strong> Indicates a dangerous or potentially negative action.
+          </div>
+
+          <div class="alert success">
+            <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
+            <strong>Success!</strong> Indicates a successful or positive action.
+          </div>
+
+          <div class="alert info">
+            <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
+            <strong>Info!</strong> Indicates a neutral informative change or action.
+          </div>
+
+          <div class="alert warning">
+            <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
+            <strong>Warning</strong> Indicates a warning that might need attention.
+          </div>
+
+        </div>
+
+        <div class="TextBox">
           <h1><span class="iconify-inline" data-icon="mdi:hand-wave" style="color: #2c88ff;"></span> This a list of
             buttons:</h1>
 
@@ -422,9 +411,6 @@
           <br><br>
           <hr class="divisor"><br>
 
-
-
-
           <div class="FlexButtons">
 
             <div id="FlexButton" class="XboxIcon">
@@ -453,6 +439,72 @@
       </div>
 
       <div class="TextBox">
+        <div class="wrap-collabsible"> <input id="collapsible" class="toggle" type="checkbox"> <label for="collapsible" class="lbl-toggle"><span class="iconify-inline" data-icon="fluent:document-bullet-list-20-filled"></span>Quick links</label>
+
+          <div class="collapsible-content">
+            <div class="content-inner">
+
+              <div class="ContentBox">
+
+                <div class="FlexBox">
+                  <h4>Article Name here!</h4>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci tempora quam pariatur animi,aliquid quisquam repellat inventore vel.
+                  </p>
+
+                  <button class="lock btnFull"> Read more
+                    <i class="icon-regular">
+                      <span class="iconify-inline" data-icon="fluent:arrow-circle-right-32-regular"></span>
+                    </i>
+
+                    <i class="icon-filled">
+                      <span class="iconify-inline" data-icon="fluent:arrow-circle-right-32-filled"></span>
+                    </i>
+                  </button>
+                </div>
+
+              
+                <div class="FlexBox">
+                  <h4>Article Name here!</h4>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci tempora quam pariatur animi,aliquid quisquam repellat inventore vel.
+                  </p>
+
+                  <button class="lock btnFull"> Read more
+                    <i class="icon-regular">
+                      <span class="iconify-inline" data-icon="fluent:arrow-circle-right-32-regular"></span>
+                    </i>
+
+                    <i class="icon-filled">
+                      <span class="iconify-inline" data-icon="fluent:arrow-circle-right-32-filled"></span>
+                    </i>
+                  </button>
+                </div>
+              
+                <div class="FlexBox">
+                  <h4>Article Name here!</h4>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci tempora quam pariatur animi,aliquid quisquam repellat inventore vel.
+                  </p>
+
+                  <button class="lock btnFull"> Read more
+                    <i class="icon-regular">
+                      <span class="iconify-inline" data-icon="fluent:arrow-circle-right-32-regular"></span>
+                    </i>
+
+                    <i class="icon-filled">
+                      <span class="iconify-inline" data-icon="fluent:arrow-circle-right-32-filled"></span>
+                    </i>
+                  </button>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="TextBox">
 
         <div class="Headings">
           <div class="HeadingIcon"><i class="lar la-bookmark"></i></div>
@@ -467,8 +519,8 @@
           </p>
         </a>
 
-
         <hr class="divisor">
+        
         <a href="http://">
           <p><i class="las la-link"></i>
             WWF works in 100 countries and is supported million members in the United States and close to 5
@@ -476,8 +528,8 @@
           </p>
         </a>
 
-
-        <hr class="divisor">
+        <hr class="dashed">
+        
         <a href="http://">
           <p><i class="las la-link"></i>
             WWF works in 100 countries and is supported million members in the United States and close to 5

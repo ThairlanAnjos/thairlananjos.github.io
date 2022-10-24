@@ -42,8 +42,8 @@
 <!---->
 
 <!--Scripts-->
-
 <script src="/scripts.js"></script>
+<script src="https://code.iconify.design/2/2.2.1/iconify.min.js"></script>
 
 <!-- CSS Stylesheet-->
 <link rel="stylesheet" href="/style.css" />
@@ -59,67 +59,54 @@
 <body>
 
 
-    <!-- Navbar-->
-
-    <div class="navbar">
-        <div class="navbar-container"></div>
-    </div>
-
     <!-- Navbar Menu-->
 
-    <div class="topnav" id="myTopnav">
 
-        <a href="/pt-br/index.html" class="active">
-            <img src="/src/Brand/Thairlan Anjos - Brand.svg" width="100%" height="60px" alt="Thairlan Anjos Brand">
-        </a>
+    <div class="HeaderNavbar">
 
+        <ul>
+            <li><a class="active" href="/pt-br/index.html">
+                    <img src="/src/Brand/Thairlan Anjos - Brand.svg" width="100%" height="45px"
+                        alt="Thairlan Anjos Brand">
+                </a></li>
 
-        <a href="/pt-br/pages/sobre.html">
-            <i class="las la-user"></i>
-            Sobre
-        </a>
+            <div class="NavItens">
 
-        <a href="/pt-br/pages/portifolio.html">
-            <i class="las la-laptop"></i>
-            Portifólio
-        </a>
+                <li>
+                    <a href="/pt-br/index.html">
+                        <span class="iconify-inline" data-icon="fluent:home-28-regular"></span>
+                        <div class="static_mobile">
+                            <div class="NameLink">Início</div>
+                        </div>
+                    </a>
+                </li>
 
-        <a href="/forms/contact.html">
-            <i class="las la-envelope"></i>
-            Contato
-        </a>
+                <li><a href="/pt-br/pages/sobre.html"><span class="iconify-inline"
+                            data-icon="fluent:person-28-filled"></span>
+                        <div class="active_mobile">
+                            <div class="NameLink">Sobre</div>
+                        </div>
+                    </a></li>
 
+                <li><a href="/pt-br/pages/contato.html"><span class="iconify-inline"
+                            data-icon="fluent:mail-28-regular"></span>
+                        <div class="static_mobile">
+                            <div class="NameLink">Contato</div>
+                        </div>
+                    </a></li>
 
-        <a href="https://drive.google.com/uc?export=download&id=1gy-7_k5oqI1zCzquBe2zCbACYtalGj9r">
-            <i class="lar la-file-alt"></i>
-            Curriculo
-        </a>
+                <li><a href="/pt-br/pages/portifolio.html"><span class="iconify-inline"
+                            data-icon="fluent:folder-28-regular"></span>
+                        <div class="static_mobile">
+                            <div class="NameLink">Portfólio</div>
+                        </div>
+                    </a></li>
 
-        <div class="dropdown">
-            <button class="dropbtn">
-                <i class="las la-language"></i>
-                Idioma
-            </button>
-            <div class="dropdown-content">
-                <a href="/index.html" target="_blank"> English <i class="las la-arrow-circle-right"></i></a>
-                <a href="/pt-br/index.html" target="_blank"> Português <i class="las la-arrow-circle-right"></i></a>
             </div>
-        </div>
 
-        <a href="javascript:void(0);" style="font-size:16px;" class="icon" onclick="myFunction()">&#9776;</a>
-
+        </ul>
     </div>
 
-    <a href="https://t.me/thairlananjos" target="_blank" class="chatlink">
-        <div class="chatbot">
-            <i class="lab la-telegram">
-            </i>
-        </div>
-    </a>
-
-
-
-    <div class="cover"></div>
 
     <div class="BodyContainer">
 
@@ -127,24 +114,20 @@
 
             <div class="Content">
 
-                <div class="SpaceBar">
-                    <!-- THIS IS A SPACE BAR -->
-                </div>
-                <div class="SpaceBar">
-                    <!-- THIS IS A SPACE BAR -->
+                <div class="alert info">
+                    <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
+                    <strong>👋🏽</strong> Se você está procurando o meu curriculo e só <a href="http://"><b>tocar
+                            aqui</b></a>.
                 </div>
 
                 <div class="TextBox">
 
                     <h1>Sobre</h1>
-                    <hr class="divisor">
 
                     <br>
-                    <h2>🦁 Um pouco sobre mim:</h2>
+                    <hr class="dashed"><br>
 
                     <p>
-
-
                         Olá, eu me chamo Thairlan tenho 25 anos de idade, e sou apaixonado por UX, me apaixonei pela
                         area de UX Design quando entrei na faculdade de Engenharia de Software, sou fascinado em como a
                         empatia, comunicação e a adaptabilidade pode contribuir para a aplicação de soluções acessíveis.
@@ -164,7 +147,6 @@
                         <br><b>― Steve Jobs.</b>
                     </blockquote>
                 </div>
-
 
                 <div class="TextBox">
 
@@ -187,7 +169,7 @@
                             <h5> 🦾 Adaptabilidade </h5>
                             <hr class="divisor">
                             <p>
-                                Sou uma alguém que lida bem com mudanças de cenários de trabalho, busco sempre desafios,
+                                Sou uma pessoa que lida bem com mudanças de cenários de trabalho, busco sempre desafios,
                                 que possam levar ao meu crescimento pessoal e profissional.
                             </p>
                         </div>
@@ -196,7 +178,7 @@
                             <h5>🧠 Apredizado</h5>
                             <hr class="divisor">
                             <p>
-                                Tenho empenho em aprender coisas diferentes sobre diversas areas de ux, sempre focando
+                                Tenho empenho em aprender coisas diferentes sobre diversas areas de UX, sempre focando
                                 em como posso melhorar o meu trabalho, dedicando o tempo necessário para desenvolver
                                 aptidão suficiente.
                             </p>
@@ -209,29 +191,31 @@
 
                     <h2>🎒 Vida academica</h2>
 
-                    <div class="ContentBox">
+                    <div class="wrapper">
 
-                        <div class="FlexBox">
-                            <h5>🎓 Graduation:</h5>
-                            <hr class="divisor">
+                        <div class="box a">
+                            <h5>🎓 Graduação:</h5>
+                            <hr>
                             <p>
-                                <b>Engehraria De Software:</b><br>
+                                <b>Engenharia de software:</b><br>
                                 Universidade Evangelica De Goiás.<br>
-                                2018 ➜ 2022
+                                2018 ➜ 2023
                             </p>
                         </div>
 
-                        <div class="FlexBox">
-                            <h5> 📜 Certificados:</h5>
-
-                            <hr class="divisor">
-                            <p>
-                                <b>Scrum Fundamentals Certified | 2019.</b></br>
+                        <div class="box b">
+                            <h5>📜 Certificado:</h5>
+                            <hr>
+                            <p> <b>Scrum Fundamentals Certified.</b></br>
                                 SCRUM Study</br>
-                                2019
+                                2019</p>
 
-                                <br><br>
+                        </div>
 
+                        <div class="box c">
+                            <h5>📜 Certificado:</h5>
+                            <hr>
+                            <p>
                                 <b>Certified Fundamentals do UX Design.</b></br>
                                 Coursera | Google</br>
                                 2021
@@ -243,7 +227,7 @@
                 <div class="TextBox">
                     <h2>💭 Fatos interessantes </h2>
 
-                    <div class="ContentBox">
+                    <div class="ContentBoxFlex">
 
                         <div class="FlexBox">
                             <h5>🌱 Estou sempre melhorando:</h5>
@@ -272,58 +256,9 @@
                     </div>
                 </div>
 
-                <div class="TextBox">
-                    <h2>💖 I'm in love with:</h2>
-
-                    <div class="ContentBox">
-
-                        <div class="FlexBox">
-                            <p>
-                                🤝 Relações sociais verdadeiras.<br>
-                                🦉 Animais de um modo geral, "louco por corujas".<br>
-                                🥗 Comida vegana é minha paixão "Eu sou vegetariano".<br>
-                                📸 Fotografar o mundo ao meu redor.<br>
-                                📚 Livros com conteudo inspirador.<br>
-                                🛫 E claro viajar, é minha maior paixão.<br>
-                            </p>
-                        </div>
-                    </div>
-                </div>
-
                 <div class="Footer">
                     <footer>
-                        <div id="FooterMenu">
-                            <ul>
-
-                                <li>
-                                    <a href="/pt-br/index.html">
-                                        <i class="las la-home"></i>
-                                        Inicio
-                                    </a>
-                                </li>
-
-                                <li>
-                                    <a href="/forms/contact.html">
-                                        <i class="las la-envelope"></i>
-                                        Contato
-                                    </a>
-                                </li>
-
-                                <li>
-                                    <a href="/pt-br/pages/sobre.html">
-                                        <i class="las la-user"></i>
-                                        Sobre
-                                    </a>
-                                </li>
-
-                            </ul>
-                        </div>
-                        <hr class="divisor">
-                        </br>
-                        Thairlan Anjos © <br> 2021 Todos os direitos reservados.
-                        <br> - </br>
-                        <i class="las la-heart"></i> Feito com amor!
-                        <br><br>
+                        Thairlan Anjos © 2021 Todos os direitos reservados.
                     </footer>
                 </div>
 

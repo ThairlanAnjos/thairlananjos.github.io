@@ -58,49 +58,50 @@
 
 <body>
 
-  <div class="topnav" id="myTopnav">
+  <div class="HeaderNavbar">
 
-    <a href="/pt-br/index.html" class="active">
-      <img src="/src/Brand/Thairlan Anjos - Brand.svg" width="100%" height="30px" alt="Thairlan Anjos Brand">
-    </a>
+    <ul>
+      <li><a class="active" href="#home">
+          <img src="/src/Brand/Thairlan Anjos - Brand.svg" width="100%" height="45px" alt="Thairlan Anjos Brand">
+        </a></li>
 
+      <div class="NavItens">
 
-    <a href="/pt-br/pages/sobre.html">
-      <span class="iconify-inline" data-icon="system-uicons:user-male-circle"></span>
-      Sobre
-    </a>
+        <li>
+          <a href="/pt-br/index.html">
+            <span class="iconify-inline" data-icon="fluent:home-28-filled"></span>
+            <div class="active_mobile">
+              <div class="NameLink">Inicio</div>
+            </div>
 
-    <a href="/pt-br/pages/portifolio.html">
-      <span class="iconify-inline" data-icon="system-uicons:folder-open"></span>
-      Portifólio
-    </a>
+          </a>
+        </li>
 
-    <a href="/forms/contact.html">
-      <span class="iconify-inline" data-icon="system-uicons:mail-add"></span>
-      Contato
-    </a>
+        <li><a href="/pt-br/pages/sobre.html"><span class="iconify-inline" data-icon="fluent:person-28-regular"></span>
+            <div class="static_mobile">
+              <div class="NameLink">Sobre</div>
+            </div>
+          </a></li>
 
-    <a href="https://drive.google.com/uc?export=download&id=1gy-7_k5oqI1zCzquBe2zCbACYtalGj9r">
-      <span class="iconify-inline" data-icon="system-uicons:document"></span>
-      Curriculo
-    </a>
+        <li><a href="/pt-br/pages/contato.html"><span class="iconify-inline" data-icon="fluent:mail-28-regular"></span>
+            <div class="static_mobile">
+              <div class="NameLink">Contact</div>
+            </div>
+          </a></li>
 
-    <a href="javascript:void(0);" style="font-size:16px;" class="icon" onclick="myFunction()">&#9776;</a>
+        <li><a href="/pt-br/pages/portifolio.html"><span class="iconify-inline"
+              data-icon="fluent:folder-28-regular"></span>
+            <div class="static_mobile">
+              <div class="NameLink">Portfolio</div>
+            </div>
+          </a></li>
 
+      </div>
+
+    </ul>
   </div>
 
-  <div class="chatbot">
-    <a href="http://www.t.me/ThairlanAnjos" target="_blank" rel="noopener noreferrer">
-      <span class="iconify-inline" data-icon="bxl:telegram"></span>
-      Fale comigo!
-    </a>      
-  </div> 
-
-
-
-  <button class="open-button" onclick="openForm()">
-    <i class="las la-language"></i>
-  </button>
+  <!-- Coutry Menu -->
 
   <button class="open-button" onclick="openForm()">
     <i class="las la-language"></i>
@@ -110,7 +111,6 @@
     <form action="/action_page.php" class="form-container">
 
       <h6 class="center">
-        <i class="las la-language"></i>
         Select your language
       </h6>
 
@@ -139,9 +139,12 @@
     }
   </script>
 
-
-
-  <div class="cover"></div>
+  <!-- chatbot-->
+  <div class="chatbot">
+    <a href="http://www.t.me/ThairlanAnjos" target="_blank" rel="noopener noreferrer">
+      <span class="iconify-inline" data-icon="la:telegram-plane"></span> Fale comigo!
+    </a>
+  </div>
 
   <div class="BodyContainer">
 
@@ -152,89 +155,127 @@
         <header>
 
           <!---------- Profile Card Area --------->
-
-          <div class="ProfileCard">
-            <div class="ProfileCardContent">
-
-              <div class="ProfilePicture">
-                <img class="ProfileImage" src="/src/Images/ProfilePicture.jpeg" alt="" />
+          <div class="TextBoxHeader">
+            <div class="ContentBoxHeader">
+              <div class="FlexBoxNull">
+                <img class="AboutImage" src="/src/Images/ProfilePicture.webp" alt="" height="250px" />
               </div>
+              <div class="FlexBoxNull">
 
+                <h1 class="PageTitle">
+                  Olá, seja bem-vindo.
+                </h1>
+                <p class="DescriptionAbout">
+                  <h4>                    
+Sou thairlan, um designer de experiência do usuário, apaixonado por gatos fofinhos, cappuccino e por criar experiências que melhoram a vida das pessoas.
 
-              <div class="ProfileBio">
-                <header>
-                  <h1 class="PageTitle">Thairlan Anjos</h1><br>
+                  </h4>
+                </p>
 
-                  <div class="Social">
+                <div class="SocialAbout">
+
+                  <div class="SocialButton">
                     <a href="https://thairlananjos.page.link/twitter" target="_blank">
-                      <i class="lab la-twitter la-3x"></i></a>
-
-                    <a href="https://thairlananjos.page.link/instagram" target="_blank">
-                      <i class="lab la-instagram la-3x"></i></a>
-
-                    <a href="https://thairlananjos.page.link/dribbble" target="_blank">
-                      <i class="lab la-dribbble la-3x"></i></a>
-
-                    <a href="https://thairlananjos.page.link/behance" target="_blank">
-                      <i class="lab la-behance la-3x"></i></a>
-
+                      <span class="iconify-inline" data-icon="simple-icons:twitter"></span>
+                    </a>
                   </div>
+
+                  <div class="SocialButton">
+                    <a href="https://thairlananjos.page.link/instagram" target="_blank">
+                      <span class="iconify-inline" data-icon="simple-icons:instagram"></span>
+                    </a>
+                  </div>
+
+
+                  <div class="SocialButton"> <a href="https://thairlananjos.page.link/spotify" target="_blank">
+                      <span class="iconify-inline" data-icon="simple-icons:spotify"></span>
+                    </a></div>
+
+
+                  <div class="SocialButton"> <a href="https://thairlananjos.page.link/dribbble" target="_blank">
+                      <span class="iconify-inline" data-icon="simple-icons:dribbble"></span>
+                    </a></div>
+
+                </div>
+
               </div>
             </div>
           </div>
+
+          <!--End Profile cards-->
         </header>
 
-        <!--End Profile cards-->
 
-        <div class="TargetBar">
-          <h6>Este site está em construção.</h6>
+        <div class="alert warning">
+          <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
+          Este site está em construção, por esse motivo alguns itens podem não funcionar como esperado.
         </div>
 
         <div class="TextBox">
-          <h1>Sobre</h1>
+          <h2>Links</h2>
+          <div class="ContentBoxFlex">
+            <div class="FlexBox">
+              <h3> Templates </h4>
+                <a class="linkpost" href="http://">
+                  <p>➜ Figma</p>
+                </a>
+                <a class="linkpost" href="http://">
+                  <p>➜ Notion</p>
+                </a>
+                <a class="linkpost" href="http://">
+                  <p>➜ Google Docs</p>
+                </a>
+            </div>
 
-          <p>
-            Um pouco sobre mim, e sobre como conheci a UX Design, Design Thinking, e o mundo do desenvolvimento web,
-            aqui falo da minha história de vida, e de pontos importantes que têm sido cruciais para a minha formação
-            profissional até agora.
-          </p>
+            <div class="FlexBox">
+              <h3> Conteúdo</h4>
+                <a class="linkpost" href="http://">
+                  <p>➜ Lista de leitura</p>
+                </a>
+                <a class="linkpost" href="http://">
+                  <p>➜ Medium</p>
+                </a>
+                <a class="linkpost" href="http://">
+                  <p>➜ Estante de livros</p>
+                </a>
+            </div>
 
-          <button onclick="window.location.href='/pages/about.html'">
-            Ver mais
-            <i class="las la-arrow-circle-right"></i>
-          </button>
-
-          <br>
-
+            <div class="FlexBox">
+              <h3> Links rapidos</h4>
+                <a class="linkpost" href="http://">
+                  <p>➜ Me patrocina</p>
+                </a>
+                <a class="linkpost" href="http://">
+                  <p>➜ Frelancer</p>
+                </a>
+                <a class="linkpost" href="http://">
+                  <p>➜ Favoritos</p>
+                </a>
+            </div>
+          </div>
         </div>
 
         <div class="TextBox">
-          <h1>Portfólio</h1>
 
+          <h2>Trabalhos em destaque:</h2>
+          <div class="ContentBoxStand">
 
-          <p>Alguns projetos pessoais, acadêmicos e profissionais desenvolvidos por mim e por equipes com as quais tive
-            o grande prazer de colaborar.</p>
+            <div class="FlexBoxStand">
+              <img src="/src/Brand/ThairlanBrand.png" alt="" width="100%">
+            </div>
 
-          <button onclick="window.location.href='/pages/portfolio/index.html'">
-            Ir para Portfolio
-            <i class="las la-arrow-circle-right"></i>
-          </button>
-        </div>
+            <div class="FlexBoxStand">
+              <img src="/src/Brand/ThairlanBrand.png" alt="" width="100%">
+            </div>
 
-        <div class="TextBox">
-          <h1>Contato</h1>
-          <hr class="divisor">
-          <p>
-            Gostou do meu trabalho, ou tem alguma pergunta interessante? Então vamos conversar, envie-me uma mensagem
-            clicando no botão abaixo.
-          </p>
+            <div class="FlexBoxStand">
+              <img src="/src/Brand/ThairlanBrand.png" alt="" width="100%">
+            </div>
 
-          <button onclick="window.location.href='/pages/contact.html'">
-            Ir para Contact
-            <i class="las la-arrow-circle-right"></i>
-          </button>
+          </div>
 
         </div>
+
 
         <div class="MailBox">
           <div class="SocialMailBox">
@@ -254,7 +295,7 @@
               <a href="https://thairlananjos.page.link/behance" target="_blank">
                 <i class="lab la-behance la-2x"></i></a>
 
-              <a href="https://thairlananjos.page.link/linkedin" target="_blank">
+              <a href="https://thairlananjos.page.link/Linkedin-BR" target="_blank">
                 <i class="lab la-linkedin-in la-2x"></i></a>
 
           </div>
@@ -263,38 +304,7 @@
 
         <div class="Footer">
           <footer>
-            <div id="FooterMenu">
-              <ul>
-
-                <li>
-                  <a href="/pt-br/index.html">
-                    <i class="las la-home"></i>
-                    Inicio
-                  </a>
-                </li>
-
-                <li>
-                  <a href="/forms/contact.html">
-                    <i class="las la-envelope"></i>
-                    Contato
-                  </a>
-                </li>
-
-                <li>
-                  <a href="/pt-br/pages/sobre.html">
-                    <i class="las la-user"></i>
-                    Sobre
-                  </a>
-                </li>
-
-              </ul>
-            </div>
-            <hr class="divisor">
-            </br>
-            Thairlan Anjos 2022 © <br>Todos os direitos reservados.
-            <br> - </br>
-            <i class="las la-heart"></i> Feito com amor!
-            <br><br>
+            Thairlan Anjos 2022 © Todos os direitos reservados.
           </footer>
         </div>
 

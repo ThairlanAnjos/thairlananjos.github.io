@@ -55,116 +55,97 @@
 
   <div class="topnav" id="myTopnav">
 
-    <a href="/index.html" class="active">
-      <img src="/src/Brand/Thairlan Anjos - Brand.svg" width="100%" height="30px" alt="Thairlan Anjos Brand">
-    </a>
-
-
-    <a href="/pages/about.html">
-      <span class="iconify-inline" data-icon="system-uicons:user-male-circle"></span>
-      About
-    </a>
-
-    <a href="/pages/portfolio/index.html">
-      <span class="iconify-inline" data-icon="system-uicons:folder-open"></span>
-      Portfolio
-    </a>
-
-    <a href="/forms/contact.html">
-      <span class="iconify-inline" data-icon="system-uicons:mail-add"></span>
-      Contact
-    </a>
-
-    <a href="/forms/newsletter.html">
-      <span class="iconify-inline" data-icon="system-uicons:newspaper"></span>
-      Newsletter
-    </a>
-
-    <a href="https://drive.google.com/uc?export=download&id=1gy-7_k5oqI1zCzquBe2zCbACYtalGj9r">
-      <span class="iconify-inline" data-icon="system-uicons:document"></span>
-      Resume
-    </a>
-
-    <a href="/blog" target="_blank" onclick="return false;">
-      <span class="iconify-inline" data-icon="system-uicons:create" data-flip="horizontal,vertical"></span>
-      Blog
-    </a>
-
-    </a>
-
-    <div class="dropdown">
-      <button class="dropbtn">
-        <span class="iconify-inline" data-icon="system-uicons:diamond"></span>
-        Support
-      </button>
-
-      <div class="dropdown-content">
-
-        <a href="https://thairlananjos.page.link/patreon" target="_blank">
-          <i class="lab la-patreon"></i>
-          Patreon
-        </a>
-
-        <a href="https://thairlananjos.page.link/paypaldonate" target="_blank">
-          <i class="lab la-paypal"></i>
-          PayPal
-        </a>
-
-
+    <div class="NavbarContainer">
+      <a href="/index.html" class="active">
+        <img src="/src/Brand/Thairlan Anjos - Brand.svg" width="100%" height="30px" alt="Thairlan Anjos Brand">
+      </a>
+  
+  
+      <a href="/pages/about.html">
+        <span class="iconify-inline" data-icon="system-uicons:user-male-circle"></span>
+        About
+      </a>
+  
+      <a href="/pages/portfolio/index.html">
+        <span class="iconify-inline" data-icon="system-uicons:folder-open"></span>
+        Portfolio
+      </a>
+  
+      <a href="/forms/contact.html">
+        <span class="iconify-inline" data-icon="system-uicons:mail-add"></span>
+        Contact
+      </a>
+  
+      <a href="/forms/newsletter.html">
+        <span class="iconify-inline" data-icon="system-uicons:newspaper"></span>
+        Newsletter
+      </a>
+  
+      <a href="https://drive.google.com/uc?export=download&id=1gy-7_k5oqI1zCzquBe2zCbACYtalGj9r">
+        <span class="iconify-inline" data-icon="system-uicons:document"></span>
+        Resume
+      </a>
+  
+      <a href="/blog" target="_blank" onclick="return false;">
+        <span class="iconify-inline" data-icon="system-uicons:create" data-flip="horizontal,vertical"></span>
+        Blog
+      </a>
+  
+      </a>
+  
+      <div class="dropdown">
+        <button class="dropbtn">
+          <span class="iconify-inline" data-icon="system-uicons:diamond"></span>
+          Support
+        </button>
+  
+        <div class="dropdown-content">
+  
+          <a href="https://thairlananjos.page.link/patreon" target="_blank">
+            <span class="iconify-inline" data-icon="cib:patreon"></span>
+            Patreon
+          </a>
+  
+          <a href="https://thairlananjos.page.link/paypaldonate" target="_blank">
+            <span class="iconify-inline" data-icon="cib:paypal"></span>
+            PayPal
+          </a>
+  
+          <a href="https://thairlananjos.page.link/CashApp" target="_blank">
+            <span class="iconify-inline" data-icon="cib:cashapp"></span>
+            Cash App
+          </a>
+  
+        </div>
+  
       </div>
-
+  
+      <div class="dropdown">
+        <button class="dropbtn" id="active_language">
+          <span class="iconify-inline" data-icon="twemoji:flag-united-states"></span>
+          English
+        </button>
+  
+        <div class="dropdown-content">
+          <a href="/pt-br/index.html">
+            <span class="iconify-inline" data-icon="twemoji:flag-brazil"></span>
+            Português
+          </a>
+        </div>
+  
+      </div>
+  
+      <a href="javascript:void(0);" style="font-size:16px;" class="icon" onclick="myFunction()">&#9776;</a>
+  
     </div>
 
-    <a href="javascript:void(0);" style="font-size:16px;" class="icon" onclick="myFunction()">&#9776;</a>
-
   </div>
-
-  <button class="open-button" onclick="openForm()">
-    <i class="las la-language"></i>
-  </button>
-
-  <div class="form-popup" id="CountrySelect">
-    <form action="/action_page.php" class="form-container">
-
-      <h6 class="center">
-        <i class="las la-language"></i>
-        Select your language
-      </h6>
-
-      <br>
-
-      <a class="btnlink" href="/index.html">
-        <span class="iconify-inline" data-icon="twemoji:flag-for-flag-united-states"></span>
-        English
-      </a>
-
-      <a class="btnlink" href="/pt-br/"><span class="iconify-inline" data-icon="twemoji:flag-for-flag-brazil"></span>
-        Portuguese</a>
-
-      <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
-
-    </form>
-  </div>
-
-  <script>
-    function openForm() {
-      document.getElementById("CountrySelect").style.display = "block";
-    }
-
-    function closeForm() {
-      document.getElementById("CountrySelect").style.display = "none";
-    }
-  </script>
 
   <div class="BodyContainer">
 
     <div class="ElementsContainer">
 
       <div class="Content">
-
-        <div class="SpaceBar">
-          <!-- THIS IS A SPACE BAR -->
-        </div>
 
         <div class="TextBox">
 
@@ -185,41 +166,9 @@
 
         </div>
 
-
         <div class="Footer">
-          <footer>
-            <div id="FooterMenu">
-              <ul>
-
-                <li>
-                  <a href="/index.html">
-                    <i class="las la-home"></i>
-                    Home
-                  </a>
-                </li>
-
-                <li>
-                  <a href="/forms/contact.html">
-                    <i class="las la-envelope"></i>
-                    Contact
-                  </a>
-                </li>
-
-                <li>
-                  <a href="/pages/about.html">
-                    <i class="las la-user"></i>
-                    About
-                  </a>
-                </li>
-
-              </ul>
-            </div>
-            <hr class="divisor">
-            </br>
-            Thairlan Anjos 2022 © <br> All rights reserved
-            <br> - </br>
-            <i class="las la-heart"></i> Make with love!
-            <br><br>
+          <footer>          
+            Thairlan Anjos 2022 © | All rights reserved.         
           </footer>
         </div>
 

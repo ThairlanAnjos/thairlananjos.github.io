@@ -2,12 +2,12 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!--Tags and trackers-->
-    <meta name="facebook-domain-verification" content="ghdc3mwh0qf0j8if8of3ogmbfj1it1" />
+  <!--Tags and trackers-->
+  <meta name="facebook-domain-verification" content="ghdc3mwh0qf0j8if8of3ogmbfj1it1" />
 
   <!--Icons / Favicons-->
   <link rel="apple-touch-icon" sizes="180x180" href="/favicons/apple-touch-icon.png">
@@ -23,359 +23,143 @@
   <meta name="msapplication-TileImage" content="/favicons/mstile-144x144.png">
   <meta name="theme-color" content="#ffffff">
 
-    <!--Icons libs-->
-    <link rel="stylesheet" href="path/to/line-awesome/css/line-awesome-font-awesome.min.css" />
-    <link rel="stylesheet"
-        href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css" />
+  <!--Icons libs-->
+  <link rel="stylesheet" href="path/to/line-awesome/css/line-awesome-font-awesome.min.css" />
+  <link rel="stylesheet"
+    href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css" />
 
-    <!--Mobile color-->
-    <meta name="theme-color" content="#8EDDFF">
-    <meta name="apple-mobile-web-app-status-bar-style" content="#8EDDFF">
-    <!---->
+  <!--Mobile color-->
+  <meta name="theme-color" content="#8EDDFF">
+  <meta name="apple-mobile-web-app-status-bar-style" content="#8EDDFF">
+  <!---->
 
   <!--Scripts-->
   <script src="/scripts.js"></script>
   <script src="https://code.iconify.design/2/2.1.2/iconify.min.js"></script>
 
 
-    <!-- CSS Stylesheet-->
-    <link rel="stylesheet" href="/style.css" />
-    <link rel="stylesheet" href="/media.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <!-- CSS Stylesheet-->
+  <link rel="stylesheet" href="/style.css" />
+  <link rel="stylesheet" href="/media.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 
 
-    <link rel="alternate" href="rss.xml" type="application/rss+xml" title="RSS" />
-    <title>About</title>
+  <link rel="alternate" href="rss.xml" type="application/rss+xml" title="RSS" />
+  <title>About</title>
 </head>
 
 <body>
 
-   <!-- Navbar Menu-->
+  <!-- Navbar Menu-->
+  
 
-   <div class="topnav" id="myTopnav">
+  <div class="HeaderNavbar">
 
-    <a href="/index.html" class="active">
-      <img src="/src/Brand/Thairlan Anjos - Brand.svg" width="100%" height="30px" alt="Thairlan Anjos Brand">
-    </a>
+    <ul>
+      <li><a class="active" href="#home">
+          <img src="/src/Brand/Thairlan Anjos - Brand.svg" width="100%" height="45px" alt="Thairlan Anjos Brand">
+        </a></li>
 
+      <div class="NavItens">
 
-    <a href="/pages/about.html">
-      <span class="iconify-inline" data-icon="system-uicons:user-male-circle"></span>
-      About
-    </a>
+        <li>
+          <a href="/index.html">
+            <span class="iconify-inline" data-icon="fluent:home-28-regular"></span>
+            <div class="static_mobile">
+              <div class="NameLink">Home</div>
+            </div>            
+          </a>
+        </li>
 
-    <a href="/pages/portfolio/index.html">
-      <span class="iconify-inline" data-icon="system-uicons:folder-open"></span>
-      Portfolio
-    </a>
+        <li><a href="/pages/about.html"><span class="iconify-inline" data-icon="fluent:person-28-filled"></span>
+          <div class="active_mobile">  
+          <div class="NameLink">About</div>
+        </div>
+          </a></li>
 
-    <a href="/forms/contact.html">
-      <span class="iconify-inline" data-icon="system-uicons:mail-add"></span>
-      Contact
-    </a>
+        <li><a href="/forms/contact.html"><span class="iconify-inline" data-icon="fluent:mail-28-regular"></span>
+          <div class="static_mobile">  
+            <div class="NameLink">Contact</div>
+          </div>
+          </a></li>
 
-    <a href="/forms/newsletter.html">
-      <span class="iconify-inline" data-icon="system-uicons:newspaper"></span>
-      Newsletter
-    </a>
+        <li><a href="/pages/portfolio/"><span class="iconify-inline" data-icon="fluent:folder-28-regular"></span>
+          <div class="static_mobile">  
+            <div class="NameLink">Portfolio</div>
+          </div>
+          </a></li>
 
-    <a href="https://drive.google.com/uc?export=download&id=1gy-7_k5oqI1zCzquBe2zCbACYtalGj9r">
-      <span class="iconify-inline" data-icon="system-uicons:document"></span>
-      Resume
-    </a>
+      </div>
 
-    <a href="/blog" target="_blank" onclick="return false;">
-      <span class="iconify-inline" data-icon="system-uicons:create" data-flip="horizontal,vertical"></span>
-      Blog
-    </a>
+    </ul>
+  </div>
 
-    </a>
+  <div class="BodyContainer">
 
-    <div class="dropdown">
-      <button class="dropbtn">
-        <span class="iconify-inline" data-icon="system-uicons:diamond"></span>
-        Support
-      </button>
+    <div class="ElementsContainer">
+      <div class="Content">
 
-      <div class="dropdown-content">
+        <div class="alert info">
+          <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span> 
+          <strong>👋🏽</strong> If you are looking for my resume you can download it by <a href="http://"><b>clicking here</b></a>. 
+        </div>
 
-        <a href="https://thairlananjos.page.link/patreon" target="_blank">
-          <i class="lab la-patreon"></i>
-          Patreon
-        </a>
+        <div class="TextBox">
 
-        <a href="https://thairlananjos.page.link/paypaldonate" target="_blank">
-          <i class="lab la-paypal"></i>
-          PayPal
-        </a>
+          <h1>About</h1>
 
+          <p>
+            Hi, I'm Thairlan, 26 UX Designer, passionate about software development, three hundred and fifty page books, fluffy cats, and coffee.
+            <br><br>
+            I'm a proud member of the LGBTQIA+ community, and founder of UX Rainbow, a web-based social inclusion initiative that aims to include people in the world of UX Design.
+            <br><br>
+            I fell in love with UX Design when I discovered that through empathy, communication, and adaptability I could contribute to designing more equitable solutions.
+            <br><br>
+            I am also self-taught, I measure no effort to research and go where the knowledge is, I love to listen and teach, from my point of view everyone has something to teach, and everyone has something to learn.
+            <br><br>
+            There is a quote by American entrepreneur Steve Jobs, that I take as a reminder, that guides me to my goals in life:
+            <br><br>
+            "Your time is limited, so don't waste it living someone else's life."
+            - Steve Jobs.
+          </p>
+          <br><hr><br>
+
+          <div class='TextFlexBoxContainer'>
+            <div class='row'>
+              <div class='column'>
+                <div class='blue-column'>
+                  Some Text in Column One
+                </div>
+              </div>
+              <div class='column'>
+                <div class='green-column'>
+                  Some Text in Column Two
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="TextBox">
+          <blockquote
+          cite="https://www.goodreads.com/quotes/374630-your-time-is-limited-so-don-t-waste-it-living-someone#:~:text=Your%20time%20is%20limited%2C%20so%20don%27t%20waste%20it%20living%20someone%20else%27s%20life.">
+
+          “Your time is limited, so don't waste it living someone else's life.”
+          <br><b>― Steve Jobs.</b>
+        </blockquote>
+        </div>        
+
+        <div class="Footer">
+          <footer>
+            Thairlan Anjos 2022 © | All rights reserved.
+          </footer>
+        </div>
 
       </div>
 
     </div>
 
-    <a href="javascript:void(0);" style="font-size:16px;" class="icon" onclick="myFunction()">&#9776;</a>
-
   </div>
-
-  <button class="open-button" onclick="openForm()">
-    <i class="las la-language"></i>
-  </button>
-
-  <div class="form-popup" id="CountrySelect">
-    <form action="/action_page.php" class="form-container">
-
-      <h6 class="center">
-        <i class="las la-language"></i>
-        Select your language
-      </h6>
-
-      <br>
-
-      <a class="btnlink" href="/index.html">
-        <span class="iconify-inline" data-icon="twemoji:flag-for-flag-united-states"></span>
-        English
-      </a>
-
-      <a class="btnlink" href="/pt-br/"><span class="iconify-inline" data-icon="twemoji:flag-for-flag-brazil"></span>
-        Portuguese</a>
-
-      <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
-
-    </form>
-  </div>
-
-  <script>
-    function openForm() {
-      document.getElementById("CountrySelect").style.display = "block";
-    }
-
-    function closeForm() {
-      document.getElementById("CountrySelect").style.display = "none";
-    }
-  </script>
-
-    <div class="BodyContainer">
-
-        <div class="ElementsContainer">
-
-            <div class="Content">
-
-                <div class="SpaceBar">
-                    <!-- THIS IS A SPACE BAR -->
-                </div>
-
-                <div class="TextBox">
-
-                    <h1>About</h1>
-                    <hr class="divisor">
-
-                    <br>
-                    <h2>🦁 A little about me:</h2>
-
-                    <p>
-                        Hello, my name is Thairlan, I'm 25 years old, and I'm enthusiastic about UX, I fell in love with
-                        UX
-                        Design when I entered Software Engineering school, I'm fascinated by how empathy, communication
-                        and
-                        adaptability can contribute to the application of accessible solutions.
-                        <br><br>
-                        I'm very self-taught, I usually learn more from online content, I love listening and teaching,
-                        in my
-                        view everyone has something to teach, and everyone has something to learn, my love for UX, was
-                        born
-                        out of my vision of what education can do for people, and how user experience plays a primary
-                        role
-                        in that.
-                    </p>
-
-                    <br>
-
-                    <blockquote
-                        cite="https://www.goodreads.com/quotes/374630-your-time-is-limited-so-don-t-waste-it-living-someone#:~:text=Your%20time%20is%20limited%2C%20so%20don%27t%20waste%20it%20living%20someone%20else%27s%20life.">
-
-                        “Your time is limited, so don't waste it living someone else's life.”
-                        <br><b>― Steve Jobs.</b>
-                    </blockquote>
-                </div>
-
-                <div class="TextBox">
-
-                    <h2>🎯 Focus points:</h2>
-                    <p>Interpersonal qualities, which I have developed in my career.</p>
-
-                    <div class="wrapper">
-
-                        <div class="box a">
-                            <h5>🤝 Communication</h5>
-                            <hr class="divisor">
-                            <p>
-                                In my professional career I have performed several functions where communication with
-                                diverse groups my main work tool was, where I also always played a listening role.
-                            </p>
-                        </div>
-
-                        <div class="box b">
-                            <h5> 🦾 Adaptability </h5>
-                            <hr class="divisor">
-                            <p>
-                                Someone who deals well with changes in work scenarios, I am always looking for
-                                challenges, which can lead to my personal and professional growth.
-                            </p>
-                        </div>
-
-                        <div class="box c">
-                            <h5>🧠 Learning</h5>
-                            <hr class="divisor">
-                            <p>
-                                Committed to learning different things about various areas of ux, always focusing on how
-                                I can improve my work, taking the time to develop sufficient aptitude.
-                            </p>
-                        </div>
-
-                    </div>
-                </div>
-
-                <div class="TextBox">
-
-                    <h2>🎒 Academic Life</h2>
-                    <br>
-                    <h5>🎓 Graduation:</h5>
-
-                    <div class="ContentBox">
-
-
-                        <div class="FlexBox">
-                            <p>
-                                <b>Software Engineering:</b>
-                                <br>
-                                Evangelical University of Goiás.<br>
-                                2018 ➜ 2022
-                            </p>
-                        </div>
-
-                    </div>
-                    <br>
-                    <h5> 📜 Certificates:</h5>
-
-                    <div class="ContentBox">
-
-                        <div class="FlexBox">
-                            <p>
-                                <b>Scrum Fundamentals Certified</b>
-                                <br>
-                                SCRUM Study</br>
-                                2019
-                            </p>
-                        </div>
-
-                        <div class="FlexBox">
-                            <p>
-                                <b>Certified Fundamentals do UX Design.</b><br>
-                                Coursera | Google</br>
-                                2021
-                            </p>
-                        </div>
-
-                        <div class="FlexBox">
-                            <p>
-                                <b>Start the UX Design Process: Empathize, Define, and Ideate.</b><br>
-                                Coursera | Google</br>
-                                2022
-                            </p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="TextBox">
-                    <h2>💭 Interesting Facts</h2>
-
-                    <div class="ContentBox">
-
-                        <div class="FlexBox">
-                            <h5>🌱 Favorite tools:</h5>
-                            <p></p>
-                            ➜ VS Code<br>
-                            ➜ Figma<br>
-                            ➜ Miro<br>
-                        </div>
-
-                        <div class="FlexBox">
-                            <h5>💬 Ask me about:</h5>
-                            ➜ Get started in UI / UX Design.<br>
-                            ➜ Build accessible solutions.<br>
-                            ➜ Create prototypes & wireframes.
-                        </div>
-
-                        <div class="FlexBox">
-                            <h5>🥋 Hobbies:</h5>
-                            ➜ Draw random things.<br>
-                            ➜ Taking pictures of nature.<br>
-                            ➜ Cooking, passion for cakes.
-                        </div>
-                    </div>
-                </div>
-
-                <div class="TextBox">
-                    <h2>💖 I'm in love with:</h2>
-
-                    <div class="ContentBox">
-
-                        <div class="FlexBox">
-                            <p>
-                                🤝 Social relationships.<br>
-                                🦉 Animals in a very general way "Crazy about owls".<br>
-                                🥗 Vegan food and a great passion "I'm a vegetarian".<br>
-                                📸 Photographing life around me.<br>
-                                📚 Books with inspirational or informative content.<br>
-                                🛫 And of course, traveling for sure is a great passion.<br>
-                            </p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="Footer">
-                    <footer>
-                        <div id="FooterMenu">
-                            <ul>
-
-                                <li>
-                                    <a href="/index.html">
-                                        <i class="las la-home"></i>
-                                        Home
-                                    </a>
-                                </li>
-
-                                <li>
-                                    <a href="/forms/contact.html">
-                                        <i class="las la-envelope"></i>
-                                        Contact
-                                    </a>
-                                </li>
-
-                                <li>
-                                    <a href="/pages/about.html">
-                                        <i class="las la-user"></i>
-                                        About
-                                    </a>
-                                </li>
-
-                            </ul>
-                        </div>
-                        <hr class="divisor">
-                        </br>
-                        Thairlan Anjos 2022 © <br> All rights reserved
-                        <br> - </br>
-                        <i class="las la-heart"></i> Make with love!
-                        <br><br>
-                    </footer>
-                </div>
-
-            </div>
-
-        </div>
-
-    </div>
 
 </body>
 
