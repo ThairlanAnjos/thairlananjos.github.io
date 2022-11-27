@@ -194,6 +194,13 @@
         align-items: stretch;
     }
 
+    /* --- About Page --- */
+    .row {
+        display: flex;
+        flex-direction: column-reverse;
+        flex-wrap: wrap;
+        width: 100%;
+    }
 
 
     /* --------- Header Badge ----------*/
@@ -303,7 +310,13 @@
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {}
 
-@media only screen and (max-width: 768px) {}
+@media only screen and (max-width: 768px) {
+    
+
+    .column {
+        justify-content: space-between;
+    }
+}
 
 
 /*- ----- Fim Mobile -----*/
