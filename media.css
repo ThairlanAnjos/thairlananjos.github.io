@@ -250,6 +250,18 @@
         bottom: 70px;
     }
 
+    .form-container {
+        max-width: 300px;
+        padding: 46px 4px;
+        margin: auto auto 162px 26px;
+        transition: all 0.8 ease-in-out;
+
+    }
+
+    .form-container .cancel {
+        bottom: 70px;
+    }
+
     .BodyContainer {
         margin-top: 15px;
     }
@@ -268,7 +280,7 @@
     .NameLink {
         padding: 1px;
         font-size: var(--font-size-sm);
-      }
+    }
 
     .active {
         display: none;
@@ -282,7 +294,7 @@
         flex-direction: column;
         padding: 16px 12px;
     }
-      
+
 
     div ul {
         border-bottom-width: 0px;
@@ -291,6 +303,10 @@
         border-right-width: 0px;
         border-style: solid;
         border-top-width: 1px;
+    }
+
+    .Footer{
+        margin-bottom: 162px;
     }
 }
 
@@ -311,7 +327,7 @@
 @media only screen and (min-width: 768px) {}
 
 @media only screen and (max-width: 768px) {
-    
+
 
     .column {
         justify-content: space-between;

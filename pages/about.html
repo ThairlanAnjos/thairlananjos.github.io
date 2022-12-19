@@ -27,7 +27,8 @@
   <link rel="stylesheet" href="path/to/line-awesome/css/line-awesome-font-awesome.min.css" />
   <link rel="stylesheet"
     href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css" />
-
+  <script src="https://code.iconify.design/iconify-icon/1.0.1/iconify-icon.min.js"></script>
+  
   <!--Mobile color-->
   <meta name="theme-color" content="#8EDDFF">
   <meta name="apple-mobile-web-app-status-bar-style" content="#8EDDFF">
@@ -50,8 +51,43 @@
 
 <body>
 
-  <!-- Navbar Menu-->
+    <!-- Country Menu -->
+
+    <button class="open-button" onclick="openForm()">
+      <iconify-icon inline icon="carbon:ibm-watson-language-translator"></iconify-icon>
+    </button>
   
+    <div class="form-popup" id="CountrySelect">
+      <form action="/action_page.php" class="form-container">
+  
+        <h3>
+          <iconify-icon inline icon="carbon:ibm-watson-language-translator"></iconify-icon>
+        </h3>
+        <h4>Select your language</h4>
+  
+        <br><br>
+  
+        <a class="btn" href="/pt-br/pages/sobre.html"><span class="iconify-inline" data-icon="twemoji:flag-for-flag-brazil"></span>
+          Portuguese</a>
+  
+        <button type="button" class="cancel" onclick="closeForm()">
+          <iconify-icon inline icon="mdi:close-circle"></iconify-icon> Close
+        </button>
+  
+      </form>
+    </div>
+  
+    <script>
+      function openForm() {
+        document.getElementById("CountrySelect").style.display = "block";
+      }
+  
+      function closeForm() {
+        document.getElementById("CountrySelect").style.display = "none";
+      }
+    </script>
+
+  <!-- Navbar Menu-->
 
   <div class="HeaderNavbar">
 

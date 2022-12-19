@@ -35,7 +35,8 @@
   <link rel="stylesheet" href="path/to/line-awesome/css/line-awesome-font-awesome.min.css" />
   <link rel="stylesheet"
     href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css" />
-
+  <script src="https://code.iconify.design/iconify-icon/1.0.1/iconify-icon.min.js"></script>
+  
   <!--Mobile color-->
   <meta name="theme-color" content="#EBEBEB">
   <meta name="apple-mobile-web-app-status-bar-style" content="#EBEBEB">
@@ -57,6 +58,45 @@
 </head>
 
 <body>
+  
+  <!-- Country Menu -->
+
+    <button class="open-button" onclick="openForm()">
+      <iconify-icon inline icon="carbon:ibm-watson-language-translator"></iconify-icon>
+    </button>
+  
+    <div class="form-popup" id="CountrySelect">
+      <form action="/action_page.php" class="form-container">
+  
+        <h3>
+          <iconify-icon inline icon="carbon:ibm-watson-language-translator"></iconify-icon>
+        </h3>
+        <h4>Selecione seu idioma</h4>
+  
+        <br><br>
+  
+        <a class="btn btnFull" href="/index.html">
+          <span class="iconify-inline" data-icon="twemoji:flag-for-flag-united-states"></span>
+          English
+        </a>
+  
+        <button type="button" class="cancel" onclick="closeForm()">
+          <iconify-icon inline icon="mdi:close-circle"></iconify-icon> Fechar
+        </button>
+  
+      </form>
+    </div>
+
+    <script>
+      function openForm() {
+        document.getElementById("CountrySelect").style.display = "block";
+      }
+
+      function closeForm() {
+        document.getElementById("CountrySelect").style.display = "none";
+      }
+    </script>
+
 
   <div class="HeaderNavbar">
 
@@ -101,43 +141,6 @@
     </ul>
   </div>
 
-  <!-- Coutry Menu -->
-
-  <button class="open-button" onclick="openForm()">
-    <i class="las la-language"></i>
-  </button>
-
-  <div class="form-popup" id="CountrySelect">
-    <form action="/action_page.php" class="form-container">
-
-      <h6 class="center">
-        Select your language
-      </h6>
-
-      <br>
-
-      <a class="btnlink" href="/index.html">
-        <span class="iconify-inline" data-icon="twemoji:flag-for-flag-united-states"></span>
-        English
-      </a>
-
-      <a class="btnlink" href="/pt-br/"><span class="iconify-inline" data-icon="twemoji:flag-for-flag-brazil"></span>
-        Portuguese</a>
-
-      <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
-
-    </form>
-  </div>
-
-  <script>
-    function openForm() {
-      document.getElementById("CountrySelect").style.display = "block";
-    }
-
-    function closeForm() {
-      document.getElementById("CountrySelect").style.display = "none";
-    }
-  </script>
 
   <!-- chatbot-->
   <div class="chatbot">
@@ -163,37 +166,35 @@
               <div class="FlexBoxNull">
 
                 <h1 class="PageTitle">
-                  Olá, seja bem-vindo.
+                  Olá, Seja bem-vindo.
                 </h1>
                 <p class="DescriptionAbout">
                   <h4>
-                    Sou thairlan, um designer de experiência do usuário, apaixonado por gatos fofinhos, cappuccino e por
-                    criar experiências que melhoram a vida das pessoas.
-
+                    Sou thairlan, um designer de experiência do usuário, apaixonado por gatos fofinhos, cappuccino e por criar experiências que melhoram a vida das pessoas.
                   </h4>
                 </p>
 
                 <div class="SocialAbout">
 
                   <div class="SocialButton">
-                    <a href="https://thairlananjos.page.link/twitter" target="_blank">
+                    <a href="https://go.thairlananjos.com/Twitter" target="_blank">
                       <span class="iconify-inline" data-icon="simple-icons:twitter"></span>
                     </a>
                   </div>
 
                   <div class="SocialButton">
-                    <a href="https://thairlananjos.page.link/instagram" target="_blank">
+                    <a href="https://go.thairlananjos.com/Instagram" target="_blank">
                       <span class="iconify-inline" data-icon="simple-icons:instagram"></span>
                     </a>
                   </div>
 
 
-                  <div class="SocialButton"> <a href="https://thairlananjos.page.link/spotify" target="_blank">
+                  <div class="SocialButton"> <a href="https://go.thairlananjos.com/Spotify" target="_blank">
                       <span class="iconify-inline" data-icon="simple-icons:spotify"></span>
                     </a></div>
 
 
-                  <div class="SocialButton"> <a href="https://thairlananjos.page.link/dribbble" target="_blank">
+                  <div class="SocialButton"> <a href="https://go.thairlananjos.com/Dribbble" target="_blank">
                       <span class="iconify-inline" data-icon="simple-icons:dribbble"></span>
                     </a></div>
 
@@ -217,40 +218,40 @@
           <div class="ContentBoxFlex">
             <div class="FlexBox">
               <h3> Templates </h4>
-                <a class="linkpost" href="http://">
-                  <p>➜ Figma</p>
+                <a class="linkfeature" href="https://go.thairlananjos.com/Figma">
+                  <p><iconify-icon inline icon="ph:figma-logo-light"></iconify-icon> Figma</p>
                 </a>
-                <a class="linkpost" href="http://">
-                  <p>➜ Notion</p>
+                <a class="linkfeature" href="https://go.thairlananjos.com/NotionSite">
+                  <p><iconify-icon inline icon="radix-icons:notion-logo"></iconify-icon> Notion</p>
                 </a>
-                <a class="linkpost" href="http://">
-                  <p>➜ Google Docs</p>
+                <a class="linkfeature" href="https://go.thairlananjos.com/GoogleDocs">
+                  <p><iconify-icon inline icon="iconoir:google-docs"></iconify-icon> Google Docs</p>
                 </a>
             </div>
 
             <div class="FlexBox">
               <h3> Conteúdo</h4>
-                <a class="linkpost" href="http://">
-                  <p>➜ Lista de leitura</p>
+                <a class="linkfeature" href="https://go.thairlananjos.com/InstapaperReadlist">
+                  <p><iconify-icon inline icon="simple-icons:instapaper"></iconify-icon> Lista de leitura</p>
                 </a>
-                <a class="linkpost" href="http://">
-                  <p>➜ Medium</p>
+                <a class="linkfeature" href="https://go.thairlananjos.com/Medium">
+                  <p><iconify-icon inline icon="carbon:logo-medium"></iconify-icon> Medium</p>
                 </a>
-                <a class="linkpost" href="http://">
-                  <p>➜ Estante de livros</p>
+                <a class="linkfeature" href="https://go.thairlananjos.com/Goodreads">
+                  <p><iconify-icon inline icon="fa-brands:goodreads"></iconify-icon> Estante de livros</p>
                 </a>
             </div>
 
             <div class="FlexBox">
-              <h3> Links rapidos</h4>
-                <a class="linkpost" href="http://">
-                  <p>➜ Me patrocina</p>
+              <h3> Links rápidos</h4>
+                <a class="linkfeature" href="https://go.thairlananjos.com/PayPal5">
+                  <p><iconify-icon inline icon="line-md:coffee-loop"></iconify-icon> Me patrocina</p>
                 </a>
-                <a class="linkpost" href="http://">
-                  <p>➜ Frelancer</p>
+                <a class="linkfeature" href="/pt-br/pages/contato.html">
+                  <p><iconify-icon inline icon="material-symbols:laptop-chromebook-outline-rounded"></iconify-icon> Me contrate</p>
                 </a>
-                <a class="linkpost" href="http://">
-                  <p>➜ Favoritos</p>
+                <a class="linkfeature" href="/pages/bookmarks.html">
+                  <p><iconify-icon inline icon="fluent:bookmark-32-filled"></iconify-icon> Favoritos</p>
                 </a>
             </div>
           </div>
@@ -276,7 +277,6 @@
           </div>
 
         </div>
-
 
         <div class="MailBox">
           <div class="SocialMailBox">

@@ -39,7 +39,7 @@
 
   /* ######### REMOVER VAR ANTIGAS ######### */
 
-  --headings-font: "Space Grotesk", sans-serif;  
+  --headings-font: "Space Grotesk", sans-serif;
   --paragraph-font: "Inter", sans-serif;
   --code-font: "JetBrains Mono;", monospace;
   --button-font: "Inter", sans-serif;
@@ -872,7 +872,7 @@ a:hover {
   margin: 5px auto 5px auto;
   padding: 15px 20px 15px 20px;
   transition: all 0.3s;
-  width: 200px;
+  width: 35%;
 }
 
 .btnlink:hover {
@@ -1347,7 +1347,7 @@ button:active {
   width: 100%;
 }
 
-.column {  
+.column {
   display: flex;
   flex-direction: column;
   flex-basis: 100%;
@@ -1558,7 +1558,7 @@ button:active {
   background-color: #ffffffe1;
   position: fixed;
   top: 0px;
-  width: 100%;  
+  width: 100%;
 }
 
 .NavItens {
@@ -1607,7 +1607,7 @@ li a {
   align-items: center;
   border-radius: 10px;
   color: var(--black90);
-  display: flex;  
+  display: flex;
   padding: 12px 22px;
   text-align: center;
   text-decoration: none;
@@ -1654,6 +1654,7 @@ svg.iconify.iconify--system-uicons.iconify-inline {
   background-color: var(--color02);
   border: 0px solid var(--black95);
   bottom: 0px;
+  box-shadow: 0px 5px 25px -7px #00000042;
   transition: all 0.8 ease-in-out;
   color: #000000ab;
   cursor: pointer;
@@ -1681,11 +1682,12 @@ svg.iconify.iconify--system-uicons.iconify-inline {
   animation-timing-function: 0.5s cubic-bezier(0.17, 0.67, 0.94, 0.59);
   animation: slideInUp;
   animation-duration: 0.5s;
-  border: 0px solid #f1f1f1;
+  border: 0px solid #cecece;
   bottom: 0px;
-  margin: 0px 0px 60px 0px;
   display: none;
-  left: 10px;
+  left: 0;
+  right: 0;
+  max-width: 100%;
   position: fixed;
   text-align: center;
   transition: all 0.8 ease-in-out;
@@ -1695,12 +1697,14 @@ svg.iconify.iconify--system-uicons.iconify-inline {
 /* Add styles to the form container */
 .form-container {
   background-color: var(--color00);
-  border-radius: 25px;
-  box-shadow: 0px 5px 20px -7px var(--black10);
-  margin: 0px 0px 20px 0px;
-  max-width: 250px;
-  padding: 20px 15px 10px 15px;
+  border-radius: 15px;
+  box-shadow: 0px 0px 15px -5px var(--black20);
+  border: 0px solid #cecece;
+  max-width: 30%;
+  padding: 46px 4px;
+  margin: auto auto 100px 26px;
   transition: all 0.8 ease-in-out;
+
 }
 
 /* Full-width input fields */
@@ -1715,20 +1719,35 @@ svg.iconify.iconify--system-uicons.iconify-inline {
 
 /* Set a style for the submit/login button */
 .form-container .btn {
-  background-color: #8aedff;
+  background-color: #f1f1f1;
+  border-radius: 100px;
   border: none;
+  font-family: var(--paragraph-font);
   color: #464646;
   cursor: pointer;
-  margin: auto auto 5px auto;
-  padding: 15px 10px 15px 10px;
-  width: 100%;
+  margin: 36px 5px;
+  padding: 12px 16px 12px 16px;
 }
 
 /* Add a red background color to the cancel button */
 .form-container .cancel {
-  background-color: rgb(255, 205, 205);
-  margin: 10px 0px 10px 0px;
-  padding: 15px 10px 15px 10px;
+  background-color: var(--color03);
+  border: 0px solid var(--black95);
+  bottom: 0px;
+  transition: all 0.8 ease-in-out;
+  box-shadow: 0px 5px 25px -7px #00000042;
+  color: #000000ab;
+  cursor: pointer;
+  display: inline-block;
+  font-family: var(--paragraph-font);
+  font-size: var(--font-size-md);
+  font-weight: 400;
+  left: 15px;
+  padding: 5px 16px;
+  position: fixed;
+  width: 130px;
+  height: 55px;
+  margin: 18px 16px;
 }
 
 /* Add some hover effects to buttons */

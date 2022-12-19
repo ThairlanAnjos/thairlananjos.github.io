@@ -27,7 +27,8 @@
   <link rel="stylesheet" href="path/to/line-awesome/css/line-awesome-font-awesome.min.css" />
   <link rel="stylesheet"
     href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css" />
-
+  <script src="https://code.iconify.design/iconify-icon/1.0.1/iconify-icon.min.js"></script>
+  
   <!--Mobile color-->
   <meta name="theme-color" content="#CDFF82">
   <meta name="apple-mobile-web-app-status-bar-style" content="#CDFF82">
@@ -51,6 +52,42 @@
 
 <body>
 
+      <!-- Country Menu -->
+
+      <button class="open-button" onclick="openForm()">
+        <iconify-icon inline icon="carbon:ibm-watson-language-translator"></iconify-icon>
+      </button>
+    
+      <div class="form-popup" id="CountrySelect">
+        <form action="/action_page.php" class="form-container">
+    
+          <h3>
+            <iconify-icon inline icon="carbon:ibm-watson-language-translator"></iconify-icon>
+          </h3>
+          <h4>Select your language</h4>
+    
+          <br><br>
+    
+          <a class="btn" href="/pt-br/pages/contato.html"><span class="iconify-inline" data-icon="twemoji:flag-for-flag-brazil"></span>
+            Portuguese</a>
+    
+          <button type="button" class="cancel" onclick="closeForm()">
+            <iconify-icon inline icon="mdi:close-circle"></iconify-icon> Close
+          </button>
+    
+        </form>
+      </div>
+    
+      <script>
+        function openForm() {
+          document.getElementById("CountrySelect").style.display = "block";
+        }
+    
+        function closeForm() {
+          document.getElementById("CountrySelect").style.display = "none";
+        }
+      </script>
+
   <!-- Navbar Menu-->
 
   <div class="HeaderNavbar">
@@ -63,32 +100,32 @@
       <div class="NavItens">
 
         <li>
-          <a href="/pt-br/index.html">
+          <a href="/index.html">
             <span class="iconify-inline" data-icon="fluent:home-28-regular"></span>
             <div class="static_mobile">
-              <div class="NameLink">Início</div>
+              <div class="NameLink"> Home</div>
             </div>
           </a>
         </li>
 
         <li>
-          <a href="/pt-br/pages/sobre.html"><span class="iconify-inline" data-icon="fluent:person-28-regular"></span>
+          <a href="/pages/about.html"><span class="iconify-inline" data-icon="fluent:person-28-regular"></span>
             <div class="static_mobile">
-              <div class="NameLink">Sobre</div>
+              <div class="NameLink"> About</div>
             </div>
           </a>
         </li>
 
-        <li><a href="/pt-br/pages/contato.html"><span class="iconify-inline" data-icon="fluent:mail-28-filled"></span>
+        <li><a href="/forms/contact.html"><span class="iconify-inline" data-icon="fluent:mail-28-filled"></span>
             <div class="active_mobile">
-              <div class="NameLink">Contato</div>
+              <div class="NameLink"> Contact</div>
             </div>
           </a></li>
 
-        <li><a href="/pt-br/pages/portifolio.html"><span class="iconify-inline"
+        <li><a href="/pages/portfolio/index.html"><span class="iconify-inline"
               data-icon="fluent:folder-28-regular"></span>
             <div class="static_mobile">
-              <div class="NameLink">Portfólio</div>
+              <div class="NameLink">Portfolio</div>
             </div>
           </a></li>
 
@@ -105,16 +142,15 @@
 
         <div class="alert success">
           <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
-          👋🏽 Ei! Você tambem pode me chamar no <a class="linkpost" href="http://">WhatsApp</a> ou no <a
+          👋🏽 Hey! You can chat with me at <a class="linkpost" href="http://">WhatsApp</a> or <a
             class="linkpost" href="http://">Telegram</a>.
         </div>
 
         <div class="TextBox">
           <div class="TextBox">
-            <h1>Contato</h1>
+            <h1>Contact</h1>
             <p>
-              Bem-vindo ao formulário de contato aqui pode contactar-me directamente, por favor lembre-se que todos os
-              campos com um * são obrigatórios.
+              Welcome to the contact form here you can contact me directly, please remember that all fields with an * are required.
             </p>
           </div>
 
