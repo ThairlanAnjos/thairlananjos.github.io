@@ -850,8 +850,7 @@ a:hover {
   color: var(--black95);
   letter-spacing: -0.7px;
   padding: 8px 12px 8px 12px;
-  margin: 3px 8px;
-  width: auto;
+  margin: 3px 0px;
 }
 
 .linkfeature:hover {
