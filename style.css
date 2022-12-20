@@ -845,17 +845,17 @@ a:hover {
 }
 
 .linkfeature {
-  background-color: var(--black05);
-  border-radius: 8px;
-  color: var(--black95);
+  background-color: var(--black03);
+  border-radius: 12px;
+  color: var(--black60);
   letter-spacing: -0.7px;
   padding: 8px 12px 8px 12px;
   margin: 3px 0px;
 }
 
 .linkfeature:hover {
-  background-color: var(--color00);
-  color: var(--color06);
+  color: var(--black95);
+  background-color: var(--black05);
 }
 
 /*------------ Buttons -------------*/
@@ -1571,6 +1571,18 @@ button:active {
   margin: auto;
 }
 
+.Sponsor{
+  background-color: #ff7497;
+  color: #ffffff;
+  border-radius: 999px;
+  display: flex;
+  padding: 9px;
+  margin: 6px;
+  width: 45px;
+  height: 45px;
+  align-items: center;
+  justify-content: center;
+}
 
 .NameLink {
   padding-left: 3px;
