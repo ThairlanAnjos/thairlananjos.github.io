@@ -44,7 +44,6 @@
   --code-font: "JetBrains Mono;", monospace;
   --button-font: "Inter", sans-serif;
 
-
   /* --- Paragraph Font ---*/
   --paragraph-font-family: "Inter", sans-serif;
   --paragraph-font-letter-spacing: -0.5px;
@@ -722,7 +721,11 @@ img.FollowImg:hover {
   transition: all 0.5s ease-in-out;
 }
 
+/*--- Defaults -----*/
 
+.radius-default-img{
+  border-radius: 16px;
+}
 
 /*------- Line / Callout */
 
@@ -842,19 +845,18 @@ a:hover {
 }
 
 .linkfeature {
-  background-color: var(--black01);
-  border: 1px solid var(--black01);
+  background-color: var(--black05);
   border-radius: 8px;
   color: var(--black95);
   letter-spacing: -0.7px;
-  padding: 4px 12px 4px 8px;
-  margin-top: 8px;
+  padding: 8px 12px 8px 12px;
+  margin: 3px 8px;
+  width: auto;
 }
 
 .linkfeature:hover {
-  border: 1px solid var(--black10);
-  color: var(--black80);
-  padding: 4px 12px 4px 8px;
+  background-color: var(--color00);
+  color: var(--color06);
 }
 
 /*------------ Buttons -------------*/
@@ -1294,6 +1296,7 @@ button:active {
   grid-gap: 0px;
   font-family: var(--paragraph-font-family);
   flex-direction: row;
+  justify-content: space-around;
   flex-wrap: wrap;
   align-content: center;
   align-items: stretch;
@@ -1619,7 +1622,7 @@ li a:hover:not(.active) {
 }
 
 .active {
-  background-color: var(--color06);
+  background-color: var(--black05);  
   padding: 10px;
   margin: 0px;
   border-radius: 0px;
