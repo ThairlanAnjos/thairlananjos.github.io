@@ -22,13 +22,13 @@
   <meta name="msapplication-TileColor" content="#ffffff">
   <meta name="msapplication-TileImage" content="/favicons/mstile-144x144.png">
   <meta name="theme-color" content="#ffffff">
- 
+
   <!--Icons libs-->
   <link rel="stylesheet" href="path/to/line-awesome/css/line-awesome-font-awesome.min.css" />
   <link rel="stylesheet"
     href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css" />
   <script src="https://code.iconify.design/iconify-icon/1.0.1/iconify-icon.min.js"></script>
-  
+
   <!--Mobile color-->
   <meta name="theme-color" content="#CDFF82">
   <meta name="apple-mobile-web-app-status-bar-style" content="#CDFF82">
@@ -51,7 +51,7 @@
 </head>
 
 <body>
-    
+
   <!-- Country Menu -->
 
   <button class="open-button" onclick="openForm()">
@@ -108,26 +108,27 @@
             <span class="iconify-inline" data-icon="fluent:home-28-regular"></span>
             <div class="static_mobile">
               <div class="NameLink">Início</div>
-            </div>            
+            </div>
           </a>
         </li>
 
         <li><a href="/pt-br/pages/sobre.html"><span class="iconify-inline" data-icon="fluent:person-28-regular"></span>
-          <div class="static_mobile">  
-          <div class="NameLink">Sobre</div>
-        </div>
+            <div class="static_mobile">
+              <div class="NameLink">Sobre</div>
+            </div>
           </a></li>
 
         <li><a href="/pt-br/pages/contato.html"><span class="iconify-inline" data-icon="fluent:mail-28-filled"></span>
-          <div class="active_mobile">  
-            <div class="NameLink">Contato</div>
-          </div>
+            <div class="active_mobile">
+              <div class="NameLink">Contato</div>
+            </div>
           </a></li>
 
-        <li><a href="/pt-br/pages/portifolio.html"><span class="iconify-inline" data-icon="fluent:folder-28-regular"></span>
-          <div class="static_mobile">  
-            <div class="NameLink">Portfólio</div>
-          </div>
+        <li><a href="/pt-br/pages/portifolio.html"><span class="iconify-inline"
+              data-icon="fluent:folder-28-regular"></span>
+            <div class="static_mobile">
+              <div class="NameLink">Portfólio</div>
+            </div>
           </a></li>
 
       </div>
@@ -141,35 +142,61 @@
 
       <div class="Content">
 
-          <div class="alert success">
-            <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
-            👋🏽 Ei! Você tambem pode me chamar no <a class="linkpost" href="http://">WhatsApp</a> ou no <a class="linkpost" href="http://">Telegram</a>.
-          </div>
-
         <div class="TextBox">
           <div class="TextBox">
             <h1>Contato</h1>
             <p>
-                Bem-vindo ao formulário de contato aqui pode contactar-me directamente, por favor lembre-se que todos os campos com um * são obrigatórios.
+              Bem-vindo ao formulário de contato aqui pode contactar-me diretamente, por favor lembre-se que, todos os
+              campos com um * são obrigatórios.
             </p>
           </div>
 
 
 
           <div class="BoxCenter">
-            
+
             <iframe class="ContactIframe" src="/forms/Input Forms/ContactForm.html" frameborder="0">
             </iframe>
 
           </div>
-         
+
         </div>
 
-      <div class="Footer">
-        <footer>          
-          Thairlan Anjos 2022 © | Todos os direitos reservados.         
-        </footer>
-      </div>
+        <div class="alert">
+          <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
+
+          <h5>👋🏽 Olá, você também pode me encontrar em:</h5>
+          <br>
+          <div class="ButtonsGrid">
+
+            <div>
+               <button class="btnWhiteFull" onclick="window.location.href='/index.html'">
+                <iconify-icon inline icon="akar-icons:whatsapp-fill"></iconify-icon> WhatsApp
+              </button>
+            </div>
+
+
+            <div> <button class="btnWhiteFull" onclick="window.location.href='/https://go.thairlananjos.com/TelegramChat'">
+                <iconify-icon inline icon="mingcute:telegram-fill"></iconify-icon> Telegram
+              </button>
+            </div>
+
+
+            <div>
+              <button class="btnWhiteFull" onclick="window.location.href='https://go.thairlananjos.com/HireContact'">
+                <iconify-icon inline icon="fluent:mail-inbox-28-filled"></iconify-icon> E-mail
+              </button>
+            </div>
+
+          </div>
+
+        </div>
+
+        <div class="Footer">
+          <footer>
+            Thairlan Anjos 2022 © | Todos os direitos reservados.
+          </footer>
+        </div>
 
       </div>
 

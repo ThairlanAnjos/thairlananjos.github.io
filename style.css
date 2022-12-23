@@ -3,7 +3,7 @@
   @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=JetBrains+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&family=Source+Serif+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&family=Space+Grotesk:wght@300;400;500;600;700&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 
   --animate-duration: 100ms;
-  --animate-delay: 0.9s;
+  --animate-delay: 0.5s;
 
   /*------ Brand Colors----- */
 
@@ -63,7 +63,6 @@
   --font-size-xl: clamp(1.95rem, 0.76vw + 1.76rem, 2.37rem);
   --font-size-xxl: clamp(2.44rem, 1.3vw + 2.12rem, 3.16rem);
   --font-size-xxxl: clamp(3.05rem, 2.1vw + 2.53rem, 4.21rem);
-
 }
 
 /*--- White ---*/
@@ -491,8 +490,6 @@ body {
 /* ------- Elements Inside Direct in Body ------- */
 
 .chatbot {
-  animation-iteration-count: 3;
-  animation: bounce;
   background: var(--color04);
   border-radius: 100px;
   bottom: 0px;
@@ -511,7 +508,8 @@ body {
 }
 
 .chatbot:hover {
-  animation: bounce;
+  animation: tada;
+  animation-duration: 2s;
   opacity: 90px;
   background: var(--color04);
   box-shadow: 0px 0px 0px 0px #00000042;
@@ -723,7 +721,7 @@ img.FollowImg:hover {
 
 /*--- Defaults -----*/
 
-.radius-default-img{
+.radius-default-img {
   border-radius: 16px;
 }
 
@@ -1248,6 +1246,16 @@ button:active {
 
 /*----------------- FlexBox / GridBox / Text FlexBox ----------------------*/
 
+/* --- Buttons Grid --- */
+
+.ButtonsGrid{
+  display: grid;
+  grid-gap: 4px;
+  align-items: center;
+  justify-content: start;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+}
+
 /*-- Grid Box --*/
 
 .ContentBoxGrid {
@@ -1514,6 +1522,7 @@ button:active {
 
 .alert {
   padding: 26px;
+  background-color: var(--color00);
   margin: 5px 0px 10px 0px;
   font-family: var(--paragraph-font-family);
   color: var(--black80);
@@ -1571,7 +1580,7 @@ button:active {
   margin: auto;
 }
 
-.Sponsor{
+.Sponsor {
   background-color: #ff7497;
   color: #ffffff;
   border-radius: 999px;
@@ -1633,7 +1642,7 @@ li a:hover:not(.active) {
 }
 
 .active {
-  background-color: var(--black05);  
+  background-color: var(--black05);
   padding: 10px;
   margin: 0px;
   border-radius: 0px;
