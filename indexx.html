@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!--Scripts-->
+  <script src="/scripts.js"></script>
+  <script src="https://code.iconify.design/2/2.1.2/iconify.min.js"></script>
+
+  <!--Tags and trackers-->
+  <meta name="facebook-domain-verification" content="ghdc3mwh0qf0j8if8of3ogmbfj1it1" />
+
+  <!--Icons / Favicons-->
+  <link rel="apple-touch-icon" sizes="180x180" href="/favicons/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="194x194" href="/favicons/favicon-194x194.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="/favicons/android-chrome-192x192.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicons/favicon-16x16.png">
+  <link rel="manifest" href="/favicons/site.webmanifest">
+  <link rel="mask-icon" href="/favicons/safari-pinned-tab.svg" color="#000000">
+  <meta name="apple-mobile-web-app-title" content="Thairlan Anjos">
+  <meta name="application-name" content="Thairlan Anjos">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-TileImage" content="/favicons/mstile-144x144.png">
+  <meta name="theme-color" content="#ffffff">
+
+  <!--Icons libs-->
+  <link rel="stylesheet" href="path/to/line-awesome/css/line-awesome-font-awesome.min.css" />
+  <link rel="stylesheet"
+    href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css" />
+  <script src="https://code.iconify.design/iconify-icon/1.0.1/iconify-icon.min.js"></script>
+
+  <!--Mobile color-->
+  <meta name="theme-color" content="#EBEBEB">
+  <meta name="apple-mobile-web-app-status-bar-style" content="#EBEBEB">
+
+  <!-- CSS Stylesheet-->
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="/css/colors.css">
+  <link rel="stylesheet" href="media.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="alternate" href="rss.xml" type="application/rss+xml" title="RSS" />
+
+  <title>Thairlan Anjos | Website</title>
+
+</head>
+
+<body>
+
+  <!-- Country Menu -->
+
+  <button class="open-button" onclick="openForm()">
+    <iconify-icon inline icon="carbon:ibm-watson-language-translator"></iconify-icon>
+  </button>
+
+  <div class="form-popup" id="CountrySelect">
+    <form action="/action_page.php" class="form-container">
+
+      <h3>
+        <iconify-icon inline icon="carbon:ibm-watson-language-translator"></iconify-icon>
+      </h3>
+      <h4>Select your language</h4>
+
+      <br><br>
+
+      <a class="btn" href="/pt-br/"><span class="iconify-inline" data-icon="twemoji:flag-for-flag-brazil"></span>
+        Portuguese</a>
+
+      <button type="button" class="cancel" onclick="closeForm()">
+        <iconify-icon inline icon="mdi:close-circle"></iconify-icon> Close
+      </button>
+
+    </form>
+  </div>
+
+  <script>
+    function openForm() {
+      document.getElementById("CountrySelect").style.display = "block";
+    }
+
+    function closeForm() {
+      document.getElementById("CountrySelect").style.display = "none";
+    }
+  </script>
+
+  <!-- chatbot-->
+  <div class="chatbot">
+    <a href="http://www.t.me/ThairlanAnjos" target="_blank" rel="noopener noreferrer">
+      <span class="iconify-inline" data-icon="la:telegram-plane"></span> Talk to me!
+    </a>
+  </div>
+
+  <!-- Navbar Menu-->
+  <div class="HeaderNavbar">
+
+    <ul>
+      <li><a class="active" href="/index.html">
+          <img src="/src/Brand/Thairlan Anjos - Brand.svg" width="100%" height="45px" alt="Thairlan Anjos Brand">
+        </a></li>
+
+      <div class="NavItens">
+
+        <li>
+          <a href="/">
+            <span class="iconify-inline" data-icon="fluent:home-28-filled"></span>
+            <div class="active_mobile">
+              <div class="NameLink">Home</div>
+            </div>
+
+          </a>
+        </li>
+
+        <li><a href="/pages/about.html"><span class="iconify-inline" data-icon="fluent:person-28-regular"></span>
+            <div class="static_mobile">
+              <div class="NameLink">About</div>
+            </div>
+          </a></li>
+
+        <li><a href="/forms/contact.html"><span class="iconify-inline" data-icon="fluent:mail-28-regular"></span>
+            <div class="static_mobile">
+              <div class="NameLink">Contact</div>
+            </div>
+          </a></li>
+
+        <li><a href="/pages/portfolio/"><span class="iconify-inline" data-icon="fluent:folder-28-regular"></span>
+            <div class="static_mobile">
+              <div class="NameLink">Portfolio</div>
+            </div>
+          </a></li>
+
+
+      </div>
+
+    </ul>
+  </div>
+
+  <div class="BodyContainer">
+
+    <div class="ElementsContainer">
+
+      <div class="Content">
+
+        <header>
+
+          <!---------- Profile Card Area --------->
+
+          <div class="TextBoxHeader">
+            <div class="ContentBoxHeader">
+              <div class="FlexBoxNull">
+                <img class="AboutImage" src="/src/Images/ProfilePicture.webp" alt="" height="250px" />
+              </div>
+              <div class="FlexBoxNull">
+
+                <h1 class="PageTitle">
+                  Hi, Welcome.
+                </h1>
+                <p class="DescriptionAbout">
+                  <h4>
+                    I'm Thairlan, a user experience designer with a passion for fluffy cats, cappuccino and creating
+                    experiences that make people's lives better.
+                  </h4>
+                </p>
+
+                <div class="SocialAbout">
+
+                  <div class="SocialButton">
+                    <a href="https://go.thairlananjos.com/Twitter" target="_blank">
+                      <span class="iconify-inline" data-icon="simple-icons:twitter"></span>
+                    </a>
+                  </div>
+
+                  <div class="SocialButton">
+                    <a href="https://go.thairlananjos.com/Instagram" target="_blank">
+                      <span class="iconify-inline" data-icon="simple-icons:instagram"></span>
+                    </a>
+                  </div>
+
+
+                  <div class="SocialButton">
+                    <a href="https://go.thairlananjos.com/Spotify" target="_blank">
+                      <span class="iconify-inline" data-icon="simple-icons:spotify"></span>
+                    </a></div>
+
+
+                  <div class="SocialButton">
+                    <a href="https://go.thairlananjos.com/Dribbble" target="_blank">
+                      <span class="iconify-inline" data-icon="simple-icons:dribbble"></span>
+                    </a></div>
+
+                </div>
+
+              </div>
+            </div>
+          </div>
+
+          <!--End Profile cards-->
+
+          <!-- WEB STORIES -----------
+<div class="TextBox">
+<h2>Story</h2>
+<p>Web Stories</p>
+</div>
+-->
+
+          <div class="TextBox">
+            <h2>Shortcuts</h2>
+            <div class="ContentBoxFlex">
+              <div class="FlexBox">
+                <h3> Resources</h4>
+                  <a class="linkfeature" href="https://go.thairlananjos.com/Figma">
+                    <p>
+                      <iconify-icon inline icon="ph:figma-logo-light"></iconify-icon> Figma
+                    </p>
+                  </a>
+                  <a class="linkfeature" href="https://go.thairlananjos.com/NotionSite">
+                    <p>
+                      <iconify-icon inline icon="radix-icons:notion-logo"></iconify-icon> Notion
+                    </p>
+                  </a>
+                  <a class="linkfeature" href="https://go.thairlananjos.com/GoogleDocs">
+                    <p>
+                      <iconify-icon inline icon="iconoir:google-docs"></iconify-icon> Google Docs
+                    </p>
+                  </a>
+              </div>
+
+              <div class="FlexBox">
+                <h3> Content</h4>
+                  <a class="linkfeature" href="https://go.thairlananjos.com/InstapaperReadlist">
+                    <p>
+                      <iconify-icon inline icon="simple-icons:instapaper"></iconify-icon> Readlist
+                    </p>
+                  </a>
+                  <a class="linkfeature" href="https://go.thairlananjos.com/Medium">
+                    <p>
+                      <iconify-icon inline icon="carbon:logo-medium"></iconify-icon> Medium
+                    </p>
+                  </a>
+                  <a class="linkfeature" href="https://go.thairlananjos.com/Goodreads">
+                    <p>
+                      <iconify-icon inline icon="fa-brands:goodreads"></iconify-icon> Bookshelf
+                    </p>
+                  </a>
+              </div>
+
+              <div class="FlexBox">
+                <h3> Quick links</h4>
+                  <a class="linkfeature" href="https://go.thairlananjos.com/PayPal5">
+                    <p>
+                      <iconify-icon inline icon="line-md:coffee-loop"></iconify-icon> Sponsor
+                    </p>
+                  </a>
+                  <a class="linkfeature" href="https://go.thairlananjos.com/HireContact">
+                    <p>
+                      <iconify-icon inline icon="material-symbols:laptop-chromebook-outline-rounded"></iconify-icon>
+                      Hire me
+                    </p>
+                  </a>
+                  <a class="linkfeature" href="/pages/bookmarks.html">
+                    <p>
+                      <iconify-icon inline icon="fluent:bookmark-32-filled"></iconify-icon> Bookmarks
+                    </p>
+                  </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="TextBox">
+
+            <h2>Featured Work</h2>
+            <div class="ContentBoxStand">
+
+              <div class="FlexBoxStand">
+                <img src="/src/Brand/ThairlanBrand.png" alt="" width="100%">
+              </div>
+
+              <div class="FlexBoxStand">
+                <img src="/src/Brand/ThairlanBrand.png" alt="" width="100%">
+              </div>
+
+              <div class="FlexBoxStand">
+                <img src="/src/Brand/ThairlanBrand.png" alt="" width="100%">
+              </div>
+
+            </div>
+
+          </div>
+
+          <div class="MailBox">
+            <div class="SocialMailBox">
+
+              <p class="MalBoxText">
+
+                <h4>📫 How to reach me:</h4>
+
+                <a href="https://go.thairlananjos.com/Twitter" target="_blank">
+                  <i class="lab la-twitter la-2x"></i></a>
+
+                <a href="https://go.thairlananjos.com/Snapchat" target="_blank">
+                  <i class="lab la-snapchat la-2x"></i></a>
+
+                <a href="https://go.thairlananjos.com/Instagram" target="_blank">
+                  <i class="lab la-instagram la-2x"></i></a>
+
+                <a href="https://go.thairlananjos.com/Facebook" target="_blank">
+                  <i class="lab la-facebook la-2x"></i></a>
+
+                <a href="https://go.thairlananjos.com/Dribbble" target="_blank">
+                  <i class="lab la-dribbble la-2x"></i></a>
+
+                <a href="https://go.thairlananjos.com/Behance" target="_blank">
+                  <i class="lab la-behance la-2x"></i></a>
+
+                <a href="https://go.thairlananjos.com/Spotify" target="_blank">
+                  <i class="lab la-spotify la-2x"></i></a>
+
+                <a href="https://go.thairlananjos.com/Linkedin" target="_blank">
+                  <i class="lab la-linkedin-in la-2x"></i></a>
+
+            </div>
+          </div>
+
+      </div>
+
+    </div>
+
+
+    <div class="Footer">
+      <footer>
+        Thairlan Anjos 2022 © | All rights reserved.
+      </footer>
+    </div>
+
+  </div>
+  </div>
+
+</body>
+
+</html>
