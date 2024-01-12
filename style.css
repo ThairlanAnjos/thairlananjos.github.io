@@ -221,6 +221,9 @@ code {
 
 /* --- New Containers --- */
 
+.div-size{
+  width: 48.4em;
+}
 
 .Father-Container {
   display: flex;
