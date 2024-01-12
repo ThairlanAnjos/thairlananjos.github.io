@@ -52,7 +52,7 @@
     }
 
     button {
-        font-size: var(--font-size-md);
+        font-size: var(--font-size-sm);
         padding: 8px 18px;
     }
 
@@ -106,7 +106,7 @@
     }
 
     button {
-        font-size: var(--font-size-base);
+        font-size: var(--font-size-sm);
         padding: 8px 18px;
     }
 

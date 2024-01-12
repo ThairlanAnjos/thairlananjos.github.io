@@ -278,7 +278,7 @@ code {
 .ContentBoxFlex {
   display: flex;
   padding: 2.8em 0em;
-  align-items: flex-start;
+  align-items: stretch;
   flex-wrap: wrap;
   gap: 16px;
 }
@@ -302,7 +302,7 @@ code {
 }
 
 .Flex-Inner {
-  padding: 12px 0px 0px 4px;
+  padding: 22px 0px 0px 4px;
   display: flex;
   justify-content: space-between;
   align-content: center;
