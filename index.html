@@ -8,6 +8,8 @@
 
   <!--Scripts-->
   <script src="/scripts.js"></script>
+  <script src="/manifest.json"></script>
+  <script src="/service-worker.js"></script>
   <script src="https://code.iconify.design/2/2.1.2/iconify.min.js"></script>
 
   <!--Tags and trackers-->
@@ -24,8 +26,8 @@
   <meta name="apple-mobile-web-app-title" content="Thairlan Anjos">
   <meta name="application-name" content="Thairlan Anjos">
   <meta name="msapplication-TileColor" content="#ffffff">
-  <meta name="msapplication-TileImage" content="/favicons/mstile-144x144.png">
-  <meta name="theme-color" content="#ffffff">
+  <meta name="msapplication-TileImage" content="/favicons/mstile-144x144.png">  
+
 
   <!--Icons libs-->
   <link rel="stylesheet" href="path/to/line-awesome/css/line-awesome-font-awesome.min.css" />
@@ -34,40 +36,99 @@
   <script src="https://code.iconify.design/iconify-icon/1.0.1/iconify-icon.min.js"></script>
 
   <!--Mobile color-->
-  <meta name="theme-color" content="#EBEBEB">
+  <meta name="theme-color" content="#141414">
+  <meta name="mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="#EBEBEB">
 
   <!-- CSS Stylesheet-->
-  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="/style.css" />
+  <link rel="stylesheet" href="/media.css" />
   <link rel="stylesheet" href="/css/colors.css">
-  <link rel="stylesheet" href="media.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
   <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap"
     rel="stylesheet">
 
   <link rel="alternate" href="rss.xml" type="application/rss+xml" title="RSS" />
 
-  <title>Thairlan Anjos | Website</title>
+  <title>Thairlan Anjos • Website</title>
 
 </head>
 
-<style>
-</style>
-
 <body>
 
-  <div class="BodyContainer">  
-    <div class="ElementsContainer">
-      <h1 class="PageTitle">
-        👨🏽‍🚀 coming soon        
-        <div class="animate__animated animate__flash animate__infinite animate__slow">•</div>
-      </h1>
+  <div class="Father-Container">
+
+    <div class="Container-Black">
+
+      <div class="Navbar-Container">
+
+        <ul>
+          <li><a class="active" href="/index.html">
+              <img src="/src/Brand/Thairlan Anjos - Brand.svg" width="90%" height="38px" alt="Thairlan Anjos Brand">
+            </a></li>
+
+          <div class="NavItens">
+
+
+
+            <li><a href="/pages/about.html">
+               <div class="static_mobile">
+                  <div class="NameLink">About</div>
+                </div>
+              </a></li>
+
+            <li><a href="/pages/notion.html">
+              <div class="static_mobile">
+                  <div class="NameLink">Notion</div>
+                </div>
+              </a></li>
+
+          </div>
+
+        </ul>
+      </div>
+
+      <div class="Header-Container">
+        <div>
+          <h1 class="PageTitle">
+            I help people and businesses <br> create better solutions.
+          </h1>
+          <br>
+
+          <button class="cta-button" onclick="window.location.href='/pages/notion.html'">
+           See all products
+            <i class="icon-regular">
+              <span class="iconify-inline" data-icon="solar:arrow-right-linear"></span>
+            </i>          
+          </button>
+          
+        </div>
+        
+      </div>
+
+      <div class="Footer">
+        <footer>
+          Thairlan Anjos 2022 © | All rights reserved.
+        </footer>
+      </div>
+
     </div>
-  </div> 
 
-  
-
+  </div>
 
 </body>
+
+<script>
+  if ('serviceWorker' in navigator) {
+    navigator.serviceWorker.register('/service-worker.js')
+      .then((registration) => {
+        console.log('Service Worker registrado com sucesso:', registration);
+      })
+      .catch((error) => {
+        console.error('Erro ao registrar Service Worker:', error);
+      });
+  }
+</script>
+
 
 </html>

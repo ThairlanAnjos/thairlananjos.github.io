@@ -1,3 +1,5 @@
-# ⚠ Aviso importante
+# ⚠ Important:
 
-Esta é uma página do GitHub, que estou usando como propaganda para meu futuro site. Para saber mais, fique de olho em minhas redes sociais.
+This is a GitHub page, which I'm using as an advertisement for my future website. To find out more, keep an eye on my social networks.
+*
+thairlananjos.com/pages/about
