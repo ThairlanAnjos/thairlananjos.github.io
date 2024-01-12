@@ -77,7 +77,7 @@
     /* --- navbar --- */
 
     .NameLink {
-        font-size: var(--font-size-sm);
+        font-size: var(--font-size-base);
         padding: 0px;
     }
 
@@ -90,7 +90,7 @@
     }
 
     button {
-        font-size: var(--font-size-sm);
+        font-size: var(--font-size-base);
         padding: 8px 18px;
     }
 
