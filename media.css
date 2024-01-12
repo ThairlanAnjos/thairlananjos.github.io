@@ -28,7 +28,7 @@
         font-size: var(--font-size-md);
         letter-spacing: -1px;
         font-weight: 500;
-        line-height: 2rem;
+        line-height: 1.8rem;
     }
     h3{var(--font-size-md)}
     h4{var(--font-size-md)}
@@ -38,7 +38,7 @@
     /* --- navbar --- */
 
     .NameLink {
-        font-size: var(--font-size-sm);
+        font-size: var(--font-size-base);
         padding: 0px;
     }
 
@@ -48,6 +48,7 @@
         font-size: var(--font-size-lg);
         font-weight: 600;
         letter-spacing: -1px;
+        line-height: 1.8rem;
     }
 
     button {
@@ -61,6 +62,20 @@
     .ContentBoxFlex {
         flex-direction: column;
     }
+
+    .Container-Default {
+        padding: 2.8em 0em;
+    }
+
+    .Flex-Inner {
+        padding: 8px 0px 0px 0px;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .div-size{
+        width: 18.4em;
+      }
 
 }
 
