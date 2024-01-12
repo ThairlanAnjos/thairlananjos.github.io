@@ -25,10 +25,10 @@
     /* --- root --- */
     h1{var(--font-size-xl)}    
     h2{
-        font-size: var(--font-size-md);
+        font-size: var(--font-size-lg);
         letter-spacing: -1px;
-        font-weight: 500;
-        line-height: 1.8rem;
+        font-weight: 600;
+        line-height: 2.0rem;
     }
     h3{var(--font-size-md)}
     h4{var(--font-size-md)}
@@ -52,7 +52,7 @@
     }
 
     button {
-        font-size: var(--font-size-sm);
+        font-size: var(--font-size-md);
         padding: 8px 18px;
     }
 
