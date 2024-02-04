@@ -469,7 +469,7 @@ code {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
-  margin: 0px 0px;
+  margin: 24px 0px;
   padding: auto;
   animation: fadeInUp;
   font-size: var(--font-size-xl);
