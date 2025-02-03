@@ -23,7 +23,7 @@
 @media only screen and (max-width: 600px) {
 
     /* --- root --- */
-    h1{var(--font-size-xl)}    
+    h1{var(--font-size-xxl)}    
     h2{
         font-size: var(--font-size-lg);
         letter-spacing: -1px;
@@ -45,14 +45,13 @@
     /* --- body --- */
 
     .PageTitle {
-        font-size: var(--font-size-lg);
+        font-size: var(--font-size-xl);
         font-weight: 600;
         letter-spacing: -1px;
-        line-height: 1.8rem;
     }
 
     button {
-        font-size: var(--font-size-sm);
+        font-size: var(--font-size-md);
         padding: 8px 18px;
     }
 
@@ -74,7 +73,7 @@
     }
 
     .div-size{
-        width: 18.4em;
+        width: 95%;
       }
 
 }
@@ -84,7 +83,7 @@
 
     /* --- root --- */
     h1{var(--font-size-lg)}
-    h2{var(--font-size-md) font-weight: 500;}
+    h2{var(--font-size-md)}
     h3{var(--font-size-md)}
     h4{var(--font-size-md)}
     h5{var(--font-size-base)}
@@ -100,13 +99,13 @@
     /* --- body --- */
 
     .PageTitle {
-        font-size: var(--font-size-lg);
+        font-size: var(--font-size-xl);
         font-weight: 600;
         letter-spacing: -1px;
     }
 
     button {
-        font-size: var(--font-size-sm);
+        font-size: var(--font-size-md);
         padding: 8px 18px;
     }
 
@@ -127,7 +126,7 @@
 
         /* --- root --- */
         h1{var(--font-size-xl)}
-        h2{var(--font-size-md) font-weight: 500;}
+        h2{var(--font-size-md)}
         h3{var(--font-size-md)}
         h4{var(--font-size-md)}
         h5{var(--font-size-base)}
@@ -143,13 +142,13 @@
         /* --- body --- */
     
         .PageTitle {
-            font-size: var(--font-size-lg);
+            font-size: var(--font-size-xl);
             font-weight: 600;
             letter-spacing: -1px;
         }
     
         button {
-            font-size: var(--font-size-sm);
+            font-size: var(--font-size-md);
             padding: 8px 18px;
         }
     

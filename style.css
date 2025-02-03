@@ -41,7 +41,7 @@
 
   /* ######### REMOVER VAR ANTIGAS ######### */
 
-  --headings-font: "Space Grotesk", sans-serif;
+  --headings-font: "Source Serif Pro", sans-serif;
   --paragraph-font: "Inter", sans-serif;
   --code-font: "JetBrains Mono;", monospace;
   --button-font: "Inter", sans-serif;
@@ -80,13 +80,16 @@ body {
 
 .center {
   text-align: center;
+  word-wrap: break-word;      /* IE 5.5-7 */
+  white-space: -moz-pre-wrap; /* Firefox 1.0-2.0 */
+  white-space: pre-wrap;      /* current browsers */
 }
 
 h1 {
   color: #383838;
   font-family: var(--headings-font);
   font-size: var(--font-size-xxl);
-  font-weight: 700;
+  font-weight: 400;
   letter-spacing: -1.8px;
   line-height: 1.0em;
   margin: 0px 0px 8px 0px;
@@ -98,7 +101,7 @@ h2 {
   color: #383838;
   font-family: var(--headings-font);
   font-size: var(--font-size-xl);
-  font-weight: 600;
+  font-weight: 500;
   letter-spacing: -1px;
   line-height: 2.8rem;
   margin: 0px 0px 5px 0px;
@@ -111,7 +114,7 @@ h3 {
   font-size: var(--font-size-md);
   font-weight: 500;
   letter-spacing: -1px;
-  line-height: 2.0rem;
+  line-height: 1.6rem;
   margin: 0px 0px 5px 0px;
   padding: 0px 0px 5px 0px;
 
@@ -161,6 +164,20 @@ p {
   color: #383838;
 }
 
+.signatura{
+  font-family: var(--paragraph-font-family);
+  font-size: var(--font-size-base);
+  font-style: var(--font-style-normal);
+  font-weight: var(--paragraph-font-weight);
+  font-feature-settings: 'cv11'on;
+  letter-spacing: var(--paragraph-font-letter-spacing);
+  line-height: var(--paragraph-font-line-height);
+  margin: 5px 0px 5px 0px;
+  text-align: justify;
+  text-justify: inter-word;
+  color: #383838;
+}
+
 b {
   font-weight: 500;
 }
@@ -196,7 +213,7 @@ blockquote {
 
 pre code {
   background-color: #271036;
-  border-radius: 15px;
+  border-radius: 0px;
   border: 1px solid #0000002a;
   color: #13ffff;
   display: block;
@@ -207,7 +224,7 @@ pre code {
 
 code {
   background-color: #271036;
-  border-radius: 5px;
+  border-radius: 0px;
   color: #13ffff;
   font-family: var(--code-font);
   font-weight: 300;
@@ -221,7 +238,7 @@ code {
 /* --- New Containers --- */
 
 .div-size{
-  width: 48.4em;
+  width: 95%;
 }
 
 .Father-Container {
@@ -286,13 +303,14 @@ code {
   background-color: var(--color00);
   flex: 1 0 calc(33.33% - 16px);
   box-sizing: border-box;
-  border-radius: 14px;
+  border-radius: 0px;
   padding: 18px 22px;
   border: 1px solid var(--black10);
+  transition: all 0.3s ease-in-out;
 }
 
 .FlexBox:hover {
-  background-color: var(--color00);
+  background-color: var(--black01);
   border-color: var(--black30);
 }
 
@@ -451,16 +469,16 @@ code {
 }
 
 .PageTitle {
-  font-family: var(--headings-font);
-  color: var(--color00);
-  font-weight: 700;
+  font-family: var(--paragraph-font);
+  color: var(--color01);
+  font-weight: 400;
   font-size: var(--font-size-xxl);
   font-feature-settings: 'ss04'on, 'ss03'on, 'ss02'on, 'ss01'on, 'salt'on;
   margin: 14px 0px;
   padding: 0px;
-  letter-spacing: -2px;
+  letter-spacing: -1px;
   line-height: 1.2em;
-  text-align: center;
+  text-align: justify;
 }
 
 .SocialAbout {
@@ -470,7 +488,7 @@ code {
   flex-wrap: wrap;
   justify-content: center;
   margin: 24px 0px;
-  padding: auto;
+  padding: 24px auto;
   animation: fadeInUp;
   font-size: var(--font-size-xl);
 }
@@ -525,7 +543,7 @@ code {
 }
 
 .SpaceBar {
-  background-color: rgba(196, 196, 196, 0);
+  background-color: rgb(255, 43, 43);
   height: 1px;
   margin: 200px 0px 10px 0px;
   max-width: auto;
@@ -537,7 +555,7 @@ code {
 .TargetBar {
   align-items: center;
   background-color: #ffe134;
-  border-radius: 25px;
+  border-radius: 0px;
   border: 0px solid #00000011;
   color: var(--black90);
   font-size: var(--font-size-base);
@@ -581,7 +599,7 @@ code {
 
 .TextBox {
   background-color: var(--color00);
-  border-radius: 25px;
+  border-radius: 0px;
   border: 1px solid var(--black05);
   color: var(--black90);
   font-size: var(--font-size-base);
@@ -596,7 +614,7 @@ code {
 
 .TextBoxBlue {
   background-color: var(--color04);
-  border-radius: 25px;
+  border-radius: 0px;
   border: 1px solid var(--black05);
   color: var(--black90);
   font-size: var(--font-size-base);
@@ -611,7 +629,7 @@ code {
 
 .TextBoxRed {
   background-color: var(--color03);
-  border-radius: 25px;
+  border-radius: 0px;
   border: 1px solid var(--black05);
   color: var(--black90);
   font-size: var(--font-size-base);
@@ -626,7 +644,7 @@ code {
 
 .TextBoxYellow {
   background-color: var(--color05);
-  border-radius: 25px;
+  border-radius: 0px;
   border: 1px solid var(--black05);
   color: var(--black90);
   font-size: var(--font-size-base);
@@ -641,7 +659,7 @@ code {
 
 .TextBoxGreen {
   background-color: #cdff82;
-  border-radius: 25px;
+  border-radius: 0px;
   border: 1px solid var(--black05);
   color: var(--black90);
   font-size: var(--font-size-base);
@@ -656,7 +674,7 @@ code {
 
 .TextBoxGray {
   background-color: #ebebeb;
-  border-radius: 25px;
+  border-radius: 0px;
   border: 1px solid var(--black05);
   color: var(--black90);
   font-size: var(--font-size-base);
@@ -671,7 +689,7 @@ code {
 
 .MailBox {
   background: #fff9ee;
-  border-radius: 20px;
+  border-radius: 0px;
   border: 1px solid var(--black05);
   color: var(--black90);
   font-size: var(--font-size-base);
@@ -740,7 +758,7 @@ code {
   float: left;
   background-color: var(--black05);
   text-align: center;
-  border-radius: 10px;
+  border-radius: 0px;
   color: #000000e3;
   margin: 5px 0px 10px 0px;
   padding: 5px 5px 5px 5px;
@@ -780,7 +798,7 @@ code {
   transition: all 0.2s ease-in-out;
   background-color: #fafafa;
   color: #272727;
-  border-radius: 35px;
+  border-radius: 0px;
   padding: 20px;
   width: auto;
   height: auto;
@@ -789,7 +807,7 @@ code {
 }
 
 .box:hover {
-  border-radius: 20px;
+  border-radius: 0px;
   background-color: #f0f0f09a;
   transition: all 0.3s ease-in-out;
 }
@@ -799,7 +817,7 @@ code {
 /*--- Defaults -----*/
 
 .radius-default-img {
-  border-radius: 16px;
+  border-radius: 0px;
 }
 
 /*------- Line / Callout */
@@ -877,8 +895,6 @@ input[type='checkbox'] {
 .collapsible-content .content-inner {
   background: var(--color00);
   border-top: 1px solid var(--black10);
-  border-bottom-left-radius: 16px;
-  border-bottom-right-radius: 16px;
   padding: 10px;
 }
 
@@ -918,7 +934,7 @@ a:hover {
 
 .linkfeature {
   background-color: var(--black03);
-  border-radius: 12px;
+  border-radius: 0px;
   color: var(--black60);
   letter-spacing: -0.7px;
   padding: 8px 12px 8px 12px;
@@ -939,7 +955,7 @@ a:hover {
   font-size: var(--font-size-base);
   font-feature-settings: 'cv11'on;
   padding: 12px 8px;
-  border-radius: 100px;
+  border-radius: 0px;
   cursor: pointer;
   transition: all 0.3s;
   align-items: center;
@@ -957,7 +973,7 @@ button {
   font-size: var(--font-size-base);
   font-feature-settings: 'cv11'on;
   padding: 14px 32px;
-  border-radius: 100px;
+  border-radius: 0px;
   cursor: pointer;
   transition: all 0.3s;
   margin: 0.4em auto;
@@ -971,7 +987,7 @@ button:hover {
 
 button:active {
   outline: none;
-  border-radius: 10px;
+  border-radius: 0px;
   transition: all 0.3s;
 }
 
@@ -1017,18 +1033,18 @@ button:active {
 }
 
 
-.button-small {
-  padding: 0.4em 0.8em;
+.button-sm {
+  padding: 0.6em 1.4em;
   font-size: var(--font-size-sm);
 }
 
-.button-medium {
+.button-md {
   padding: 0.8em 1.8em;
   font-size: var(--font-size-base);
 }
 
-.button-large {
-  padding: 0.8em 2.4em;
+.button-lg {
+  padding: 1.0em 2.4em;
   font-size: var(--font-size-md);
 }
 
@@ -1039,7 +1055,7 @@ button:active {
   border: 1px solid var(--color01);
   background-color: var(--color01);
   margin: 3px 0px 3px 0px;
-  border-radius: 100px;
+  border-radius: 0px;
   width: 100%;
 }
 
@@ -1059,7 +1075,7 @@ button:active {
   background-color: var(--color01);
   padding: 6px 9px 6px 9px;
   margin: 3px 0px 3px 0px;
-  border-radius: 100px;
+  border-radius: 0px;
 }
 
 .btnSmall:hover {
@@ -1120,7 +1136,7 @@ button:active {
 
 .scrollmenu {
   background-color: #a18b2900;
-  border-radius: 15px;
+  border-radius: 0px;
   padding: 5px 0px 10px 0px;
   display: flex;
   flex-wrap: wrap;
@@ -1131,7 +1147,7 @@ button:active {
   color: black;
   padding: 15px 20px 15px 20px;
   margin: 5px 5px 5px 5px;
-  border-radius: 100px;
+  border-radius: 0px;
   background-color: #ffffff;
   transition: all 0.3s ease-in-out;
 }
@@ -1144,7 +1160,7 @@ button:active {
 
 .ScrollLink:active {
   outline: none;
-  border-radius: 10px;
+  border-radius: 0px;
   background-color: #ffffffee;
   transition: all 0.3s ease-in-out;
 }
@@ -1177,7 +1193,7 @@ button:active {
   color: hsla(0, 0%, 0%, 0.8);
   padding: 15px 20px 15px 20px;
   margin: auto;
-  border-radius: 23px;
+  border-radius: 0px;
   background-color: #fafafa;
   border: 2px solid #00000001;
   transition: all 0.2s ease-out;
@@ -1188,7 +1204,7 @@ button:active {
 }
 
 .GridBox:hover {
-  border-radius: 16px;
+  border-radius: 0px;
   border: 2px solid #00000000;
   background-color: #f0f0f09a;
   transition: all 0.3s ease-in-out;
@@ -1257,7 +1273,6 @@ button:active {
   min-height: auto;
   padding: 15px;
   margin: 5px;
-  border-radius: 16px;
   background-color: #ffffff;
   border: solid 1px #0000000e;
   transition: all 0.3s ease-in-out;
@@ -1318,13 +1333,13 @@ button:active {
   block-size: fit-content;
   display: block;
   overflow: auto;
-  border-radius: 32px;
+  border-radius: 0px;
   margin: 0px;
   transition: all 0.3s ease-in-out;
 }
 
 .imgradius:hover {
-  border-radius: 18px;
+  border-radius: 0px;
   transition: all 0.3s ease-in-out;
 }
 
@@ -1368,7 +1383,7 @@ button:active {
   margin: 5px 0px 10px 0px;
   font-family: var(--paragraph-font-family);
   color: var(--black80);
-  border-radius: 12px;
+  border-radius: 0px;
   border: 1px solid var(--black05);
   flex-direction: row-reverse;
   align-content: space-between;
@@ -1446,9 +1461,9 @@ div ul {
   position: fixed;
   border-bottom-width: 1px;
   border: 1px solid var(--black10);
-  background-color: #ffffffd3;
+  background-color: #ffffff00;
   backdrop-filter: blur(18px);
-  border-radius: 100px;
+  border-radius: 999px;
   padding: 0px 12px 0px 0px;
 }
 
