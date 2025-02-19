@@ -246,7 +246,7 @@ code {
   margin: auto;
   width: 100%;
   padding: 0px;
-  border: 0px solid #000;
+  border: 0px solid #ffffff;
   justify-content: flex-start;
   flex-direction: column;
   height: 100vh;
@@ -254,7 +254,7 @@ code {
 
 
 .Container-Black {
-  background-color: var(--color06);
+  background-color: var(--color00);
 }
 
 .Container-White {
@@ -470,7 +470,7 @@ code {
 
 .PageTitle {
   font-family: var(--paragraph-font);
-  color: var(--color01);
+  color: var(--color06);
   font-weight: 400;
   font-size: var(--font-size-xxl);
   font-feature-settings: 'ss04'on, 'ss03'on, 'ss02'on, 'ss01'on, 'salt'on;
@@ -480,6 +480,21 @@ code {
   line-height: 1.2em;
   text-align: justify;
 }
+
+.PageTitle::after {
+  content: '';
+  display: inline-block;
+  width: 10px;
+  background-color: black;
+  margin-left: 5px;
+  animation: blink 0.5s step-end infinite alternate;
+}
+
+@keyframes blink {
+  from { opacity: 1; }
+  to { opacity: 0; }
+}
+
 
 .SocialAbout {
   color: var(--color00);
