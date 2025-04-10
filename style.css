@@ -74,6 +74,7 @@ body {
   margin: 0px;
   padding: 0px;
   scroll-behavior: smooth;
+  background-color: var(--color00);
 }
 
 /* ------------ Headings ----------- */
@@ -247,6 +248,7 @@ code {
   width: 100%;
   padding: 0px;
   border: 0px solid #ffffff;
+  background-color: var(--color00);
   justify-content: flex-start;
   flex-direction: column;
   height: 100vh;
