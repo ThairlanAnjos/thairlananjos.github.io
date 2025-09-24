@@ -1,179 +1,143 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <link rel="icon" href="/favicon.png" />
+    <title>Coming Soon — Thairlan Anjos</title>
+    <meta name="description" content="Content creator." />
+    <meta property="og:title" content="Coming Soon — Thairlan Anjos" />
+    <meta property="og:description" content="Content creator." />
+    <meta property="og:type" content="website" />
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Fonts (optional) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Instrument+Serif&family=Petrona:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
 
-  <!--Scripts-->
-  <script src="/scripts.js"></script>
-  <script src="/manifest.json"></script>
-  <script src="/service-worker.js"></script>
-  <script src="https://code.iconify.design/2/2.1.2/iconify.min.js"></script>
+    <style>
+      :root {
+        --bg: #f7f6f3;
+        --accent: #1a2238;
+        --muted: #666666;
+        --font-heading: "Instrument Serif", serif;
+        --font-body: "Petrona", serif;
+      }
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+      html,
+      body {
+        height: 100%;
+      }
+      body {
+        font-family: var(--font-body);
+        background: var(--bg);
+        color: var(--accent);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 20px;
+      }
+      .container {
+        max-width: 600px;
+        width: 100%;
+        text-align: center;
+        padding: 32px;
+      }
+      h1 {
+        font-family: var(--font-heading);
+        font-size: clamp(32px, 8vw, 48px);
+        margin-bottom: 24px;
+        line-height: 1.2;
+        min-height: 1.2em;
+      }
+      h1::after {
+        content: "";
+        display: inline-block;
+        width: 3px;
+        height: 1em;
+        background: var(--accent);
+        margin-left: 6px;
+        animation: blink 1s step-end infinite;
+        vertical-align: middle;
+      }
+      @keyframes blink {
+        50% {
+          opacity: 0;
+        }
+      }
+      .cta {
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        font-size: clamp(16px, 4vw, 18px);
+        color: var(--accent);
+        text-decoration: underline;
+        background: none;
+        border: 0;
+        cursor: pointer;
+      }
+      footer {
+        margin-top: 24px;
+        font-size: clamp(14px, 3.5vw, 16px);
+        color: var(--muted);
+      }
+      @media (prefers-reduced-motion: reduce) {
+        * {
+          animation: none;
+          transition: none;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Coming Soon</h1>
 
-  <!--Tags and trackers-->
-  <meta name="facebook-domain-verification" content="ghdc3mwh0qf0j8if8of3ogmbfj1it1" />
+      <form
+        action="https://thainotes.substack.com/"
+        method="post"
+        target="_blank"
+      >
+        <button type="submit" class="cta" aria-label="Subscribe">
+          Avise-me
+        </button>
+      </form>
 
-  <!--Icons / Favicons-->
-  <link rel="apple-touch-icon" sizes="180x180" href="/favicons/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="/favicons/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="194x194" href="/favicons/favicon-194x194.png">
-  <link rel="icon" type="image/png" sizes="192x192" href="/favicons/android-chrome-192x192.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="/favicons/favicon-16x16.png">
-  <link rel="manifest" href="/favicons/site.webmanifest">
-  <link rel="mask-icon" href="/favicons/safari-pinned-tab.svg" color="#000000">
-  <meta name="apple-mobile-web-app-title" content="Thairlan Anjos">
-  <meta name="application-name" content="Thairlan Anjos">
-  <meta name="msapplication-TileColor" content="#ffffff">
-  <meta name="msapplication-TileImage" content="/favicons/mstile-144x144.png">
-
-  <!-- Meta Tags -->
-  <!-- Primary Meta Tags -->
-  <title>Thairlan Anjos</title>
-  <meta name="title" content="Thairlan Anjos" />
-  <meta name="description"
-    content="I'm Thairlan Anjos a Product designer, software engineering student and Notion specialist, I help people and companies create better solutions." />
-
-  <!-- Open Graph / Facebook -->
-  <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://www.thairlananjos.com" />
-  <meta property="og:title" content="Thairlan Anjos" />
-  <meta property="og:description"
-    content="I'm Thairlan Anjos a Product designer, software engineering student and Notion specialist, I help people and companies create better solutions." />
-  <meta property="og:image" content="/src/Images/MetaBanner.png" />
-
-  <!-- Twitter -->
-  <meta property="twitter:card" content="summary_large_image" />
-  <meta property="twitter:url" content="https://www.thairlananjos.com" />
-  <meta property="twitter:title" content="Thairlan Anjos" />
-  <meta property="twitter:description"
-    content="I'm Thairlan Anjos a Product designer, software engineering student and Notion specialist, I help people and companies create better solutions." />
-  <meta property="twitter:image" content="src/Images/MetaBanner.png" />
-
-
-  <!--Icons libs-->
-  <link rel="stylesheet" href="path/to/line-awesome/css/line-awesome-font-awesome.min.css" />
-  <link rel="stylesheet"
-    href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css" />
-  <script src="https://code.iconify.design/iconify-icon/1.0.1/iconify-icon.min.js"></script>
-
-  <script>
-    const texto = 'Think Different!';
-let indice = 0;
-
-function digitar() {
-  const titulo = document.querySelector('.PageTitle');
-  if (indice < texto.length) {
-    titulo.textContent += texto.charAt(indice);
-    indice++;
-    setTimeout(digitar, 150); // Ajuste a velocidade aqui (milissegundos)
-  }
-}
-
-window.onload = function() {
-  const titulo = document.querySelector('.PageTitle');
-  titulo.textContent = ''; // Limpa o texto inicial
-  digitar();
-}
-
-  </script>
-
-  <!--Mobile color-->
-  <meta name="theme-color" content="#141414">
-  <meta name="mobile-web-app-capable" content="yes">
-  <meta name="apple-mobile-web-app-status-bar-style" content="#EBEBEB">
-
-  <!-- CSS Stylesheet-->
-  <link rel="stylesheet" href="/style.css" />
-  <link rel="stylesheet" href="/media.css" />
-  <link rel="stylesheet" href="/css/colors.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap"
-    rel="stylesheet">
-
-  <link rel="alternate" href="rss.xml" type="application/rss+xml" title="RSS" />
-
-  <title>Thairlan Anjos • Website</title>
-
-</head>
-
-<style>
-  body {
-    background-color: #141414;
-  }
-</style>
-
-<body>
-
-  <div class="Father-Container">
-
-    <div class="Container-Black">
-
-      <div class="Navbar-Container">
-
-        <ul>
-          <li><a class="active" href="/index.html">
-              <img src="/src/Brand/Thairlan Anjos - Brand.svg" width="90%" height="38px" alt="Thairlan Anjos Brand">
-            </a></li>
-
-          <div class="NavItens">
-
-            <li><a href="/pages/about.html">
-                <div class="static_mobile">
-                  <div class="NameLink">Sobre</div>
-                </div>
-              </a></li>
-
-            <li><a href="https://go.thairlananjos.com/behance">
-                <div class="static_mobile">
-                  <div class="NameLink">Behance</div>
-                </div>
-              </a></li>
-
-            <li><a href="https://go.thairlananjos.com/linkedin" target="_blank">
-                <div class="static_mobile">
-                  <div class="NameLink">Linkedin</div>
-                </div>
-              </a></li>
-
-          </div>
-
-        </ul>
-      </div>
-
-      <div class="Header-Container">
-        <div>
-          <h1 class="PageTitle">         
-          Think Different!</h1>
-<br><br>
-        </div>
-
-      </div>
-
-      <div class="Footer">
-        <footer>
-          Thairlan Anjos 2025© | Todos os direitos reservados.
-        </footer>
-      </div>
-
+      <footer>
+        Assine para receber novidades direto na sua caixa de entrada.
+      </footer>
     </div>
 
-  </div>
-
-</body>
-
-<script>
-  if ('serviceWorker' in navigator) {
-    navigator.serviceWorker.register('/service-worker.js')
-      .then((registration) => {
-        console.log('Service Worker registrado com sucesso:', registration);
-      })
-      .catch((error) => {
-        console.error('Erro ao registrar Service Worker:', error);
-      });
-  }
-</script>
-
-
+    <script>
+      // Lightweight typing effect; respects user's reduced-motion preference
+      (function () {
+        const text = "Coming Soon";
+        const title = document.querySelector("h1");
+        if (!title) return;
+        if (
+          window.matchMedia &&
+          window.matchMedia("(prefers-reduced-motion: reduce)").matches
+        ) {
+          title.textContent = text;
+          return;
+        }
+        title.textContent = "";
+        let i = 0;
+        const step = () => {
+          if (i < text.length) {
+            title.textContent += text.charAt(i++);
+            setTimeout(step, 150);
+          }
+        };
+        document.addEventListener("DOMContentLoaded", step);
+      })();
+    </script>
+  </body>
 </html>
