@@ -43,6 +43,8 @@
         align-items: center;
         justify-content: center;
         padding: 20px;
+        /* Transição suave para o dark mode */
+        transition: background-color 0.5s, color 0.5s;
       }
       .container {
         max-width: 600px;
@@ -53,6 +55,7 @@
       h1 {
         font-family: var(--font-heading);
         font-size: clamp(32px, 8vw, 48px);
+        font-weight: normal; /* Adicionado para remover o negrito */
         margin-bottom: 24px;
         line-height: 1.2;
         min-height: 1.2em;
@@ -66,6 +69,8 @@
         margin-left: 6px;
         animation: blink 1s step-end infinite;
         vertical-align: middle;
+        /* Transição suave para o dark mode */
+        transition: background-color 0.5s;
       }
       @keyframes blink {
         50% {
@@ -82,11 +87,15 @@
         background: none;
         border: 0;
         cursor: pointer;
+        /* Transição suave para o dark mode */
+        transition: color 0.5s;
       }
       footer {
         margin-top: 24px;
         font-size: clamp(14px, 3.5vw, 16px);
         color: var(--muted);
+        /* Transição suave para o dark mode */
+        transition: color 0.5s;
       }
       @media (prefers-reduced-motion: reduce) {
         * {
@@ -94,22 +103,90 @@
           transition: none;
         }
       }
+
+      /* --- INÍCIO DO CÓDIGO DARK MODE --- */
+
+      /* 1. Estilo do Switch (Botão) */
+      .dark-mode-switch {
+        display: block;
+        --width-of-switch: 2.8em; /* Reduzido de 3.0em */
+        --height-of-switch: 1.5em; /* Reduzido de 1.7em */
+        --size-of-icon: 1.1em; /* Reduzido de 1.3em */
+        --slider-offset: 0.2em; /* Mantido */
+        position: fixed; /* Fixo na tela */
+        bottom: 20px;
+        right: 20px;
+        z-index: 999;
+        width: var(--width-of-switch);
+        height: var(--height-of-switch);
+      }
+      .dark-mode-switch input { opacity: 0; width: 0; height: 0; }
+      .dark-mode-slider {
+        /* border: solid 0px #2404642A; */ /* Removido */
+        position: absolute;
+        cursor: pointer;
+        top: 0; left: 0; right: 0; bottom: 0;
+        /* background: radial-gradient(circle at 40% 50%, #ffffff, #b391f6); */ /* Removido */
+        background-color: var(--bg); /* Alterado */
+        border: 1px solid var(--accent); /* Adicionado */
+        transition: .4s;
+        border-radius: 30px;
+      }
+      .dark-mode-slider:before {
+        position: absolute;
+        content: "";
+        height: var(--size-of-icon,1.1em); /* Atualizado */
+        width: var(--size-of-icon,1.1em); /* Atualizado */
+        border-radius: 20px;
+        left: var(--slider-offset,0.2em); /* Fallback corrigido */
+        top: 50%;
+        transform: translateY(-50%);
+        /* background: radial-gradient(circle, #ffcf40 30%, #ff7e00 70%); */ /* Removido */
+        background-color: var(--accent); /* Alterado */
+        transition: .4s, box-shadow .4s; /* Adicionada transição para a lua */
+      }
+      input:checked + .dark-mode-slider {
+        /* background: #15111c; */ /* Removido */
+        /* background-image: radial-gradient(circle, #ffffff 1px, transparent 1px); */ /* Removido */
+        /* background-size: 15px 15px; */ /* Removido */
+        background-color: var(--bg); /* Adicionado - vai pegar o valor dark */
+        border: 1px solid var(--accent); /* Adicionado - vai pegar o valor light */
+      }
+      input:checked + .dark-mode-slider:before {
+        left: calc(100% - (var(--size-of-icon,1.1em) + var(--slider-offset,0.2em))); /* Valores atualizados */
+        /* background: #303136; */ /* Removido */
+        /* box-shadow: inset -3px -2px 5px -2px #dcdcdc, inset -10px -4px 0 0 #b0b0b0; */ /* Removido */
+        background-color: var(--bg); /* Invertido: agora é azul (cor de fundo do dark mode) */
+        box-shadow: inset -0.25em -0.15em 0 0 var(--accent); /* Invertido: agora é branco (cor de texto do dark mode) */
+      }
+
+      /* 2. Lógica do Dark Mode (troca as variáveis) */
+      body.dark-mode-active {
+        /* O 'accent' (escuro) vira o fundo */
+        --bg: #1a2238; 
+        /* O 'bg' (claro) vira a cor do texto */
+        --accent: #f7f6f3;
+        /* Um cinza mais claro para o rodapé */
+        --muted: #999999; 
+      }
+      /* --- FIM DO CÓDIGO DARK MODE --- */
+
     </style>
   </head>
   <body>
     <div class="container">
       <h1>Coming Soon</h1>
 
-<a href="https://thainotes.substack.com" target="_blank" class="cta">
-  Avise-me
-</a>
-
+      <a href="https://thainotes.substack.com" target="_blank" class="cta">
+        Avise-me
+      </a>
 
       <footer>
         Assine para receber novidades direto na sua caixa de entrada.
       </footer>
     </div>
 
+    <!-- Script original do site (Typing Effect) -->
     <script>
       // Lightweight typing effect; respects user's reduced-motion preference
       (function () {
@@ -134,5 +211,59 @@
         document.addEventListener("DOMContentLoaded", step);
       })();
     </script>
+
+    <!-- --- INÍCIO DOS ITENS DO DARK MODE --- -->
+
+    <!-- 1. HTML do Switch -->
+    <label class="dark-mode-switch" title="Alternar modo light/dark">
+      <input type="checkbox" id="dark-mode-checkbox">
+      <span class="dark-mode-slider"></span>
+    </label>
+
+    <!-- 2. JavaScript do Switch (com localStorage) -->
+    <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      // Espera o DOM estar pronto para anexar o JS
+      const toggle = document.getElementById('dark-mode-checkbox');
+      if (!toggle) return; // Se o switch não for encontrado, não faz nada
+      
+      const body = document.body;
+      const storageKey = 'darkMode';
+
+      function applyDarkMode(isDark) {
+        body.classList.toggle('dark-mode-active', isDark);
+        toggle.checked = isDark;
+      }
+
+      const prefersDark = window.matchMedia('(prefers-color-scheme: dark)');
+      const savedState = localStorage.getItem(storageKey);
+
+      if (savedState !== null) {
+        // Se tiver algo salvo, usa isso
+        applyDarkMode(savedState === 'true');
+      } else {
+        // Se não, usa a preferência do sistema
+        applyDarkMode(prefersDark.matches);
+      }
+
+      // Ouve a mudança no checkbox
+      toggle.addEventListener('change', function() {
+        const isChecked = toggle.checked;
+        applyDarkMode(isChecked);
+        // Salva a escolha
+        localStorage.setItem(storageKey, isChecked);
+      });
+
+      // (Opcional) Ouve mudanças na preferência do sistema
+      prefersDark.addEventListener('change', (e) => {
+        // Só aplica se o usuário não tiver salvo uma preferência
+        if (localStorage.getItem(storageKey) === null) {
+          applyDarkMode(e.matches);
+        }
+      });
+    });
+    </script>
+    <!-- --- FIM DOS ITENS DO DARK MODE --- -->
+
   </body>
 </html>
