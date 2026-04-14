@@ -1,16 +1,19 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1" />
     <link rel="icon" href="/favicon.png" />
-    <title>Coming Soon — Thairlan Anjos</title>
-    <meta name="description" content="Content creator." />
-    <meta property="og:title" content="Coming Soon — Thairlan Anjos" />
-    <meta property="og:description" content="Content creator." />
+    <title>Links — Thairlan Anjos</title>
+    <meta name="description" content="Thairlan Anjos - Meus links de redes sociais." />
+    <meta property="og:title" content="Links — Thairlan Anjos" />
+    <meta property="og:description" content="Thairlan Anjos - Meus links de redes sociais." />
     <meta property="og:type" content="website" />
 
-    <!-- Fonts (optional) -->
+    <!-- Iconify script -->
+    <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+
+    <!-- Fontes do site original -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -23,6 +26,7 @@
         --bg: #f7f6f3;
         --accent: #1a2238;
         --muted: #666666;
+        --link-hover: #e8e6e1;
         --font-heading: "Instrument Serif", serif;
         --font-body: "Petrona", serif;
       }
@@ -40,80 +44,117 @@
         background: var(--bg);
         color: var(--accent);
         display: flex;
+        flex-direction: column;
         align-items: center;
-        justify-content: center;
-        padding: 20px;
-        /* Transição suave para o dark mode */
+        justify-content: flex-start;
+        padding: 60px 20px;
         transition: background-color 0.5s, color 0.5s;
+        overflow-y: auto;
       }
       .container {
-        max-width: 600px;
+        max-width: 500px; /* Largura levemente maior para o grid */
         width: 100%;
         text-align: center;
-        padding: 32px;
       }
+      
+      header {
+        margin-bottom: 40px;
+      }
+      
+      /* Acessibilidade: Título H1 único para estrutura semântica clara */
       h1 {
         font-family: var(--font-heading);
-        font-size: clamp(32px, 8vw, 48px);
-        font-weight: normal; /* Adicionado para remover o negrito */
-        margin-bottom: 24px;
+        font-size: clamp(32px, 8vw, 42px);
+        font-weight: normal;
         line-height: 1.2;
-        min-height: 1.2em;
       }
-      h1::after {
-        content: "";
-        display: inline-block;
-        width: 3px;
-        height: 1em;
-        background: var(--accent);
-        margin-left: 6px;
-        animation: blink 1s step-end infinite;
-        vertical-align: middle;
-        /* Transição suave para o dark mode */
-        transition: background-color 0.5s;
+
+      /* Acessibilidade: Nav com label para leitores de tela */
+      nav {
+        width: 100%;
       }
-      @keyframes blink {
-        50% {
-          opacity: 0;
-        }
+
+      /* Acessibilidade: Grid responsivo para os links */
+      ul {
+        list-style: none;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); /* 2 colunas */
+        gap: 16px;
       }
-      .cta {
-        display: inline-flex;
+
+      /* Snapchat e Substack como destaque ou grid irregular se desejar, 
+         mas manteremos o grid 2x2 para minimalismo. O último item ocupará 2 colunas se ímpar. */
+      li:last-child:nth-child(odd) {
+        grid-column: span 2;
+      }
+
+      /* Estilo minimalista dos links em grid */
+      .link-item {
+        display: flex;
+        flex-direction: column;
         align-items: center;
-        gap: 8px;
-        font-size: clamp(16px, 4vw, 18px);
+        justify-content: center;
+        gap: 12px;
+        padding: 24px 12px;
+        border: 1px solid var(--accent);
+        text-decoration: none;
         color: var(--accent);
-        text-decoration: underline;
-        background: none;
-        border: 0;
-        cursor: pointer;
-        /* Transição suave para o dark mode */
-        transition: color 0.5s;
+        font-size: 16px;
+        transition: all 0.3s ease;
+        border-radius: 12px;
       }
+
+      .link-item iconify-icon {
+        font-size: 28px;
+        /* Garante que o ícone herde a cor do texto para manter o branding monochrome */
+        color: currentColor;
+      }
+
+      /* Acessibilidade: Estados de hover e focus para feedback visual */
+      .link-item:hover {
+        background-color: var(--accent);
+        color: var(--bg);
+      }
+
+      /* Acessibilidade: Anel de foco de alto contraste para navegação por teclado */
+      .link-item:focus-visible {
+        outline: 3px solid var(--accent);
+        outline-offset: 4px;
+        background-color: var(--accent);
+        color: var(--bg);
+      }
+
+      /* Acessibilidade: Link de pular conteúdo (escondido até ganhar foco) */
+      .skip-link {
+        position: absolute;
+        top: -40px;
+        left: 0;
+        background: var(--accent);
+        color: var(--bg);
+        padding: 8px;
+        z-index: 1000;
+        transition: top 0.3s;
+        text-decoration: none;
+      }
+      .skip-link:focus {
+        top: 0;
+      }
+
       footer {
-        margin-top: 24px;
-        font-size: clamp(14px, 3.5vw, 16px);
+        margin-top: 60px;
+        font-size: 14px;
         color: var(--muted);
-        /* Transição suave para o dark mode */
         transition: color 0.5s;
       }
-      @media (prefers-reduced-motion: reduce) {
-        * {
-          animation: none;
-          transition: none;
-        }
-      }
 
-      /* --- INÍCIO DO CÓDIGO DARK MODE --- */
-
-      /* 1. Estilo do Switch (Botão) */
+      /* --- CÓDIGO DARK MODE --- */
       .dark-mode-switch {
         display: block;
-        --width-of-switch: 2.8em; /* Reduzido de 3.0em */
-        --height-of-switch: 1.5em; /* Reduzido de 1.7em */
-        --size-of-icon: 1.1em; /* Reduzido de 1.3em */
-        --slider-offset: 0.2em; /* Mantido */
-        position: fixed; /* Fixo na tela */
+        --width-of-switch: 2.8em;
+        --height-of-switch: 1.5em;
+        --size-of-icon: 1.1em;
+        --slider-offset: 0.2em;
+        position: fixed;
         bottom: 20px;
         right: 20px;
         z-index: 999;
@@ -122,51 +163,35 @@
       }
       .dark-mode-switch input { opacity: 0; width: 0; height: 0; }
       .dark-mode-slider {
-        /* border: solid 0px #2404642A; */ /* Removido */
         position: absolute;
         cursor: pointer;
         top: 0; left: 0; right: 0; bottom: 0;
-        /* background: radial-gradient(circle at 40% 50%, #ffffff, #b391f6); */ /* Removido */
-        background-color: var(--bg); /* Alterado */
-        border: 1px solid var(--accent); /* Adicionado */
+        background-color: var(--bg);
+        border: 1px solid var(--accent);
         transition: .4s;
         border-radius: 30px;
       }
       .dark-mode-slider:before {
         position: absolute;
         content: "";
-        height: var(--size-of-icon,1.1em); /* Atualizado */
-        width: var(--size-of-icon,1.1em); /* Atualizado */
+        height: var(--size-of-icon);
+        width: var(--size-of-icon);
         border-radius: 20px;
-        left: var(--slider-offset,0.2em); /* Fallback corrigido */
+        left: var(--slider-offset);
         top: 50%;
         transform: translateY(-50%);
-        /* background: radial-gradient(circle, #ffcf40 30%, #ff7e00 70%); */ /* Removido */
-        background-color: var(--accent); /* Alterado */
-        transition: .4s, box-shadow .4s; /* Adicionada transição para a lua */
-      }
-      input:checked + .dark-mode-slider {
-        /* background: #15111c; */ /* Removido */
-        /* background-image: radial-gradient(circle, #ffffff 1px, transparent 1px); */ /* Removido */
-        /* background-size: 15px 15px; */ /* Removido */
-        background-color: var(--bg); /* Adicionado - vai pegar o valor dark */
-        border: 1px solid var(--accent); /* Adicionado - vai pegar o valor light */
+        background-color: var(--accent);
+        transition: .4s, box-shadow .4s;
       }
       input:checked + .dark-mode-slider:before {
-        left: calc(100% - (var(--size-of-icon,1.1em) + var(--slider-offset,0.2em))); /* Valores atualizados */
-        /* background: #303136; */ /* Removido */
-        /* box-shadow: inset -3px -2px 5px -2px #dcdcdc, inset -10px -4px 0 0 #b0b0b0; */ /* Removido */
-        background-color: var(--bg); /* Invertido: agora é azul (cor de fundo do dark mode) */
-        box-shadow: inset -0.25em -0.15em 0 0 var(--accent); /* Invertido: agora é branco (cor de texto do dark mode) */
+        left: calc(100% - (var(--size-of-icon) + var(--slider-offset)));
+        background-color: var(--bg);
+        box-shadow: inset -0.25em -0.15em 0 0 var(--accent);
       }
 
-      /* 2. Lógica do Dark Mode (troca as variáveis) */
       body.dark-mode-active {
-        /* O 'accent' (escuro) vira o fundo */
         --bg: #1a2238; 
-        /* O 'bg' (claro) vira a cor do texto */
         --accent: #f7f6f3;
-        /* Um cinza mais claro para o rodapé */
         --muted: #999999; 
       }
       /* --- FIM DO CÓDIGO DARK MODE --- */
@@ -174,59 +199,86 @@
     </style>
   </head>
   <body>
-    <div class="container">
-      <h1>Coming Soon</h1>
+    <!-- Acessibilidade: Link para pular direto para o conteúdo (visível apenas ao tabular) -->
+    <a href="#main-content" class="skip-link">Pular para o conteúdo principal</a>
 
-      <a href="https://thainotes.substack.com" target="_blank" class="cta">
-        Avise-me
-      </a>
+    <!-- Acessibilidade: Main para indicar o conteúdo central -->
+    <main class="container" id="main-content">
+      <header>
+        <h1>Thairlan Anjos</h1>
+      </header>
+
+      <nav aria-label="Meus Links de Redes Sociais">
+        <ul>
+          <li>
+            <a href="https://go.thairlananjos.com/goodreads" class="link-item" target="_blank" rel="noopener">
+              <iconify-icon icon="ri:book-line" aria-hidden="true"></iconify-icon>
+              <span>Goodreads</span>
+            </a>
+          </li>
+          <li>
+            <a href="https://go.thairlananjos.com/instagram" class="link-item" target="_blank" rel="noopener">
+              <iconify-icon icon="ri:instagram-line" aria-hidden="true"></iconify-icon>
+              <span>Instagram</span>
+            </a>
+          </li>
+          <li>
+            <a href="https://go.thairlananjos.com/bluesky" class="link-item" target="_blank" rel="noopener">
+              <iconify-icon icon="ri:bluesky-line" aria-hidden="true"></iconify-icon>
+              <span>Bluesky</span>
+            </a>
+          </li>
+          <li>
+            <a href="https://go.thairlananjos.com/threads" class="link-item" target="_blank" rel="noopener">
+              <iconify-icon icon="ri:threads-line" aria-hidden="true"></iconify-icon>
+              <span>Threads</span>
+            </a>
+          </li>
+          <li>
+            <a href="https://go.thairlananjos.com/snapchat" class="link-item" target="_blank" rel="noopener">
+              <iconify-icon icon="ri:snapchat-line" aria-hidden="true"></iconify-icon>
+              <span>Snapchat</span>
+            </a>
+          </li>
+          <li>
+            <a href="https://go.thairlananjos.com/substack" class="link-item" target="_blank" rel="noopener">
+              <iconify-icon icon="simple-icons:substack" aria-hidden="true"></iconify-icon>
+              <span>Substack</span>
+            </a>
+          </li>
+          <li>
+            <a href="https://go.thairlananjos.com/twitter" class="link-item" target="_blank" rel="noopener">
+              <iconify-icon icon="ri:twitter-x-line" aria-hidden="true"></iconify-icon>
+              <span>Twitter</span>
+            </a>
+          </li>
+          <li>
+            <a href="https://go.thairlananjos.com/pinterest" class="link-item" target="_blank" rel="noopener">
+              <iconify-icon icon="ri:pinterest-line" aria-hidden="true"></iconify-icon>
+              <span>Pinterest</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
 
       <footer>
-        Assine para receber novidades direto na sua caixa de entrada.
+        &copy; <span id="year"></span> Thairlan Anjos
       </footer>
-    </div>
+    </main>
 
-    <!-- Script original do site (Typing Effect) -->
-    <script>
-      // Lightweight typing effect; respects user's reduced-motion preference
-      (function () {
-        const text = "Coming Soon";
-        const title = document.querySelector("h1");
-        if (!title) return;
-        if (
-          window.matchMedia &&
-          window.matchMedia("(prefers-reduced-motion: reduce)").matches
-        ) {
-          title.textContent = text;
-          return;
-        }
-        title.textContent = "";
-        let i = 0;
-        const step = () => {
-          if (i < text.length) {
-            title.textContent += text.charAt(i++);
-            setTimeout(step, 150);
-          }
-        };
-        document.addEventListener("DOMContentLoaded", step);
-      })();
-    </script>
-
-    <!-- --- INÍCIO DOS ITENS DO DARK MODE --- -->
-
-    <!-- 1. HTML do Switch -->
+    <!-- HTML do Switch Dark Mode -->
     <label class="dark-mode-switch" title="Alternar modo light/dark">
-      <input type="checkbox" id="dark-mode-checkbox">
+      <input type="checkbox" id="dark-mode-checkbox" aria-label="Alternar modo escuro">
       <span class="dark-mode-slider"></span>
     </label>
 
-    <!-- 2. JavaScript do Switch (com localStorage) -->
     <script>
     document.addEventListener("DOMContentLoaded", function() {
-      // Espera o DOM estar pronto para anexar o JS
+      // Atualizar o ano no rodapé automaticamente
+      document.getElementById('year').textContent = new Date().getFullYear();
+
+      // Lógica do Dark Mode (reutilizada do original)
       const toggle = document.getElementById('dark-mode-checkbox');
-      if (!toggle) return; // Se o switch não for encontrado, não faz nada
-      
       const body = document.body;
       const storageKey = 'darkMode';
 
@@ -239,31 +291,23 @@
       const savedState = localStorage.getItem(storageKey);
 
       if (savedState !== null) {
-        // Se tiver algo salvo, usa isso
         applyDarkMode(savedState === 'true');
       } else {
-        // Se não, usa a preferência do sistema
         applyDarkMode(prefersDark.matches);
       }
 
-      // Ouve a mudança no checkbox
       toggle.addEventListener('change', function() {
         const isChecked = toggle.checked;
         applyDarkMode(isChecked);
-        // Salva a escolha
         localStorage.setItem(storageKey, isChecked);
       });
 
-      // (Opcional) Ouve mudanças na preferência do sistema
       prefersDark.addEventListener('change', (e) => {
-        // Só aplica se o usuário não tiver salvo uma preferência
         if (localStorage.getItem(storageKey) === null) {
           applyDarkMode(e.matches);
         }
       });
     });
     </script>
-    <!-- --- FIM DOS ITENS DO DARK MODE --- -->
-
   </body>
 </html>
