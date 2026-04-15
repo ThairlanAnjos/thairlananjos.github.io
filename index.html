@@ -268,38 +268,12 @@
         <h1>Thairlan Anjos</h1>
       </header>
 
-      <!-- Seção de Livros (Mini Deck Grid) -->
+      <!-- Seção de Livros (Mini Deck Grid Dinâmico) -->
       <section class="books-section" aria-labelledby="books-title">
         <h2 id="books-title" class="sr-only">Leituras Recentes</h2>
-        <div class="books-grid">
-          <div class="book-card">
-            <iconify-icon icon="ri:book-3-line" class="book-icon"></iconify-icon>
-            <div class="book-info">
-              <span class="book-title">A Metamorfose</span>
-              <span class="book-author">Franz Kafka</span>
-            </div>
-          </div>
-          <div class="book-card">
-            <iconify-icon icon="ri:book-3-line" class="book-icon"></iconify-icon>
-            <div class="book-info">
-              <span class="book-title">Noites Brancas</span>
-              <span class="book-author">F. Dostoiévski</span>
-            </div>
-          </div>
-          <div class="book-card">
-            <iconify-icon icon="ri:book-3-line" class="book-icon"></iconify-icon>
-            <div class="book-info">
-              <span class="book-title">Ego Is the Enemy</span>
-              <span class="book-author">Ryan Holiday</span>
-            </div>
-          </div>
-          <div class="book-card">
-            <iconify-icon icon="ri:book-3-line" class="book-icon"></iconify-icon>
-            <div class="book-info">
-              <span class="book-title">Biblioteca da Meia-Noite</span>
-              <span class="book-author">Matt Haig</span>
-            </div>
-          </div>
+        <div class="books-grid" id="books-container">
+          <!-- O conteúdo será carregado via JavaScript -->
+          <div class="book-card loading">Carregando leituras...</div>
         </div>
       </section>
 
@@ -402,6 +376,49 @@
           applyDarkMode(e.matches);
         }
       });
+
+      // --- BUSCA DINÂMICA DE LIVROS DO GOODREADS ---
+      const rssUrl = 'https://www.goodreads.com/review/list_rss/106296664?key=Tye_yDTFjrNlBcqWzsUB8qulmcmV12bKfKUFwhC7VP2AIp8O&shelf=read';
+      const apiProxy = `https://api.rss2json.com/v1/api.json?rss_url=${encodeURIComponent(rssUrl)}`;
+
+      async function fetchBooks() {
+        const container = document.getElementById('books-container');
+        try {
+          const response = await fetch(apiProxy);
+          const data = await response.json();
+
+          if (data.status === 'ok') {
+            container.innerHTML = ''; // Limpa o "Carregando"
+            
+            // Pega apenas os 4 primeiros livros
+            const books = data.items.slice(0, 4);
+            
+            books.forEach(book => {
+              const card = document.createElement('div');
+              card.className = 'book-card';
+              
+              // Limpar o nome do autor se vier com tags ou prefixos
+              const author = book.author || 'Autor desconhecido';
+              
+              card.innerHTML = `
+                <iconify-icon icon="ri:book-3-line" class="book-icon"></iconify-icon>
+                <div class="book-info">
+                  <span class="book-title" title="${book.title}">${book.title}</span>
+                  <span class="book-author">${author}</span>
+                </div>
+              `;
+              container.appendChild(card);
+            });
+          } else {
+            throw new Error('Erro ao carregar feed');
+          }
+        } catch (error) {
+          console.error('Goodreads fetch error:', error);
+          container.innerHTML = '<div class="book-card" style="grid-column: span 2; text-align: center;">Não foi possível carregar as leituras.</div>';
+        }
+      }
+
+      fetchBooks();
     });
     </script>
   </body>
