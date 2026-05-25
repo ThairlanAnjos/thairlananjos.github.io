@@ -47,7 +47,7 @@
         flex-direction: column;
         align-items: center;
         justify-content: flex-start;
-        padding: 60px 20px 80px; /* Aumentado o padding inferior */
+        padding: 60px 20px 80px; /* Restaurado padding para o layout centralizado */
         transition: background-color 0.5s, color 0.5s;
         overflow-y: auto;
       }
@@ -59,13 +59,68 @@
       
       header {
         margin-bottom: 48px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+      }
+      
+      .profile-img-container {
+        position: relative;
+        width: 180px;
+        height: 180px;
+        margin-bottom: 24px;
+        overflow: hidden;
+        border-radius: 50%;
+        border: 2px solid var(--accent); /* Um detalhe sutil para destacar o círculo */
+      }
+      
+      .profile-img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
       }
       
       h1 {
         font-family: var(--font-heading);
-        font-size: clamp(36px, 10vw, 48px);
+        font-size: clamp(32px, 8vw, 40px);
         font-weight: normal;
         line-height: 1.2;
+        margin-bottom: 16px;
+      }
+
+      .header-divider {
+        width: 60px;
+        height: 1px;
+        background-color: var(--accent);
+        opacity: 0.2;
+        margin-bottom: 24px;
+      }
+
+      /* Nova seção de ícones sociais no topo */
+      .social-icons {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        margin-top: 16px;
+      }
+      .social-icon-link {
+        color: var(--accent);
+        font-size: 24px;
+        text-decoration: none;
+        transition: opacity 0.2s;
+        display: flex;
+        align-items: center;
+        opacity: 0.8;
+      }
+      .social-icon-link:hover {
+        opacity: 1;
+      }
+      .social-icon-link:focus-visible {
+        outline: 2px solid var(--accent);
+        outline-offset: 4px;
+        border-radius: 4px;
       }
 
       /* Títulos das Seções */
@@ -74,7 +129,7 @@
         font-size: 24px;
         font-weight: normal;
         margin-bottom: 20px;
-        text-align: left;
+        text-align: center;
         opacity: 0.9;
       }
 
@@ -92,13 +147,17 @@
 
       /* Seção de Livros (Lista) */
       .books-section {
-        margin-bottom: 32px;
+        margin-bottom: 48px;
         width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
       }
       .books-list {
         display: flex;
         flex-direction: column;
         gap: 12px;
+        width: 100%;
       }
       .book-card {
         display: flex;
@@ -112,6 +171,7 @@
         text-decoration: none;
         color: inherit;
         transition: transform 0.2s ease, background-color 0.2s;
+        width: 100%;
       }
       .book-card:hover {
         background-color: rgba(26, 34, 56, 0.03);
@@ -244,6 +304,7 @@
 
       footer {
         margin-top: 60px;
+        padding: 10%;
         font-size: 14px;
         color: var(--muted);
         transition: color 0.5s;
@@ -304,8 +365,34 @@
 
     <main class="container" id="main-content">
       <header>
+        <div class="profile-img-container">
+          <img src="Profile.jpg" alt="Foto de Thairlan Anjos" class="profile-img">
+        </div>
         <h1>Thairlan Anjos</h1>
+        <div class="header-divider"></div>
+        <div class="social-icons">
+          <a href="https://go.thairlananjos.com/threads" class="social-icon-link" target="_blank" rel="noopener" aria-label="Threads">
+            <iconify-icon icon="ri:threads-line"></iconify-icon>
+          </a>
+          <a href="https://go.thairlananjos.com/snapchat" class="social-icon-link" target="_blank" rel="noopener" aria-label="Snapchat">
+            <iconify-icon icon="ri:snapchat-line"></iconify-icon>
+          </a>
+          <a href="https://go.thairlananjos.com/pinterest" class="social-icon-link" target="_blank" rel="noopener" aria-label="Pinterest">
+            <iconify-icon icon="ri:pinterest-line"></iconify-icon>
+          </a>
+          <a href="https://go.thairlananjos.com/goodreads" class="social-icon-link" target="_blank" rel="noopener" aria-label="Goodreads">
+            <iconify-icon icon="simple-icons:goodreads"></iconify-icon>
+          </a>
+        </div>
       </header>
+
+      <!-- Lendo Agora -->
+      <section class="books-section">
+        <h2>Lendo Agora</h2>
+        <div class="books-list" id="currently-reading-container">
+          <div class="book-card">Carregando leituras...</div>
+        </div>
+      </section>
 
       <!-- Leituras Recentes -->
       <section class="books-section">
@@ -319,63 +406,6 @@
           <iconify-icon icon="ri:arrow-right-up-line"></iconify-icon>
         </a>
       </section>
-
-      <hr class="divider">
-
-      <!-- Links Úteis -->
-      <nav aria-label="Links Úteis">
-        <h2>Links Úteis</h2>
-        <ul>
-          <li>
-            <a href="https://go.thairlananjos.com/goodreads" class="link-item" target="_blank" rel="noopener">
-              <iconify-icon icon="simple-icons:goodreads" aria-hidden="true"></iconify-icon>
-              <span>Goodreads</span>
-            </a>
-          </li>
-          <li>
-            <a href="https://go.thairlananjos.com/instagram" class="link-item" target="_blank" rel="noopener">
-              <iconify-icon icon="ri:instagram-line" aria-hidden="true"></iconify-icon>
-              <span>Instagram</span>
-            </a>
-          </li>
-          <li>
-            <a href="https://go.thairlananjos.com/bluesky" class="link-item" target="_blank" rel="noopener">
-              <iconify-icon icon="ri:bluesky-line" aria-hidden="true"></iconify-icon>
-              <span>Bluesky</span>
-            </a>
-          </li>
-          <li>
-            <a href="https://go.thairlananjos.com/threads" class="link-item" target="_blank" rel="noopener">
-              <iconify-icon icon="ri:threads-line" aria-hidden="true"></iconify-icon>
-              <span>Threads</span>
-            </a>
-          </li>
-          <li>
-            <a href="https://go.thairlananjos.com/snapchat" class="link-item" target="_blank" rel="noopener">
-              <iconify-icon icon="ri:snapchat-line" aria-hidden="true"></iconify-icon>
-              <span>Snapchat</span>
-            </a>
-          </li>
-          <li>
-            <a href="https://go.thairlananjos.com/substack" class="link-item" target="_blank" rel="noopener">
-              <iconify-icon icon="simple-icons:substack" aria-hidden="true"></iconify-icon>
-              <span>Substack</span>
-            </a>
-          </li>
-          <li>
-            <a href="https://go.thairlananjos.com/twitter" class="link-item" target="_blank" rel="noopener">
-              <iconify-icon icon="ri:twitter-x-line" aria-hidden="true"></iconify-icon>
-              <span>Twitter</span>
-            </a>
-          </li>
-          <li>
-            <a href="https://go.thairlananjos.com/pinterest" class="link-item" target="_blank" rel="noopener">
-              <iconify-icon icon="ri:pinterest-line" aria-hidden="true"></iconify-icon>
-              <span>Pinterest</span>
-            </a>
-          </li>
-        </ul>
-      </nav>
 
       <footer>
         &copy; <span id="year"></span> Thairlan Anjos
@@ -423,11 +453,11 @@
       });
 
       // --- BUSCA DINÂMICA DE LIVROS DO GOODREADS ---
-      const rssUrl = 'https://www.goodreads.com/review/list_rss/106296664?key=Tye_yDTFjrNlBcqWzsUB8qulmcmV12bKfKUFwhC7VP2AIp8O&shelf=read';
-      const apiProxy = `https://api.rss2json.com/v1/api.json?rss_url=${encodeURIComponent(rssUrl)}`;
+      async function fetchBooks(shelf, containerId, limit = 3) {
+        const container = document.getElementById(containerId);
+        const rssUrl = `https://www.goodreads.com/review/list_rss/106296664?key=Tye_yDTFjrNlBcqWzsUB8qulmcmV12bKfKUFwhC7VP2AIp8O&shelf=${shelf}`;
+        const apiProxy = `https://api.rss2json.com/v1/api.json?rss_url=${encodeURIComponent(rssUrl)}`;
 
-      async function fetchBooks() {
-        const container = document.getElementById('books-container');
         try {
           const response = await fetch(apiProxy);
           const data = await response.json();
@@ -435,8 +465,12 @@
           if (data.status === 'ok') {
             container.innerHTML = ''; 
             
-            // Pega apenas os 3 primeiros para não poluir muito a lista
-            const books = data.items.slice(0, 3);
+            if (data.items.length === 0) {
+              container.innerHTML = '<div class="book-card" style="justify-content: center; opacity: 0.7;">Nenhum livro nesta estante no momento.</div>';
+              return;
+            }
+
+            const books = data.items.slice(0, limit);
             
             books.forEach(book => {
               const card = document.createElement('a');
@@ -446,7 +480,6 @@
               card.rel = 'noopener';
               
               const author = book.author || 'Autor desconhecido';
-              // Tentar pegar a imagem da descrição se o thumbnail estiver vazio
               let coverUrl = book.thumbnail;
               if (!coverUrl && book.description) {
                 const imgMatch = book.description.match(/src="([^"]+)"/);
@@ -466,12 +499,13 @@
             throw new Error('Erro ao carregar feed');
           }
         } catch (error) {
-          console.error('Goodreads fetch error:', error);
+          console.error(`Goodreads fetch error (${shelf}):`, error);
           container.innerHTML = '<div class="book-card" style="text-align: center;">Não foi possível carregar as leituras.</div>';
         }
       }
 
-      fetchBooks();
+      fetchBooks('currently-reading', 'currently-reading-container', 1);
+      fetchBooks('read', 'books-container', 3);
     });
     </script>
   </body>
