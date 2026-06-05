@@ -479,7 +479,15 @@
               card.target = '_blank';
               card.rel = 'noopener';
               
-              const author = book.author || 'Autor desconhecido';
+              let author = book.author;
+              if (!author && book.description) {
+                const authorMatch = book.description.match(/author:\s*([^<]+)/);
+                if (authorMatch) {
+                  author = authorMatch[1].trim();
+                }
+              }
+              author = author || 'Autor desconhecido';
+
               let coverUrl = book.thumbnail;
               if (!coverUrl && book.description) {
                 const imgMatch = book.description.match(/src="([^"]+)"/);
