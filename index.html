@@ -2,16 +2,13 @@
 <html lang="pt-BR">
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="icon" href="/favicon.png" />
-    <title>Links — Thairlan Anjos</title>
-    <meta name="description" content="Thairlan Anjos - Meus links de redes sociais." />
-    <meta property="og:title" content="Links — Thairlan Anjos" />
-    <meta property="og:description" content="Thairlan Anjos - Meus links de redes sociais." />
+    <title>Em Construção — Thairlan Anjos</title>
+    <meta name="description" content="Site em construção — Thairlan Anjos." />
+    <meta property="og:title" content="Em Construção — Thairlan Anjos" />
+    <meta property="og:description" content="Site em construção — Thairlan Anjos." />
     <meta property="og:type" content="website" />
-
-    <!-- Iconify script -->
-    <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
 
     <!-- Fontes do site original -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -26,495 +23,99 @@
         --bg: #f7f6f3;
         --accent: #1a2238;
         --muted: #666666;
-        --link-hover: #e8e6e1;
         --font-heading: "Instrument Serif", serif;
         --font-body: "Petrona", serif;
       }
+
+      @media (prefers-color-scheme: dark) {
+        :root {
+          --bg: #1a2238;
+          --accent: #f7f6f3;
+          --muted: #999999;
+        }
+      }
+
       * {
         box-sizing: border-box;
         margin: 0;
         padding: 0;
       }
+
       html,
       body {
         height: 100%;
+        width: 100%;
       }
+
       body {
         font-family: var(--font-body);
         background: var(--bg);
         color: var(--accent);
         display: flex;
-        flex-direction: column;
         align-items: center;
-        justify-content: flex-start;
-        padding: 60px 20px 80px; /* Restaurado padding para o layout centralizado */
+        justify-content: center;
+        padding: 20px;
         transition: background-color 0.5s, color 0.5s;
-        overflow-y: auto;
+        overflow: hidden;
       }
+
       .container {
-        max-width: 500px;
+        max-width: 450px;
         width: 100%;
         text-align: center;
-      }
-      
-      header {
-        margin-bottom: 48px;
         display: flex;
         flex-direction: column;
         align-items: center;
-        width: 100%;
+        justify-content: center;
       }
-      
-      .profile-img-container {
-        position: relative;
-        width: 180px;
-        height: 180px;
+
+      .emoji-container {
+        font-size: 64px;
         margin-bottom: 24px;
-        overflow: hidden;
-        border-radius: 50%;
-        border: 2px solid var(--accent); /* Um detalhe sutil para destacar o círculo */
+        display: inline-block;
+        animation: float 3s ease-in-out infinite;
       }
-      
-      .profile-img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-        object-position: center;
-      }
-      
+
       h1 {
         font-family: var(--font-heading);
-        font-size: clamp(32px, 8vw, 40px);
+        font-size: clamp(36px, 8vw, 48px);
         font-weight: normal;
         line-height: 1.2;
         margin-bottom: 16px;
+        letter-spacing: -0.5px;
       }
 
-      .header-divider {
+      .divider {
         width: 60px;
         height: 1px;
         background-color: var(--accent);
         opacity: 0.2;
-        margin-bottom: 24px;
-      }
-
-      /* Nova seção de ícones sociais no topo */
-      .social-icons {
-        display: flex;
-        justify-content: center;
-        gap: 20px;
-        margin-top: 16px;
-      }
-      .social-icon-link {
-        color: var(--accent);
-        font-size: 24px;
-        text-decoration: none;
-        transition: opacity 0.2s;
-        display: flex;
-        align-items: center;
-        opacity: 0.8;
-      }
-      .social-icon-link:hover {
-        opacity: 1;
-      }
-      .social-icon-link:focus-visible {
-        outline: 2px solid var(--accent);
-        outline-offset: 4px;
-        border-radius: 4px;
-      }
-
-      /* Títulos das Seções */
-      h2 {
-        font-family: var(--font-heading);
-        font-size: 24px;
-        font-weight: normal;
         margin-bottom: 20px;
-        text-align: center;
-        opacity: 0.9;
       }
 
-      .sr-only {
-        position: absolute;
-        width: 1px;
-        height: 1px;
-        padding: 0;
-        margin: -1px;
-        overflow: hidden;
-        clip: rect(0, 0, 0, 0);
-        white-space: nowrap;
-        border-width: 0;
-      }
-
-      /* Seção de Livros (Lista) */
-      .books-section {
-        margin-bottom: 48px;
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-      }
-      .books-list {
-        display: flex;
-        flex-direction: column;
-        gap: 12px;
-        width: 100%;
-      }
-      .book-card {
-        display: flex;
-        align-items: center;
-        gap: 16px;
-        padding: 12px;
-        background: transparent;
-        border: 1px solid var(--accent);
-        border-radius: 12px;
-        text-align: left;
-        text-decoration: none;
-        color: inherit;
-        transition: transform 0.2s ease, background-color 0.2s;
-        width: 100%;
-      }
-      .book-card:hover {
-        background-color: rgba(26, 34, 56, 0.03);
-      }
-      body.dark-mode-active .book-card:hover {
-        background-color: rgba(247, 246, 243, 0.05);
-      }
-
-      .book-cover {
-        width: 45px;
-        height: 65px;
-        background-color: var(--accent);
-        border-radius: 4px;
-        object-fit: cover;
-        flex-shrink: 0;
-        /* Estilo para imagem não carregada */
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        color: var(--bg);
-        font-size: 10px;
-      }
-      .book-info {
-        display: flex;
-        flex-direction: column;
-        overflow: hidden;
-      }
-      .book-title {
-        font-family: var(--font-heading);
-        font-size: 18px;
-        margin-bottom: 2px;
-        white-space: nowrap;
-        overflow: hidden;
-        text-overflow: ellipsis;
-      }
-      .book-author {
-        font-size: 13px;
-        color: var(--muted);
-      }
-
-      .more-link {
-        display: inline-flex;
-        align-items: center;
-        gap: 6px;
-        margin-top: 16px;
-        font-size: 14px;
-        color: var(--accent);
-        text-decoration: none;
-        opacity: 0.8;
-        transition: opacity 0.2s;
-      }
-      .more-link:hover {
-        opacity: 1;
-        text-decoration: underline;
-      }
-
-      /* Linha Divisória */
-      .divider {
-        width: 100%;
-        height: 1px;
-        background-color: var(--accent);
-        opacity: 0.2;
-        margin: 40px 0;
-        border: none;
-      }
-
-      /* Seção de Links */
-      nav {
-        width: 100%;
-        text-align: left;
-      }
-
-      ul {
-        list-style: none;
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        gap: 16px;
-      }
-
-      li:last-child:nth-child(odd) {
-        grid-column: span 2;
-      }
-
-      .link-item {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        gap: 12px;
-        padding: 24px 12px;
-        border: 1px solid var(--accent);
-        text-decoration: none;
-        color: var(--accent);
+      p {
         font-size: 16px;
-        transition: all 0.3s ease;
-        border-radius: 12px;
-      }
-
-      .link-item iconify-icon {
-        font-size: 28px;
-        color: currentColor;
-      }
-
-      .link-item:hover {
-        background-color: var(--accent);
-        color: var(--bg);
-      }
-
-      .link-item:focus-visible {
-        outline: 3px solid var(--accent);
-        outline-offset: 4px;
-        background-color: var(--accent);
-        color: var(--bg);
-      }
-
-      .skip-link {
-        position: absolute;
-        top: -40px;
-        left: 0;
-        background: var(--accent);
-        color: var(--bg);
-        padding: 8px;
-        z-index: 1000;
-        transition: top 0.3s;
-        text-decoration: none;
-      }
-      .skip-link:focus {
-        top: 0;
-      }
-
-      footer {
-        margin-top: 60px;
-        padding: 10%;
-        font-size: 14px;
+        line-height: 1.6;
         color: var(--muted);
-        transition: color 0.5s;
-        text-align: center;
+        max-width: 320px;
       }
 
-      /* --- DARK MODE --- */
-      .dark-mode-switch {
-        display: block;
-        --width-of-switch: 2.8em;
-        --height-of-switch: 1.5em;
-        --size-of-icon: 1.1em;
-        --slider-offset: 0.2em;
-        position: fixed;
-        bottom: 20px;
-        right: 20px;
-        z-index: 999;
-        width: var(--width-of-switch);
-        height: var(--height-of-switch);
-      }
-      .dark-mode-switch input { opacity: 0; width: 0; height: 0; }
-      .dark-mode-slider {
-        position: absolute;
-        cursor: pointer;
-        top: 0; left: 0; right: 0; bottom: 0;
-        background-color: var(--bg);
-        border: 1px solid var(--accent);
-        transition: .4s;
-        border-radius: 30px;
-      }
-      .dark-mode-slider:before {
-        position: absolute;
-        content: "";
-        height: var(--size-of-icon);
-        width: var(--size-of-icon);
-        border-radius: 20px;
-        left: var(--slider-offset);
-        top: 50%;
-        transform: translateY(-50%);
-        background-color: var(--accent);
-        transition: .4s, box-shadow .4s;
-      }
-      input:checked + .dark-mode-slider:before {
-        left: calc(100% - (var(--size-of-icon) + var(--slider-offset)));
-        background-color: var(--bg);
-        box-shadow: inset -0.25em -0.15em 0 0 var(--accent);
-      }
-
-      body.dark-mode-active {
-        --bg: #1a2238; 
-        --accent: #f7f6f3;
-        --muted: #999999; 
+      @keyframes float {
+        0%, 100% {
+          transform: translateY(0) rotate(0deg);
+        }
+        50% {
+          transform: translateY(-10px) rotate(5deg);
+        }
       }
     </style>
   </head>
   <body>
-    <a href="#main-content" class="skip-link">Pular para o conteúdo principal</a>
-
     <main class="container" id="main-content">
-      <header>
-        <div class="profile-img-container">
-          <img src="Profile.jpg" alt="Foto de Thairlan Anjos" class="profile-img">
-        </div>
-        <h1>Thairlan Anjos</h1>
-        <div class="header-divider"></div>
-        <div class="social-icons">
-          <a href="https://go.thairlananjos.com/threads" class="social-icon-link" target="_blank" rel="noopener" aria-label="Threads">
-            <iconify-icon icon="ri:threads-line"></iconify-icon>
-          </a>
-          <a href="https://go.thairlananjos.com/snapchat" class="social-icon-link" target="_blank" rel="noopener" aria-label="Snapchat">
-            <iconify-icon icon="ri:snapchat-line"></iconify-icon>
-          </a>
-          <a href="https://go.thairlananjos.com/pinterest" class="social-icon-link" target="_blank" rel="noopener" aria-label="Pinterest">
-            <iconify-icon icon="ri:pinterest-line"></iconify-icon>
-          </a>
-          <a href="https://go.thairlananjos.com/goodreads" class="social-icon-link" target="_blank" rel="noopener" aria-label="Goodreads">
-            <iconify-icon icon="simple-icons:goodreads"></iconify-icon>
-          </a>
-        </div>
-      </header>
-
-      <!-- Lendo Agora -->
-      <section class="books-section">
-        <h2>Lendo Agora</h2>
-        <div class="books-list" id="currently-reading-container">
-          <div class="book-card">Carregando leituras...</div>
-        </div>
-      </section>
-
-      <!-- Leituras Recentes -->
-      <section class="books-section">
-        <h2>Leituras Recentes</h2>
-        <div class="books-list" id="books-container">
-          <div class="book-card">Carregando leituras...</div>
-        </div>
-        <a href="https://www.goodreads.com/user/show/106296664-thairlan-anjos" class="more-link" target="_blank" rel="noopener">
-          <iconify-icon icon="simple-icons:goodreads"></iconify-icon>
-          <span>Ver mais no Goodreads</span>
-          <iconify-icon icon="ri:arrow-right-up-line"></iconify-icon>
-        </a>
-      </section>
-
-      <footer>
-        &copy; <span id="year"></span> Thairlan Anjos
-      </footer>
+      <div class="emoji-container" aria-hidden="true">🚧</div>
+      <h1>Site em Construção</h1>
+      <div class="divider"></div>
+      <p>Novidades em breve. Por favor, volte mais tarde.</p>
     </main>
-
-    <!-- HTML do Switch Dark Mode -->
-    <label class="dark-mode-switch" title="Alternar modo light/dark">
-      <input type="checkbox" id="dark-mode-checkbox" aria-label="Alternar modo escuro">
-      <span class="dark-mode-slider"></span>
-    </label>
-
-    <script>
-    document.addEventListener("DOMContentLoaded", function() {
-      document.getElementById('year').textContent = new Date().getFullYear();
-
-      const toggle = document.getElementById('dark-mode-checkbox');
-      const body = document.body;
-      const storageKey = 'darkMode';
-
-      function applyDarkMode(isDark) {
-        body.classList.toggle('dark-mode-active', isDark);
-        toggle.checked = isDark;
-      }
-
-      const prefersDark = window.matchMedia('(prefers-color-scheme: dark)');
-      const savedState = localStorage.getItem(storageKey);
-
-      if (savedState !== null) {
-        applyDarkMode(savedState === 'true');
-      } else {
-        applyDarkMode(prefersDark.matches);
-      }
-
-      toggle.addEventListener('change', function() {
-        const isChecked = toggle.checked;
-        applyDarkMode(isChecked);
-        localStorage.setItem(storageKey, isChecked);
-      });
-
-      prefersDark.addEventListener('change', (e) => {
-        if (localStorage.getItem(storageKey) === null) {
-          applyDarkMode(e.matches);
-        }
-      });
-
-      // --- BUSCA DINÂMICA DE LIVROS DO GOODREADS ---
-      async function fetchBooks(shelf, containerId, limit = 3) {
-        const container = document.getElementById(containerId);
-        const rssUrl = `https://www.goodreads.com/review/list_rss/106296664?key=Tye_yDTFjrNlBcqWzsUB8qulmcmV12bKfKUFwhC7VP2AIp8O&shelf=${shelf}`;
-        const apiProxy = `https://api.rss2json.com/v1/api.json?rss_url=${encodeURIComponent(rssUrl)}`;
-
-        try {
-          const response = await fetch(apiProxy);
-          const data = await response.json();
-
-          if (data.status === 'ok') {
-            container.innerHTML = ''; 
-            
-            if (data.items.length === 0) {
-              container.innerHTML = '<div class="book-card" style="justify-content: center; opacity: 0.7;">Nenhum livro nesta estante no momento.</div>';
-              return;
-            }
-
-            const books = data.items.slice(0, limit);
-            
-            books.forEach(book => {
-              const card = document.createElement('a');
-              card.className = 'book-card';
-              card.href = book.link;
-              card.target = '_blank';
-              card.rel = 'noopener';
-              
-              let author = book.author;
-              if (!author && book.description) {
-                const authorMatch = book.description.match(/author:\s*([^<]+)/);
-                if (authorMatch) {
-                  author = authorMatch[1].trim();
-                }
-              }
-              author = author || 'Autor desconhecido';
-
-              let coverUrl = book.thumbnail;
-              if (!coverUrl && book.description) {
-                const imgMatch = book.description.match(/src="([^"]+)"/);
-                if (imgMatch) coverUrl = imgMatch[1];
-              }
-
-              card.innerHTML = `
-                <img src="${coverUrl || ''}" alt="Capa de ${book.title}" class="book-cover" onerror="this.src='https://placehold.co/45x65/1a2238/f7f6f3?text=📖'">
-                <div class="book-info">
-                  <span class="book-title" title="${book.title}">${book.title}</span>
-                  <span class="book-author">${author}</span>
-                </div>
-              `;
-              container.appendChild(card);
-            });
-          } else {
-            throw new Error('Erro ao carregar feed');
-          }
-        } catch (error) {
-          console.error(`Goodreads fetch error (${shelf}):`, error);
-          container.innerHTML = '<div class="book-card" style="text-align: center;">Não foi possível carregar as leituras.</div>';
-        }
-      }
-
-      fetchBooks('currently-reading', 'currently-reading-container', 1);
-      fetchBooks('read', 'books-container', 3);
-    });
-    </script>
   </body>
 </html>
